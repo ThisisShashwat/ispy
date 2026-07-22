@@ -1,0 +1,421 @@
+{
+  "nodes": [
+    {
+      "id": "query:create landing page eyespy ysws program hacky spy",
+      "type": "query",
+      "meta": {
+        "text": "create a landing page for eyespy YSWS program, hacky spy-themed React tailwindcss website"
+      }
+    },
+    {
+      "id": ".claude/settings.local.json",
+      "type": "file"
+    },
+    {
+      "id": "openspec/config.yaml",
+      "type": "file"
+    },
+    {
+      "id": "query:website theming current color palette typography css design",
+      "type": "query",
+      "meta": {
+        "text": "website theming, current color palette, typography, CSS/design tokens, component styling for buttons/cards/nav"
+      }
+    },
+    {
+      "id": "src/components/sections/Arsenal.jsx::IdeaCard",
+      "type": "file"
+    },
+    {
+      "id": "src/App.jsx",
+      "type": "file"
+    },
+    {
+      "id": "src/components/DossierPhoto.jsx::DossierPhoto",
+      "type": "file"
+    },
+    {
+      "id": "src/components/EnvelopeIntro.jsx::EnvelopeIntro",
+      "type": "file"
+    },
+    {
+      "id": "src/components/Marquee.jsx::Marquee",
+      "type": "file"
+    },
+    {
+      "id": "query:(empty)",
+      "type": "query",
+      "meta": {
+        "text": ""
+      }
+    },
+    {
+      "id": "query:integrate prizes hour breakdown page navigable from homepage",
+      "type": "query",
+      "meta": {
+        "text": "integrate prizes and hour breakdown page, navigable from homepage, inspired by widget.hackclub.com/shop style"
+      }
+    },
+    {
+      "id": "src/components/sections/Prizes.jsx",
+      "type": "file"
+    },
+    {
+      "id": "src/data/prizes.js",
+      "type": "file"
+    },
+    {
+      "id": "query:auth dashboard hack club oauth airtable submission database",
+      "type": "query",
+      "meta": {
+        "text": "auth dashboard hack club oauth airtable submission no database"
+      }
+    },
+    {
+      "id": "src/pages/Home.jsx",
+      "type": "file"
+    },
+    {
+      "id": "src/pages/PrizesPage.jsx",
+      "type": "file"
+    },
+    {
+      "id": "src/hooks/useDecryptText.js::useDecryptText",
+      "type": "file"
+    },
+    {
+      "id": "src/hooks/useRevealOnScroll.js::useRevealOnScroll",
+      "type": "file"
+    },
+    {
+      "id": "src/data/prizeTiers.js",
+      "type": "file"
+    }
+  ],
+  "edges": [
+    {
+      "from": "query:create landing page eyespy ysws program hacky spy",
+      "to": ".claude/settings.local.json",
+      "rel": "retrieved",
+      "ts": 1784126843
+    },
+    {
+      "from": "query:create landing page eyespy ysws program hacky spy",
+      "to": "openspec/config.yaml",
+      "rel": "retrieved",
+      "ts": 1784126843
+    },
+    {
+      "from": "query:website theming current color palette typography css design",
+      "to": "src/components/sections/Arsenal.jsx::IdeaCard",
+      "rel": "retrieved",
+      "ts": 1784645689
+    },
+    {
+      "from": "query:website theming current color palette typography css design",
+      "to": "src/App.jsx",
+      "rel": "retrieved",
+      "ts": 1784645689
+    },
+    {
+      "from": "query:website theming current color palette typography css design",
+      "to": "src/components/DossierPhoto.jsx::DossierPhoto",
+      "rel": "retrieved",
+      "ts": 1784645689
+    },
+    {
+      "from": "query:website theming current color palette typography css design",
+      "to": "src/components/EnvelopeIntro.jsx::EnvelopeIntro",
+      "rel": "retrieved",
+      "ts": 1784645689
+    },
+    {
+      "from": "query:website theming current color palette typography css design",
+      "to": "src/components/Marquee.jsx::Marquee",
+      "rel": "retrieved",
+      "ts": 1784645689
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/App.jsx",
+      "rel": "read",
+      "ts": 1784645694,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/components/sections/Arsenal.jsx::IdeaCard",
+      "rel": "read",
+      "ts": 1784645694,
+      "meta": {
+        "mode": "symbol_excerpt"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/components/DossierPhoto.jsx::DossierPhoto",
+      "rel": "read",
+      "ts": 1784645694,
+      "meta": {
+        "mode": "symbol_excerpt"
+      }
+    },
+    {
+      "from": "query:integrate prizes hour breakdown page navigable from homepage",
+      "to": "src/components/sections/Prizes.jsx",
+      "rel": "retrieved",
+      "ts": 1784655155
+    },
+    {
+      "from": "query:integrate prizes hour breakdown page navigable from homepage",
+      "to": "src/data/prizes.js",
+      "rel": "retrieved",
+      "ts": 1784655155
+    },
+    {
+      "from": "query:integrate prizes hour breakdown page navigable from homepage",
+      "to": "src/components/sections/Arsenal.jsx::IdeaCard",
+      "rel": "retrieved",
+      "ts": 1784655155
+    },
+    {
+      "from": "query:integrate prizes hour breakdown page navigable from homepage",
+      "to": "src/App.jsx",
+      "rel": "retrieved",
+      "ts": 1784655155
+    },
+    {
+      "from": "query:integrate prizes hour breakdown page navigable from homepage",
+      "to": "src/components/DossierPhoto.jsx::DossierPhoto",
+      "rel": "retrieved",
+      "ts": 1784655155
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/components/sections/Prizes.jsx",
+      "rel": "read",
+      "ts": 1784655157,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/data/prizes.js",
+      "rel": "read",
+      "ts": 1784655158,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/components/sections/Arsenal.jsx::IdeaCard",
+      "rel": "read",
+      "ts": 1784655158,
+      "meta": {
+        "mode": "symbol_excerpt"
+      }
+    },
+    {
+      "from": "query:auth dashboard hack club oauth airtable submission database",
+      "to": "src/pages/Home.jsx",
+      "rel": "retrieved",
+      "ts": 1784733968
+    },
+    {
+      "from": "query:auth dashboard hack club oauth airtable submission database",
+      "to": "src/pages/PrizesPage.jsx",
+      "rel": "retrieved",
+      "ts": 1784733968
+    },
+    {
+      "from": "query:auth dashboard hack club oauth airtable submission database",
+      "to": "src/components/sections/Arsenal.jsx::IdeaCard",
+      "rel": "retrieved",
+      "ts": 1784733968
+    },
+    {
+      "from": "query:auth dashboard hack club oauth airtable submission database",
+      "to": "src/hooks/useDecryptText.js::useDecryptText",
+      "rel": "retrieved",
+      "ts": 1784733968
+    },
+    {
+      "from": "query:auth dashboard hack club oauth airtable submission database",
+      "to": "src/hooks/useRevealOnScroll.js::useRevealOnScroll",
+      "rel": "retrieved",
+      "ts": 1784733968
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/pages/Home.jsx",
+      "rel": "read",
+      "ts": 1784733972,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/pages/PrizesPage.jsx",
+      "rel": "read",
+      "ts": 1784733973,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/components/sections/Arsenal.jsx::IdeaCard",
+      "rel": "read",
+      "ts": 1784733973,
+      "meta": {
+        "mode": "symbol_excerpt"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/data/prizeTiers.js",
+      "rel": "read",
+      "ts": 1784734049,
+      "meta": {
+        "mode": "full"
+      }
+    }
+  ],
+  "files": {
+    "src/App.jsx": {
+      "query_terms": [],
+      "cached_content": "import ScanlineOverlay from './components/ScanlineOverlay'\nimport EnvelopeIntro from './components/EnvelopeIntro'\nimport Marquee from './components/Marquee'\nimport Hero from './components/sections/Hero'\nimport Briefing from './components/sections/Briefing'\nimport Arsenal from './components/sections/",
+      "cached_chars": 784,
+      "cached_tokens_est": 196,
+      "last_action": "read",
+      "last_ts": 1784645694
+    },
+    "src/components/sections/Arsenal.jsx::IdeaCard": {
+      "query_terms": [],
+      "cached_content": "function IdeaCard({ idea, index }) {\n  const [ref, visible] = useRevealOnScroll()\n  return (\n    <div\n      ref={ref}\n      style={{ transitionDelay: visible ? `${index * 120}ms` : '0ms' }}\n      className={`border border-outline bg-surface-container-low hover:border-primary-container transition-all",
+      "cached_chars": 722,
+      "cached_tokens_est": 180,
+      "last_action": "read",
+      "last_ts": 1784733973
+    },
+    "src/components/DossierPhoto.jsx::DossierPhoto": {
+      "query_terms": [],
+      "cached_content": "export default function DossierPhoto({\n  src,\n  alt,\n  label,\n  rotate = '-rotate-2',\n  width = 'w-64 sm:w-80',\n}) {\n  const [imageFailed, setImageFailed] = useState(false)\n\n  return (\n    <div className={`relative inline-block ${rotate}`}>\n      <div className=\"absolute -top-3 left-1/2 -translate-x",
+      "cached_chars": 1187,
+      "cached_tokens_est": 296,
+      "last_action": "read",
+      "last_ts": 1784645694
+    },
+    "src/components/sections/Prizes.jsx": {
+      "query_terms": [],
+      "cached_content": "import { prizes } from '../../data/prizes'\nimport DossierPhoto from '../DossierPhoto'\nimport TerminalPane from '../TerminalPane'\nimport { useRevealOnScroll } from '../../hooks/useRevealOnScroll'\n\nfunction PrizeItem({ prize, index }) {\n  const [ref, visible] = useRevealOnScroll()\n\n  return (\n    <div",
+      "cached_chars": 1897,
+      "cached_tokens_est": 474,
+      "last_action": "read",
+      "last_ts": 1784655157
+    },
+    "src/data/prizes.js": {
+      "query_terms": [],
+      "cached_content": "import flipperZero from \"../assets/prizes/flipper_zero_img.webp\"\nimport monitor from '../assets/prizes/minotor_pic.avif'\nimport gopro from '../assets/prizes/gopro_pic.webp'\n\n// Swap a prize's photo by replacing the file at its `image` import path\n// (or pointing `image` at a new file) \u2014 no other cod",
+      "cached_chars": 663,
+      "cached_tokens_est": 165,
+      "last_action": "read",
+      "last_ts": 1784655158
+    },
+    "src/pages/Home.jsx": {
+      "query_terms": [],
+      "cached_content": "import Marquee from '../components/Marquee'\nimport Hero from '../components/sections/Hero'\nimport Briefing from '../components/sections/Briefing'\nimport Arsenal from '../components/sections/Arsenal'\nimport Prizes from '../components/sections/Prizes'\nimport HowItWorks from '../components/sections/How",
+      "cached_chars": 568,
+      "cached_tokens_est": 142,
+      "last_action": "read",
+      "last_ts": 1784733972
+    },
+    "src/pages/PrizesPage.jsx": {
+      "query_terms": [],
+      "cached_content": "import { Link } from 'react-router-dom'\nimport { prizeTiers } from '../data/prizeTiers'\nimport DossierPhoto from '../components/DossierPhoto'\nimport TerminalPane from '../components/TerminalPane'\nimport { useRevealOnScroll } from '../hooks/useRevealOnScroll'\n\nfunction TierItem({ item }) {\n  return (",
+      "cached_chars": 3456,
+      "cached_tokens_est": 864,
+      "last_action": "read",
+      "last_ts": 1784733973
+    },
+    "src/data/prizeTiers.js": {
+      "query_terms": [],
+      "cached_content": "import flipperPlaceholder from '../assets/prizes/flipper_zero_img.webp'\nimport goproPlaceholder from '../assets/prizes/gopro-placeholder.svg'\nimport monitorPlaceholder from '../assets/prizes/minotor_pic.avif'\nimport casioWatch from \"../assets/prizes/casio_image.jpg\"\nimport laptopImage from \"../asset",
+      "cached_chars": 2133,
+      "cached_tokens_est": 533,
+      "last_action": "read",
+      "last_ts": 1784734049
+    }
+  },
+  "actions": [
+    {
+      "ts": 1784126843,
+      "kind": "retrieve",
+      "payload": {
+        "kind": "retrieve",
+        "query": "create a landing page for eyespy YSWS program, hacky spy-themed React tailwindcss website"
+      }
+    },
+    {
+      "ts": 1784126843,
+      "kind": "continue_retrieve",
+      "payload": {
+        "kind": "continue_retrieve",
+        "query": "create a landing page for eyespy YSWS program, hacky spy-themed React tailwindcss website"
+      }
+    },
+    {
+      "ts": 1784645689,
+      "kind": "retrieve",
+      "payload": {
+        "kind": "retrieve",
+        "query": "website theming, current color palette, typography, CSS/design tokens, component styling for buttons/cards/nav"
+      }
+    },
+    {
+      "ts": 1784645689,
+      "kind": "continue_retrieve",
+      "payload": {
+        "kind": "continue_retrieve",
+        "query": "website theming, current color palette, typography, CSS/design tokens, component styling for buttons/cards/nav"
+      }
+    },
+    {
+      "ts": 1784655155,
+      "kind": "retrieve",
+      "payload": {
+        "kind": "retrieve",
+        "query": "integrate prizes and hour breakdown page, navigable from homepage, inspired by widget.hackclub.com/shop style"
+      }
+    },
+    {
+      "ts": 1784655155,
+      "kind": "continue_retrieve",
+      "payload": {
+        "kind": "continue_retrieve",
+        "query": "integrate prizes and hour breakdown page, navigable from homepage, inspired by widget.hackclub.com/shop style"
+      }
+    },
+    {
+      "ts": 1784733968,
+      "kind": "retrieve",
+      "payload": {
+        "kind": "retrieve",
+        "query": "auth dashboard hack club oauth airtable submission no database"
+      }
+    },
+    {
+      "ts": 1784733968,
+      "kind": "continue_retrieve",
+      "payload": {
+        "kind": "continue_retrieve",
+        "query": "auth dashboard hack club oauth airtable submission no database"
+      }
+    }
+  ]
+}

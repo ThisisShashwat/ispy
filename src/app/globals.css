@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-on-background font-mono;
+  }
+}
+
+@layer components {
+  .glitch-title {
+    position: relative;
+    display: inline-block;
+  }
+  .glitch-title:hover::before,
+  .glitch-title:hover::after {
+    content: attr(data-text);
+    position: absolute;
+    inset: 0;
+    background: inherit;
+  }
+  .glitch-title:hover::before {
+    color: #fdaf00;
+    animation: glitchShift 0.3s steps(2) infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+  }
+  .glitch-title:hover::after {
+    color: #00ff41;
+    animation: glitchShift 0.3s steps(2) infinite reverse;
+    clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
+  }
+
+  .text-glow {
+    text-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
+  }
+
+  .glow {
+    filter: drop-shadow(0 0 4px rgba(0, 230, 57, 0.15));
+  }
+}
+
+.grain-overlay {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.35'/%3E%3C/svg%3E");
+}

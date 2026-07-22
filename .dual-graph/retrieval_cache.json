@@ -1,0 +1,195 @@
+{
+  "entries": {
+    "auth dashboard hack club oauth airtable submission database|tf=5|te=12": {
+      "created_epoch": 1784733968,
+      "files": [
+        "src/pages/Home.jsx",
+        "src/pages/PrizesPage.jsx",
+        "src/components/sections/Arsenal.jsx::IdeaCard",
+        "src/hooks/useDecryptText.js::useDecryptText",
+        "src/hooks/useRevealOnScroll.js::useRevealOnScroll"
+      ],
+      "mtimes_ns": {
+        "src/pages/Home.jsx": 1784656310975357392,
+        "src/pages/PrizesPage.jsx": 1784732574969763509,
+        "src/components/sections/Arsenal.jsx::IdeaCard": 1784648701202063591,
+        "src/hooks/useDecryptText.js::useDecryptText": 1784127842813872819,
+        "src/hooks/useRevealOnScroll.js::useRevealOnScroll": 1784128605473081117
+      },
+      "result": {
+        "ok": true,
+        "query": "auth dashboard hack club oauth airtable submission no database",
+        "graph_files": [
+          {
+            "id": "src/pages/Home.jsx",
+            "kind": "file",
+            "path": "src/pages/Home.jsx",
+            "ext": ".jsx",
+            "size": 568,
+            "keywords": [
+              "home"
+            ],
+            "summary": "import Marquee from '../components/Marquee'. Contains 1 function: Home.",
+            "file_hash": "82ff34a5",
+            "_score": 16,
+            "_role": "ui_surface",
+            "_intent": "general"
+          },
+          {
+            "id": "src/pages/PrizesPage.jsx",
+            "kind": "file",
+            "path": "src/pages/PrizesPage.jsx",
+            "ext": ".jsx",
+            "size": 3462,
+            "keywords": [
+              "prizespage",
+              "prizes",
+              "page"
+            ],
+            "summary": "import { Link } from 'react-router-dom'. Contains 3 functions/classes: TierItem, TierColumn, PrizesPage.",
+            "file_hash": "3d10455e",
+            "_score": 15,
+            "_role": "ui_surface",
+            "_intent": "general"
+          },
+          {
+            "id": "src/components/sections/Arsenal.jsx::IdeaCard",
+            "kind": "symbol",
+            "path": "src/components/sections/Arsenal.jsx",
+            "ext": ".jsx",
+            "size": 19,
+            "keywords": [
+              "ideacard",
+              "idea",
+              "card"
+            ],
+            "symbol_type": "utility",
+            "name": "IdeaCard",
+            "line_start": 22,
+            "line_end": 40,
+            "body_hash": "411a7570",
+            "confidence": "medium",
+            "exported": false,
+            "_score": 11,
+            "_role": "code",
+            "_intent": "general"
+          },
+          {
+            "id": "src/hooks/useDecryptText.js::useDecryptText",
+            "kind": "symbol",
+            "path": "src/hooks/useDecryptText.js",
+            "ext": ".js",
+            "size": 43,
+            "keywords": [
+              "usedecrypttext",
+              "use",
+              "decrypt",
+              "text"
+            ],
+            "symbol_type": "hook",
+            "name": "useDecryptText",
+            "line_start": 6,
+            "line_end": 48,
+            "body_hash": "fcc16bc3",
+            "confidence": "high",
+            "exported": true,
+            "_score": 11,
+            "_role": "logic",
+            "_intent": "general"
+          },
+          {
+            "id": "src/hooks/useRevealOnScroll.js::useRevealOnScroll",
+            "kind": "symbol",
+            "path": "src/hooks/useRevealOnScroll.js",
+            "ext": ".js",
+            "size": 26,
+            "keywords": [
+              "userevealonscroll",
+              "use",
+              "reveal",
+              "scroll"
+            ],
+            "symbol_type": "hook",
+            "name": "useRevealOnScroll",
+            "line_start": 4,
+            "line_end": 29,
+            "body_hash": "7f0457b2",
+            "confidence": "high",
+            "exported": true,
+            "_score": 11,
+            "_role": "logic",
+            "_intent": "general"
+          }
+        ],
+        "graph_edges": [
+          {
+            "from": "src/pages/Home.jsx",
+            "to": "../components/Marquee",
+            "rel": "imports"
+          },
+          {
+            "from": "src/pages/Home.jsx",
+            "to": "../components/sections/Arsenal",
+            "rel": "imports"
+          },
+          {
+            "from": "src/pages/Home.jsx",
+            "to": "../components/sections/Briefing",
+            "rel": "imports"
+          },
+          {
+            "from": "src/pages/Home.jsx",
+            "to": "../components/sections/CtaFooter",
+            "rel": "imports"
+          },
+          {
+            "from": "src/pages/Home.jsx",
+            "to": "../components/sections/Hero",
+            "rel": "imports"
+          },
+          {
+            "from": "src/pages/Home.jsx",
+            "to": "../components/sections/HowItWorks",
+            "rel": "imports"
+          },
+          {
+            "from": "src/pages/Home.jsx",
+            "to": "../components/sections/Prizes",
+            "rel": "imports"
+          },
+          {
+            "from": "src/pages/Home.jsx",
+            "to": "Arsenal",
+            "rel": "imports"
+          },
+          {
+            "from": "src/pages/Home.jsx",
+            "to": "Briefing",
+            "rel": "imports"
+          },
+          {
+            "from": "src/pages/Home.jsx",
+            "to": "CtaFooter",
+            "rel": "imports"
+          },
+          {
+            "from": "src/pages/Home.jsx",
+            "to": "Hero",
+            "rel": "imports"
+          },
+          {
+            "from": "src/pages/Home.jsx",
+            "to": "HowItWorks",
+            "rel": "imports"
+          }
+        ],
+        "grep_hits": [],
+        "reuse_candidates": [],
+        "read_budget": {
+          "remaining_chars": 60000,
+          "reuse_gate_candidates": []
+        }
+      }
+    }
+  }
+}
