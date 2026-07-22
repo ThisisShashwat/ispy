@@ -4,7 +4,7 @@ import EnvelopeIntro from '../components/EnvelopeIntro'
 import { CloseAttemptProvider } from '../context/CloseAttemptContext'
 
 export const metadata = {
-  title: 'ISpy | become Palintir and get rewarded by building',
+  title: 'ISpy | make spyware stuff and get rewarded',
   description: 'Join the Hack Club Slack and head to #ispy channel!',
   icons: { icon: '/favicon.svg' },
 }
