@@ -1,24 +1,24 @@
 {
   "entries": {
-    "auth dashboard hack club oauth airtable submission database|tf=5|te=12": {
-      "created_epoch": 1784733968,
+    "images not rendering|tf=5|te=12": {
+      "created_epoch": 1784746371,
       "files": [
         "src/pages/Home.jsx",
-        "src/pages/PrizesPage.jsx",
-        "src/components/sections/Arsenal.jsx::IdeaCard",
         "src/hooks/useDecryptText.js::useDecryptText",
-        "src/hooks/useRevealOnScroll.js::useRevealOnScroll"
+        "src/hooks/useRevealOnScroll.js::useRevealOnScroll",
+        "src/pages/PrizesPage.jsx",
+        "src/context/CloseAttemptContext.jsx::useCloseAttempt"
       ],
       "mtimes_ns": {
-        "src/pages/Home.jsx": 1784656310975357392,
-        "src/pages/PrizesPage.jsx": 1784732574969763509,
-        "src/components/sections/Arsenal.jsx::IdeaCard": 1784648701202063591,
-        "src/hooks/useDecryptText.js::useDecryptText": 1784127842813872819,
-        "src/hooks/useRevealOnScroll.js::useRevealOnScroll": 1784128605473081117
+        "src/pages/Home.jsx": -1,
+        "src/hooks/useDecryptText.js::useDecryptText": 1784740086757930011,
+        "src/hooks/useRevealOnScroll.js::useRevealOnScroll": 1784740083883900951,
+        "src/pages/PrizesPage.jsx": -1,
+        "src/context/CloseAttemptContext.jsx::useCloseAttempt": 1784740089542958195
       },
       "result": {
         "ok": true,
-        "query": "auth dashboard hack club oauth airtable submission no database",
+        "query": "images not rendering",
         "graph_files": [
           {
             "id": "src/pages/Home.jsx",
@@ -31,47 +31,8 @@
             ],
             "summary": "import Marquee from '../components/Marquee'. Contains 1 function: Home.",
             "file_hash": "82ff34a5",
-            "_score": 16,
+            "_score": 12,
             "_role": "ui_surface",
-            "_intent": "general"
-          },
-          {
-            "id": "src/pages/PrizesPage.jsx",
-            "kind": "file",
-            "path": "src/pages/PrizesPage.jsx",
-            "ext": ".jsx",
-            "size": 3462,
-            "keywords": [
-              "prizespage",
-              "prizes",
-              "page"
-            ],
-            "summary": "import { Link } from 'react-router-dom'. Contains 3 functions/classes: TierItem, TierColumn, PrizesPage.",
-            "file_hash": "3d10455e",
-            "_score": 15,
-            "_role": "ui_surface",
-            "_intent": "general"
-          },
-          {
-            "id": "src/components/sections/Arsenal.jsx::IdeaCard",
-            "kind": "symbol",
-            "path": "src/components/sections/Arsenal.jsx",
-            "ext": ".jsx",
-            "size": 19,
-            "keywords": [
-              "ideacard",
-              "idea",
-              "card"
-            ],
-            "symbol_type": "utility",
-            "name": "IdeaCard",
-            "line_start": 22,
-            "line_end": 40,
-            "body_hash": "411a7570",
-            "confidence": "medium",
-            "exported": false,
-            "_score": 11,
-            "_role": "code",
             "_intent": "general"
           },
           {
@@ -118,6 +79,46 @@
             "exported": true,
             "_score": 11,
             "_role": "logic",
+            "_intent": "general"
+          },
+          {
+            "id": "src/pages/PrizesPage.jsx",
+            "kind": "file",
+            "path": "src/pages/PrizesPage.jsx",
+            "ext": ".jsx",
+            "size": 3462,
+            "keywords": [
+              "prizespage",
+              "prizes",
+              "page"
+            ],
+            "summary": "import { Link } from 'react-router-dom'. Contains 3 functions/classes: TierItem, TierColumn, PrizesPage.",
+            "file_hash": "3d10455e",
+            "_score": 11,
+            "_role": "ui_surface",
+            "_intent": "general"
+          },
+          {
+            "id": "src/context/CloseAttemptContext.jsx::useCloseAttempt",
+            "kind": "symbol",
+            "path": "src/context/CloseAttemptContext.jsx",
+            "ext": ".jsx",
+            "size": 7,
+            "keywords": [
+              "usecloseattempt",
+              "use",
+              "close",
+              "attempt"
+            ],
+            "symbol_type": "hook",
+            "name": "useCloseAttempt",
+            "line_start": 34,
+            "line_end": 40,
+            "body_hash": "bd76d0e6",
+            "confidence": "high",
+            "exported": true,
+            "_score": 10,
+            "_role": "code",
             "_intent": "general"
           }
         ],

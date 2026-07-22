@@ -16,6 +16,10 @@ export default function DossierPhoto({
   const displayName =
     filename || `${(alt || 'FILE').toUpperCase().replace(/\s+/g, '_')}.DAT`
 
+  // Next.js static image imports resolve to a { src, width, height } object,
+  // not a URL string — unwrap it so <img src> gets an actual path either way.
+  const resolvedSrc = typeof src === 'string' ? src : src?.src
+
   return (
     <div className={`bg-surface-container-low border border-outline ${width}`}>
       <div className="flex items-center justify-between gap-2 border-b border-dashed border-outline-variant px-3 py-2">
@@ -33,7 +37,7 @@ export default function DossierPhoto({
           </div>
         ) : (
           <img
-            src={src}
+            src={resolvedSrc}
             alt={alt}
             onError={() => setImageFailed(true)}
             className="w-full h-auto border border-outline-variant"

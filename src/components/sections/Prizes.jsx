@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { prizes } from '../../data/prizes'
+import { highlightedPrizes } from '../../data/prizeTiers'
 import DossierPhoto from '../DossierPhoto'
 import TerminalPane from '../TerminalPane'
 import { useRevealOnScroll } from '../../hooks/useRevealOnScroll'
@@ -17,7 +17,7 @@ function PrizeItem({ prize, index }) {
         visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
       }`}
     >
-      <DossierPhoto src={prize.image} alt={prize.name} label={prize.clearanceLevel} />
+      <DossierPhoto src={prize.image} alt={prize.name} label={prize.codename} />
       <p className="mt-6 font-mono uppercase tracking-widest text-on-background font-bold text-lg">
         {prize.name}
       </p>
@@ -43,7 +43,7 @@ export default function Prizes() {
             Ship a real project, walk away with real field equipment.
           </p>
           <div className="grid sm:grid-cols-3 gap-10 justify-items-center">
-            {prizes.map((prize, i) => (
+            {highlightedPrizes.map((prize, i) => (
               <PrizeItem key={prize.id} prize={prize} index={i} />
             ))}
           </div>

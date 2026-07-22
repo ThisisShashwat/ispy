@@ -90,6 +90,21 @@
     {
       "id": "src/data/prizeTiers.js",
       "type": "file"
+    },
+    {
+      "id": "query:images not rendering",
+      "type": "query",
+      "meta": {
+        "text": "images not rendering"
+      }
+    },
+    {
+      "id": "src/context/CloseAttemptContext.jsx::useCloseAttempt",
+      "type": "file"
+    },
+    {
+      "id": "src/components/DossierPhoto.jsx",
+      "type": "file"
     }
   ],
   "edges": [
@@ -284,6 +299,99 @@
       "meta": {
         "mode": "full"
       }
+    },
+    {
+      "from": "query:images not rendering",
+      "to": "src/pages/Home.jsx",
+      "rel": "retrieved",
+      "ts": 1784746371
+    },
+    {
+      "from": "query:images not rendering",
+      "to": "src/hooks/useDecryptText.js::useDecryptText",
+      "rel": "retrieved",
+      "ts": 1784746371
+    },
+    {
+      "from": "query:images not rendering",
+      "to": "src/hooks/useRevealOnScroll.js::useRevealOnScroll",
+      "rel": "retrieved",
+      "ts": 1784746371
+    },
+    {
+      "from": "query:images not rendering",
+      "to": "src/pages/PrizesPage.jsx",
+      "rel": "retrieved",
+      "ts": 1784746371
+    },
+    {
+      "from": "query:images not rendering",
+      "to": "src/context/CloseAttemptContext.jsx::useCloseAttempt",
+      "rel": "retrieved",
+      "ts": 1784746371
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/pages/Home.jsx",
+      "rel": "read",
+      "ts": 1784746373,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/hooks/useDecryptText.js::useDecryptText",
+      "rel": "read",
+      "ts": 1784746373,
+      "meta": {
+        "mode": "symbol_excerpt"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/hooks/useRevealOnScroll.js::useRevealOnScroll",
+      "rel": "read",
+      "ts": 1784746373,
+      "meta": {
+        "mode": "symbol_excerpt"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/data/prizeTiers.js",
+      "rel": "read",
+      "ts": 1784746441,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/components/sections/Prizes.jsx",
+      "rel": "read",
+      "ts": 1784746441,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/data/prizes.js",
+      "rel": "read",
+      "ts": 1784746449,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/components/DossierPhoto.jsx",
+      "rel": "read",
+      "ts": 1784746449,
+      "meta": {
+        "mode": "full"
+      }
     }
   ],
   "files": {
@@ -313,11 +421,11 @@
     },
     "src/components/sections/Prizes.jsx": {
       "query_terms": [],
-      "cached_content": "import { prizes } from '../../data/prizes'\nimport DossierPhoto from '../DossierPhoto'\nimport TerminalPane from '../TerminalPane'\nimport { useRevealOnScroll } from '../../hooks/useRevealOnScroll'\n\nfunction PrizeItem({ prize, index }) {\n  const [ref, visible] = useRevealOnScroll()\n\n  return (\n    <div",
-      "cached_chars": 1897,
-      "cached_tokens_est": 474,
+      "cached_content": "'use client'\n\nimport Link from 'next/link'\nimport { prizes } from '../../data/prizes'\nimport DossierPhoto from '../DossierPhoto'\nimport TerminalPane from '../TerminalPane'\nimport { useRevealOnScroll } from '../../hooks/useRevealOnScroll'\n\nfunction PrizeItem({ prize, index }) {\n  const [ref, visible]",
+      "cached_chars": 2138,
+      "cached_tokens_est": 534,
       "last_action": "read",
-      "last_ts": 1784655157
+      "last_ts": 1784746441
     },
     "src/data/prizes.js": {
       "query_terms": [],
@@ -325,7 +433,7 @@
       "cached_chars": 663,
       "cached_tokens_est": 165,
       "last_action": "read",
-      "last_ts": 1784655158
+      "last_ts": 1784746449
     },
     "src/pages/Home.jsx": {
       "query_terms": [],
@@ -333,7 +441,7 @@
       "cached_chars": 568,
       "cached_tokens_est": 142,
       "last_action": "read",
-      "last_ts": 1784733972
+      "last_ts": 1784746373
     },
     "src/pages/PrizesPage.jsx": {
       "query_terms": [],
@@ -349,7 +457,31 @@
       "cached_chars": 2133,
       "cached_tokens_est": 533,
       "last_action": "read",
-      "last_ts": 1784734049
+      "last_ts": 1784746441
+    },
+    "src/hooks/useDecryptText.js::useDecryptText": {
+      "query_terms": [],
+      "cached_content": "const FRAME_MS = 30\n\nexport function useDecryptText(finalText) {\n  const [text, setText] = useState(finalText)\n  const prefersReducedMotion = useRef(\n    typeof window !== 'undefined' &&\n      window.matchMedia?.('(prefers-reduced-motion: reduce)').matches,\n  )\n\n  useEffect(() => {\n    if (prefersRe",
+      "cached_chars": 1069,
+      "cached_tokens_est": 267,
+      "last_action": "read",
+      "last_ts": 1784746373
+    },
+    "src/hooks/useRevealOnScroll.js::useRevealOnScroll": {
+      "query_terms": [],
+      "cached_content": "// Returns a ref to attach and a boolean that flips true once the element\n// scrolls into view \u2014 used to trigger a one-shot fade-up entrance animation.\nexport function useRevealOnScroll() {\n  const ref = useRef(null)\n  const [visible, setVisible] = useState(false)\n\n  useEffect(() => {\n    const node",
+      "cached_chars": 712,
+      "cached_tokens_est": 178,
+      "last_action": "read",
+      "last_ts": 1784746373
+    },
+    "src/components/DossierPhoto.jsx": {
+      "query_terms": [],
+      "cached_content": "'use client'\n\nimport { useState } from 'react'\n\n// Wraps an image in a bracketed \"secured file\" treatment: filename-style\n// header, [SECURED] tag, and sharp-cornered bordered frame.\nexport default function DossierPhoto({\n  src,\n  alt,\n  label,\n  filename,\n  width = 'w-64 sm:w-80',\n}) {\n  const [ima",
+      "cached_chars": 1807,
+      "cached_tokens_est": 451,
+      "last_action": "read",
+      "last_ts": 1784746449
     }
   },
   "actions": [
@@ -415,6 +547,22 @@
       "payload": {
         "kind": "continue_retrieve",
         "query": "auth dashboard hack club oauth airtable submission no database"
+      }
+    },
+    {
+      "ts": 1784746371,
+      "kind": "retrieve",
+      "payload": {
+        "kind": "retrieve",
+        "query": "images not rendering"
+      }
+    },
+    {
+      "ts": 1784746371,
+      "kind": "continue_retrieve",
+      "payload": {
+        "kind": "continue_retrieve",
+        "query": "images not rendering"
       }
     }
   ]

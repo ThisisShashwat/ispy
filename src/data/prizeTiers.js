@@ -49,3 +49,27 @@ export const prizeTiers = [
     ],
   },
 ]
+
+// Homepage teaser highlights: one item each from the lowest, a middle, and
+// the highest tier, so the preview reflects the full range without showing
+// everything (full breakdown lives on /prizes).
+export const highlightedPrizes = [
+  {
+    id: prizeTiers[0].items[0].id,
+    name: prizeTiers[0].items[0].name,
+    image: prizeTiers[0].items[0].image,
+    codename: prizeTiers[0].codename,
+  },
+  {
+    id: prizeTiers[2].items[0].id,
+    name: prizeTiers[2].items[0].name,
+    image: prizeTiers[2].items[0].image,
+    codename: prizeTiers[2].codename,
+  },
+  {
+    id: prizeTiers[4].items[0].id,
+    name: prizeTiers[4].items[0].name,
+    image: prizeTiers[4].items[0].image,
+    codename: prizeTiers[4].codename,
+  },
+]
