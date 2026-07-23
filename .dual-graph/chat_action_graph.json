@@ -132,6 +132,24 @@
     {
       "id": "src/components/sections/HowItWorks.jsx",
       "type": "file"
+    },
+    {
+      "id": "query:dashboard hackatime projects submit project button oauth greeting",
+      "type": "query",
+      "meta": {
+        "text": "dashboard hackatime projects submit a project button oauth greeting name, prizes page tier one prizes list, submission form prize selection"
+      }
+    },
+    {
+      "id": "query:dashboard page component hackatime projects list oauth user",
+      "type": "query",
+      "meta": {
+        "text": "dashboard page component hackatime projects list oauth user name greeting submit project button toggle"
+      }
+    },
+    {
+      "id": "src/components/TerminalPane.jsx",
+      "type": "file"
     }
   ],
   "edges": [
@@ -530,6 +548,93 @@
       "meta": {
         "mode": "full"
       }
+    },
+    {
+      "from": "query:dashboard hackatime projects submit project button oauth greeting",
+      "to": "src/pages/PrizesPage.jsx",
+      "rel": "retrieved",
+      "ts": 1784822512
+    },
+    {
+      "from": "query:dashboard hackatime projects submit project button oauth greeting",
+      "to": "src/components/sections/Prizes.jsx",
+      "rel": "retrieved",
+      "ts": 1784822512
+    },
+    {
+      "from": "query:dashboard hackatime projects submit project button oauth greeting",
+      "to": "src/data/prizeTiers.js",
+      "rel": "retrieved",
+      "ts": 1784822512
+    },
+    {
+      "from": "query:dashboard hackatime projects submit project button oauth greeting",
+      "to": "src/data/prizes.js",
+      "rel": "retrieved",
+      "ts": 1784822512
+    },
+    {
+      "from": "query:dashboard hackatime projects submit project button oauth greeting",
+      "to": "src/pages/Home.jsx",
+      "rel": "retrieved",
+      "ts": 1784822512
+    },
+    {
+      "from": "query:dashboard page component hackatime projects list oauth user",
+      "to": "src/pages/PrizesPage.jsx",
+      "rel": "retrieved",
+      "ts": 1784822523
+    },
+    {
+      "from": "query:dashboard page component hackatime projects list oauth user",
+      "to": "src/pages/Home.jsx",
+      "rel": "retrieved",
+      "ts": 1784822523
+    },
+    {
+      "from": "query:dashboard page component hackatime projects list oauth user",
+      "to": "src/hooks/useRevealOnScroll.js::useRevealOnScroll",
+      "rel": "retrieved",
+      "ts": 1784822523
+    },
+    {
+      "from": "query:dashboard page component hackatime projects list oauth user",
+      "to": "src/components/sections/Arsenal.jsx::IdeaCard",
+      "rel": "retrieved",
+      "ts": 1784822523
+    },
+    {
+      "from": "query:dashboard page component hackatime projects list oauth user",
+      "to": "src/components/TerminalPane.jsx",
+      "rel": "retrieved",
+      "ts": 1784822523
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/pages/PrizesPage.jsx",
+      "rel": "read",
+      "ts": 1784822536,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/data/prizeTiers.js",
+      "rel": "read",
+      "ts": 1784822536,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/pages/Home.jsx",
+      "rel": "read",
+      "ts": 1784822536,
+      "meta": {
+        "mode": "full"
+      }
     }
   ],
   "files": {
@@ -579,7 +684,7 @@
       "cached_chars": 568,
       "cached_tokens_est": 142,
       "last_action": "read",
-      "last_ts": 1784816703
+      "last_ts": 1784822536
     },
     "src/pages/PrizesPage.jsx": {
       "query_terms": [],
@@ -587,15 +692,15 @@
       "cached_chars": 3456,
       "cached_tokens_est": 864,
       "last_action": "read",
-      "last_ts": 1784816704
+      "last_ts": 1784822536
     },
     "src/data/prizeTiers.js": {
       "query_terms": [],
       "cached_content": "import flipperPlaceholder from '../assets/prizes/flipper_zero_img.webp'\nimport goproPlaceholder from '../assets/prizes/gopro-placeholder.svg'\nimport monitorPlaceholder from '../assets/prizes/minotor_pic.avif'\nimport casioWatch from \"../assets/prizes/casio_image.jpg\"\nimport laptopImage from \"../asset",
-      "cached_chars": 2133,
-      "cached_tokens_est": 533,
+      "cached_chars": 2858,
+      "cached_tokens_est": 714,
       "last_action": "read",
-      "last_ts": 1784746441
+      "last_ts": 1784822536
     },
     "src/hooks/useDecryptText.js::useDecryptText": {
       "query_terms": [],
@@ -757,6 +862,38 @@
       "payload": {
         "kind": "continue_retrieve",
         "query": "dashboard page should reiterate homepage prompt about what projects count, in a simple way, instead of just being a submission form"
+      }
+    },
+    {
+      "ts": 1784822512,
+      "kind": "retrieve",
+      "payload": {
+        "kind": "retrieve",
+        "query": "dashboard hackatime projects submit a project button oauth greeting name, prizes page tier one prizes list, submission form prize selection"
+      }
+    },
+    {
+      "ts": 1784822512,
+      "kind": "continue_retrieve",
+      "payload": {
+        "kind": "continue_retrieve",
+        "query": "dashboard hackatime projects submit a project button oauth greeting name, prizes page tier one prizes list, submission form prize selection"
+      }
+    },
+    {
+      "ts": 1784822523,
+      "kind": "retrieve",
+      "payload": {
+        "kind": "retrieve",
+        "query": "dashboard page component hackatime projects list oauth user name greeting submit project button toggle"
+      }
+    },
+    {
+      "ts": 1784822523,
+      "kind": "continue_retrieve",
+      "payload": {
+        "kind": "continue_retrieve",
+        "query": "dashboard page component hackatime projects list oauth user name greeting submit project button toggle"
       }
     }
   ]

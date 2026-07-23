@@ -1,24 +1,194 @@
 {
   "entries": {
-    "dashboard page reiterate homepage prompt about what projects|tf=5|te=12": {
-      "created_epoch": 1784816700,
+    "dashboard hackatime projects submit project button oauth greeting|tf=5|te=12": {
+      "created_epoch": 1784822512,
+      "files": [
+        "src/pages/PrizesPage.jsx",
+        "src/components/sections/Prizes.jsx",
+        "src/data/prizeTiers.js",
+        "src/data/prizes.js",
+        "src/pages/Home.jsx"
+      ],
+      "mtimes_ns": {
+        "src/pages/PrizesPage.jsx": -1,
+        "src/components/sections/Prizes.jsx": 1784747130923957468,
+        "src/data/prizeTiers.js": 1784749370569048220,
+        "src/data/prizes.js": -1,
+        "src/pages/Home.jsx": -1
+      },
+      "result": {
+        "ok": true,
+        "query": "dashboard hackatime projects submit a project button oauth greeting name, prizes page tier one prizes list, submission form prize selection",
+        "graph_files": [
+          {
+            "id": "src/pages/PrizesPage.jsx",
+            "kind": "file",
+            "path": "src/pages/PrizesPage.jsx",
+            "ext": ".jsx",
+            "size": 3462,
+            "keywords": [
+              "prizespage",
+              "prizes",
+              "page"
+            ],
+            "summary": "import { Link } from 'react-router-dom'. Contains 3 functions/classes: TierItem, TierColumn, PrizesPage.",
+            "file_hash": "3d10455e",
+            "_score": 42,
+            "_role": "ui_surface",
+            "_intent": "general"
+          },
+          {
+            "id": "src/components/sections/Prizes.jsx",
+            "kind": "file",
+            "path": "src/components/sections/Prizes.jsx",
+            "ext": ".jsx",
+            "size": 2137,
+            "keywords": [
+              "prizes"
+            ],
+            "summary": "import { Link } from 'react-router-dom'. Contains 2 functions/classes: PrizeItem, Prizes.",
+            "file_hash": "b199f81d",
+            "_score": 27,
+            "_role": "code",
+            "_intent": "general"
+          },
+          {
+            "id": "src/data/prizeTiers.js",
+            "kind": "file",
+            "path": "src/data/prizeTiers.js",
+            "ext": ".js",
+            "size": 2135,
+            "keywords": [
+              "prizetiers",
+              "prize",
+              "tiers"
+            ],
+            "summary": "import flipperPlaceholder from '../assets/prizes/flipper_zero_img.webp'.",
+            "file_hash": "2f7819d4",
+            "_score": 25,
+            "_role": "code",
+            "_intent": "general"
+          },
+          {
+            "id": "src/data/prizes.js",
+            "kind": "file",
+            "path": "src/data/prizes.js",
+            "ext": ".js",
+            "size": 665,
+            "keywords": [
+              "prizes"
+            ],
+            "summary": "import flipperZero from \"../assets/prizes/flipper_zero_img.webp\".",
+            "file_hash": "0b730f61",
+            "_score": 24,
+            "_role": "code",
+            "_intent": "general"
+          },
+          {
+            "id": "src/pages/Home.jsx",
+            "kind": "file",
+            "path": "src/pages/Home.jsx",
+            "ext": ".jsx",
+            "size": 568,
+            "keywords": [
+              "home"
+            ],
+            "summary": "import Marquee from '../components/Marquee'. Contains 1 function: Home.",
+            "file_hash": "82ff34a5",
+            "_score": 22,
+            "_role": "ui_surface",
+            "_intent": "general"
+          }
+        ],
+        "graph_edges": [
+          {
+            "from": "src/pages/Home.jsx",
+            "to": "../components/sections/Prizes",
+            "rel": "imports"
+          },
+          {
+            "from": "src/pages/PrizesPage.jsx",
+            "to": "../components/DossierPhoto",
+            "rel": "imports"
+          },
+          {
+            "from": "src/pages/PrizesPage.jsx",
+            "to": "../components/TerminalPane",
+            "rel": "imports"
+          },
+          {
+            "from": "src/pages/PrizesPage.jsx",
+            "to": "../data/prizeTiers",
+            "rel": "imports"
+          },
+          {
+            "from": "src/pages/PrizesPage.jsx",
+            "to": "src/pages/PrizesPage.jsx::TierColumn",
+            "rel": "contains"
+          },
+          {
+            "from": "src/pages/PrizesPage.jsx",
+            "to": "src/pages/PrizesPage.jsx::TierItem",
+            "rel": "contains"
+          },
+          {
+            "from": "src/components/sections/Prizes.jsx",
+            "to": "../../data/prizes",
+            "rel": "imports"
+          },
+          {
+            "from": "src/components/sections/Prizes.jsx",
+            "to": "../../hooks/useRevealOnScroll",
+            "rel": "imports"
+          },
+          {
+            "from": "src/components/sections/Prizes.jsx",
+            "to": "../DossierPhoto",
+            "rel": "imports"
+          },
+          {
+            "from": "src/components/sections/Prizes.jsx",
+            "to": "../TerminalPane",
+            "rel": "imports"
+          },
+          {
+            "from": "src/components/sections/Prizes.jsx",
+            "to": "DossierPhoto",
+            "rel": "imports"
+          },
+          {
+            "from": "src/components/sections/Prizes.jsx",
+            "to": "TerminalPane",
+            "rel": "imports"
+          }
+        ],
+        "grep_hits": [],
+        "reuse_candidates": [],
+        "read_budget": {
+          "remaining_chars": 60000,
+          "reuse_gate_candidates": []
+        }
+      }
+    },
+    "dashboard page component hackatime projects list oauth user|tf=5|te=12": {
+      "created_epoch": 1784822523,
       "files": [
         "src/pages/PrizesPage.jsx",
         "src/pages/Home.jsx",
+        "src/hooks/useRevealOnScroll.js::useRevealOnScroll",
         "src/components/sections/Arsenal.jsx::IdeaCard",
-        "src/hooks/useDecryptText.js::useDecryptText",
-        "src/hooks/useRevealOnScroll.js::useRevealOnScroll"
+        "src/components/TerminalPane.jsx"
       ],
       "mtimes_ns": {
         "src/pages/PrizesPage.jsx": -1,
         "src/pages/Home.jsx": -1,
+        "src/hooks/useRevealOnScroll.js::useRevealOnScroll": 1784740083883900951,
         "src/components/sections/Arsenal.jsx::IdeaCard": 1784740072130782382,
-        "src/hooks/useDecryptText.js::useDecryptText": 1784740086757930011,
-        "src/hooks/useRevealOnScroll.js::useRevealOnScroll": 1784740083883900951
+        "src/components/TerminalPane.jsx": 1784740061993680470
       },
       "result": {
         "ok": true,
-        "query": "dashboard page should reiterate homepage prompt about what projects count, in a simple way, instead of just being a submission form",
+        "query": "dashboard page component hackatime projects list oauth user name greeting submit project button toggle",
         "graph_files": [
           {
             "id": "src/pages/PrizesPage.jsx",
@@ -48,53 +218,8 @@
             ],
             "summary": "import Marquee from '../components/Marquee'. Contains 1 function: Home.",
             "file_hash": "82ff34a5",
-            "_score": 19,
+            "_score": 22,
             "_role": "ui_surface",
-            "_intent": "general"
-          },
-          {
-            "id": "src/components/sections/Arsenal.jsx::IdeaCard",
-            "kind": "symbol",
-            "path": "src/components/sections/Arsenal.jsx",
-            "ext": ".jsx",
-            "size": 19,
-            "keywords": [
-              "ideacard",
-              "idea",
-              "card"
-            ],
-            "symbol_type": "utility",
-            "name": "IdeaCard",
-            "line_start": 22,
-            "line_end": 40,
-            "body_hash": "411a7570",
-            "confidence": "medium",
-            "exported": false,
-            "_score": 11,
-            "_role": "code",
-            "_intent": "general"
-          },
-          {
-            "id": "src/hooks/useDecryptText.js::useDecryptText",
-            "kind": "symbol",
-            "path": "src/hooks/useDecryptText.js",
-            "ext": ".js",
-            "size": 43,
-            "keywords": [
-              "usedecrypttext",
-              "use",
-              "decrypt",
-              "text"
-            ],
-            "symbol_type": "hook",
-            "name": "useDecryptText",
-            "line_start": 6,
-            "line_end": 48,
-            "body_hash": "fcc16bc3",
-            "confidence": "high",
-            "exported": true,
-            "_score": 11,
-            "_role": "logic",
             "_intent": "general"
           },
           {
@@ -116,8 +241,47 @@
             "body_hash": "7f0457b2",
             "confidence": "high",
             "exported": true,
-            "_score": 11,
+            "_score": 16,
             "_role": "logic",
+            "_intent": "general"
+          },
+          {
+            "id": "src/components/sections/Arsenal.jsx::IdeaCard",
+            "kind": "symbol",
+            "path": "src/components/sections/Arsenal.jsx",
+            "ext": ".jsx",
+            "size": 19,
+            "keywords": [
+              "ideacard",
+              "idea",
+              "card"
+            ],
+            "symbol_type": "utility",
+            "name": "IdeaCard",
+            "line_start": 22,
+            "line_end": 40,
+            "body_hash": "411a7570",
+            "confidence": "medium",
+            "exported": false,
+            "_score": 14,
+            "_role": "code",
+            "_intent": "general"
+          },
+          {
+            "id": "src/components/TerminalPane.jsx",
+            "kind": "file",
+            "path": "src/components/TerminalPane.jsx",
+            "ext": ".jsx",
+            "size": 2821,
+            "keywords": [
+              "terminalpane",
+              "terminal",
+              "pane"
+            ],
+            "summary": "import { useEffect, useRef, useState } from 'react'. Contains 1 function: TerminalPane.",
+            "file_hash": "172fa9b5",
+            "_score": 12,
+            "_role": "code",
             "_intent": "general"
           }
         ],
@@ -158,28 +322,28 @@
             "rel": "imports"
           },
           {
-            "from": "src/pages/Home.jsx",
-            "to": "Arsenal",
+            "from": "src/pages/PrizesPage.jsx",
+            "to": "../components/DossierPhoto",
             "rel": "imports"
           },
           {
-            "from": "src/pages/Home.jsx",
-            "to": "Briefing",
+            "from": "src/pages/PrizesPage.jsx",
+            "to": "../components/TerminalPane",
             "rel": "imports"
           },
           {
-            "from": "src/pages/Home.jsx",
-            "to": "CtaFooter",
+            "from": "src/pages/PrizesPage.jsx",
+            "to": "../hooks/useRevealOnScroll",
             "rel": "imports"
           },
           {
-            "from": "src/pages/Home.jsx",
-            "to": "Hero",
+            "from": "src/components/TerminalPane.jsx",
+            "to": "../context/CloseAttemptContext",
             "rel": "imports"
           },
           {
-            "from": "src/pages/Home.jsx",
-            "to": "HowItWorks",
+            "from": "src/components/TerminalPane.jsx",
+            "to": "react",
             "rel": "imports"
           }
         ],

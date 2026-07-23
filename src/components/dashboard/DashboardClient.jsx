@@ -44,6 +44,7 @@ function validate(fields, selectedPrize, screenshot) {
 
 export default function DashboardClient({ profile, projects }) {
   const router = useRouter()
+  const [showForm, setShowForm] = useState(false)
   const [selectedProject, setSelectedProject] = useState(null)
   const [selectedPrize, setSelectedPrize] = useState(null)
   const [fields, setFields] = useState(EMPTY_FIELDS)
@@ -120,6 +121,23 @@ export default function DashboardClient({ profile, projects }) {
       setStatus('error')
       setStatusMessage('Network error — submission was not sent. Please try again.')
     }
+  }
+
+  if (!showForm) {
+    return (
+      <div className="flex flex-col items-start gap-6">
+        <p className="text-on-background text-lg">
+          {profile?.firstName ? `Welcome, ${profile.firstName}` : 'Welcome'}
+        </p>
+        <button
+          type="button"
+          onClick={() => setShowForm(true)}
+          className="font-mono uppercase tracking-widest border border-primary-container text-primary-container px-8 py-4 hover:bg-primary-container hover:text-on-primary-container transition-colors"
+        >
+          Submit a project
+        </button>
+      </div>
+    )
   }
 
   return (

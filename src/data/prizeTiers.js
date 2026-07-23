@@ -7,6 +7,8 @@ import porkbun from "../assets/prizes/porkbun.png"
 import keychain from "../assets/prizes/keychain_image.jpg"
 import macropad from "../assets/prizes/macropad_image.jpg"
 import gopro from "../assets/prizes/gopro.jpg"
+import grant from "../assets/prizes/grant_image.jpg"
+import hardwareGrantPlaceholder from "../assets/prizes/hardware-grant-placeholder.svg"
 // Placeholder tier data — swap items/hours/codenames for real reward-tier
 // content later. Structure (hours, codename, items[]) is stable.
 export const prizeTiers = [
@@ -15,6 +17,7 @@ export const prizeTiers = [
     codename: 'LVL 1 CLEARANCE',
     items: [
       { id: 'keychain', name: 'One Key Keychain', image: keychain, desc: 'A tiny macropad keychain for shortcut energy.' },
+      { id: 'hardware-grant', name: '$6.5/hr Hardware Grant', image: grant, desc: '$6.50 for every hour you log, straight to hardware.' },
     ],
   },
   {
