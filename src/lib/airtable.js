@@ -22,6 +22,8 @@ export const AIRTABLE_FIELDS = {
   prize: 'Prize',
   comments: 'Comments',
   overrideHours: 'Optional - Override Hours Spent',
+  category: 'Category',
+  journalLink: 'Journal Link',
 }
 
 function airtableConfig() {

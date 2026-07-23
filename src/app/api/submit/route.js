@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server'
 import { getSessionFromRequest } from '../../../lib/auth'
 import { getIdentity } from '../../../lib/hackclub'
 import { getHackatimeMe, getHackatimeProjects } from '../../../lib/hackatime'
-import { prizeTiers } from '../../../data/prizeTiers'
+import { findPrize } from '../../../data/prizeTiers'
 import {
   AIRTABLE_FIELDS,
   createAirtableRecord,
@@ -10,12 +10,28 @@ import {
   uploadAirtableAttachment,
 } from '../../../lib/airtable'
 
-function findPrize(prizeId) {
-  for (const tier of prizeTiers) {
-    const item = tier.items.find((i) => i.id === prizeId)
-    if (item) return { item, tier }
+function parseCart(raw) {
+  let parsed
+  try {
+    parsed = JSON.parse(raw)
+  } catch {
+    return null
   }
-  return null
+  if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) return null
+
+  const entries = []
+  for (const [itemId, quantity] of Object.entries(parsed)) {
+    const qty = Number(quantity)
+    if (!Number.isInteger(qty) || qty <= 0) return null
+    const match = findPrize(itemId)
+    if (!match) return null
+    entries.push({ itemId, quantity: qty, item: match.item, cost: match.cost })
+  }
+  return entries
+}
+
+function serializeCart(entries) {
+  return entries.map(({ item, quantity }) => `${item.name} ×${quantity}`).join(', ')
 }
 
 export async function POST(request) {
@@ -25,9 +41,11 @@ export async function POST(request) {
   }
 
   const formData = await request.formData()
+  const category = formData.get('category')?.toString() ?? ''
   const projectName = formData.get('projectName')?.toString() ?? ''
-  const prizeId = formData.get('prizeId')?.toString() ?? ''
-  const prizeName = formData.get('prizeName')?.toString() ?? ''
+  const journalLink = formData.get('journalLink')?.toString() ?? ''
+  const hoursSpentRaw = formData.get('hoursSpent')?.toString() ?? ''
+  const cartRaw = formData.get('cart')?.toString() ?? ''
   const playableUrl = formData.get('playableUrl')?.toString() ?? ''
   const codeUrl = formData.get('codeUrl')?.toString() ?? ''
   const description = formData.get('description')?.toString() ?? ''
@@ -42,18 +60,31 @@ export async function POST(request) {
   const country = formData.get('country')?.toString() ?? ''
   const zip = formData.get('zip')?.toString() ?? ''
 
+  if (category !== 'software' && category !== 'hardware') {
+    return NextResponse.json({ error: 'Invalid or missing category' }, { status: 400 })
+  }
+
   // Re-fetch identity and Hackatime data from the session's access token —
-  // never trust identity/hours values from the client payload.
-  const [identity, projects, hackatimeMe] = await Promise.all([
+  // never trust identity/hours values from the client payload. Hardware
+  // submissions have no Hackatime project, so self-reported hours are used
+  // as-is; there's no independent source to re-verify them against.
+  const [identity, hackatimeMe, projects] = await Promise.all([
     getIdentity(session.access_token),
-    getHackatimeProjects(session.hackatime_access_token),
     getHackatimeMe(session.hackatime_access_token),
+    category === 'software' ? getHackatimeProjects(session.hackatime_access_token) : Promise.resolve(null),
   ])
 
-  const selectedProject = projects.find((p) => p.name === projectName)
-  const hoursTracked = selectedProject ? selectedProject.total_seconds / 3600 : 0
+  let selectedProject = null
+  let hoursTracked = 0
+  if (category === 'software') {
+    selectedProject = projects.find((p) => p.name === projectName)
+    hoursTracked = selectedProject ? selectedProject.total_seconds / 3600 : 0
+  } else {
+    hoursTracked = parseFloat(hoursSpentRaw) || 0
+  }
 
-  const prizeMatch = findPrize(prizeId)
+  const cartEntries = parseCart(cartRaw)
+  const prizeSummary = cartEntries ? serializeCart(cartEntries) : ''
 
   const candidateFields = {
     [AIRTABLE_FIELDS.playableUrl]: playableUrl,
@@ -70,7 +101,8 @@ export async function POST(request) {
     [AIRTABLE_FIELDS.country]: country,
     [AIRTABLE_FIELDS.zip]: zip,
     [AIRTABLE_FIELDS.birthday]: birthday,
-    [AIRTABLE_FIELDS.prize]: prizeName,
+    [AIRTABLE_FIELDS.prize]: prizeSummary,
+    [AIRTABLE_FIELDS.category]: category === 'hardware' ? 'Hardware' : 'Software',
   }
 
   const requiredCheck = {
@@ -88,7 +120,13 @@ export async function POST(request) {
     Country: country,
     'Zip Code': zip,
     Birthday: birthday,
-    Prize: prizeName,
+    Prize: prizeSummary,
+  }
+
+  if (category === 'hardware') {
+    candidateFields[AIRTABLE_FIELDS.journalLink] = journalLink
+    requiredCheck['Journal Link'] = journalLink
+    requiredCheck['Hours Spent'] = hoursSpentRaw
   }
 
   const missingFields = Object.entries(requiredCheck)
@@ -102,18 +140,24 @@ export async function POST(request) {
     )
   }
 
-  if (!selectedProject) {
+  if (category === 'software' && !selectedProject) {
     return NextResponse.json({ error: 'Selected project not found on Hackatime' }, { status: 400 })
   }
 
-  if (!prizeMatch) {
-    return NextResponse.json({ error: 'Unknown prize selected' }, { status: 400 })
+  if (!cartEntries || cartEntries.length === 0) {
+    return NextResponse.json({ error: 'No prizes selected' }, { status: 400 })
   }
 
-  if (hoursTracked < prizeMatch.tier.hours) {
+  const cartTotal = cartEntries.reduce((sum, entry) => sum + entry.cost * entry.quantity, 0)
+
+  if (cartTotal > hoursTracked) {
+    const hoursDescription =
+      category === 'software'
+        ? `"${selectedProject.name}" has ${hoursTracked.toFixed(1)} tracked hours`
+        : `${hoursTracked.toFixed(1)} self-reported hours`
     return NextResponse.json(
       {
-        error: `Not eligible: "${selectedProject.name}" has ${hoursTracked.toFixed(1)} tracked hours, this prize requires ${prizeMatch.tier.hours}.`,
+        error: `Not eligible: ${hoursDescription}, this cart costs ${cartTotal.toFixed(1)}.`,
       },
       { status: 403 },
     )

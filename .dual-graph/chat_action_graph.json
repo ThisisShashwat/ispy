@@ -150,6 +150,71 @@
     {
       "id": "src/components/TerminalPane.jsx",
       "type": "file"
+    },
+    {
+      "id": "query:prize picker single select hours gating multiple prizes",
+      "type": "query",
+      "meta": {
+        "text": "prize picker single select hours gating multiple prizes submission"
+      }
+    },
+    {
+      "id": "src/components/dashboard/PrizePicker.jsx",
+      "type": "file"
+    },
+    {
+      "id": "src/app/api/submit/route.js",
+      "type": "file"
+    },
+    {
+      "id": "query:syntaxerror unexpected non whitespace character after json position",
+      "type": "query",
+      "meta": {
+        "text": "SyntaxError: Unexpected non-whitespace character after JSON at position 4 on /dashboard/success page during software submission; also ENOENT routes-manifest.json"
+      }
+    },
+    {
+      "id": "src/app/dashboard/success/page.jsx",
+      "type": "file"
+    },
+    {
+      "id": "src/lib/airtable.js::createAirtableRecord",
+      "type": "file"
+    },
+    {
+      "id": "src/app/api/auth/hackatime/callback/route.js::GET",
+      "type": "file"
+    },
+    {
+      "id": "src/lib/auth.js",
+      "type": "file"
+    },
+    {
+      "id": "src/lib/session.js",
+      "type": "file"
+    },
+    {
+      "id": "query:add footer tos privacy policy fulfillment bounty links",
+      "type": "query",
+      "meta": {
+        "text": "add footer with TOS, privacy policy, and fulfillment bounty links"
+      }
+    },
+    {
+      "id": "src/lib/hackclub.js::primaryAddress",
+      "type": "file"
+    },
+    {
+      "id": "src/app/api/auth/callback/route.js::GET",
+      "type": "file"
+    },
+    {
+      "id": "src/app/api/auth/hackatime/login/route.js::GET",
+      "type": "file"
+    },
+    {
+      "id": "src/app/api/auth/login/route.js::GET",
+      "type": "file"
     }
   ],
   "edges": [
@@ -635,6 +700,168 @@
       "meta": {
         "mode": "full"
       }
+    },
+    {
+      "from": "query:prize picker single select hours gating multiple prizes",
+      "to": "src/pages/PrizesPage.jsx",
+      "rel": "retrieved",
+      "ts": 1784826434
+    },
+    {
+      "from": "query:prize picker single select hours gating multiple prizes",
+      "to": "src/components/sections/Prizes.jsx",
+      "rel": "retrieved",
+      "ts": 1784826434
+    },
+    {
+      "from": "query:prize picker single select hours gating multiple prizes",
+      "to": "src/data/prizes.js",
+      "rel": "retrieved",
+      "ts": 1784826434
+    },
+    {
+      "from": "query:prize picker single select hours gating multiple prizes",
+      "to": "src/data/prizeTiers.js",
+      "rel": "retrieved",
+      "ts": 1784826434
+    },
+    {
+      "from": "query:prize picker single select hours gating multiple prizes",
+      "to": "src/pages/Home.jsx",
+      "rel": "retrieved",
+      "ts": 1784826434
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/components/dashboard/PrizePicker.jsx",
+      "rel": "read",
+      "ts": 1784826437,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/data/prizeTiers.js",
+      "rel": "read",
+      "ts": 1784826437,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/app/api/submit/route.js",
+      "rel": "read",
+      "ts": 1784826437,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:syntaxerror unexpected non whitespace character after json position",
+      "to": "src/app/dashboard/success/page.jsx",
+      "rel": "retrieved",
+      "ts": 1784826526
+    },
+    {
+      "from": "query:syntaxerror unexpected non whitespace character after json position",
+      "to": "src/app/dashboard/page.jsx",
+      "rel": "retrieved",
+      "ts": 1784826526
+    },
+    {
+      "from": "query:syntaxerror unexpected non whitespace character after json position",
+      "to": "src/components/dashboard/DashboardClient.jsx",
+      "rel": "retrieved",
+      "ts": 1784826526
+    },
+    {
+      "from": "query:syntaxerror unexpected non whitespace character after json position",
+      "to": "src/lib/airtable.js::createAirtableRecord",
+      "rel": "retrieved",
+      "ts": 1784826526
+    },
+    {
+      "from": "query:syntaxerror unexpected non whitespace character after json position",
+      "to": "src/app/api/auth/hackatime/callback/route.js::GET",
+      "rel": "retrieved",
+      "ts": 1784826526
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/app/dashboard/success/page.jsx",
+      "rel": "read",
+      "ts": 1784826528,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/app/dashboard/page.jsx",
+      "rel": "read",
+      "ts": 1784826528,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/components/dashboard/DashboardClient.jsx",
+      "rel": "read",
+      "ts": 1784826528,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/lib/auth.js",
+      "rel": "read",
+      "ts": 1784826538,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/lib/session.js",
+      "rel": "read",
+      "ts": 1784826546,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:add footer tos privacy policy fulfillment bounty links",
+      "to": "src/lib/hackclub.js::primaryAddress",
+      "rel": "retrieved",
+      "ts": 1784827580
+    },
+    {
+      "from": "query:add footer tos privacy policy fulfillment bounty links",
+      "to": "src/app/api/auth/callback/route.js::GET",
+      "rel": "retrieved",
+      "ts": 1784827580
+    },
+    {
+      "from": "query:add footer tos privacy policy fulfillment bounty links",
+      "to": "src/app/api/auth/hackatime/callback/route.js::GET",
+      "rel": "retrieved",
+      "ts": 1784827580
+    },
+    {
+      "from": "query:add footer tos privacy policy fulfillment bounty links",
+      "to": "src/app/api/auth/hackatime/login/route.js::GET",
+      "rel": "retrieved",
+      "ts": 1784827580
+    },
+    {
+      "from": "query:add footer tos privacy policy fulfillment bounty links",
+      "to": "src/app/api/auth/login/route.js::GET",
+      "rel": "retrieved",
+      "ts": 1784827580
     }
   ],
   "files": {
@@ -697,10 +924,10 @@
     "src/data/prizeTiers.js": {
       "query_terms": [],
       "cached_content": "import flipperPlaceholder from '../assets/prizes/flipper_zero_img.webp'\nimport goproPlaceholder from '../assets/prizes/gopro-placeholder.svg'\nimport monitorPlaceholder from '../assets/prizes/minotor_pic.avif'\nimport casioWatch from \"../assets/prizes/casio_image.jpg\"\nimport laptopImage from \"../asset",
-      "cached_chars": 2858,
-      "cached_tokens_est": 714,
+      "cached_chars": 3137,
+      "cached_tokens_est": 784,
       "last_action": "read",
-      "last_ts": 1784822536
+      "last_ts": 1784826437
     },
     "src/hooks/useDecryptText.js::useDecryptText": {
       "query_terms": [],
@@ -737,18 +964,18 @@
     "src/app/dashboard/page.jsx": {
       "query_terms": [],
       "cached_content": "import { requireSession } from '../../lib/auth'\nimport { getIdentity } from '../../lib/hackclub'\nimport { getHackatimeMe, getHackatimeProjects } from '../../lib/hackatime'\nimport DashboardClient from '../../components/dashboard/DashboardClient'\n\nexport default async function DashboardPage() {\n  cons",
-      "cached_chars": 1361,
-      "cached_tokens_est": 340,
+      "cached_chars": 2043,
+      "cached_tokens_est": 510,
       "last_action": "read",
-      "last_ts": 1784816786
+      "last_ts": 1784826528
     },
     "src/components/dashboard/DashboardClient.jsx": {
       "query_terms": [],
       "cached_content": "'use client'\n\nimport { useState } from 'react'\nimport { useRouter } from 'next/navigation'\nimport ProjectPicker from './ProjectPicker'\nimport PrizePicker from './PrizePicker'\nimport SubmissionForm from './SubmissionForm'\n\nconst EMPTY_FIELDS = {\n  playableUrl: '',\n  codeUrl: '',\n  description: '',\n  ",
-      "cached_chars": 6078,
-      "cached_tokens_est": 1519,
+      "cached_chars": 10052,
+      "cached_tokens_est": 2513,
       "last_action": "read",
-      "last_ts": 1784816787
+      "last_ts": 1784826528
     },
     "src/app/page.jsx": {
       "query_terms": [],
@@ -765,6 +992,46 @@
       "cached_tokens_est": 521,
       "last_action": "read",
       "last_ts": 1784816793
+    },
+    "src/components/dashboard/PrizePicker.jsx": {
+      "query_terms": [],
+      "cached_content": "'use client'\n\nimport { prizeTiers } from '../../data/prizeTiers'\n\nexport default function PrizePicker({ hoursTracked, selectedPrize, onSelect }) {\n  return (\n    <div className=\"grid sm:grid-cols-2 lg:grid-cols-5 gap-4\">\n      {prizeTiers.map((tier) => {\n        const eligible = hoursTracked >= tier",
+      "cached_chars": 1985,
+      "cached_tokens_est": 496,
+      "last_action": "read",
+      "last_ts": 1784826437
+    },
+    "src/app/api/submit/route.js": {
+      "query_terms": [],
+      "cached_content": "import { NextResponse } from 'next/server'\nimport { getSessionFromRequest } from '../../../lib/auth'\nimport { getIdentity } from '../../../lib/hackclub'\nimport { getHackatimeMe, getHackatimeProjects } from '../../../lib/hackatime'\nimport { prizeTiers } from '../../../data/prizeTiers'\nimport {\n  AIRT",
+      "cached_chars": 5431,
+      "cached_tokens_est": 1357,
+      "last_action": "read",
+      "last_ts": 1784826437
+    },
+    "src/app/dashboard/success/page.jsx": {
+      "query_terms": [],
+      "cached_content": "import Link from 'next/link'\nimport { requireSession } from '../../../lib/auth'\n\nexport default async function SubmissionSuccessPage() {\n  await requireSession()\n\n  return (\n    <main className=\"min-h-screen px-6 py-24 flex items-center justify-center text-center\">\n      <div className=\"max-w-lg\">\n ",
+      "cached_chars": 1153,
+      "cached_tokens_est": 288,
+      "last_action": "read",
+      "last_ts": 1784826528
+    },
+    "src/lib/auth.js": {
+      "query_terms": [],
+      "cached_content": "import { cookies } from 'next/headers'\nimport { redirect } from 'next/navigation'\nimport { SESSION_COOKIE, decryptSession } from './session'\n\nexport async function getSession() {\n  const cookieStore = await cookies()\n  const token = cookieStore.get(SESSION_COOKIE)?.value\n  const session = await decr",
+      "cached_chars": 1149,
+      "cached_tokens_est": 287,
+      "last_action": "read",
+      "last_ts": 1784826538
+    },
+    "src/lib/session.js": {
+      "query_terms": [],
+      "cached_content": "import { createHash } from 'node:crypto'\nimport { EncryptJWT, jwtDecrypt } from 'jose'\n\nconst SESSION_COOKIE = 'session'\nconst SESSION_TTL_SECONDS = 60 * 60 * 24 * 7 // 7 days\n\n// A256GCM requires exactly a 32-byte key; SESSION_SECRET can be any length,\n// so it's hashed down to a fixed-size key rat",
+      "cached_chars": 1657,
+      "cached_tokens_est": 414,
+      "last_action": "read",
+      "last_ts": 1784826546
     }
   },
   "actions": [
@@ -894,6 +1161,54 @@
       "payload": {
         "kind": "continue_retrieve",
         "query": "dashboard page component hackatime projects list oauth user name greeting submit project button toggle"
+      }
+    },
+    {
+      "ts": 1784826434,
+      "kind": "retrieve",
+      "payload": {
+        "kind": "retrieve",
+        "query": "prize picker single select hours gating multiple prizes submission"
+      }
+    },
+    {
+      "ts": 1784826434,
+      "kind": "continue_retrieve",
+      "payload": {
+        "kind": "continue_retrieve",
+        "query": "prize picker single select hours gating multiple prizes submission"
+      }
+    },
+    {
+      "ts": 1784826526,
+      "kind": "retrieve",
+      "payload": {
+        "kind": "retrieve",
+        "query": "SyntaxError: Unexpected non-whitespace character after JSON at position 4 on /dashboard/success page during software submission; also ENOENT routes-manifest.json"
+      }
+    },
+    {
+      "ts": 1784826526,
+      "kind": "continue_retrieve",
+      "payload": {
+        "kind": "continue_retrieve",
+        "query": "SyntaxError: Unexpected non-whitespace character after JSON at position 4 on /dashboard/success page during software submission; also ENOENT routes-manifest.json"
+      }
+    },
+    {
+      "ts": 1784827580,
+      "kind": "retrieve",
+      "payload": {
+        "kind": "retrieve",
+        "query": "add footer with TOS, privacy policy, and fulfillment bounty links"
+      }
+    },
+    {
+      "ts": 1784827580,
+      "kind": "continue_retrieve",
+      "payload": {
+        "kind": "continue_retrieve",
+        "query": "add footer with TOS, privacy policy, and fulfillment bounty links"
       }
     }
   ]

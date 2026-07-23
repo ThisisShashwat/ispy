@@ -37,6 +37,7 @@ function TextField({ label, name, value, onChange, errors, type = 'text', textar
 
 export default function SubmissionForm({
   profile,
+  category,
   fields,
   onFieldChange,
   onScreenshotChange,
@@ -137,6 +138,15 @@ export default function SubmissionForm({
             onChange={onFieldChange}
             errors={errors}
           />
+          {category === 'hardware' && (
+            <TextField
+              label="Journal Link"
+              name="journalLink"
+              value={fields.journalLink}
+              onChange={onFieldChange}
+              errors={errors}
+            />
+          )}
         </div>
         <div className="mt-4">
           <label className="font-mono text-[10px] tracking-widest text-on-surface-variant uppercase mb-1 block">

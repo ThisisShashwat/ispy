@@ -65,9 +65,7 @@ export default function PrizesPage() {
               </p>
               <p className="font-mono text-xs text-on-surface-variant max-w-xl mx-auto border border-outline-variant border-dashed px-4 py-3">
                 HOW THIS WORKS: hours are logged externally as you ship. Once your
-                logged hours meet a tier's threshold, everything in that tier is
-                yours to claim. This isn't a live counter, just a static breakdown
-                of what each hour milestone unlocks.
+                logged hours meet a tier threshold, you can pick a prize from anything in that tier (like a shop)!
               </p>
             </div>
 

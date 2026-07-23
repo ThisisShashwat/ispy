@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import ProjectPicker from './ProjectPicker'
 import PrizePicker from './PrizePicker'
 import SubmissionForm from './SubmissionForm'
+import { findPrize } from '../../data/prizeTiers'
 
 const EMPTY_FIELDS = {
   playableUrl: '',
@@ -18,6 +19,7 @@ const EMPTY_FIELDS = {
   state: '',
   country: '',
   zip: '',
+  journalLink: '',
 }
 
 const REQUIRED_TEXT_FIELDS = [
@@ -32,33 +34,78 @@ const REQUIRED_TEXT_FIELDS = [
   ['zip', 'Zip Code is required'],
 ]
 
-function validate(fields, selectedPrize, screenshot) {
+function cartTotal(cart) {
+  return Object.entries(cart).reduce((sum, [itemId, quantity]) => {
+    const match = findPrize(itemId)
+    return sum + (match ? match.cost * quantity : 0)
+  }, 0)
+}
+
+function validate(fields, cart, hoursTracked, screenshot, category) {
   const errors = {}
   for (const [name, message] of REQUIRED_TEXT_FIELDS) {
     if (!fields[name].trim()) errors[name] = message
   }
+  if (category === 'hardware' && !fields.journalLink.trim()) {
+    errors.journalLink = 'Journal Link is required'
+  }
   if (!screenshot) errors.screenshot = 'Screenshot is required'
-  if (!selectedPrize) errors.prize = 'Select a prize you are eligible for'
+  const total = cartTotal(cart)
+  if (total === 0) errors.prize = 'Select at least one prize'
+  else if (total > hoursTracked) errors.prize = 'Cart total exceeds your available hours'
   return errors
 }
 
 export default function DashboardClient({ profile, projects }) {
   const router = useRouter()
   const [showForm, setShowForm] = useState(false)
+  const [category, setCategory] = useState(null) // null | 'software' | 'hardware'
   const [selectedProject, setSelectedProject] = useState(null)
-  const [selectedPrize, setSelectedPrize] = useState(null)
+  const [hoursSpent, setHoursSpent] = useState('')
+  const [cart, setCart] = useState({})
   const [fields, setFields] = useState(EMPTY_FIELDS)
   const [screenshot, setScreenshot] = useState(null)
   const [errors, setErrors] = useState({})
   const [status, setStatus] = useState('idle') // idle | submitting | success | error
   const [statusMessage, setStatusMessage] = useState('')
 
-  const hoursTracked = selectedProject ? selectedProject.total_seconds / 3600 : 0
+  const hoursTracked =
+    category === 'hardware'
+      ? parseFloat(hoursSpent) || 0
+      : selectedProject
+        ? selectedProject.total_seconds / 3600
+        : 0
+
+  const trackIdentified = category === 'hardware' ? hoursSpent.trim() !== '' : Boolean(selectedProject)
+
+  function handleSelectCategory(nextCategory) {
+    setCategory(nextCategory)
+    setSelectedProject(null)
+    setHoursSpent('')
+    setCart({})
+    setErrors({})
+  }
 
   function handleSelectProject(project) {
     setSelectedProject(project)
-    // Changing the project can invalidate a previously-eligible prize choice.
-    setSelectedPrize(null)
+    // Changing the project can invalidate a previously-eligible cart.
+    setCart({})
+  }
+
+  function handleHoursSpentChange(value) {
+    setHoursSpent(value)
+    // Changing self-reported hours can invalidate a previously-eligible cart.
+    setCart({})
+  }
+
+  function handleChangeQuantity(itemId, quantity) {
+    setCart((prev) => {
+      if (quantity <= 0) {
+        const { [itemId]: _removed, ...rest } = prev
+        return rest
+      }
+      return { ...prev, [itemId]: quantity }
+    })
   }
 
   function handleFieldChange(name, value) {
@@ -68,12 +115,17 @@ export default function DashboardClient({ profile, projects }) {
   async function handleSubmit(e) {
     e.preventDefault()
 
-    if (!selectedProject) {
+    if (category === 'software' && !selectedProject) {
       setErrors({ project: 'Select a Hackatime project first' })
       return
     }
 
-    const validationErrors = validate(fields, selectedPrize, screenshot)
+    if (category === 'hardware' && !hoursSpent.trim()) {
+      setErrors({ hours: 'Enter hours spent first' })
+      return
+    }
+
+    const validationErrors = validate(fields, cart, hoursTracked, screenshot, category)
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors)
       return
@@ -84,9 +136,14 @@ export default function DashboardClient({ profile, projects }) {
     setStatusMessage('')
 
     const body = new FormData()
-    body.set('projectName', selectedProject.name)
-    body.set('prizeId', selectedPrize.id)
-    body.set('prizeName', selectedPrize.name)
+    body.set('category', category)
+    if (category === 'software') {
+      body.set('projectName', selectedProject.name)
+    } else {
+      body.set('hoursSpent', hoursSpent)
+      body.set('journalLink', fields.journalLink)
+    }
+    body.set('cart', JSON.stringify(cart))
     body.set('playableUrl', fields.playableUrl)
     body.set('codeUrl', fields.codeUrl)
     body.set('description', fields.description)
@@ -140,41 +197,97 @@ export default function DashboardClient({ profile, projects }) {
     )
   }
 
-  return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-12">
+  if (!category) {
+    return (
       <div>
         <p className="font-mono text-xs text-primary-container tracking-widest uppercase mb-3">
-          1. Select the project you're submitting
+          Is this a hardware or software project?
         </p>
-        <ProjectPicker
-          projects={projects}
-          selectedProject={selectedProject}
-          onSelect={handleSelectProject}
-        />
-        {errors.project && <p className="text-error text-xs mt-2 font-mono">{errors.project}</p>}
+        <div className="flex gap-4">
+          <button
+            type="button"
+            onClick={() => handleSelectCategory('software')}
+            className="font-mono uppercase tracking-widest border border-primary-container text-primary-container px-8 py-4 hover:bg-primary-container hover:text-on-primary-container transition-colors"
+          >
+            Software
+          </button>
+          <button
+            type="button"
+            onClick={() => handleSelectCategory('hardware')}
+            className="font-mono uppercase tracking-widest border border-primary-container text-primary-container px-8 py-4 hover:bg-primary-container hover:text-on-primary-container transition-colors"
+          >
+            Hardware
+          </button>
+        </div>
+      </div>
+    )
+  }
+
+  return (
+    <form onSubmit={handleSubmit} className="flex flex-col gap-12">
+      <button
+        type="button"
+        onClick={() => handleSelectCategory(null)}
+        className="font-mono text-xs text-on-surface-variant hover:underline self-start"
+      >
+        ← change category
+      </button>
+
+      <div>
+        <p className="font-mono text-xs text-primary-container tracking-widest uppercase mb-3">
+          1. {category === 'software' ? "Select the project you're submitting" : 'Enter your self-reported hours spent'}
+        </p>
+        {category === 'software' ? (
+          <>
+            <ProjectPicker
+              projects={projects}
+              selectedProject={selectedProject}
+              onSelect={handleSelectProject}
+            />
+            {errors.project && <p className="text-error text-xs mt-2 font-mono">{errors.project}</p>}
+          </>
+        ) : (
+          <>
+            <input
+              type="number"
+              min="0"
+              step="0.1"
+              value={hoursSpent}
+              onChange={(e) => handleHoursSpentChange(e.target.value)}
+              placeholder="Hours spent"
+              className="w-full max-w-xs border border-outline-variant bg-surface-container-low px-3 py-2 text-sm text-on-background focus:outline-none focus:border-primary-container"
+            />
+            {errors.hours && <p className="text-error text-xs mt-2 font-mono">{errors.hours}</p>}
+          </>
+        )}
       </div>
 
-      {selectedProject && (
+      {trackIdentified && (
         <div>
           <p className="font-mono text-xs text-primary-container tracking-widest uppercase mb-3">
-            2. Pick your prize ({hoursTracked.toFixed(1)} tracked hours on "{selectedProject.name}")
+            2. Pick your prizes (
+            {category === 'software'
+              ? `${hoursTracked.toFixed(1)} tracked hours on "${selectedProject.name}"`
+              : `${hoursTracked.toFixed(1)} self-reported hours`}
+            )
           </p>
           <PrizePicker
             hoursTracked={hoursTracked}
-            selectedPrize={selectedPrize}
-            onSelect={setSelectedPrize}
+            cart={cart}
+            onChangeQuantity={handleChangeQuantity}
           />
           {errors.prize && <p className="text-error text-xs mt-2 font-mono">{errors.prize}</p>}
         </div>
       )}
 
-      {selectedProject && selectedPrize && (
+      {trackIdentified && cartTotal(cart) > 0 && cartTotal(cart) <= hoursTracked && (
         <div>
           <p className="font-mono text-xs text-primary-container tracking-widest uppercase mb-3">
             3. Submission details
           </p>
           <SubmissionForm
             profile={profile}
+            category={category}
             fields={fields}
             onFieldChange={handleFieldChange}
             onScreenshotChange={setScreenshot}

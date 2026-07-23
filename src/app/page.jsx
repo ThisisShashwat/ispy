@@ -5,6 +5,7 @@ import Arsenal from '../components/sections/Arsenal'
 import Prizes from '../components/sections/Prizes'
 import HowItWorks from '../components/sections/HowItWorks'
 import CtaFooter from '../components/sections/CtaFooter'
+import Footer from '../components/Footer'
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Prizes />
       <HowItWorks />
       <CtaFooter />
+      <Footer />
     </main>
   )
 }

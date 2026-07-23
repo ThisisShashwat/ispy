@@ -1,350 +1,188 @@
 {
   "entries": {
-    "dashboard hackatime projects submit project button oauth greeting|tf=5|te=12": {
-      "created_epoch": 1784822512,
+    "add footer tos privacy policy fulfillment bounty links|tf=5|te=12": {
+      "created_epoch": 1784827580,
       "files": [
-        "src/pages/PrizesPage.jsx",
-        "src/components/sections/Prizes.jsx",
-        "src/data/prizeTiers.js",
-        "src/data/prizes.js",
-        "src/pages/Home.jsx"
+        "src/lib/hackclub.js::primaryAddress",
+        "src/app/api/auth/callback/route.js::GET",
+        "src/app/api/auth/hackatime/callback/route.js::GET",
+        "src/app/api/auth/hackatime/login/route.js::GET",
+        "src/app/api/auth/login/route.js::GET"
       ],
       "mtimes_ns": {
-        "src/pages/PrizesPage.jsx": -1,
-        "src/components/sections/Prizes.jsx": 1784747130923957468,
-        "src/data/prizeTiers.js": 1784749370569048220,
-        "src/data/prizes.js": -1,
-        "src/pages/Home.jsx": -1
+        "src/lib/hackclub.js::primaryAddress": 1784742777254468169,
+        "src/app/api/auth/callback/route.js::GET": 1784743036327648869,
+        "src/app/api/auth/hackatime/callback/route.js::GET": 1784743024316556431,
+        "src/app/api/auth/hackatime/login/route.js::GET": 1784743016953411522,
+        "src/app/api/auth/login/route.js::GET": 1784740217047272125
       },
       "result": {
         "ok": true,
-        "query": "dashboard hackatime projects submit a project button oauth greeting name, prizes page tier one prizes list, submission form prize selection",
+        "query": "add footer with TOS, privacy policy, and fulfillment bounty links",
         "graph_files": [
           {
-            "id": "src/pages/PrizesPage.jsx",
-            "kind": "file",
-            "path": "src/pages/PrizesPage.jsx",
-            "ext": ".jsx",
-            "size": 3462,
-            "keywords": [
-              "prizespage",
-              "prizes",
-              "page"
-            ],
-            "summary": "import { Link } from 'react-router-dom'. Contains 3 functions/classes: TierItem, TierColumn, PrizesPage.",
-            "file_hash": "3d10455e",
-            "_score": 42,
-            "_role": "ui_surface",
-            "_intent": "general"
-          },
-          {
-            "id": "src/components/sections/Prizes.jsx",
-            "kind": "file",
-            "path": "src/components/sections/Prizes.jsx",
-            "ext": ".jsx",
-            "size": 2137,
-            "keywords": [
-              "prizes"
-            ],
-            "summary": "import { Link } from 'react-router-dom'. Contains 2 functions/classes: PrizeItem, Prizes.",
-            "file_hash": "b199f81d",
-            "_score": 27,
-            "_role": "code",
-            "_intent": "general"
-          },
-          {
-            "id": "src/data/prizeTiers.js",
-            "kind": "file",
-            "path": "src/data/prizeTiers.js",
-            "ext": ".js",
-            "size": 2135,
-            "keywords": [
-              "prizetiers",
-              "prize",
-              "tiers"
-            ],
-            "summary": "import flipperPlaceholder from '../assets/prizes/flipper_zero_img.webp'.",
-            "file_hash": "2f7819d4",
-            "_score": 25,
-            "_role": "code",
-            "_intent": "general"
-          },
-          {
-            "id": "src/data/prizes.js",
-            "kind": "file",
-            "path": "src/data/prizes.js",
-            "ext": ".js",
-            "size": 665,
-            "keywords": [
-              "prizes"
-            ],
-            "summary": "import flipperZero from \"../assets/prizes/flipper_zero_img.webp\".",
-            "file_hash": "0b730f61",
-            "_score": 24,
-            "_role": "code",
-            "_intent": "general"
-          },
-          {
-            "id": "src/pages/Home.jsx",
-            "kind": "file",
-            "path": "src/pages/Home.jsx",
-            "ext": ".jsx",
-            "size": 568,
-            "keywords": [
-              "home"
-            ],
-            "summary": "import Marquee from '../components/Marquee'. Contains 1 function: Home.",
-            "file_hash": "82ff34a5",
-            "_score": 22,
-            "_role": "ui_surface",
-            "_intent": "general"
-          }
-        ],
-        "graph_edges": [
-          {
-            "from": "src/pages/Home.jsx",
-            "to": "../components/sections/Prizes",
-            "rel": "imports"
-          },
-          {
-            "from": "src/pages/PrizesPage.jsx",
-            "to": "../components/DossierPhoto",
-            "rel": "imports"
-          },
-          {
-            "from": "src/pages/PrizesPage.jsx",
-            "to": "../components/TerminalPane",
-            "rel": "imports"
-          },
-          {
-            "from": "src/pages/PrizesPage.jsx",
-            "to": "../data/prizeTiers",
-            "rel": "imports"
-          },
-          {
-            "from": "src/pages/PrizesPage.jsx",
-            "to": "src/pages/PrizesPage.jsx::TierColumn",
-            "rel": "contains"
-          },
-          {
-            "from": "src/pages/PrizesPage.jsx",
-            "to": "src/pages/PrizesPage.jsx::TierItem",
-            "rel": "contains"
-          },
-          {
-            "from": "src/components/sections/Prizes.jsx",
-            "to": "../../data/prizes",
-            "rel": "imports"
-          },
-          {
-            "from": "src/components/sections/Prizes.jsx",
-            "to": "../../hooks/useRevealOnScroll",
-            "rel": "imports"
-          },
-          {
-            "from": "src/components/sections/Prizes.jsx",
-            "to": "../DossierPhoto",
-            "rel": "imports"
-          },
-          {
-            "from": "src/components/sections/Prizes.jsx",
-            "to": "../TerminalPane",
-            "rel": "imports"
-          },
-          {
-            "from": "src/components/sections/Prizes.jsx",
-            "to": "DossierPhoto",
-            "rel": "imports"
-          },
-          {
-            "from": "src/components/sections/Prizes.jsx",
-            "to": "TerminalPane",
-            "rel": "imports"
-          }
-        ],
-        "grep_hits": [],
-        "reuse_candidates": [],
-        "read_budget": {
-          "remaining_chars": 60000,
-          "reuse_gate_candidates": []
-        }
-      }
-    },
-    "dashboard page component hackatime projects list oauth user|tf=5|te=12": {
-      "created_epoch": 1784822523,
-      "files": [
-        "src/pages/PrizesPage.jsx",
-        "src/pages/Home.jsx",
-        "src/hooks/useRevealOnScroll.js::useRevealOnScroll",
-        "src/components/sections/Arsenal.jsx::IdeaCard",
-        "src/components/TerminalPane.jsx"
-      ],
-      "mtimes_ns": {
-        "src/pages/PrizesPage.jsx": -1,
-        "src/pages/Home.jsx": -1,
-        "src/hooks/useRevealOnScroll.js::useRevealOnScroll": 1784740083883900951,
-        "src/components/sections/Arsenal.jsx::IdeaCard": 1784740072130782382,
-        "src/components/TerminalPane.jsx": 1784740061993680470
-      },
-      "result": {
-        "ok": true,
-        "query": "dashboard page component hackatime projects list oauth user name greeting submit project button toggle",
-        "graph_files": [
-          {
-            "id": "src/pages/PrizesPage.jsx",
-            "kind": "file",
-            "path": "src/pages/PrizesPage.jsx",
-            "ext": ".jsx",
-            "size": 3462,
-            "keywords": [
-              "prizespage",
-              "prizes",
-              "page"
-            ],
-            "summary": "import { Link } from 'react-router-dom'. Contains 3 functions/classes: TierItem, TierColumn, PrizesPage.",
-            "file_hash": "3d10455e",
-            "_score": 23,
-            "_role": "ui_surface",
-            "_intent": "general"
-          },
-          {
-            "id": "src/pages/Home.jsx",
-            "kind": "file",
-            "path": "src/pages/Home.jsx",
-            "ext": ".jsx",
-            "size": 568,
-            "keywords": [
-              "home"
-            ],
-            "summary": "import Marquee from '../components/Marquee'. Contains 1 function: Home.",
-            "file_hash": "82ff34a5",
-            "_score": 22,
-            "_role": "ui_surface",
-            "_intent": "general"
-          },
-          {
-            "id": "src/hooks/useRevealOnScroll.js::useRevealOnScroll",
+            "id": "src/lib/hackclub.js::primaryAddress",
             "kind": "symbol",
-            "path": "src/hooks/useRevealOnScroll.js",
+            "path": "src/lib/hackclub.js",
             "ext": ".js",
-            "size": 26,
+            "size": 4,
             "keywords": [
-              "userevealonscroll",
-              "use",
-              "reveal",
-              "scroll"
+              "primaryaddress",
+              "primary",
+              "address"
             ],
-            "symbol_type": "hook",
-            "name": "useRevealOnScroll",
-            "line_start": 4,
-            "line_end": 29,
-            "body_hash": "7f0457b2",
+            "symbol_type": "use_case",
+            "name": "primaryAddress",
+            "line_start": 40,
+            "line_end": 43,
+            "body_hash": "a7a312c2",
             "confidence": "high",
             "exported": true,
             "_score": 16,
-            "_role": "logic",
-            "_intent": "general"
+            "_role": "code",
+            "_intent": "feature"
           },
           {
-            "id": "src/components/sections/Arsenal.jsx::IdeaCard",
+            "id": "src/app/api/auth/callback/route.js::GET",
             "kind": "symbol",
-            "path": "src/components/sections/Arsenal.jsx",
-            "ext": ".jsx",
-            "size": 19,
+            "path": "src/app/api/auth/callback/route.js",
+            "ext": ".js",
+            "size": 29,
             "keywords": [
-              "ideacard",
-              "idea",
-              "card"
+              "get"
             ],
-            "symbol_type": "utility",
-            "name": "IdeaCard",
-            "line_start": 22,
-            "line_end": 40,
-            "body_hash": "411a7570",
-            "confidence": "medium",
-            "exported": false,
-            "_score": 14,
-            "_role": "code",
-            "_intent": "general"
+            "symbol_type": "api_route",
+            "name": "GET",
+            "line_start": 5,
+            "line_end": 33,
+            "body_hash": "f33cf74b",
+            "confidence": "high",
+            "exported": true,
+            "_score": 15,
+            "_role": "logic",
+            "_intent": "feature"
           },
           {
-            "id": "src/components/TerminalPane.jsx",
-            "kind": "file",
-            "path": "src/components/TerminalPane.jsx",
-            "ext": ".jsx",
-            "size": 2821,
+            "id": "src/app/api/auth/hackatime/callback/route.js::GET",
+            "kind": "symbol",
+            "path": "src/app/api/auth/hackatime/callback/route.js",
+            "ext": ".js",
+            "size": 35,
             "keywords": [
-              "terminalpane",
-              "terminal",
-              "pane"
+              "get"
             ],
-            "summary": "import { useEffect, useRef, useState } from 'react'. Contains 1 function: TerminalPane.",
-            "file_hash": "172fa9b5",
-            "_score": 12,
-            "_role": "code",
-            "_intent": "general"
+            "symbol_type": "api_route",
+            "name": "GET",
+            "line_start": 6,
+            "line_end": 40,
+            "body_hash": "016c7ccb",
+            "confidence": "high",
+            "exported": true,
+            "_score": 15,
+            "_role": "logic",
+            "_intent": "feature"
+          },
+          {
+            "id": "src/app/api/auth/hackatime/login/route.js::GET",
+            "kind": "symbol",
+            "path": "src/app/api/auth/hackatime/login/route.js",
+            "ext": ".js",
+            "size": 10,
+            "keywords": [
+              "get"
+            ],
+            "symbol_type": "api_route",
+            "name": "GET",
+            "line_start": 4,
+            "line_end": 13,
+            "body_hash": "c72ae081",
+            "confidence": "high",
+            "exported": true,
+            "_score": 15,
+            "_role": "logic",
+            "_intent": "feature"
+          },
+          {
+            "id": "src/app/api/auth/login/route.js::GET",
+            "kind": "symbol",
+            "path": "src/app/api/auth/login/route.js",
+            "ext": ".js",
+            "size": 10,
+            "keywords": [
+              "get"
+            ],
+            "symbol_type": "api_route",
+            "name": "GET",
+            "line_start": 4,
+            "line_end": 13,
+            "body_hash": "09d01193",
+            "confidence": "high",
+            "exported": true,
+            "_score": 15,
+            "_role": "logic",
+            "_intent": "feature"
           }
         ],
         "graph_edges": [
           {
-            "from": "src/pages/Home.jsx",
-            "to": "../components/Marquee",
-            "rel": "imports"
+            "from": "src/lib/hackclub.js",
+            "to": "src/lib/hackclub.js::primaryAddress",
+            "rel": "contains"
           },
           {
-            "from": "src/pages/Home.jsx",
-            "to": "../components/sections/Arsenal",
-            "rel": "imports"
+            "from": "src/app/api/auth/callback/route.js",
+            "to": "src/app/api/auth/callback/route.js::GET",
+            "rel": "contains"
           },
           {
-            "from": "src/pages/Home.jsx",
-            "to": "../components/sections/Briefing",
-            "rel": "imports"
+            "from": "src/app/api/auth/hackatime/callback/route.js",
+            "to": "src/app/api/auth/hackatime/callback/route.js::GET",
+            "rel": "contains"
           },
           {
-            "from": "src/pages/Home.jsx",
+            "from": "src/app/api/auth/hackatime/login/route.js",
+            "to": "src/app/api/auth/hackatime/login/route.js::GET",
+            "rel": "contains"
+          },
+          {
+            "from": "src/app/api/auth/login/route.js",
+            "to": "src/app/api/auth/login/route.js::GET",
+            "rel": "contains"
+          },
+          {
+            "from": "src/app/page.jsx",
             "to": "../components/sections/CtaFooter",
             "rel": "imports"
           },
           {
-            "from": "src/pages/Home.jsx",
-            "to": "../components/sections/Hero",
+            "from": "src/app/page.jsx",
+            "to": "CtaFooter",
             "rel": "imports"
           },
           {
-            "from": "src/pages/Home.jsx",
-            "to": "../components/sections/HowItWorks",
+            "from": "src/components/sections/CtaFooter.jsx",
+            "to": "../TerminalPane",
             "rel": "imports"
           },
           {
-            "from": "src/pages/Home.jsx",
-            "to": "../components/sections/Prizes",
+            "from": "src/components/sections/CtaFooter.jsx",
+            "to": "TerminalPane",
             "rel": "imports"
           },
           {
-            "from": "src/pages/PrizesPage.jsx",
-            "to": "../components/DossierPhoto",
-            "rel": "imports"
+            "from": "openspec/changes/add-dashboard-eligibility-summary/design.md",
+            "to": "src/app/dashboard/page.js",
+            "rel": "references"
           },
           {
-            "from": "src/pages/PrizesPage.jsx",
-            "to": "../components/TerminalPane",
-            "rel": "imports"
+            "from": "openspec/changes/add-dashboard-eligibility-summary/proposal.md",
+            "to": "src/app/dashboard/page.js",
+            "rel": "references"
           },
           {
-            "from": "src/pages/PrizesPage.jsx",
-            "to": "../hooks/useRevealOnScroll",
-            "rel": "imports"
-          },
-          {
-            "from": "src/components/TerminalPane.jsx",
-            "to": "../context/CloseAttemptContext",
-            "rel": "imports"
-          },
-          {
-            "from": "src/components/TerminalPane.jsx",
-            "to": "react",
-            "rel": "imports"
+            "from": "openspec/changes/add-dashboard-eligibility-summary/tasks.md",
+            "to": "src/app/dashboard/page.js",
+            "rel": "references"
           }
         ],
         "grep_hits": [],

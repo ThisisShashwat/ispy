@@ -11,6 +11,8 @@ import grant from "../assets/prizes/grant_image.jpg"
 import hardwareGrantPlaceholder from "../assets/prizes/hardware-grant-placeholder.svg"
 // Placeholder tier data — swap items/hours/codenames for real reward-tier
 // content later. Structure (hours, codename, items[]) is stable.
+// `hours` is each item's flat hour cost (spendable currency), not a minimum
+// unlock threshold — every item in a tier costs that tier's `hours` value.
 export const prizeTiers = [
   {
     hours: 1,
@@ -76,3 +78,13 @@ export const highlightedPrizes = [
     codename: prizeTiers[4].codename,
   },
 ]
+
+// Shared cost lookup used by both the dashboard cart UI and the submit
+// endpoint — an item's cost is always its tier's `hours` value.
+export function findPrize(prizeId) {
+  for (const tier of prizeTiers) {
+    const item = tier.items.find((i) => i.id === prizeId)
+    if (item) return { item, tier, cost: tier.hours }
+  }
+  return null
+}
