@@ -25,6 +25,21 @@ export default async function DashboardPage() {
     <main className="min-h-screen px-6 py-16">
       <div className="max-w-5xl mx-auto">
         <p className="font-mono text-primary-container tracking-[0.3em] text-sm mb-4">
+          CASE FILE — ELIGIBILITY
+        </p>
+        <h2
+          data-text="What Counts"
+          className="glitch-title text-2xl sm:text-3xl font-bold text-on-background mb-6"
+        >
+          What Counts
+        </h2>
+        <ul className="text-on-surface-variant leading-relaxed mb-16 list-disc pl-5 space-y-1">
+          <li>Something that could in theory be used to spy on someone. Very very broad theme ik</li>
+          <li>Shipped publicly (repo, build, or hardware demo)</li>
+          <li>Hardware projects: some exceptions on &ldquo;fully working&rdquo;</li>
+        </ul>
+
+        <p className="font-mono text-primary-container tracking-[0.3em] text-sm mb-4">
           CASE FILE — AGENT DASHBOARD
         </p>
         <h1 className="text-3xl sm:text-4xl font-bold text-on-background mb-10">

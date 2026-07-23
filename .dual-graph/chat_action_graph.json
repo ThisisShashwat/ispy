@@ -105,6 +105,33 @@
     {
       "id": "src/components/DossierPhoto.jsx",
       "type": "file"
+    },
+    {
+      "id": "query:dashboard page reiterate homepage prompt about what projects",
+      "type": "query",
+      "meta": {
+        "text": "dashboard page should reiterate homepage prompt about what projects count, in a simple way, instead of just being a submission form"
+      }
+    },
+    {
+      "id": "src/components/sections/Briefing.jsx",
+      "type": "file"
+    },
+    {
+      "id": "src/app/dashboard/page.jsx",
+      "type": "file"
+    },
+    {
+      "id": "src/components/dashboard/DashboardClient.jsx",
+      "type": "file"
+    },
+    {
+      "id": "src/app/page.jsx",
+      "type": "file"
+    },
+    {
+      "id": "src/components/sections/HowItWorks.jsx",
+      "type": "file"
     }
   ],
   "edges": [
@@ -392,24 +419,135 @@
       "meta": {
         "mode": "full"
       }
+    },
+    {
+      "from": "query:dashboard page reiterate homepage prompt about what projects",
+      "to": "src/pages/PrizesPage.jsx",
+      "rel": "retrieved",
+      "ts": 1784816700
+    },
+    {
+      "from": "query:dashboard page reiterate homepage prompt about what projects",
+      "to": "src/pages/Home.jsx",
+      "rel": "retrieved",
+      "ts": 1784816700
+    },
+    {
+      "from": "query:dashboard page reiterate homepage prompt about what projects",
+      "to": "src/components/sections/Arsenal.jsx::IdeaCard",
+      "rel": "retrieved",
+      "ts": 1784816700
+    },
+    {
+      "from": "query:dashboard page reiterate homepage prompt about what projects",
+      "to": "src/hooks/useDecryptText.js::useDecryptText",
+      "rel": "retrieved",
+      "ts": 1784816700
+    },
+    {
+      "from": "query:dashboard page reiterate homepage prompt about what projects",
+      "to": "src/hooks/useRevealOnScroll.js::useRevealOnScroll",
+      "rel": "retrieved",
+      "ts": 1784816700
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/pages/Home.jsx",
+      "rel": "read",
+      "ts": 1784816703,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/pages/PrizesPage.jsx",
+      "rel": "read",
+      "ts": 1784816704,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/components/sections/Arsenal.jsx::IdeaCard",
+      "rel": "read",
+      "ts": 1784816704,
+      "meta": {
+        "mode": "symbol_excerpt"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/components/sections/Briefing.jsx",
+      "rel": "read",
+      "ts": 1784816712,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/App.jsx",
+      "rel": "read",
+      "ts": 1784816717,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/app/dashboard/page.jsx",
+      "rel": "read",
+      "ts": 1784816786,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/components/dashboard/DashboardClient.jsx",
+      "rel": "read",
+      "ts": 1784816787,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/app/page.jsx",
+      "rel": "read",
+      "ts": 1784816790,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/components/sections/HowItWorks.jsx",
+      "rel": "read",
+      "ts": 1784816793,
+      "meta": {
+        "mode": "full"
+      }
     }
   ],
   "files": {
     "src/App.jsx": {
       "query_terms": [],
-      "cached_content": "import ScanlineOverlay from './components/ScanlineOverlay'\nimport EnvelopeIntro from './components/EnvelopeIntro'\nimport Marquee from './components/Marquee'\nimport Hero from './components/sections/Hero'\nimport Briefing from './components/sections/Briefing'\nimport Arsenal from './components/sections/",
-      "cached_chars": 784,
-      "cached_tokens_est": 196,
+      "cached_content": "import { BrowserRouter, Routes, Route } from 'react-router-dom'\nimport ScanlineOverlay from './components/ScanlineOverlay'\nimport EnvelopeIntro from './components/EnvelopeIntro'\nimport Home from './pages/Home'\nimport PrizesPage from './pages/PrizesPage'\nimport { CloseAttemptProvider } from './contex",
+      "cached_chars": 724,
+      "cached_tokens_est": 181,
       "last_action": "read",
-      "last_ts": 1784645694
+      "last_ts": 1784816717
     },
     "src/components/sections/Arsenal.jsx::IdeaCard": {
       "query_terms": [],
-      "cached_content": "function IdeaCard({ idea, index }) {\n  const [ref, visible] = useRevealOnScroll()\n  return (\n    <div\n      ref={ref}\n      style={{ transitionDelay: visible ? `${index * 120}ms` : '0ms' }}\n      className={`border border-outline bg-surface-container-low hover:border-primary-container transition-all",
-      "cached_chars": 722,
-      "cached_tokens_est": 180,
+      "cached_content": "]\n\nfunction IdeaCard({ idea, index }) {\n  const [ref, visible] = useRevealOnScroll()\n  return (\n    <div\n      ref={ref}\n      style={{ transitionDelay: visible ? `${index * 120}ms` : '0ms' }}\n      className={`border border-outline bg-surface-container-low hover:border-primary-container transition-",
+      "cached_chars": 719,
+      "cached_tokens_est": 179,
       "last_action": "read",
-      "last_ts": 1784733973
+      "last_ts": 1784816704
     },
     "src/components/DossierPhoto.jsx::DossierPhoto": {
       "query_terms": [],
@@ -441,7 +579,7 @@
       "cached_chars": 568,
       "cached_tokens_est": 142,
       "last_action": "read",
-      "last_ts": 1784746373
+      "last_ts": 1784816703
     },
     "src/pages/PrizesPage.jsx": {
       "query_terms": [],
@@ -449,7 +587,7 @@
       "cached_chars": 3456,
       "cached_tokens_est": 864,
       "last_action": "read",
-      "last_ts": 1784733973
+      "last_ts": 1784816704
     },
     "src/data/prizeTiers.js": {
       "query_terms": [],
@@ -482,6 +620,46 @@
       "cached_tokens_est": 451,
       "last_action": "read",
       "last_ts": 1784746449
+    },
+    "src/components/sections/Briefing.jsx": {
+      "query_terms": [],
+      "cached_content": "import Redacted from '../Redacted'\nimport TerminalPane from '../TerminalPane'\n\nexport default function Briefing() {\n  return (\n    <TerminalPane id=\"briefing\" path=\"cat case_file_001.md\" className=\"bg-surface\">\n      <div className=\"px-6 py-20\">\n        <div className=\"max-w-3xl mx-auto\">\n          ",
+      "cached_chars": 1140,
+      "cached_tokens_est": 285,
+      "last_action": "read",
+      "last_ts": 1784816712
+    },
+    "src/app/dashboard/page.jsx": {
+      "query_terms": [],
+      "cached_content": "import { requireSession } from '../../lib/auth'\nimport { getIdentity } from '../../lib/hackclub'\nimport { getHackatimeMe, getHackatimeProjects } from '../../lib/hackatime'\nimport DashboardClient from '../../components/dashboard/DashboardClient'\n\nexport default async function DashboardPage() {\n  cons",
+      "cached_chars": 1361,
+      "cached_tokens_est": 340,
+      "last_action": "read",
+      "last_ts": 1784816786
+    },
+    "src/components/dashboard/DashboardClient.jsx": {
+      "query_terms": [],
+      "cached_content": "'use client'\n\nimport { useState } from 'react'\nimport { useRouter } from 'next/navigation'\nimport ProjectPicker from './ProjectPicker'\nimport PrizePicker from './PrizePicker'\nimport SubmissionForm from './SubmissionForm'\n\nconst EMPTY_FIELDS = {\n  playableUrl: '',\n  codeUrl: '',\n  description: '',\n  ",
+      "cached_chars": 6078,
+      "cached_tokens_est": 1519,
+      "last_action": "read",
+      "last_ts": 1784816787
+    },
+    "src/app/page.jsx": {
+      "query_terms": [],
+      "cached_content": "import Marquee from '../components/Marquee'\nimport Hero from '../components/sections/Hero'\nimport Briefing from '../components/sections/Briefing'\nimport Arsenal from '../components/sections/Arsenal'\nimport Prizes from '../components/sections/Prizes'\nimport HowItWorks from '../components/sections/How",
+      "cached_chars": 568,
+      "cached_tokens_est": 142,
+      "last_action": "read",
+      "last_ts": 1784816790
+    },
+    "src/components/sections/HowItWorks.jsx": {
+      "query_terms": [],
+      "cached_content": "'use client'\n\nimport { useRevealOnScroll } from '../../hooks/useRevealOnScroll'\nimport TerminalPane from '../TerminalPane'\n\nconst steps = [\n  {\n    step: '01',\n    title: 'Choose your target device',\n    desc: \"have any idea, it doesn't have to be crazy hard\",\n  },\n  {\n    step: '02',\n    title: 'Bu",
+      "cached_chars": 2087,
+      "cached_tokens_est": 521,
+      "last_action": "read",
+      "last_ts": 1784816793
     }
   },
   "actions": [
@@ -563,6 +741,22 @@
       "payload": {
         "kind": "continue_retrieve",
         "query": "images not rendering"
+      }
+    },
+    {
+      "ts": 1784816700,
+      "kind": "retrieve",
+      "payload": {
+        "kind": "retrieve",
+        "query": "dashboard page should reiterate homepage prompt about what projects count, in a simple way, instead of just being a submission form"
+      }
+    },
+    {
+      "ts": 1784816700,
+      "kind": "continue_retrieve",
+      "payload": {
+        "kind": "continue_retrieve",
+        "query": "dashboard page should reiterate homepage prompt about what projects count, in a simple way, instead of just being a submission form"
       }
     }
   ]

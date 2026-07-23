@@ -1,25 +1,42 @@
 {
   "entries": {
-    "images not rendering|tf=5|te=12": {
-      "created_epoch": 1784746371,
+    "dashboard page reiterate homepage prompt about what projects|tf=5|te=12": {
+      "created_epoch": 1784816700,
       "files": [
-        "src/pages/Home.jsx",
-        "src/hooks/useDecryptText.js::useDecryptText",
-        "src/hooks/useRevealOnScroll.js::useRevealOnScroll",
         "src/pages/PrizesPage.jsx",
-        "src/context/CloseAttemptContext.jsx::useCloseAttempt"
+        "src/pages/Home.jsx",
+        "src/components/sections/Arsenal.jsx::IdeaCard",
+        "src/hooks/useDecryptText.js::useDecryptText",
+        "src/hooks/useRevealOnScroll.js::useRevealOnScroll"
       ],
       "mtimes_ns": {
-        "src/pages/Home.jsx": -1,
-        "src/hooks/useDecryptText.js::useDecryptText": 1784740086757930011,
-        "src/hooks/useRevealOnScroll.js::useRevealOnScroll": 1784740083883900951,
         "src/pages/PrizesPage.jsx": -1,
-        "src/context/CloseAttemptContext.jsx::useCloseAttempt": 1784740089542958195
+        "src/pages/Home.jsx": -1,
+        "src/components/sections/Arsenal.jsx::IdeaCard": 1784740072130782382,
+        "src/hooks/useDecryptText.js::useDecryptText": 1784740086757930011,
+        "src/hooks/useRevealOnScroll.js::useRevealOnScroll": 1784740083883900951
       },
       "result": {
         "ok": true,
-        "query": "images not rendering",
+        "query": "dashboard page should reiterate homepage prompt about what projects count, in a simple way, instead of just being a submission form",
         "graph_files": [
+          {
+            "id": "src/pages/PrizesPage.jsx",
+            "kind": "file",
+            "path": "src/pages/PrizesPage.jsx",
+            "ext": ".jsx",
+            "size": 3462,
+            "keywords": [
+              "prizespage",
+              "prizes",
+              "page"
+            ],
+            "summary": "import { Link } from 'react-router-dom'. Contains 3 functions/classes: TierItem, TierColumn, PrizesPage.",
+            "file_hash": "3d10455e",
+            "_score": 23,
+            "_role": "ui_surface",
+            "_intent": "general"
+          },
           {
             "id": "src/pages/Home.jsx",
             "kind": "file",
@@ -31,8 +48,30 @@
             ],
             "summary": "import Marquee from '../components/Marquee'. Contains 1 function: Home.",
             "file_hash": "82ff34a5",
-            "_score": 12,
+            "_score": 19,
             "_role": "ui_surface",
+            "_intent": "general"
+          },
+          {
+            "id": "src/components/sections/Arsenal.jsx::IdeaCard",
+            "kind": "symbol",
+            "path": "src/components/sections/Arsenal.jsx",
+            "ext": ".jsx",
+            "size": 19,
+            "keywords": [
+              "ideacard",
+              "idea",
+              "card"
+            ],
+            "symbol_type": "utility",
+            "name": "IdeaCard",
+            "line_start": 22,
+            "line_end": 40,
+            "body_hash": "411a7570",
+            "confidence": "medium",
+            "exported": false,
+            "_score": 11,
+            "_role": "code",
             "_intent": "general"
           },
           {
@@ -79,46 +118,6 @@
             "exported": true,
             "_score": 11,
             "_role": "logic",
-            "_intent": "general"
-          },
-          {
-            "id": "src/pages/PrizesPage.jsx",
-            "kind": "file",
-            "path": "src/pages/PrizesPage.jsx",
-            "ext": ".jsx",
-            "size": 3462,
-            "keywords": [
-              "prizespage",
-              "prizes",
-              "page"
-            ],
-            "summary": "import { Link } from 'react-router-dom'. Contains 3 functions/classes: TierItem, TierColumn, PrizesPage.",
-            "file_hash": "3d10455e",
-            "_score": 11,
-            "_role": "ui_surface",
-            "_intent": "general"
-          },
-          {
-            "id": "src/context/CloseAttemptContext.jsx::useCloseAttempt",
-            "kind": "symbol",
-            "path": "src/context/CloseAttemptContext.jsx",
-            "ext": ".jsx",
-            "size": 7,
-            "keywords": [
-              "usecloseattempt",
-              "use",
-              "close",
-              "attempt"
-            ],
-            "symbol_type": "hook",
-            "name": "useCloseAttempt",
-            "line_start": 34,
-            "line_end": 40,
-            "body_hash": "bd76d0e6",
-            "confidence": "high",
-            "exported": true,
-            "_score": 10,
-            "_role": "code",
             "_intent": "general"
           }
         ],
