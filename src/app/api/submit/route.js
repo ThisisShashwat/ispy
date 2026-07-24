@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 import { getSessionFromRequest } from '../../../lib/auth'
 import { getIdentity } from '../../../lib/hackclub'
-import { getHackatimeMe, getHackatimeProjects } from '../../../lib/hackatime'
+import { getHackatimeProjects } from '../../../lib/hackatime'
 import { findPrize } from '../../../data/prizeTiers'
 import {
   AIRTABLE_FIELDS,
@@ -53,6 +53,7 @@ export async function POST(request) {
   const screenshot = formData.get('screenshot')
   // Not available via OAuth scope for this app tier — user-entered.
   const birthday = formData.get('birthday')?.toString() ?? ''
+  const githubUsername = formData.get('githubUsername')?.toString() ?? ''
   const addressLine1 = formData.get('addressLine1')?.toString() ?? ''
   const addressLine2 = formData.get('addressLine2')?.toString() ?? ''
   const city = formData.get('city')?.toString() ?? ''
@@ -68,9 +69,8 @@ export async function POST(request) {
   // never trust identity/hours values from the client payload. Hardware
   // submissions have no Hackatime project, so self-reported hours are used
   // as-is; there's no independent source to re-verify them against.
-  const [identity, hackatimeMe, projects] = await Promise.all([
+  const [identity, projects] = await Promise.all([
     getIdentity(session.access_token),
-    getHackatimeMe(session.hackatime_access_token),
     category === 'software' ? getHackatimeProjects(session.hackatime_access_token) : Promise.resolve(null),
   ])
 
@@ -93,7 +93,10 @@ export async function POST(request) {
     [AIRTABLE_FIELDS.lastName]: identity?.last_name ?? '',
     [AIRTABLE_FIELDS.email]: identity?.primary_email ?? '',
     [AIRTABLE_FIELDS.description]: description,
-    [AIRTABLE_FIELDS.githubUsername]: hackatimeMe?.github_username ?? '',
+    // Trusted from the client, unlike identity/hours above: this is submission
+    // attribution only, not auth-bearing, and is deliberately user-correctable
+    // since OAuth's cached GitHub username can be stale or never linked.
+    [AIRTABLE_FIELDS.githubUsername]: githubUsername,
     [AIRTABLE_FIELDS.addressLine1]: addressLine1,
     [AIRTABLE_FIELDS.addressLine2]: addressLine2,
     [AIRTABLE_FIELDS.city]: city,
@@ -113,7 +116,6 @@ export async function POST(request) {
     Email: identity?.primary_email,
     Screenshot: screenshot,
     Description: description,
-    'Github Username': hackatimeMe?.github_username,
     'Address Line 1': addressLine1,
     City: city,
     'State/Province': state,

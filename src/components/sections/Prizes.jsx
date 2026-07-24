@@ -53,7 +53,7 @@ export default function Prizes() {
           href="/prizes"
           className="block text-center mt-5 font-mono font-bold text-lg text-on-background hover:text-primary-container transition-colors"
         >
-          SEE FULL DOSSIER →
+          SEE FULL LIST →
         </Link>
       </div>
     </TerminalPane>

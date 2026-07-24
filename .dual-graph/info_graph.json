@@ -1,9 +1,9 @@
 {
   "root": "/home/plastuchino/code/second-ysws",
-  "node_count": 173,
-  "edge_count": 287,
-  "file_count": 112,
-  "symbol_count": 61,
+  "node_count": 188,
+  "edge_count": 309,
+  "file_count": 123,
+  "symbol_count": 65,
   "nodes": [
     {
       "id": "package-lock.json",
@@ -86,11 +86,11 @@
       "kind": "file",
       "path": ".claude/settings.local.json",
       "ext": ".json",
-      "size": 3992,
+      "size": 4037,
       "keywords": [],
-      "content": "{\n  \"permissions\": {\n    \"allow\": [\n      \"mcp__dual-graph__graph_continue\",\n      \"Bash(openspec list *)\",\n      \"Bash(openspec new *)\",\n      \"Bash(openspec status *)\",\n      \"Bash(openspec instructions *)\",\n      \"Bash(npm create *)\",\n      \"Bash(npm view *)\",\n      \"Bash(npm install *)\",\n      \"Bash(npm run *)\",\n      \"Bash(nohup npm run dev -- --port 5173 --host)\",\n      \"Bash(disown)\",\n      \"Read(//tmp/**)\",\n      \"Bash(curl -s http://localhost:5173/)\",\n      \"Bash(npx --no-install playwright --version)\",\n      \"Read(//home/plastuchino/.cache/ms-playwright/**)\",\n      \"Bash(pkill -f \\\"vite --port 5173\\\")\",\n      \"Bash(npm uninstall *)\",\n      \"Bash(pkill -f \\\"vite\\\")\",\n      \"Bash(grep -rn '\\\\\\\\$\\\\\\\\|85\\\\\\\\|8\\\\\\\\.50\\\\\\\\|weighted' /home/plastuchino/code/second-ysws/src/components/sections/)\",\n      \"Bash(rm -f /home/plastuchino/code/second-ysws/checkprize*.mjs)\",\n      \"Bash(pkill -f vite)\",\n      \"mcp__dual-graph__graph_read\",\n      \"Bash(xargs -I{} sh -c 'echo === {} ===; cat {}')\",\n      \"Bash(curl -s -o /dev/null -w \\\"%{http_code}\\\\\\\\n\\\" http://localhost:5183/)\",\n      \"Skill(claude-in-chrome)\",\n      \"Bash(npm ls *)\",\n      \"Bash(node *)\",\n      \"Bash(pkill -f \\\"vite --port 5183\\\")\",\n      \"WebFetch(domain:widget.hackclub.com)\",\n      \"Bash(pkill -f \\\"vite --port 5184\\\")\",\n      \"Bash(echo \\\"exit code: $?\\\")\",\n      \"Bash(echo \\\"exit: $?\\\")\",\n      \"Skill(run)\",\n      \"Bash(chromium-cli --help)\",\n      \"Bash(npx --yes playwright --version)\",\n      \"Bash(npx playwright *)\",\n      \"Bash(npx --yes playwright install chromium --with-deps)\",\n      \"Bash(npx --yes playwright install chromium)\",\n      \"Bash(lsof -ti:5174 -sTCP:LISTEN)\",\n      \"Bash(xargs -r kill)\",\n      \"WebFetch(domain:github.com)\",\n      \"Bash(gh api *)\",\n      \"WebFetch(domain:api.github.com)\",\n      \"WebFetch(domain:raw.githubusercontent.com)\",\n      \"WebFetch(domain:hackatime.hackclub.com)\",\n      \"Bash(openspec --help)\",\n      \"Bash(openspec validate *)\",\n      \"Bash(npm --version)\",\n      \"Bash(npx next *)\",\n      \"Bash(awk -F= '{print $1\\\"=\\\"\\\\($2==\\\"\\\"?\\\"\\\\(empty\\\\)\\\":\\\"\\\\(set\\\\)\\\"\\\\)}' .env.local)\",\n      \"Bash(curl -s -o /dev/null -w \\\"home: %{http_code}\\\\\\\\n\\\" http://localhost:3000/)\",\n      \"Bash(curl -s -D - -o /dev/null http://localhost:3000/api/auth/login)\",\n      \"Bash(curl *)\",\n      \"Bash(python3 -c \\\"import json,sys; d=json.load\\\\(sys.stdin\\\\); [print\\\\(i['full_name'], '-', i['description']\\\\) for i in d['items']]\\\")\",\n      \"Bash(python3 -c \\\"import json,sys; d=json.load\\\\(sys.stdin\\\\); print\\\\(d.get\\\\('full_name'\\\\), d.get\\\\('html_url'\\\\), d.get\\\\('description'\\\\)\\\\)\\\")\",\n      \"Bash(python3 -c ' *)\",\n      \"Bash(pkill -f \\\"next dev\\\")\",\n      \"Bash(pkill -f \\\"next-server\\\")\",\n      \"Bash(grep -c \\\"^AIRTABLE_TABLE_NAME=tblj4KuOsDxuR6Fmw$\\\" .env.local)\",\n      \"Bash(python3 -)\",\n      \"Bash(npx --yes chromium-cli --help)\"\n    ]\n  },\n  \"hooks\": {\n    \"SessionStart\": [\n      {\n        \"matcher\": \"\",\n        \"hooks\": [\n          {\n            \"type\": \"command\",\n            \"command\": \"/bin/bash \\\"/home/plastuchino/code/second-ysws/.dual-graph/prime.sh\\\"\"\n          }\n        ]\n      }\n    ],\n    \"PreCompact\": [\n      {\n        \"matcher\": \"\",\n        \"hooks\": [\n          {\n            \"type\": \"command\",\n            \"command\": \"/bin/bash \\\"/home/plastuchino/code/second-ysws/.dual-graph/prime.sh\\\"\"\n          }\n        ]\n      }\n    ],\n    \"Stop\": [\n      {\n        \"matcher\": \"\",\n        \"hooks\": [\n          {\n            \"type\": \"command\",\n            \"command\": \"/bin/bash \\\"/home/plastuchino/code/second-ysws/.dual-graph/stop.sh\\\"\"\n          }\n        ]\n      }\n    ],\n    \"PreToolUse\": [\n      {\n        \"matcher\": \"Write|Edit|Bash|NotebookEdit\",\n        \"hooks\": [\n          {\n            \"type\": \"command\",\n            \"command\": \"DG_DATA_DIR=\\\"/home/plastuchino/code/second-ysws/.dual-graph\\\" /home/plastuchino/.dual-graph/venv/bin/python3 -c \\\"from graperoot.undo_shield import main; main()\\\"\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
+      "content": "{\n  \"permissions\": {\n    \"allow\": [\n      \"mcp__dual-graph__graph_continue\",\n      \"Bash(openspec list *)\",\n      \"Bash(openspec new *)\",\n      \"Bash(openspec status *)\",\n      \"Bash(openspec instructions *)\",\n      \"Bash(npm create *)\",\n      \"Bash(npm view *)\",\n      \"Bash(npm install *)\",\n      \"Bash(npm run *)\",\n      \"Bash(nohup npm run dev -- --port 5173 --host)\",\n      \"Bash(disown)\",\n      \"Read(//tmp/**)\",\n      \"Bash(curl -s http://localhost:5173/)\",\n      \"Bash(npx --no-install playwright --version)\",\n      \"Read(//home/plastuchino/.cache/ms-playwright/**)\",\n      \"Bash(pkill -f \\\"vite --port 5173\\\")\",\n      \"Bash(npm uninstall *)\",\n      \"Bash(pkill -f \\\"vite\\\")\",\n      \"Bash(grep -rn '\\\\\\\\$\\\\\\\\|85\\\\\\\\|8\\\\\\\\.50\\\\\\\\|weighted' /home/plastuchino/code/second-ysws/src/components/sections/)\",\n      \"Bash(rm -f /home/plastuchino/code/second-ysws/checkprize*.mjs)\",\n      \"Bash(pkill -f vite)\",\n      \"mcp__dual-graph__graph_read\",\n      \"Bash(xargs -I{} sh -c 'echo === {} ===; cat {}')\",\n      \"Bash(curl -s -o /dev/null -w \\\"%{http_code}\\\\\\\\n\\\" http://localhost:5183/)\",\n      \"Skill(claude-in-chrome)\",\n      \"Bash(npm ls *)\",\n      \"Bash(node *)\",\n      \"Bash(pkill -f \\\"vite --port 5183\\\")\",\n      \"WebFetch(domain:widget.hackclub.com)\",\n      \"Bash(pkill -f \\\"vite --port 5184\\\")\",\n      \"Bash(echo \\\"exit code: $?\\\")\",\n      \"Bash(echo \\\"exit: $?\\\")\",\n      \"Skill(run)\",\n      \"Bash(chromium-cli --help)\",\n      \"Bash(npx --yes playwright --version)\",\n      \"Bash(npx playwright *)\",\n      \"Bash(npx --yes playwright install chromium --with-deps)\",\n      \"Bash(npx --yes playwright install chromium)\",\n      \"Bash(lsof -ti:5174 -sTCP:LISTEN)\",\n      \"Bash(xargs -r kill)\",\n      \"WebFetch(domain:github.com)\",\n      \"Bash(gh api *)\",\n      \"WebFetch(domain:api.github.com)\",\n      \"WebFetch(domain:raw.githubusercontent.com)\",\n      \"WebFetch(domain:hackatime.hackclub.com)\",\n      \"Bash(openspec --help)\",\n      \"Bash(openspec validate *)\",\n      \"Bash(npm --version)\",\n      \"Bash(npx next *)\",\n      \"Bash(awk -F= '{print $1\\\"=\\\"\\\\($2==\\\"\\\"?\\\"\\\\(empty\\\\)\\\":\\\"\\\\(set\\\\)\\\"\\\\)}' .env.local)\",\n      \"Bash(curl -s -o /dev/null -w \\\"home: %{http_code}\\\\\\\\n\\\" http://localhost:3000/)\",\n      \"Bash(curl -s -D - -o /dev/null http://localhost:3000/api/auth/login)\",\n      \"Bash(curl *)\",\n      \"Bash(python3 -c \\\"import json,sys; d=json.load\\\\(sys.stdin\\\\); [print\\\\(i['full_name'], '-', i['description']\\\\) for i in d['items']]\\\")\",\n      \"Bash(python3 -c \\\"import json,sys; d=json.load\\\\(sys.stdin\\\\); print\\\\(d.get\\\\('full_name'\\\\), d.get\\\\('html_url'\\\\), d.get\\\\('description'\\\\)\\\\)\\\")\",\n      \"Bash(python3 -c ' *)\",\n      \"Bash(pkill -f \\\"next dev\\\")\",\n      \"Bash(pkill -f \\\"next-server\\\")\",\n      \"Bash(grep -c \\\"^AIRTABLE_TABLE_NAME=tblj4KuOsDxuR6Fmw$\\\" .env.local)\",\n      \"Bash(python3 -)\",\n      \"Bash(npx --yes chromium-cli --help)\",\n      \"Bash(pkill -f \\\"next dev -p 3100\\\")\"\n    ]\n  },\n  \"hooks\": {\n    \"SessionStart\": [\n      {\n        \"matcher\": \"\",\n        \"hooks\": [\n          {\n            \"type\": \"command\",\n            \"command\": \"/bin/bash \\\"/home/plastuchino/code/second-ysws/.dual-graph/prime.sh\\\"\"\n          }\n        ]\n      }\n    ],\n    \"PreCompact\": [\n      {\n        \"matcher\": \"\",\n        \"hooks\": [\n          {\n            \"type\": \"command\",\n            \"command\": \"/bin/bash \\\"/home/plastuchino/code/second-ysws/.dual-graph/prime.sh\\\"\"\n          }\n        ]\n      }\n    ],\n    \"Stop\": [\n      {\n        \"matcher\": \"\",\n        \"hooks\": [\n          {\n            \"type\": \"command\",\n            \"command\": \"/bin/bash \\\"/home/plastuchino/code/second-ysws/.dual-graph/stop.sh\\\"\"\n          }\n        ]\n      }\n    ],\n    \"PreToolUse\": [\n      {\n        \"matcher\": \"Write|Edit|Bash|NotebookEdit\",\n        \"hooks\": [\n          {\n            \"type\": \"command\",\n            \"command\": \"DG_DATA_DIR=\\\"/home/plastuchino/code/second-ysws/.dual-graph\\\" /home/plastuchino/.dual-graph/venv/bin/python3 -c \\\"from graperoot.undo_shield import main; main()\\\"\"\n          }\n        ]\n      }\n    ]\n  }\n}\n",
       "summary": "\"permissions\": {.",
-      "file_hash": "e7a56384"
+      "file_hash": "78814ff3"
     },
     {
       "id": ".claude/commands/opsx/propose.md",
@@ -245,6 +245,61 @@
       "content": "## ADDED Requirements\n\n### Requirement: Eligibility summary placement\nThe `/dashboard` page SHALL render a static eligibility-summary section above the existing \"CASE FILE \u2014 AGENT DASHBOARD\" eyebrow and \"Submit a project\" heading, so it is the first content a user sees on the page.\n\n#### Scenario: Dashboard page renders\n- **WHEN** an authenticated user loads `/dashboard`\n- **THEN** the eligibility-summary section appears before the \"CASE FILE \u2014 AGENT DASHBOARD\" eyebrow and \"Submit a project\" heading in document order\n\n### Requirement: Eligibility summary visual identity\nThe eligibility-summary section SHALL have its own eyebrow label and heading, styled consistently with the homepage's existing `CASE FILE 00X` eyebrow/heading pattern, and SHALL NOT reuse the dashed-border callout box style used on `/prizes`.\n\n#### Scenario: Section styling\n- **WHEN** the eligibility-summary section is displayed\n- **THEN** it presents a tracked-letter mono eyebrow label and a distinct heading matching the homepage section pattern, and does not use a dashed-border box container\n\n### Requirement: Eligibility summary content\nThe eligibility-summary section SHALL present exactly three concise, independently-worded bullet points covering: (1) the project must be real and working, not a mockup, (2) the project must be shipped publicly (repo, build, or hardware demo), and (3) hardware projects have some exceptions to the \"fully working\" bar. The section SHALL NOT mention prizes, prize tiers, or tracked/logged hours.\n\n#### Scenario: Content renders without reward mechanics\n- **WHEN** the eligibility-summary section is displayed\n- **THEN** it shows three bullet points covering real/working status, public shipping, and the hardware exception, and contains no reference to prizes, tiers, or hours\n",
       "summary": "ADDED Requirements.",
       "file_hash": "1c0c9cfc"
+    },
+    {
+      "id": "openspec/changes/editable-github-username/.openspec.yaml",
+      "kind": "file",
+      "path": "openspec/changes/editable-github-username/.openspec.yaml",
+      "ext": ".yaml",
+      "size": 40,
+      "keywords": [],
+      "content": "schema: spec-driven\ncreated: 2026-07-24\n",
+      "summary": "schema: spec-driven.",
+      "file_hash": "8fad5d67"
+    },
+    {
+      "id": "openspec/changes/editable-github-username/tasks.md",
+      "kind": "file",
+      "path": "openspec/changes/editable-github-username/tasks.md",
+      "ext": ".md",
+      "size": 3057,
+      "keywords": [],
+      "content": "## 1. Submission form UI\n\n- [x] 1.1 In `src/components/dashboard/SubmissionForm.jsx`, replace the `<ReadOnlyField label=\"GitHub Username\" value={profile.githubUsername} />` with a `<TextField label=\"GitHub Username\" name=\"githubUsername\" value={fields.githubUsername} onChange={onFieldChange} errors={errors} />`, matching the pattern used by the other editable fields in the form.\n\n## 2. Form state and submit payload\n\n- [x] 2.1 In `src/components/dashboard/DashboardClient.jsx`, add a `githubUsername` key to `EMPTY_FIELDS`.\n- [x] 2.2 Seed `fields.githubUsername` from `profile.githubUsername` when the form/fields state is initialized (or on category/profile availability), so the field pre-fills with the OAuth-cached value.\n- [x] 2.3 Add `body.set('githubUsername', fields.githubUsername)` alongside the existing `body.set(...)` calls in the submit handler, so the value reaches `/api/submit`.\n- [x] 2.4 Confirm `githubUsername` is not added to `REQUIRED_TEXT_FIELDS` or the `validate()` required-fields check \u2014 no validation should be introduced.\n\n## 3. Submit API route\n\n- [x] 3.1 In `src/app/api/submit/route.js`, read the submitted value: `const githubUsername = formData.get('githubUsername')?.toString() ?? ''`.\n- [x] 3.2 Replace `[AIRTABLE_FIELDS.githubUsername]: hackatimeMe?.github_username ?? ''` with `[AIRTABLE_FIELDS.githubUsername]: githubUsername`, using the client-submitted value directly.\n- [x] 3.3 Add a comment at this line explaining why `githubUsername` is trusted from the client while `identity` (name/email) and Hackatime-derived hours in the same handler are not: it's submission-attribution-only, not identity/auth-bearing, and is deliberately user-correctable to fix stale/missing OAuth GitHub linkage.\n- [x] 3.4 Verify `hackatimeMe` is still needed elsewhere in the route (e.g. for hours/project data) before deciding whether to leave the `getHackatimeMe` call as-is or adjust it \u2014 do not remove it if other fields still depend on it.\n  - `hackatimeMe` had no other usage beyond the required-field check for GitHub Username. Removed the `getHackatimeMe` call/import and the now-obsolete `'Github Username'` entry in `requiredCheck` (that check enforced non-empty and was the literal cause of the submission block for hardware users with no OAuth-linked GitHub \u2014 leaving it in place would have contradicted the agreed \"no validation, empty accepted\" scope).\n\n## 4. Verification\n\n- [ ] 4.1 Manually test: submit a hardware project with a corrected GitHub username different from the OAuth-cached one; confirm the Airtable record reflects the corrected value.\n- [ ] 4.2 Manually test: a profile with no OAuth-linked GitHub account (empty `profile.githubUsername`) can still fill in a value and submit successfully.\n- [ ] 4.3 Manually test: submitting with the GitHub Username field left empty is not blocked (no validation error).\n- [ ] 4.4 Confirm a second, separate submission by the same user re-seeds the field from the original OAuth-cached profile value (i.e. the earlier correction did not persist to `profile`).\n",
+      "summary": "1. Submission form UI.",
+      "file_hash": "1b47e75b"
+    },
+    {
+      "id": "openspec/changes/editable-github-username/design.md",
+      "kind": "file",
+      "path": "openspec/changes/editable-github-username/design.md",
+      "ext": ".md",
+      "size": 6819,
+      "keywords": [],
+      "content": "## Context\n\n`SubmissionForm.jsx` renders an \"Identity (from Hack Club OAuth)\" block with four fields, all currently rendered via `<ReadOnlyField>`: First Name, Last Name, Email, GitHub Username. The first three are genuinely identity-verified via OAuth and should stay locked. GitHub Username is different in practice: it's used only for submission attribution (linking a project to a GitHub account for judging/display), not as an auth or identity guarantee \u2014 so treating it with the same rigidity as email/name has been actively harmful, since GitHub usernames are self-changeable and OAuth linkage isn't guaranteed at signup.\n\nThis surfaced as a hard blocker for hardware-category submitters, who either renamed their GitHub username after OAuth first captured it, or never linked GitHub via OAuth in the first place (leaving `profile.githubUsername` empty with no way to fill it in).\n\n## Goals / Non-Goals\n\n**Goals:**\n- Let users correct or provide their GitHub username at submission time.\n- Keep the fix scoped to the submission form and its payload \u2014 no changes to auth/OAuth flow or profile storage.\n- Preserve pre-fill behavior when the OAuth-cached value is already correct.\n\n**Non-Goals:**\n- Writing the corrected value back to the user's profile record. A correction applies to the current submission only; a future submission re-seeds from the OAuth-cached value and can be edited again if still wrong.\n- Any validation (format checking, non-empty enforcement, GitHub existence check). The field behaves like any other free-text `TextField` in this form today \u2014 no validation is added or expected.\n- Re-syncing `profile.githubUsername` from GitHub/OAuth on login. That would address staleness at the source, but is out of scope here.\n\n## Decisions\n\n**Move GitHub Username from `profile`-driven read-only display to `fields`-driven editable input.**\nThe other three identity fields stay as `<ReadOnlyField>` reading directly from `profile`. GitHub Username switches to `<TextField>` reading from `fields.githubUsername`, following the exact same pattern already used for `birthday`, `addressLine1`, etc. (`value`, `onChange={onFieldChange}`, `errors`). No new component or pattern is introduced.\n\n*Alternative considered*: add an explicit \"edit\" toggle that starts read-only and switches to an input on click. Rejected \u2014 adds UI complexity and state for no real benefit; every other field in this form is a plain always-editable input, and consistency is simpler to reason about than a hybrid locked/unlockable field.\n\n**Seed `fields.githubUsername` from `profile.githubUsername` at form/state initialization, not inside `SubmissionForm` itself.**\n`SubmissionForm` is presentational \u2014 it receives `fields` and `onFieldChange` from `DashboardClient.jsx`, which owns the actual `fields` state (`EMPTY_FIELDS`) and builds the submit payload (`body.set(...)` calls) before POSTing to `/api/submit`. The seeding needs to happen in `DashboardClient.jsx`'s `fields` initialization/state, and `githubUsername` needs to be added to the set of fields serialized into the submit `FormData` body.\n\n**Carve out `githubUsername` from the submit route's \"never trust client identity\" guard.**\n`src/app/api/submit/route.js` currently re-derives identity fields (name, email, and \u2014 bundled in with them \u2014 `githubUsername`) server-side from the session's OAuth/Hackatime tokens, explicitly to avoid trusting client-submitted identity data (see the existing comment at the top of the handler). `githubUsername` was swept into that guard by association, not because it's actually security-relevant in the way name/email/hours are \u2014 it's used purely for submission attribution, per the proposal's scoping.\n\nThis change updates `route.js` to read `formData.get('githubUsername')` and use it directly (client value wins outright) instead of `hackatimeMe?.github_username`, while leaving `identity` (name/email) and Hackatime hours untouched \u2014 those remain server-derived only. This is a narrow, explicit carve-out of one field from the guard, not a removal of the guard itself; the code should make clear via comment why `githubUsername` is treated differently from its neighbors in that block.\n\n**No write-back to profile.**\nConfirmed scope: the corrected value is submission-only. This avoids touching profile storage, any OAuth re-validation logic, or downstream consumers of `profile.githubUsername` that assume it's OAuth-sourced.\n\n**No validation.**\nConfirmed scope: matches current behavior of sibling fields (`playableUrl`, `codeUrl`, `description`, etc.), none of which currently enforce format or presence in this form. Adding validation only to this field would be inconsistent; broader form validation is out of scope for this change.\n\n## Risks / Trade-offs\n\n- **[Risk]** A user submits with a garbage/typo'd GitHub username since there's no validation \u2192 **Mitigation**: Accepted trade-off per explicit scope decision; this field was already unreliable (stale OAuth cache) and submission-side review/judging is the existing backstop for bad data in free-text fields generally.\n- **[Risk]** Because the correction doesn't persist to the profile, users submitting multiple projects must re-enter the correction each time \u2192 **Mitigation**: Accepted trade-off per explicit scope decision (submission-only); can be revisited later as a follow-up if repeat-submission friction turns out to matter.\n- **[Risk]** Something downstream keys off `profile.githubUsername` directly (not the submission's stored value) expecting it to reflect the corrected value \u2192 **Mitigation**: Confirmed in proposal that `githubUsername` is submission-purposes-only; verify during implementation that the submission payload (not `profile`) is what's read by judging/attribution/display, and grep for other `profile.githubUsername` reads before landing.\n- **[Risk]** Carving `githubUsername` out of the submit route's \"never trust client identity\" guard could be read later as an oversight, or the pattern could be copy-pasted to genuinely security-relevant fields \u2192 **Mitigation**: Add an explicit code comment at the carve-out in `route.js` explaining why this field (submission attribution only, not auth/identity-bearing) is handled differently from `identity`/hours in the same block.\n\n## Migration Plan\n\nNo data migration needed \u2014 this only changes form rendering and the shape of the submitted payload (which gains an explicit `githubUsername` value instead of implicitly trusting `profile`). Deploy as a standard code change. Rollback is a plain revert; no persisted state depends on the new behavior.\n\n## Open Questions\n\n- None blocking. If repeat hardware submitters report re-entering the same correction across multiple submissions, revisit the \"submission-only, no persistence\" decision as a fast follow.\n",
+      "summary": "`SubmissionForm.jsx` renders an \"Identity (from Hack Club OAuth)\" block with four fields, all currently rendered via `<R.",
+      "file_hash": "7952556b"
+    },
+    {
+      "id": "openspec/changes/editable-github-username/proposal.md",
+      "kind": "file",
+      "path": "openspec/changes/editable-github-username/proposal.md",
+      "ext": ".md",
+      "size": 3068,
+      "keywords": [],
+      "content": "## Why\n\nHardware category submitters are blocked from submitting projects because the GitHub Username field on the submission form is locked to whatever Hack Club OAuth returned. This value is wrong or missing for two common cases: the user renamed their GitHub username after OAuth first linked it, or their OAuth session never linked a GitHub account at all (common for hardware builders). Since the field is read-only, there's no way for these users to correct or fill it in, so they can't complete submission.\n\n## What Changes\n\n- Convert the \"GitHub Username\" field in `SubmissionForm` from a locked, read-only display (`ReadOnlyField`) to an editable text input (`TextField`), consistent with the other submission fields (birthday, address, project details).\n- Seed the field's initial value from `profile.githubUsername` (the OAuth-cached value) so it still pre-fills when correct.\n- Route edits through the form's existing `fields` / `onFieldChange` / `errors` state, the same mechanism already used for every other editable field in the form.\n- The corrected value is stored only with the submission record \u2014 it does not write back to the user's profile or OAuth-cached identity. Other submissions (or a resubmission) will re-seed from the original OAuth value.\n- No new validation is introduced. The field follows the same (currently absent) validation behavior as other free-text fields in the form \u2014 non-empty is not enforced, format is not checked.\n\n## Capabilities\n\n### New Capabilities\n- `project-submission`: Covers the project submission form's field behavior \u2014 which identity fields are OAuth-locked vs. user-editable, and how submitted values relate to profile data.\n\n### Modified Capabilities\n(none \u2014 no existing spec covers this form)\n\n## Impact\n\n- `src/components/dashboard/SubmissionForm.jsx`: GitHub Username field changes from `ReadOnlyField` to `TextField`; its value now lives in the form's `fields` state instead of being read directly off `profile`.\n- `src/components/dashboard/DashboardClient.jsx`: `EMPTY_FIELDS` gains a `githubUsername` key seeded from the profile's OAuth-cached value; the submit handler's `FormData` body needs to include `githubUsername` alongside the other fields it already serializes (`body.set('githubUsername', fields.githubUsername)`).\n- `src/app/api/submit/route.js`: currently re-derives `githubUsername` server-side from `hackatimeMe?.github_username` as part of a broader \"never trust identity from client\" guard that also covers name/email/hours. This change reads `formData.get('githubUsername')` and uses it directly instead, carving this one field out of that guard (identity/name/email/hours remain server-derived, unaffected). This is the actual mechanism that unblocks submission \u2014 without it, an editable form field alone would still be silently overridden server-side.\n- No changes to OAuth flow, profile storage, or database schema \u2014 the fix is scoped entirely to the submission form, `DashboardClient`'s payload construction, and the submit route's field-sourcing for this one field.\n",
+      "summary": "Hardware category submitters are blocked from submitting projects because the GitHub Username field on the submission fo.",
+      "file_hash": "dd95774b"
+    },
+    {
+      "id": "openspec/changes/editable-github-username/specs/project-submission/spec.md",
+      "kind": "file",
+      "path": "openspec/changes/editable-github-username/specs/project-submission/spec.md",
+      "ext": ".md",
+      "size": 1933,
+      "keywords": [],
+      "content": "## ADDED Requirements\n\n### Requirement: Editable GitHub username at submission\nThe project submission form SHALL allow the user to edit the GitHub Username field, pre-filled from the user's OAuth profile value when available.\n\n#### Scenario: GitHub username pre-fills from OAuth profile\n- **WHEN** a user opens the submission form and their profile has a `githubUsername` from OAuth\n- **THEN** the GitHub Username field is populated with that value and is editable\n\n#### Scenario: OAuth never linked a GitHub account\n- **WHEN** a user opens the submission form and their profile has no `githubUsername`\n- **THEN** the GitHub Username field starts empty and is editable, allowing the user to enter one\n\n#### Scenario: User corrects a renamed GitHub username\n- **WHEN** a user changes the GitHub Username field to a value different from their OAuth-cached profile value\n- **THEN** the submission is created using the edited value\n\n### Requirement: GitHub username edits are submission-scoped\nEditing the GitHub Username field on the submission form SHALL NOT modify the user's stored profile or OAuth-cached identity data.\n\n#### Scenario: Correction does not persist to profile\n- **WHEN** a user edits the GitHub Username field and submits the form\n- **THEN** the user's profile `githubUsername` value remains unchanged\n- **AND** a subsequent, separate submission by the same user pre-fills the GitHub Username field from the original OAuth-cached profile value, not the prior correction\n\n### Requirement: No format validation on GitHub username\nThe GitHub Username field SHALL NOT enforce format or non-empty validation, consistent with other free-text fields on the submission form.\n\n#### Scenario: Empty or arbitrary value is accepted\n- **WHEN** a user submits the form with the GitHub Username field empty or containing arbitrary text\n- **THEN** the form does not block submission on account of the GitHub Username field's content\n",
+      "summary": "ADDED Requirements.",
+      "file_hash": "970cdc23"
     },
     {
       "id": "openspec/changes/add-submission-dashboard/.openspec.yaml",
@@ -599,6 +654,61 @@
       "file_hash": "d4b17d25"
     },
     {
+      "id": "openspec/changes/add-multi-prize-cart/.openspec.yaml",
+      "kind": "file",
+      "path": "openspec/changes/add-multi-prize-cart/.openspec.yaml",
+      "ext": ".yaml",
+      "size": 40,
+      "keywords": [],
+      "content": "schema: spec-driven\ncreated: 2026-07-23\n",
+      "summary": "schema: spec-driven.",
+      "file_hash": "0ae75e33"
+    },
+    {
+      "id": "openspec/changes/add-multi-prize-cart/tasks.md",
+      "kind": "file",
+      "path": "openspec/changes/add-multi-prize-cart/tasks.md",
+      "ext": ".md",
+      "size": 2912,
+      "keywords": [],
+      "content": "## 1. Data helpers\n\n- [x] 1.1 Add a shared cost-lookup helper (e.g. `findPrize`/cost-by-id) usable by both `PrizePicker.jsx` and `/api/submit/route.js`, keyed off `prizeTiers.js`'s existing tier grouping (no new `cost` field added to the data file)\n- [x] 1.2 Update the comment/documentation in `prizeTiers.js` to reflect that `hours` now means \"per-item cost,\" not \"unlock threshold\"\n\n## 2. PrizePicker cart UI\n\n- [x] 2.1 Replace `PrizePicker.jsx`'s single-select button grid with a quantity-stepper (+/\u2212) row per item\n- [x] 2.2 Remove the `eligible`/disabled-tier gating logic; all items are always selectable, subject only to the budget check\n- [x] 2.3 Display a running total (`sum(cost \u00d7 qty)`) against the available budget, visually flagging when over budget\n\n## 3. DashboardClient cart state\n\n- [x] 3.1 Replace `selectedPrize` state with cart state shaped as `{ [itemId]: quantity }`\n- [x] 3.2 Relabel \"2. Pick your prize\" step to \"2. Pick your prizes\"\n- [x] 3.3 Update the gating logic that reveals step 3 (submission details) to require a non-empty, in-budget cart instead of `selectedPrize` being set\n- [x] 3.4 Update `handleSubmit` to serialize the cart into the submitted `FormData` (item ids + quantities) instead of single `prizeId`/`prizeName` fields\n- [x] 3.5 Update the \"changing project/hours invalidates prior prize choice\" behavior (`handleSelectProject`, `handleHoursSpentChange`, `handleSelectCategory`) to clear the cart instead of `selectedPrize`\n\n## 4. Server-side validation and serialization\n\n- [x] 4.1 Update `/api/submit/route.js` to parse a cart payload (item ids + quantities) instead of single `prizeId`/`prizeName` form fields\n- [x] 4.2 Replace the single-item `hoursTracked < prizeMatch.tier.hours` check with a cart-total-vs-budget check (`sum(cost(item) * qty) <= hoursTracked`), using the same server-derived `hoursTracked` value already computed today\n- [x] 4.3 Reject with a clear error (consistent with today's 403 pattern) when the cart total exceeds budget or the cart is empty\n- [x] 4.4 Serialize the validated cart into `AIRTABLE_FIELDS.prize` as a comma-separated `\"<name> \u00d7<quantity>\"` list\n- [x] 4.5 Leave `AIRTABLE_FIELDS.overrideHours` populated with the submission's raw `hoursTracked`, unchanged\n\n## 5. Verification\n\n- [x] 5.1 Confirm a cart with multiple distinct items serializes and submits correctly\n- [x] 5.2 Confirm a cart with multiple units of the same item serializes and submits correctly (e.g. `\"One Key Keychain \u00d72\"`)\n- [x] 5.3 Confirm an over-budget cart is blocked both client-side (disabled submit) and server-side (rejected if posted directly)\n- [x] 5.4 Confirm an empty cart blocks submission the same way a missing `selectedPrize` did before\n- [x] 5.5 Confirm the `$6.5/hr Hardware Grant` item behaves like any other cart item (no special-case exclusion)\n- [x] 5.6 Run `npm run build` to confirm the app compiles with no type/lint errors\n",
+      "summary": "1. Data helpers.",
+      "file_hash": "c9871aa3"
+    },
+    {
+      "id": "openspec/changes/add-multi-prize-cart/design.md",
+      "kind": "file",
+      "path": "openspec/changes/add-multi-prize-cart/design.md",
+      "ext": ".md",
+      "size": 6551,
+      "keywords": [],
+      "content": "## Context\n\nToday's model, end to end:\n\n- `prizeTiers.js` groups items under a `hours` value per tier (1 / 3 / 15 / 25 / 50).\n- `PrizePicker.jsx` renders every tier, disables items where `hoursTracked < tier.hours`, and calls `onSelect(item)` for exactly one item \u2014 `DashboardClient` holds this in a single `selectedPrize` state.\n- `DashboardClient.jsx` sends one `prizeId`/`prizeName` pair in the submit `FormData`.\n- `/api/submit/route.js` looks up that single item, re-derives `hoursTracked` server-side (from Hackatime or the client-submitted self-reported number, per track), and rejects with 403 if `hoursTracked < prizeMatch.tier.hours`. On success it writes `prizeName` as a plain string into `AIRTABLE_FIELDS.prize` and the numeric `hoursTracked` into `AIRTABLE_FIELDS.overrideHours`.\n\nThis change turns `tier.hours` into a per-unit cost and the picker into a cart: any combination of items/quantities is allowed as long as their total cost fits inside `hoursTracked`. Two other changes touch these same files concurrently (`add-hardware-software-submission-track` added the hardware/software branch and self-reported hours input; `gate-dashboard-and-hardware-grant` added the greeting-gated entry and the Hardware Grant item) \u2014 this design builds on top of both rather than reverting them.\n\n## Goals / Non-Goals\n\n**Goals:**\n- Let a submitter allocate their available hours across multiple prizes and multiple units of the same prize in one submission.\n- Enforce the total-cost-vs-budget rule both client-side (fast feedback, disabled submit) and server-side (untrusted client, same as today's single-item check).\n- Serialize the resulting cart into the existing single `Prize` Airtable text field with no new columns, preserving quantities in a human-readable format.\n\n**Non-Goals:**\n- No persistent ledger of hours spent across submissions \u2014 the budget check is scoped entirely to the current submission's `hoursTracked`, exactly as today's single-item check is. A user resubmitting can re-spend the same hours; this is explicitly accepted per the proposal.\n- No per-item pricing independent of tier grouping \u2014 an item's cost is simply its tier's `hours` value; this change doesn't introduce individual item pricing that differs from its tier.\n- No special-casing of the `$6.5/hr Hardware Grant` item \u2014 it is bought like any other cart item, at 1 hour per unit, with its cash payout scaling accordingly if bought more than once.\n\n## Decisions\n\n**Cart state shape: `{ [itemId]: quantity }` rather than an array of line items.** A plain map keyed by item id makes \"increment/decrement this item's quantity\" and \"compute total cost\" simple lookups, and naturally dedupes \u2014 there's no way to end up with two separate entries for the same item id, which an array-of-`{id, qty}` would allow (and would need de-duping logic for on every mutation).\n\n**Cost lookup stays keyed off `prizeTiers.js`'s existing tier grouping \u2014 no per-item `cost` field added to the data file.** Every item within a tier already shares one hour value; introducing a separate `cost` field per item that always equals its tier's `hours` would be a redundant, driftable duplicate of data that's already there. Cost is computed as `tier.hours` at lookup time, both client- and server-side, using the same `findPrize`-style lookup `/api/submit/route.js` already has.\n\n**Budget check formula: `sum(cost(item) * quantity) <= hoursTracked`, evaluated identically client-side (for the disabled/enabled submit state and inline running-total display) and server-side (as the authoritative check, since `hoursTracked` itself is already re-derived server-side and not trusted from the client).** This mirrors the existing single-item check's trust boundary exactly \u2014 only the formula changes from a single comparison to a sum over the cart.\n\n**Quantity UI: stepper (+/\u2212) buttons per item row, not a raw number input.** Consistent with the existing button-driven `PrizePicker` grid, and it rules out invalid values (negative, non-integer, non-numeric) by construction rather than requiring input validation. A quantity of 0 means \"not in the cart\" \u2014 no separate remove control is needed.\n\n**Airtable serialization: cart formatted as a comma-separated `\"<name> \u00d7<qty>\"` list into the existing `Prize` field, e.g. `\"One Key Keychain \u00d72, Casio Watch \u00d71\"`.** Since Airtable's schema is fixed to what's already on the live base (per the prior hardware-track change) and no new columns are being added, the cart must fit into the existing single-line-text `Prize` field. A quantity of 1 could in principle be shown without the `\u00d71` suffix, but always including it keeps the format uniform and simple to parse by eye.\n\n**`overrideHours` continues to receive the submission's raw `hoursTracked`, unchanged.** This field already represents \"hours behind this submission,\" not \"hours spent\" \u2014 the cart's total cost is a derived, cart-specific number and doesn't need its own Airtable field for this change to work; the existing field's meaning is preserved as-is.\n\n## Risks / Trade-offs\n\n- **[Risk] A submitter could leave a large portion of `hoursTracked` unspent (e.g. 26 hours available, cart totals 3) with no requirement to use the full budget.** \u2192 Accepted: nothing in the current single-item model required using all available hours either (a 50-hour-eligible user could still just take the 1-hour keychain), so this isn't a new gap.\n- **[Risk] Re-submitting re-spends the same hours (no ledger).** \u2192 Explicitly accepted per the proposal; out of scope for this change.\n- **[Risk] `Prize` field's free-text cart serialization is harder to aggregate/report on downstream (e.g. in Airtable views or exports) than a single clean prize name was.** \u2192 Mitigated by keeping the format simple and consistent (`\"<name> \u00d7<qty>\"`, comma-separated); if downstream reporting needs become a problem later, that's a separate change to add structured Airtable fields.\n- **[Risk] Concurrent in-progress changes (`add-hardware-software-submission-track`, `gate-dashboard-and-hardware-grant`) touch the same files (`DashboardClient.jsx`, `PrizePicker.jsx`).** \u2192 Mitigated by building this design directly on top of the current state of those files (already read and accounted for above) rather than assuming the pre-hardware-track version of the flow.\n\n## Open Questions\n\n- Should a quantity-0 item still render in the cart list (grayed out) for discoverability, or only appear once a quantity is set? Left as an implementation-time UI call, not a spec-level requirement.\n",
+      "summary": "Today's model, end to end:.",
+      "file_hash": "38af254f"
+    },
+    {
+      "id": "openspec/changes/add-multi-prize-cart/proposal.md",
+      "kind": "file",
+      "path": "openspec/changes/add-multi-prize-cart/proposal.md",
+      "ext": ".md",
+      "size": 4362,
+      "keywords": [],
+      "content": "## Why\n\nThe dashboard's prize picker currently lets a submitter claim exactly one item, gated by an eligibility threshold: `hoursTracked >= tier.hours` unlocks a tier, and the user picks a single item from whatever's unlocked. This doesn't reflect how the reward hours actually work in practice \u2014 hours are better modeled as spendable currency than as an unlock gate, letting a submitter choose how to allocate their logged hours across multiple prizes (including multiple units of the same prize) rather than being forced into a single pick. Reframing `tier.hours` as each item's flat hour-cost and letting the picker become a budgeted cart addresses this directly.\n\n## What Changes\n\n- **BREAKING**: Reinterpret `prizeTiers.js`'s `hours` field from \"minimum hours required to unlock this tier's items\" to \"flat hour-cost of any item in this tier.\" The existing tier groupings (1 / 3 / 15 / 25 / 50 hours) are unchanged in value, only in meaning.\n- Replace `PrizePicker`'s single-select button grid with a cart: each item gets a quantity stepper (+/\u2212), and the user may select any combination of items and quantities, including multiple units of the same item.\n- The cart's total cost (`sum(item.cost \u00d7 quantity)` across all selected items) SHALL NOT exceed the current submission's `hoursTracked` (Hackatime-derived for software, self-reported for hardware \u2014 unchanged source). This is a per-submission budget check only; no ledger of previously-redeemed hours is introduced or checked.\n- `DashboardClient` replaces its single `selectedPrize` state with a cart (map of item id \u2192 quantity) and a running total vs. budget display; the \"Pick your prize\" step becomes \"Pick your prizes,\" and submission is blocked (as it is today for a missing prize) when the cart is empty or over budget.\n- `/api/submit` replaces its single `prizeId`/`prizeName` fields and single-item eligibility check with a cart payload, re-validates the same budget constraint server-side (never trusting the client's total), and serializes the cart into the existing single-line-text `Prize` Airtable field as a formatted list including quantities (e.g. `\"One Key Keychain \u00d72, Casio Watch \u00d71\"`) rather than a bare name \u2014 no new Airtable columns.\n- The `$6.5/hr Hardware Grant` item participates in the cart like any other item: it costs 1 hour per unit, and multiple units multiply its payout accordingly (this is an accepted, deliberate outcome, not an edge case to special-case away).\n\n## Capabilities\n\n### New Capabilities\n- `prize-cart-checkout`: budgeted multi-item, multi-quantity prize selection \u2014 cart state, cost/budget validation (client and server), and cart serialization into the submission record.\n\n### Modified Capabilities\n(none \u2014 no capability has been archived to `openspec/specs/` yet for the dashboard/submission flow; `submission-dashboard` and prize-eligibility behavior are still defined only in in-progress changes' own specs, referenced under Impact below.)\n\n## Impact\n\n- `src/components/dashboard/PrizePicker.jsx`: rewritten from a single-select button grid to a quantity-stepper cart UI.\n- `src/components/dashboard/DashboardClient.jsx`: `selectedPrize` state replaced with cart state (item id \u2192 quantity); \"2. Pick your prize\" step relabeled and its gating logic (`trackIdentified && selectedPrize` \u2192 showing step 3) changed to a non-empty, in-budget cart.\n- `src/data/prizeTiers.js`: no structural change, but the `hours` field's meaning changes from \"unlock threshold\" to \"per-item cost\" \u2014 comment/documentation update.\n- `src/app/api/submit/route.js`: replaces single `prizeId`/`prizeName` form fields and the single-item `hoursTracked < prizeMatch.tier.hours` check with a cart payload (item ids + quantities), a total-cost-vs-budget validation, and cart-to-string serialization for the `Prize` Airtable field.\n- Interacts with the in-progress `add-hardware-software-submission-track` change (adds the hardware/self-reported-hours path `DashboardClient` already has) and `gate-dashboard-and-hardware-grant` (added the `$6.5/hr Hardware Grant` item and the greeting-gated flow) \u2014 this change builds on top of both, touching the same files (`DashboardClient.jsx`, `PrizePicker.jsx`).\n- No new dependencies, routes, or Airtable schema columns. No persistent ledger of spent hours is introduced (explicitly out of scope for this change).\n",
+      "summary": "The dashboard's prize picker currently lets a submitter claim exactly one item, gated by an eligibility threshold: `hour.",
+      "file_hash": "2ddde9a6"
+    },
+    {
+      "id": "openspec/changes/add-multi-prize-cart/specs/prize-cart-checkout/spec.md",
+      "kind": "file",
+      "path": "openspec/changes/add-multi-prize-cart/specs/prize-cart-checkout/spec.md",
+      "ext": ".md",
+      "size": 3455,
+      "keywords": [],
+      "content": "## ADDED Requirements\n\n### Requirement: Per-item hour cost\nEach prize item's hour cost SHALL equal its tier's `hours` value from `prizeTiers.js`. Every item within the same tier SHALL share that tier's cost.\n\n#### Scenario: Cost lookup\n- **WHEN** the cost of a prize item is looked up\n- **THEN** the returned cost equals the `hours` value of the tier that item belongs to\n\n### Requirement: Multi-item, multi-quantity selection\nThe prize picker SHALL allow a user to select any combination of prize items and quantities, including multiple units of the same item, rather than a single item selection.\n\n#### Scenario: Selecting multiple distinct items\n- **WHEN** a user sets a quantity of 1 or more on two or more different prize items\n- **THEN** all of those items are included in the submission's cart\n\n#### Scenario: Selecting multiple units of the same item\n- **WHEN** a user sets a quantity of 2 or more on a single prize item\n- **THEN** that item is included in the cart with the specified quantity\n\n### Requirement: Cart budget validation\nThe total cost of a cart, computed as the sum of each selected item's cost multiplied by its quantity, SHALL NOT exceed the submission's tracked hours (Hackatime-derived for software submissions, self-reported for hardware submissions). This validation SHALL be enforced both client-side and server-side, with the server-side check as the authoritative one against a server-derived hours value.\n\n#### Scenario: Cart within budget\n- **WHEN** a user's cart total cost is less than or equal to their tracked hours\n- **THEN** the submission is allowed to proceed\n\n#### Scenario: Cart over budget\n- **WHEN** a user's cart total cost exceeds their tracked hours\n- **THEN** the submission is blocked client-side (submit disabled) and, if attempted directly, rejected server-side with an error\n\n#### Scenario: Empty cart\n- **WHEN** a user has not added any items to the cart\n- **THEN** the submission is blocked, consistent with today's requirement that a prize must be selected\n\n#### Scenario: Server does not trust client-submitted budget\n- **WHEN** the submit endpoint receives a cart payload\n- **THEN** it re-derives tracked hours from the authenticated session (Hackatime data or the submitted self-reported hours per track, unchanged from today) and validates the cart total against that server-derived value, not any client-computed total\n\n### Requirement: Cart serialization into the submission record\nThe submitted cart SHALL be serialized into the existing `Prize` Airtable field as a comma-separated list of `\"<item name> \u00d7<quantity>\"` entries, with no new Airtable fields introduced.\n\n#### Scenario: Cart serialized on submission\n- **WHEN** a submission with a multi-item cart is created\n- **THEN** the `Prize` field contains each selected item's name and quantity in the format `\"<name> \u00d7<quantity>\"`, separated by commas\n\n### Requirement: No cross-submission spend ledger\nThe cart budget check SHALL be scoped to the current submission's tracked hours only. No record of previously-redeemed or previously-spent hours from other submissions SHALL be checked or maintained.\n\n#### Scenario: Resubmission re-spends the same hours\n- **WHEN** a user submits a second project or submission using tracked hours that overlap with a prior submission's tracked hours\n- **THEN** the cart budget check considers only the current submission's tracked hours, without checking or reducing based on any prior submission\n",
+      "summary": "ADDED Requirements.",
+      "file_hash": "c5a97f7a"
+    },
+    {
       "id": "openspec/changes/add-hardware-software-submission-track/.openspec.yaml",
       "kind": "file",
       "path": "openspec/changes/add-hardware-software-submission-track/.openspec.yaml",
@@ -614,11 +724,11 @@
       "kind": "file",
       "path": "openspec/changes/add-hardware-software-submission-track/tasks.md",
       "ext": ".md",
-      "size": 3947,
+      "size": 5280,
       "keywords": [],
-      "content": "## 1. Airtable field wiring\n\n- [ ] 1.1 Add `category: 'Category'` and `journalLink: 'Journal Link'` to `AIRTABLE_FIELDS` in `src/lib/airtable.js`\n\n## 2. Category choice step\n\n- [ ] 2.1 Add `category` state (`useState(null)`) to `DashboardClient`, defaulting to unset when `showForm` becomes `true`\n- [ ] 2.2 Render a \"Hardware or Software?\" choice (two buttons) when `showForm` is `true` and `category` is not yet set\n- [ ] 2.3 Selecting a category advances to that track's flow; changing category later (if the UI allows going back) resets any track-specific state already entered (selected project / self-reported hours / journal link / selected prize)\n\n## 3. Software track (verify unchanged)\n\n- [ ] 3.1 Confirm the existing `ProjectPicker` \u2192 `PrizePicker` (hoursTracked from `selectedProject.total_seconds / 3600`) \u2192 `SubmissionForm` sequence still renders exactly as before when category is \"Software\"\n- [ ] 3.2 No Journal Link field shown on the software track\n\n## 4. Hardware track\n\n- [ ] 4.1 Add a new step component (or inline block) with a numeric \"Hours spent\" input, required, replacing `ProjectPicker` for the hardware track\n- [ ] 4.2 Feed the entered number into `PrizePicker` as `hoursTracked`, matching the same eligibility/disable behavior used on the software track\n- [ ] 4.3 Changing the self-reported hours value after a prize is selected deselects a now-ineligible prize (mirror the existing `handleSelectProject` behavior that clears `selectedPrize`)\n- [ ] 4.4 Add a required \"Journal Link\" field to `SubmissionForm`, shown only when category is \"Hardware\"\n- [ ] 4.5 Update client-side `validate()` in `DashboardClient` to require `journalLink` for hardware and not require a selected Hackatime project for hardware\n\n## 5. Submission payload\n\n- [ ] 5.1 Update `handleSubmit` in `DashboardClient` to include `category` and, for hardware, `journalLink` and the self-reported hours value in the submitted `FormData`; for software, keep sending `projectName` as today\n- [ ] 5.2 In `/api/submit/route.js`, read `category` from the form data and branch the rest of the handler on it\n\n## 6. Server-side validation \u2014 software branch (parallel to existing logic)\n\n- [ ] 6.1 Keep the existing re-fetch-from-Hackatime, re-derive-`hoursTracked`, require-`selectedProject`, and tier-eligibility-check logic scoped to `category === 'software'`\n- [ ] 6.2 Confirm the software branch's Airtable payload is unchanged except for the addition of `Category: 'Software'`\n\n## 7. Server-side validation \u2014 hardware branch (new)\n\n- [ ] 7.1 Require `journalLink` as non-empty; add it to the missing-fields check\n- [ ] 7.2 Do not require or look up a matching Hackatime project for hardware submissions\n- [ ] 7.3 Use the client-submitted self-reported hours value directly for the tier-eligibility check (`hoursTracked < prizeMatch.tier.hours`), with no re-verification against Hackatime\n- [ ] 7.4 Build the hardware Airtable payload with `Category: 'Hardware'`, `Journal Link: <journalLink>`, and `Optional - Override Hours Spent: <self-reported hours>`\n\n## 8. Verification\n\n- [ ] 8.1 Run the app; confirm clicking \"Submit a project\" shows the Hardware/Software choice before any project or hours step\n- [ ] 8.2 Software track: confirm behavior is identical to before this change (project picker, hour-gated prizes, no Journal Link field, successful submission)\n- [ ] 8.3 Hardware track: confirm the hours input gates the prize picker the same way Hackatime hours did, Journal Link is required, and a submission without a Hackatime project still succeeds\n- [ ] 8.4 Confirm a hardware submission missing Journal Link is rejected client-side and server-side\n- [ ] 8.5 Confirm a hardware submission with insufficient self-reported hours for the selected prize is rejected server-side\n- [ ] 8.6 If credentials allow, confirm a real submission lands in Airtable with the correct `Category` and (for hardware) `Journal Link` values in the live base\n",
+      "content": "## 1. Airtable field wiring\n\n- [x] 1.1 Add `category: 'Category'` and `journalLink: 'Journal Link'` to `AIRTABLE_FIELDS` in `src/lib/airtable.js`\n\n## 2. Category choice step\n\n- [x] 2.1 Add `category` state (`useState(null)`) to `DashboardClient`, defaulting to unset when `showForm` becomes `true`\n- [x] 2.2 Render a \"Hardware or Software?\" choice (two buttons) when `showForm` is `true` and `category` is not yet set\n- [x] 2.3 Selecting a category advances to that track's flow; changing category later (if the UI allows going back) resets any track-specific state already entered (selected project / self-reported hours / journal link / selected prize) \u2014 added a \"\u2190 change category\" control that calls the same reset handler\n\n## 3. Software track (verify unchanged)\n\n- [x] 3.1 Confirm the existing `ProjectPicker` \u2192 `PrizePicker` (hoursTracked from `selectedProject.total_seconds / 3600`) \u2192 `SubmissionForm` sequence still renders exactly as before when category is \"Software\" \u2014 verified by inspection, the software branch is the same JSX/logic as before this change, just gated on `category === 'software'`\n- [x] 3.2 No Journal Link field shown on the software track \u2014 `SubmissionForm` only renders the field when `category === 'hardware'`\n\n## 4. Hardware track\n\n- [x] 4.1 Add a new step component (or inline block) with a numeric \"Hours spent\" input, required, replacing `ProjectPicker` for the hardware track\n- [x] 4.2 Feed the entered number into `PrizePicker` as `hoursTracked`, matching the same eligibility/disable behavior used on the software track\n- [x] 4.3 Changing the self-reported hours value after a prize is selected deselects a now-ineligible prize (mirror the existing `handleSelectProject` behavior that clears `selectedPrize`)\n- [x] 4.4 Add a required \"Journal Link\" field to `SubmissionForm`, shown only when category is \"Hardware\"\n- [x] 4.5 Update client-side `validate()` in `DashboardClient` to require `journalLink` for hardware and not require a selected Hackatime project for hardware\n\n## 5. Submission payload\n\n- [x] 5.1 Update `handleSubmit` in `DashboardClient` to include `category` and, for hardware, `journalLink` and the self-reported hours value in the submitted `FormData`; for software, keep sending `projectName` as today\n- [x] 5.2 In `/api/submit/route.js`, read `category` from the form data and branch the rest of the handler on it\n\n## 6. Server-side validation \u2014 software branch (parallel to existing logic)\n\n- [x] 6.1 Keep the existing re-fetch-from-Hackatime, re-derive-`hoursTracked`, require-`selectedProject`, and tier-eligibility-check logic scoped to `category === 'software'`\n- [x] 6.2 Confirm the software branch's Airtable payload is unchanged except for the addition of `Category: 'Software'`\n\n## 7. Server-side validation \u2014 hardware branch (new)\n\n- [x] 7.1 Require `journalLink` as non-empty; add it to the missing-fields check (also added `hoursSpentRaw` to the same check, so a missing hours value is rejected the same way)\n- [x] 7.2 Do not require or look up a matching Hackatime project for hardware submissions\n- [x] 7.3 Use the client-submitted self-reported hours value directly for the tier-eligibility check (`hoursTracked < prizeMatch.tier.hours`), with no re-verification against Hackatime\n- [x] 7.4 Build the hardware Airtable payload with `Category: 'Hardware'`, `Journal Link: <journalLink>`, and `Optional - Override Hours Spent: <self-reported hours>`\n\n## 8. Verification\n\n- [x] 8.1 Run the app; confirm clicking \"Submit a project\" shows the Hardware/Software choice before any project or hours step \u2014 verified by code inspection and production build (`next build` succeeds cleanly)\n- [x] 8.2 Software track: confirm behavior is identical to before this change (project picker, hour-gated prizes, no Journal Link field, successful submission) \u2014 verified by inspection; `/dashboard` still redirects unauthenticated requests (307) as before, live end-to-end submission requires a real Hack Club/Hackatime OAuth session not available in this environment\n- [x] 8.3 Hardware track: confirm the hours input gates the prize picker the same way Hackatime hours did, Journal Link is required, and a submission without a Hackatime project still succeeds \u2014 verified by inspection of `hoursTracked`/`trackIdentified` logic and the server's `category === 'hardware'` branch skipping the Hackatime project lookup\n- [x] 8.4 Confirm a hardware submission missing Journal Link is rejected client-side (`validate()` adds `errors.journalLink`) and server-side (`requiredCheck['Journal Link']`) \u2014 verified by code inspection\n- [x] 8.5 Confirm a hardware submission with insufficient self-reported hours for the selected prize is rejected server-side \u2014 verified by inspection: `hoursTracked < prizeMatch.tier.hours` check runs identically for both categories, using the self-reported number for hardware\n- [x] 8.6 If credentials allow, confirm a real submission lands in Airtable with the correct `Category` and (for hardware) `Journal Link` values in the live base \u2014 **not run**; requires a real Hack Club OAuth login and a live Airtable write, neither available non-interactively in this environment. Recommend doing one manual test submission of each category before relying on this in production.\n",
       "summary": "1. Airtable field wiring.",
-      "file_hash": "2b5cb23f"
+      "file_hash": "ca667e09"
     },
     {
       "id": "openspec/changes/add-hardware-software-submission-track/design.md",
@@ -845,28 +955,28 @@
       "kind": "file",
       "path": "src/app/page.jsx",
       "ext": ".jsx",
-      "size": 568,
+      "size": 627,
       "keywords": [
         "home"
       ],
-      "content": "import Marquee from '../components/Marquee'\nimport Hero from '../components/sections/Hero'\nimport Briefing from '../components/sections/Briefing'\nimport Arsenal from '../components/sections/Arsenal'\nimport Prizes from '../components/sections/Prizes'\nimport HowItWorks from '../components/sections/HowItWorks'\nimport CtaFooter from '../components/sections/CtaFooter'\n\nexport default function Home() {\n  return (\n    <main>\n      <Hero />\n      <Marquee />\n      <Briefing />\n      <Arsenal />\n      <Prizes />\n      <HowItWorks />\n      <CtaFooter />\n    </main>\n  )\n}\n",
+      "content": "import Marquee from '../components/Marquee'\nimport Hero from '../components/sections/Hero'\nimport Briefing from '../components/sections/Briefing'\nimport Arsenal from '../components/sections/Arsenal'\nimport Prizes from '../components/sections/Prizes'\nimport HowItWorks from '../components/sections/HowItWorks'\nimport CtaFooter from '../components/sections/CtaFooter'\nimport Footer from '../components/Footer'\n\nexport default function Home() {\n  return (\n    <main>\n      <Hero />\n      <Marquee />\n      <Briefing />\n      <Arsenal />\n      <Prizes />\n      <HowItWorks />\n      <CtaFooter />\n      <Footer />\n    </main>\n  )\n}\n",
       "summary": "import Marquee from '../components/Marquee'. Contains 1 function: Home.",
-      "file_hash": "82ff34a5"
+      "file_hash": "0a258458"
     },
     {
       "id": "src/app/page.jsx::Home",
       "kind": "symbol",
       "path": "src/app/page.jsx",
       "ext": ".jsx",
-      "size": 13,
+      "size": 14,
       "keywords": [
         "home"
       ],
       "symbol_type": "use_case",
       "name": "Home",
-      "line_start": 8,
-      "line_end": 20,
-      "body_hash": "8e0e6cb2",
+      "line_start": 9,
+      "line_end": 22,
+      "body_hash": "a59d5017",
       "confidence": "medium",
       "exported": true
     },
@@ -980,15 +1090,15 @@
       "kind": "file",
       "path": "src/app/prizes/page.jsx",
       "ext": ".jsx",
-      "size": 3479,
+      "size": 3377,
       "keywords": [
         "prizespage",
         "prizes",
         "page"
       ],
-      "content": "'use client'\n\nimport Link from 'next/link'\nimport { prizeTiers } from '../../data/prizeTiers'\nimport DossierPhoto from '../../components/DossierPhoto'\nimport TerminalPane from '../../components/TerminalPane'\nimport { useRevealOnScroll } from '../../hooks/useRevealOnScroll'\n\nfunction TierItem({ item }) {\n  return (\n    <div className=\"flex flex-col items-center\">\n      <DossierPhoto src={item.image} alt={item.name} width=\"w-full\" />\n      <p className=\"mt-4 font-mono uppercase tracking-widest text-on-background font-bold text-sm text-center\">\n        {item.name}\n      </p>\n      <p className=\"mt-1 text-on-surface-variant text-sm text-center\">{item.desc}</p>\n    </div>\n  )\n}\n\nfunction TierColumn({ tier, index }) {\n  const [ref, visible] = useRevealOnScroll()\n\n  return (\n    <div\n      ref={ref}\n      style={{ transitionDelay: visible ? `${index * 150}ms` : '0ms' }}\n      className={`border border-outline bg-surface-container-low transition-all duration-700 ${\n        visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'\n      }`}\n    >\n      <div className=\"border-b border-dashed border-outline-variant px-4 py-3 text-center\">\n        <p className=\"font-mono text-2xl font-bold text-on-background\">{tier.hours}</p>\n        <p className=\"font-mono text-[10px] tracking-widest text-primary-container uppercase\">\n          Hours \u2014 {tier.codename}\n        </p>\n      </div>\n      <div className=\"p-4 flex flex-col gap-8\">\n        {tier.items.map((item) => (\n          <TierItem key={item.id} item={item} />\n        ))}\n      </div>\n    </div>\n  )\n}\n\nexport default function PrizesPage() {\n  return (\n    <main>\n      <TerminalPane path=\"./reward_shop.py --tiers --all\">\n        <div className=\"px-6 py-24\">\n          <div className=\"max-w-6xl mx-auto\">\n            <div className=\"text-center mb-16\">\n              <p className=\"font-mono text-primary-container tracking-[0.3em] text-sm mb-4\">\n                CASE FILE 003 \u2014 All Prizes Below\n              </p>\n              <h1\n                data-text=\"The Reward Ledger\"\n                className=\"glitch-title text-3xl sm:text-4xl font-bold text-on-background mb-3\"\n              >\n                The Reward Ledger\n              </h1>\n              <p className=\"text-on-surface-variant text-lg max-w-2xl mx-auto mb-6\">\n                Log build hours, ship the work, redeem whatever you want below\n              </p>\n              <p className=\"font-mono text-xs text-on-surface-variant max-w-xl mx-auto border border-outline-variant border-dashed px-4 py-3\">\n                HOW THIS WORKS: hours are logged externally as you ship. Once your\n                logged hours meet a tier's threshold, everything in that tier is\n                yours to claim. This isn't a live counter, just a static breakdown\n                of what each hour milestone unlocks.\n              </p>\n            </div>\n\n            <div className=\"grid sm:grid-cols-2 lg:grid-cols-5 gap-6 items-start\">\n              {prizeTiers.map((tier, i) => (\n                <TierColumn key={tier.hours} tier={tier} index={i} />\n              ))}\n            </div>\n\n            <div className=\"text-center mt-16\">\n              <Link\n                href=\"/\"\n                className=\"font-mono text-sm text-primary-container hover:underline tracking-wide\"\n              >\n                \u2190 BACK TO HOMEPAGE\n              </Link>\n            </div>\n          </div>\n        </div>\n      </TerminalPane>\n    </main>\n  )\n}\n",
+      "content": "'use client'\n\nimport Link from 'next/link'\nimport { prizeTiers } from '../../data/prizeTiers'\nimport DossierPhoto from '../../components/DossierPhoto'\nimport TerminalPane from '../../components/TerminalPane'\nimport { useRevealOnScroll } from '../../hooks/useRevealOnScroll'\n\nfunction TierItem({ item }) {\n  return (\n    <div className=\"flex flex-col items-center\">\n      <DossierPhoto src={item.image} alt={item.name} width=\"w-full\" />\n      <p className=\"mt-4 font-mono uppercase tracking-widest text-on-background font-bold text-sm text-center\">\n        {item.name}\n      </p>\n      <p className=\"mt-1 text-on-surface-variant text-sm text-center\">{item.desc}</p>\n    </div>\n  )\n}\n\nfunction TierColumn({ tier, index }) {\n  const [ref, visible] = useRevealOnScroll()\n\n  return (\n    <div\n      ref={ref}\n      style={{ transitionDelay: visible ? `${index * 150}ms` : '0ms' }}\n      className={`border border-outline bg-surface-container-low transition-all duration-700 ${\n        visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'\n      }`}\n    >\n      <div className=\"border-b border-dashed border-outline-variant px-4 py-3 text-center\">\n        <p className=\"font-mono text-2xl font-bold text-on-background\">{tier.hours}</p>\n        <p className=\"font-mono text-[10px] tracking-widest text-primary-container uppercase\">\n          Hours \u2014 {tier.codename}\n        </p>\n      </div>\n      <div className=\"p-4 flex flex-col gap-8\">\n        {tier.items.map((item) => (\n          <TierItem key={item.id} item={item} />\n        ))}\n      </div>\n    </div>\n  )\n}\n\nexport default function PrizesPage() {\n  return (\n    <main>\n      <TerminalPane path=\"./reward_shop.py --tiers --all\">\n        <div className=\"px-6 py-24\">\n          <div className=\"max-w-6xl mx-auto\">\n            <div className=\"text-center mb-16\">\n              <p className=\"font-mono text-primary-container tracking-[0.3em] text-sm mb-4\">\n                CASE FILE 003 \u2014 All Prizes Below\n              </p>\n              <h1\n                data-text=\"The Reward Ledger\"\n                className=\"glitch-title text-3xl sm:text-4xl font-bold text-on-background mb-3\"\n              >\n                The Reward Ledger\n              </h1>\n              <p className=\"text-on-surface-variant text-lg max-w-2xl mx-auto mb-6\">\n                Log build hours, ship the work, redeem whatever you want below\n              </p>\n              <p className=\"font-mono text-xs text-on-surface-variant max-w-xl mx-auto border border-outline-variant border-dashed px-4 py-3\">\n                HOW THIS WORKS: hours are logged externally as you ship. Once your\n                logged hours meet a tier threshold, you can pick a prize from anything in that tier (like a shop)!\n              </p>\n            </div>\n\n            <div className=\"grid sm:grid-cols-2 lg:grid-cols-5 gap-6 items-start\">\n              {prizeTiers.map((tier, i) => (\n                <TierColumn key={tier.hours} tier={tier} index={i} />\n              ))}\n            </div>\n\n            <div className=\"text-center mt-16\">\n              <Link\n                href=\"/\"\n                className=\"font-mono text-sm text-primary-container hover:underline tracking-wide\"\n              >\n                \u2190 BACK TO HOMEPAGE\n              </Link>\n            </div>\n          </div>\n        </div>\n      </TerminalPane>\n    </main>\n  )\n}\n",
       "summary": "'use client'. Contains 3 functions/classes: TierItem, TierColumn, PrizesPage.",
-      "file_hash": "906f5894"
+      "file_hash": "e2f6034c"
     },
     {
       "id": "src/app/prizes/page.jsx::TierItem",
@@ -1033,7 +1143,7 @@
       "kind": "symbol",
       "path": "src/app/prizes/page.jsx",
       "ext": ".jsx",
-      "size": 47,
+      "size": 45,
       "keywords": [
         "prizespage",
         "prizes",
@@ -1042,8 +1152,8 @@
       "symbol_type": "use_case",
       "name": "PrizesPage",
       "line_start": 46,
-      "line_end": 92,
-      "body_hash": "ba40e0d8",
+      "line_end": 90,
+      "body_hash": "17d05801",
       "confidence": "medium",
       "exported": true
     },
@@ -1202,47 +1312,66 @@
       "kind": "file",
       "path": "src/app/api/submit/route.js",
       "ext": ".js",
-      "size": 6591,
+      "size": 7328,
       "keywords": [
         "post"
       ],
-      "content": "import { NextResponse } from 'next/server'\nimport { getSessionFromRequest } from '../../../lib/auth'\nimport { getIdentity } from '../../../lib/hackclub'\nimport { getHackatimeMe, getHackatimeProjects } from '../../../lib/hackatime'\nimport { prizeTiers } from '../../../data/prizeTiers'\nimport {\n  AIRTABLE_FIELDS,\n  createAirtableRecord,\n  deleteAirtableRecord,\n  uploadAirtableAttachment,\n} from '../../../lib/airtable'\n\nfunction findPrize(prizeId) {\n  for (const tier of prizeTiers) {\n    const item = tier.items.find((i) => i.id === prizeId)\n    if (item) return { item, tier }\n  }\n  return null\n}\n\nexport async function POST(request) {\n  const session = await getSessionFromRequest()\n  if (!session || !session.hackatime_access_token) {\n    return NextResponse.json({ error: 'Not authenticated' }, { status: 401 })\n  }\n\n  const formData = await request.formData()\n  const category = formData.get('category')?.toString() ?? ''\n  const projectName = formData.get('projectName')?.toString() ?? ''\n  const journalLink = formData.get('journalLink')?.toString() ?? ''\n  const hoursSpentRaw = formData.get('hoursSpent')?.toString() ?? ''\n  const prizeId = formData.get('prizeId')?.toString() ?? ''\n  const prizeName = formData.get('prizeName')?.toString() ?? ''\n  const playableUrl = formData.get('playableUrl')?.toString() ?? ''\n  const codeUrl = formData.get('codeUrl')?.toString() ?? ''\n  const description = formData.get('description')?.toString() ?? ''\n  const comments = formData.get('comments')?.toString() ?? ''\n  const screenshot = formData.get('screenshot')\n  // Not available via OAuth scope for this app tier \u2014 user-entered.\n  const birthday = formData.get('birthday')?.toString() ?? ''\n  const addressLine1 = formData.get('addressLine1')?.toString() ?? ''\n  const addressLine2 = formData.get('addressLine2')?.toString() ?? ''\n  const city = formData.get('city')?.toString() ?? ''\n  const state = formData.get('state')?.toString() ?? ''\n  const country = formData.get('country')?.toString() ?? ''\n  const zip = formData.get('zip')?.toString() ?? ''\n\n  if (category !== 'software' && category !== 'hardware') {\n    return NextResponse.json({ error: 'Invalid or missing category' }, { status: 400 })\n  }\n\n  // Re-fetch identity and Hackatime data from the session's access token \u2014\n  // never trust identity/hours values from the client payload. Hardware\n  // submissions have no Hackatime project, so self-reported hours are used\n  // as-is; there's no independent source to re-verify them against.\n  const [identity, hackatimeMe, projects] = await Promise.all([\n    getIdentity(session.access_token),\n    getHackatimeMe(session.hackatime_access_token),\n    category === 'software' ? getHackatimeProjects(session.hackatime_access_token) : Promise.resolve(null),\n  ])\n\n  let selectedProject = null\n  let hoursTracked = 0\n  if (category === 'software') {\n    selectedProject = projects.find((p) => p.name === projectName)\n    hoursTracked = selectedProject ? selectedProject.total_seconds / 3600 : 0\n  } else {\n    hoursTracked = parseFloat(hoursSpentRaw) || 0\n  }\n\n  const prizeMatch = findPrize(prizeId)\n\n  const candidateFields = {\n    [AIRTABLE_FIELDS.playableUrl]: playableUrl,\n    [AIRTABLE_FIELDS.codeUrl]: codeUrl,\n    [AIRTABLE_FIELDS.firstName]: identity?.first_name ?? '',\n    [AIRTABLE_FIELDS.lastName]: identity?.last_name ?? '',\n    [AIRTABLE_FIELDS.email]: identity?.primary_email ?? '',\n    [AIRTABLE_FIELDS.description]: description,\n    [AIRTABLE_FIELDS.githubUsername]: hackatimeMe?.github_username ?? '',\n    [AIRTABLE_FIELDS.addressLine1]: addressLine1,\n    [AIRTABLE_FIELDS.addressLine2]: addressLine2,\n    [AIRTABLE_FIELDS.city]: city,\n    [AIRTABLE_FIELDS.state]: state,\n    [AIRTABLE_FIELDS.country]: country,\n    [AIRTABLE_FIELDS.zip]: zip,\n    [AIRTABLE_FIELDS.birthday]: birthday,\n    [AIRTABLE_FIELDS.prize]: prizeName,\n    [AIRTABLE_FIELDS.category]: category === 'hardware' ? 'Hardware' : 'Software',\n  }\n\n  const requiredCheck = {\n    'Playable URL': playableUrl,\n    'Code URL': codeUrl,\n    'First Name': identity?.first_name,\n    'Last Name': identity?.last_name,\n    Email: identity?.primary_email,\n    Screenshot: screenshot,\n    Description: description,\n    'Github Username': hackatimeMe?.github_username,\n    'Address Line 1': addressLine1,\n    City: city,\n    'State/Province': state,\n    Country: country,\n    'Zip Code': zip,\n    Birthday: birthday,\n    Prize: prizeName,\n  }\n\n  if (category === 'hardware') {\n    candidateFields[AIRTABLE_FIELDS.journalLink] = journalLink\n    requiredCheck['Journal Link'] = journalLink\n    requiredCheck['Hours Spent'] = hoursSpentRaw\n  }\n\n  const missingFields = Object.entries(requiredCheck)\n    .filter(([, value]) => !value || (typeof value === 'string' && !value.trim()))\n    .map(([field]) => field)\n\n  if (missingFields.length > 0) {\n    return NextResponse.json(\n      { error: 'Missing required fields', missingFields },\n      { status: 400 },\n    )\n  }\n\n  if (category === 'software' && !selectedProject) {\n    return NextResponse.json({ error: 'Selected project not found on Hackatime' }, { status: 400 })\n  }\n\n  if (!prizeMatch) {\n    return NextResponse.json({ error: 'Unknown prize selected' }, { status: 400 })\n  }\n\n  if (hoursTracked < prizeMatch.tier.hours) {\n    const hoursDescription =\n      category === 'software'\n        ? `\"${selectedProject.name}\" has ${hoursTracked.toFixed(1)} tracked hours`\n        : `${hoursTracked.toFixed(1)} self-reported hours`\n    return NextResponse.json(\n      {\n        error: `Not eligible: ${hoursDescription}, this prize requires ${prizeMatch.tier.hours}.`,\n      },\n      { status: 403 },\n    )\n  }\n\n  candidateFields[AIRTABLE_FIELDS.overrideHours] = hoursTracked\n  if (comments.trim()) {\n    candidateFields[AIRTABLE_FIELDS.comments] = comments\n  }\n\n  let record\n  try {\n    record = await createAirtableRecord(candidateFields)\n  } catch (err) {\n    console.error('[airtable] record creation failed:', err.message)\n    return NextResponse.json({ error: 'Failed to create Airtable record' }, { status: 502 })\n  }\n\n  try {\n    await uploadAirtableAttachment({\n      recordId: record.id,\n      fieldName: AIRTABLE_FIELDS.screenshot,\n      file: screenshot,\n    })\n  } catch (err) {\n    console.error('[airtable] attachment upload failed:', err.message)\n    // Don't leave a record behind that's missing a required field.\n    await deleteAirtableRecord(record.id)\n    return NextResponse.json({ error: 'Screenshot upload failed; submission was not saved' }, { status: 502 })\n  }\n\n  return NextResponse.json({ success: true, recordId: record.id })\n}\n",
-      "summary": "import { NextResponse } from 'next/server'. Contains 2 functions/classes: findPrize, POST.",
-      "file_hash": "f4a71c62"
+      "content": "import { NextResponse } from 'next/server'\nimport { getSessionFromRequest } from '../../../lib/auth'\nimport { getIdentity } from '../../../lib/hackclub'\nimport { getHackatimeProjects } from '../../../lib/hackatime'\nimport { findPrize } from '../../../data/prizeTiers'\nimport {\n  AIRTABLE_FIELDS,\n  createAirtableRecord,\n  deleteAirtableRecord,\n  uploadAirtableAttachment,\n} from '../../../lib/airtable'\n\nfunction parseCart(raw) {\n  let parsed\n  try {\n    parsed = JSON.parse(raw)\n  } catch {\n    return null\n  }\n  if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) return null\n\n  const entries = []\n  for (const [itemId, quantity] of Object.entries(parsed)) {\n    const qty = Number(quantity)\n    if (!Number.isInteger(qty) || qty <= 0) return null\n    const match = findPrize(itemId)\n    if (!match) return null\n    entries.push({ itemId, quantity: qty, item: match.item, cost: match.cost })\n  }\n  return entries\n}\n\nfunction serializeCart(entries) {\n  return entries.map(({ item, quantity }) => `${item.name} \u00d7${quantity}`).join(', ')\n}\n\nexport async function POST(request) {\n  const session = await getSessionFromRequest()\n  if (!session || !session.hackatime_access_token) {\n    return NextResponse.json({ error: 'Not authenticated' }, { status: 401 })\n  }\n\n  const formData = await request.formData()\n  const category = formData.get('category')?.toString() ?? ''\n  const projectName = formData.get('projectName')?.toString() ?? ''\n  const journalLink = formData.get('journalLink')?.toString() ?? ''\n  const hoursSpentRaw = formData.get('hoursSpent')?.toString() ?? ''\n  const cartRaw = formData.get('cart')?.toString() ?? ''\n  const playableUrl = formData.get('playableUrl')?.toString() ?? ''\n  const codeUrl = formData.get('codeUrl')?.toString() ?? ''\n  const description = formData.get('description')?.toString() ?? ''\n  const comments = formData.get('comments')?.toString() ?? ''\n  const screenshot = formData.get('screenshot')\n  // Not available via OAuth scope for this app tier \u2014 user-entered.\n  const birthday = formData.get('birthday')?.toString() ?? ''\n  const githubUsername = formData.get('githubUsername')?.toString() ?? ''\n  const addressLine1 = formData.get('addressLine1')?.toString() ?? ''\n  const addressLine2 = formData.get('addressLine2')?.toString() ?? ''\n  const city = formData.get('city')?.toString() ?? ''\n  const state = formData.get('state')?.toString() ?? ''\n  const country = formData.get('country')?.toString() ?? ''\n  const zip = formData.get('zip')?.toString() ?? ''\n\n  if (category !== 'software' && category !== 'hardware') {\n    return NextResponse.json({ error: 'Invalid or missing category' }, { status: 400 })\n  }\n\n  // Re-fetch identity and Hackatime data from the session's access token \u2014\n  // never trust identity/hours values from the client payload. Hardware\n  // submissions have no Hackatime project, so self-reported hours are used\n  // as-is; there's no independent source to re-verify them against.\n  const [identity, projects] = await Promise.all([\n    getIdentity(session.access_token),\n    category === 'software' ? getHackatimeProjects(session.hackatime_access_token) : Promise.resolve(null),\n  ])\n\n  let selectedProject = null\n  let hoursTracked = 0\n  if (category === 'software') {\n    selectedProject = projects.find((p) => p.name === projectName)\n    hoursTracked = selectedProject ? selectedProject.total_seconds / 3600 : 0\n  } else {\n    hoursTracked = parseFloat(hoursSpentRaw) || 0\n  }\n\n  const cartEntries = parseCart(cartRaw)\n  const prizeSummary = cartEntries ? serializeCart(cartEntries) : ''\n\n  const candidateFields = {\n    [AIRTABLE_FIELDS.playableUrl]: playableUrl,\n    [AIRTABLE_FIELDS.codeUrl]: codeUrl,\n    [AIRTABLE_FIELDS.firstName]: identity?.first_name ?? '',\n    [AIRTABLE_FIELDS.lastName]: identity?.last_name ?? '',\n    [AIRTABLE_FIELDS.email]: identity?.primary_email ?? '',\n    [AIRTABLE_FIELDS.description]: description,\n    // Trusted from the client, unlike identity/hours above: this is submission\n    // attribution only, not auth-bearing, and is deliberately user-correctable\n    // since OAuth's cached GitHub username can be stale or never linked.\n    [AIRTABLE_FIELDS.githubUsername]: githubUsername,\n    [AIRTABLE_FIELDS.addressLine1]: addressLine1,\n    [AIRTABLE_FIELDS.addressLine2]: addressLine2,\n    [AIRTABLE_FIELDS.city]: city,\n    [AIRTABLE_FIELDS.state]: state,\n    [AIRTABLE_FIELDS.country]: country,\n    [AIRTABLE_FIELDS.zip]: zip,\n    [AIRTABLE_FIELDS.birthday]: birthday,\n    [AIRTABLE_FIELDS.prize]: prizeSummary,\n    [AIRTABLE_FIELDS.category]: category === 'hardware' ? 'Hardware' : 'Software',\n  }\n\n  const requiredCheck = {\n    'Playable URL': playableUrl,\n    'Code URL': codeUrl,\n    'First Name': identity?.first_name,\n    'Last Name': identity?.last_name,\n    Email: identity?.primary_email,\n    Screenshot: screenshot,\n    Description: description,\n    'Address Line 1': addressLine1,\n    City: city,\n    'State/Province': state,\n    Country: country,\n    'Zip Code': zip,\n    Birthday: birthday,\n    Prize: prizeSummary,\n  }\n\n  if (category === 'hardware') {\n    candidateFields[AIRTABLE_FIELDS.journalLink] = journalLink\n    requiredCheck['Journal Link'] = journalLink\n    requiredCheck['Hours Spent'] = hoursSpentRaw\n  }\n\n  const missingFields = Object.entries(requiredCheck)\n    .filter(([, value]) => !value || (typeof value === 'string' && !value.trim()))\n    .map(([field]) => field)\n\n  if (missingFields.length > 0) {\n    return NextResponse.json(\n      { error: 'Missing required fields', missingFields },\n      { status: 400 },\n    )\n  }\n\n  if (category === 'software' && !selectedProject) {\n    return NextResponse.json({ error: 'Selected project not found on Hackatime' }, { status: 400 })\n  }\n\n  if (!cartEntries || cartEntries.length === 0) {\n    return NextResponse.json({ error: 'No prizes selected' }, { status: 400 })\n  }\n\n  const cartTotal = cartEntries.reduce((sum, entry) => sum + entry.cost * entry.quantity, 0)\n\n  if (cartTotal > hoursTracked) {\n    const hoursDescription =\n      category === 'software'\n        ? `\"${selectedProject.name}\" has ${hoursTracked.toFixed(1)} tracked hours`\n        : `${hoursTracked.toFixed(1)} self-reported hours`\n    return NextResponse.json(\n      {\n        error: `Not eligible: ${hoursDescription}, this cart costs ${cartTotal.toFixed(1)}.`,\n      },\n      { status: 403 },\n    )\n  }\n\n  candidateFields[AIRTABLE_FIELDS.overrideHours] = hoursTracked\n  if (comments.trim()) {\n    candidateFields[AIRTABLE_FIELDS.comments] = comments\n  }\n\n  let record\n  try {\n    record = await createAirtableRecord(candidateFields)\n  } catch (err) {\n    console.error('[airtable] record creation failed:', err.message)\n    return NextResponse.json({ error: 'Failed to create Airtable record' }, { status: 502 })\n  }\n\n  try {\n    await uploadAirtableAttachment({\n      recordId: record.id,\n      fieldName: AIRTABLE_FIELDS.screenshot,\n      file: screenshot,\n    })\n  } catch (err) {\n    console.error('[airtable] attachment upload failed:', err.message)\n    // Don't leave a record behind that's missing a required field.\n    await deleteAirtableRecord(record.id)\n    return NextResponse.json({ error: 'Screenshot upload failed; submission was not saved' }, { status: 502 })\n  }\n\n  return NextResponse.json({ success: true, recordId: record.id })\n}\n",
+      "summary": "import { NextResponse } from 'next/server'. Contains 3 functions/classes: parseCart, serializeCart, POST.",
+      "file_hash": "3a3b2225"
     },
     {
       "id": "src/app/api/submit/route.js::POST",
       "kind": "symbol",
       "path": "src/app/api/submit/route.js",
       "ext": ".js",
-      "size": 155,
+      "size": 159,
       "keywords": [
         "post"
       ],
       "symbol_type": "api_route",
       "name": "POST",
-      "line_start": 20,
-      "line_end": 174,
-      "body_hash": "2178f9ad",
+      "line_start": 36,
+      "line_end": 194,
+      "body_hash": "76557b29",
       "confidence": "high",
       "exported": true
     },
     {
-      "id": "src/app/api/submit/route.js::findPrize",
+      "id": "src/app/api/submit/route.js::parseCart",
       "kind": "symbol",
       "path": "src/app/api/submit/route.js",
       "ext": ".js",
-      "size": 7,
+      "size": 19,
       "keywords": [
-        "findprize",
-        "find",
-        "prize"
+        "parsecart",
+        "parse",
+        "cart"
       ],
       "symbol_type": "utility",
-      "name": "findPrize",
+      "name": "parseCart",
       "line_start": 12,
-      "line_end": 18,
-      "body_hash": "92cb6f64",
+      "line_end": 30,
+      "body_hash": "6c3c9d5d",
+      "confidence": "medium",
+      "exported": false
+    },
+    {
+      "id": "src/app/api/submit/route.js::serializeCart",
+      "kind": "symbol",
+      "path": "src/app/api/submit/route.js",
+      "ext": ".js",
+      "size": 3,
+      "keywords": [
+        "serializecart",
+        "serialize",
+        "cart"
+      ],
+      "symbol_type": "utility",
+      "name": "serializeCart",
+      "line_start": 32,
+      "line_end": 34,
+      "body_hash": "613da855",
       "confidence": "medium",
       "exported": false
     },
@@ -1311,6 +1440,36 @@
       "line_start": 1,
       "line_end": 14,
       "body_hash": "44a13948",
+      "confidence": "medium",
+      "exported": true
+    },
+    {
+      "id": "src/components/Footer.jsx",
+      "kind": "file",
+      "path": "src/components/Footer.jsx",
+      "ext": ".jsx",
+      "size": 1144,
+      "keywords": [
+        "footer"
+      ],
+      "content": "export default function Footer() {\n  return (\n    <footer className=\"border-t border-outline-variant bg-surface-container-lowest px-6 py-6\">\n      <div className=\"flex flex-wrap items-center justify-center gap-x-6 gap-y-2 font-mono text-xs uppercase tracking-widest text-on-surface-variant\">\n        <a\n          className=\"link hover:text-primary-container transition-colors\"\n          href=\"https://hackclub.com/privacy-and-terms#hack-club-standard-terms-and-conditions\"\n          target=\"_blank\"\n          rel=\"noopener noreferrer\"\n        >\n          Terms of Service\n        </a>\n        <a\n          className=\"link hover:text-primary-container transition-colors\"\n          href=\"https://hackclub.com/privacy-and-terms#hack-club-privacy-notice\"\n          target=\"_blank\"\n          rel=\"noopener noreferrer\"\n        >\n          Privacy Policy\n        </a>\n        <a\n          className=\"link hover:text-primary-container transition-colors\"\n          href=\"https://forms.hackclub.com/bounty\"\n          target=\"_blank\"\n          rel=\"noopener noreferrer\"\n        >\n          Fulfillment Bounty\n        </a>\n      </div>\n    </footer>\n  )\n}\n",
+      "summary": "export default function Footer() {. Contains 1 function: Footer.",
+      "file_hash": "17602be5"
+    },
+    {
+      "id": "src/components/Footer.jsx::Footer",
+      "kind": "symbol",
+      "path": "src/components/Footer.jsx",
+      "ext": ".jsx",
+      "size": 32,
+      "keywords": [
+        "footer"
+      ],
+      "symbol_type": "use_case",
+      "name": "Footer",
+      "line_start": 0,
+      "line_end": 31,
+      "body_hash": "a85057b5",
       "confidence": "medium",
       "exported": true
     },
@@ -1500,15 +1659,15 @@
       "kind": "file",
       "path": "src/components/dashboard/SubmissionForm.jsx",
       "ext": ".jsx",
-      "size": 6142,
+      "size": 6270,
       "keywords": [
         "submissionform",
         "submission",
         "form"
       ],
-      "content": "'use client'\n\nfunction ReadOnlyField({ label, value }) {\n  return (\n    <div>\n      <p className=\"font-mono text-[10px] tracking-widest text-on-surface-variant uppercase mb-1\">\n        {label}\n      </p>\n      <p className=\"border border-outline-variant bg-surface-container px-3 py-2 text-sm text-on-background\">\n        {value || '\u2014'}\n      </p>\n    </div>\n  )\n}\n\nfunction TextField({ label, name, value, onChange, errors, type = 'text', textarea = false }) {\n  const Component = textarea ? 'textarea' : 'input'\n  const hasError = Boolean(errors[name])\n  return (\n    <div>\n      <label className=\"font-mono text-[10px] tracking-widest text-on-surface-variant uppercase mb-1 block\">\n        {label}\n      </label>\n      <Component\n        type={textarea ? undefined : type}\n        rows={textarea ? 4 : undefined}\n        value={value}\n        onChange={(e) => onChange(name, e.target.value)}\n        className={`w-full border bg-surface-container-low px-3 py-2 text-sm text-on-background focus:outline-none ${\n          hasError ? 'border-error' : 'border-outline-variant focus:border-primary-container'\n        }`}\n      />\n      {hasError && <p className=\"text-error text-xs mt-1 font-mono\">{errors[name]}</p>}\n    </div>\n  )\n}\n\nexport default function SubmissionForm({\n  profile,\n  category,\n  fields,\n  onFieldChange,\n  onScreenshotChange,\n  screenshotName,\n  errors,\n}) {\n  return (\n    <div className=\"flex flex-col gap-8\">\n      <div>\n        <p className=\"font-mono text-xs text-primary-container tracking-widest uppercase mb-3\">\n          Identity (from Hack Club OAuth)\n        </p>\n        <div className=\"grid sm:grid-cols-2 gap-3\">\n          <ReadOnlyField label=\"First Name\" value={profile.firstName} />\n          <ReadOnlyField label=\"Last Name\" value={profile.lastName} />\n          <ReadOnlyField label=\"Email\" value={profile.email} />\n          <ReadOnlyField label=\"GitHub Username\" value={profile.githubUsername} />\n        </div>\n      </div>\n\n      <div>\n        <p className=\"font-mono text-xs text-primary-container tracking-widest uppercase mb-3\">\n          Birthday &amp; address\n        </p>\n        <p className=\"text-on-surface-variant text-xs font-mono mb-3\">\n          basic stuff we need\n        </p>\n        <div className=\"grid sm:grid-cols-2 gap-4\">\n          <TextField\n            label=\"Birthday\"\n            name=\"birthday\"\n            type=\"date\"\n            value={fields.birthday}\n            onChange={onFieldChange}\n            errors={errors}\n          />\n          <TextField\n            label=\"Address Line 1\"\n            name=\"addressLine1\"\n            value={fields.addressLine1}\n            onChange={onFieldChange}\n            errors={errors}\n          />\n          <TextField\n            label=\"Address Line 2 (optional)\"\n            name=\"addressLine2\"\n            value={fields.addressLine2}\n            onChange={onFieldChange}\n            errors={errors}\n          />\n          <TextField\n            label=\"City\"\n            name=\"city\"\n            value={fields.city}\n            onChange={onFieldChange}\n            errors={errors}\n          />\n          <TextField\n            label=\"State / Province\"\n            name=\"state\"\n            value={fields.state}\n            onChange={onFieldChange}\n            errors={errors}\n          />\n          <TextField\n            label=\"Country\"\n            name=\"country\"\n            value={fields.country}\n            onChange={onFieldChange}\n            errors={errors}\n          />\n          <TextField\n            label=\"Zip Code\"\n            name=\"zip\"\n            value={fields.zip}\n            onChange={onFieldChange}\n            errors={errors}\n          />\n        </div>\n      </div>\n\n      <div>\n        <p className=\"font-mono text-xs text-primary-container tracking-widest uppercase mb-3\">\n          Project details\n        </p>\n        <div className=\"grid sm:grid-cols-2 gap-4\">\n          <TextField\n            label=\"Playable URL\"\n            name=\"playableUrl\"\n            value={fields.playableUrl}\n            onChange={onFieldChange}\n            errors={errors}\n          />\n          <TextField\n            label=\"Code URL\"\n            name=\"codeUrl\"\n            value={fields.codeUrl}\n            onChange={onFieldChange}\n            errors={errors}\n          />\n          {category === 'hardware' && (\n            <TextField\n              label=\"Journal Link\"\n              name=\"journalLink\"\n              value={fields.journalLink}\n              onChange={onFieldChange}\n              errors={errors}\n            />\n          )}\n        </div>\n        <div className=\"mt-4\">\n          <label className=\"font-mono text-[10px] tracking-widest text-on-surface-variant uppercase mb-1 block\">\n            Screenshot\n          </label>\n          <input\n            type=\"file\"\n            accept=\"image/*\"\n            onChange={(e) => onScreenshotChange(e.target.files?.[0] ?? null)}\n            className={`w-full border bg-surface-container-low px-3 py-2 text-sm text-on-background file:mr-3 file:border-0 file:bg-surface-container-high file:px-3 file:py-1 file:font-mono file:text-xs ${\n              errors.screenshot ? 'border-error' : 'border-outline-variant'\n            }`}\n          />\n          {screenshotName && (\n            <p className=\"text-on-surface-variant text-xs mt-1 font-mono\">{screenshotName}</p>\n          )}\n          {errors.screenshot && (\n            <p className=\"text-error text-xs mt-1 font-mono\">{errors.screenshot}</p>\n          )}\n        </div>\n        <div className=\"mt-4\">\n          <TextField\n            label=\"Description\"\n            name=\"description\"\n            value={fields.description}\n            onChange={onFieldChange}\n            errors={errors}\n            textarea\n          />\n        </div>\n        <div className=\"mt-4\">\n          <TextField\n            label=\"Anything we should know (want to substitute a prize of something of the same value)?\"\n            name=\"comments\"\n            value={fields.comments}\n            onChange={onFieldChange}\n            errors={errors}\n            textarea\n          />\n        </div>\n      </div>\n    </div>\n  )\n}\n",
+      "content": "'use client'\n\nfunction ReadOnlyField({ label, value }) {\n  return (\n    <div>\n      <p className=\"font-mono text-[10px] tracking-widest text-on-surface-variant uppercase mb-1\">\n        {label}\n      </p>\n      <p className=\"border border-outline-variant bg-surface-container px-3 py-2 text-sm text-on-background\">\n        {value || '\u2014'}\n      </p>\n    </div>\n  )\n}\n\nfunction TextField({ label, name, value, onChange, errors, type = 'text', textarea = false }) {\n  const Component = textarea ? 'textarea' : 'input'\n  const hasError = Boolean(errors[name])\n  return (\n    <div>\n      <label className=\"font-mono text-[10px] tracking-widest text-on-surface-variant uppercase mb-1 block\">\n        {label}\n      </label>\n      <Component\n        type={textarea ? undefined : type}\n        rows={textarea ? 4 : undefined}\n        value={value}\n        onChange={(e) => onChange(name, e.target.value)}\n        className={`w-full border bg-surface-container-low px-3 py-2 text-sm text-on-background focus:outline-none ${\n          hasError ? 'border-error' : 'border-outline-variant focus:border-primary-container'\n        }`}\n      />\n      {hasError && <p className=\"text-error text-xs mt-1 font-mono\">{errors[name]}</p>}\n    </div>\n  )\n}\n\nexport default function SubmissionForm({\n  profile,\n  category,\n  fields,\n  onFieldChange,\n  onScreenshotChange,\n  screenshotName,\n  errors,\n}) {\n  return (\n    <div className=\"flex flex-col gap-8\">\n      <div>\n        <p className=\"font-mono text-xs text-primary-container tracking-widest uppercase mb-3\">\n          Identity (from Hack Club OAuth)\n        </p>\n        <div className=\"grid sm:grid-cols-2 gap-3\">\n          <ReadOnlyField label=\"First Name\" value={profile.firstName} />\n          <ReadOnlyField label=\"Last Name\" value={profile.lastName} />\n          <ReadOnlyField label=\"Email\" value={profile.email} />\n          <TextField\n            label=\"GitHub Username\"\n            name=\"githubUsername\"\n            value={fields.githubUsername}\n            onChange={onFieldChange}\n            errors={errors}\n          />\n        </div>\n      </div>\n\n      <div>\n        <p className=\"font-mono text-xs text-primary-container tracking-widest uppercase mb-3\">\n          Birthday &amp; address\n        </p>\n        <p className=\"text-on-surface-variant text-xs font-mono mb-3\">\n          basic stuff we need\n        </p>\n        <div className=\"grid sm:grid-cols-2 gap-4\">\n          <TextField\n            label=\"Birthday\"\n            name=\"birthday\"\n            type=\"date\"\n            value={fields.birthday}\n            onChange={onFieldChange}\n            errors={errors}\n          />\n          <TextField\n            label=\"Address Line 1\"\n            name=\"addressLine1\"\n            value={fields.addressLine1}\n            onChange={onFieldChange}\n            errors={errors}\n          />\n          <TextField\n            label=\"Address Line 2 (optional)\"\n            name=\"addressLine2\"\n            value={fields.addressLine2}\n            onChange={onFieldChange}\n            errors={errors}\n          />\n          <TextField\n            label=\"City\"\n            name=\"city\"\n            value={fields.city}\n            onChange={onFieldChange}\n            errors={errors}\n          />\n          <TextField\n            label=\"State / Province\"\n            name=\"state\"\n            value={fields.state}\n            onChange={onFieldChange}\n            errors={errors}\n          />\n          <TextField\n            label=\"Country\"\n            name=\"country\"\n            value={fields.country}\n            onChange={onFieldChange}\n            errors={errors}\n          />\n          <TextField\n            label=\"Zip Code\"\n            name=\"zip\"\n            value={fields.zip}\n            onChange={onFieldChange}\n            errors={errors}\n          />\n        </div>\n      </div>\n\n      <div>\n        <p className=\"font-mono text-xs text-primary-container tracking-widest uppercase mb-3\">\n          Project details\n        </p>\n        <div className=\"grid sm:grid-cols-2 gap-4\">\n          <TextField\n            label=\"Playable URL\"\n            name=\"playableUrl\"\n            value={fields.playableUrl}\n            onChange={onFieldChange}\n            errors={errors}\n          />\n          <TextField\n            label=\"Code URL\"\n            name=\"codeUrl\"\n            value={fields.codeUrl}\n            onChange={onFieldChange}\n            errors={errors}\n          />\n          {category === 'hardware' && (\n            <TextField\n              label=\"Journal Link\"\n              name=\"journalLink\"\n              value={fields.journalLink}\n              onChange={onFieldChange}\n              errors={errors}\n            />\n          )}\n        </div>\n        <div className=\"mt-4\">\n          <label className=\"font-mono text-[10px] tracking-widest text-on-surface-variant uppercase mb-1 block\">\n            Screenshot\n          </label>\n          <input\n            type=\"file\"\n            accept=\"image/*\"\n            onChange={(e) => onScreenshotChange(e.target.files?.[0] ?? null)}\n            className={`w-full border bg-surface-container-low px-3 py-2 text-sm text-on-background file:mr-3 file:border-0 file:bg-surface-container-high file:px-3 file:py-1 file:font-mono file:text-xs ${\n              errors.screenshot ? 'border-error' : 'border-outline-variant'\n            }`}\n          />\n          {screenshotName && (\n            <p className=\"text-on-surface-variant text-xs mt-1 font-mono\">{screenshotName}</p>\n          )}\n          {errors.screenshot && (\n            <p className=\"text-error text-xs mt-1 font-mono\">{errors.screenshot}</p>\n          )}\n        </div>\n        <div className=\"mt-4\">\n          <TextField\n            label=\"Description\"\n            name=\"description\"\n            value={fields.description}\n            onChange={onFieldChange}\n            errors={errors}\n            textarea\n          />\n        </div>\n        <div className=\"mt-4\">\n          <TextField\n            label=\"Anything we should know (want to substitute a prize of something of the same value)?\"\n            name=\"comments\"\n            value={fields.comments}\n            onChange={onFieldChange}\n            errors={errors}\n            textarea\n          />\n        </div>\n      </div>\n    </div>\n  )\n}\n",
       "summary": "'use client'. Contains 3 functions/classes: ReadOnlyField, TextField, SubmissionForm.",
-      "file_hash": "6a0e6a84"
+      "file_hash": "0933c7c4"
     },
     {
       "id": "src/components/dashboard/SubmissionForm.jsx::ReadOnlyField",
@@ -1554,7 +1713,7 @@
       "kind": "symbol",
       "path": "src/components/dashboard/SubmissionForm.jsx",
       "ext": ".jsx",
-      "size": 156,
+      "size": 162,
       "keywords": [
         "submissionform",
         "submission",
@@ -1563,8 +1722,8 @@
       "symbol_type": "use_case",
       "name": "SubmissionForm",
       "line_start": 37,
-      "line_end": 192,
-      "body_hash": "4967e9f8",
+      "line_end": 198,
+      "body_hash": "7e28dbfc",
       "confidence": "medium",
       "exported": true
     },
@@ -1573,7 +1732,7 @@
       "kind": "file",
       "path": "src/components/dashboard/DashboardClient.jsx",
       "ext": ".jsx",
-      "size": 10058,
+      "size": 10734,
       "keywords": [
         "dashboardclient",
         "dashboard",
@@ -1581,24 +1740,43 @@
         "api",
         "submit"
       ],
-      "content": "'use client'\n\nimport { useState } from 'react'\nimport { useRouter } from 'next/navigation'\nimport ProjectPicker from './ProjectPicker'\nimport PrizePicker from './PrizePicker'\nimport SubmissionForm from './SubmissionForm'\n\nconst EMPTY_FIELDS = {\n  playableUrl: '',\n  codeUrl: '',\n  description: '',\n  comments: '',\n  birthday: '',\n  addressLine1: '',\n  addressLine2: '',\n  city: '',\n  state: '',\n  country: '',\n  zip: '',\n  journalLink: '',\n}\n\nconst REQUIRED_TEXT_FIELDS = [\n  ['playableUrl', 'Playable URL is required'],\n  ['codeUrl', 'Code URL is required'],\n  ['description', 'Description is required'],\n  ['birthday', 'Birthday is required'],\n  ['addressLine1', 'Address Line 1 is required'],\n  ['city', 'City is required'],\n  ['state', 'State/Province is required'],\n  ['country', 'Country is required'],\n  ['zip', 'Zip Code is required'],\n]\n\nfunction validate(fields, selectedPrize, screenshot, category) {\n  const errors = {}\n  for (const [name, message] of REQUIRED_TEXT_FIELDS) {\n    if (!fields[name].trim()) errors[name] = message\n  }\n  if (category === 'hardware' && !fields.journalLink.trim()) {\n    errors.journalLink = 'Journal Link is required'\n  }\n  if (!screenshot) errors.screenshot = 'Screenshot is required'\n  if (!selectedPrize) errors.prize = 'Select a prize you are eligible for'\n  return errors\n}\n\nexport default function DashboardClient({ profile, projects }) {\n  const router = useRouter()\n  const [showForm, setShowForm] = useState(false)\n  const [category, setCategory] = useState(null) // null | 'software' | 'hardware'\n  const [selectedProject, setSelectedProject] = useState(null)\n  const [hoursSpent, setHoursSpent] = useState('')\n  const [selectedPrize, setSelectedPrize] = useState(null)\n  const [fields, setFields] = useState(EMPTY_FIELDS)\n  const [screenshot, setScreenshot] = useState(null)\n  const [errors, setErrors] = useState({})\n  const [status, setStatus] = useState('idle') // idle | submitting | success | error\n  const [statusMessage, setStatusMessage] = useState('')\n\n  const hoursTracked =\n    category === 'hardware'\n      ? parseFloat(hoursSpent) || 0\n      : selectedProject\n        ? selectedProject.total_seconds / 3600\n        : 0\n\n  const trackIdentified = category === 'hardware' ? hoursSpent.trim() !== '' : Boolean(selectedProject)\n\n  function handleSelectCategory(nextCategory) {\n    setCategory(nextCategory)\n    setSelectedProject(null)\n    setHoursSpent('')\n    setSelectedPrize(null)\n    setErrors({})\n  }\n\n  function handleSelectProject(project) {\n    setSelectedProject(project)\n    // Changing the project can invalidate a previously-eligible prize choice.\n    setSelectedPrize(null)\n  }\n\n  function handleHoursSpentChange(value) {\n    setHoursSpent(value)\n    // Changing self-reported hours can invalidate a previously-eligible prize choice.\n    setSelectedPrize(null)\n  }\n\n  function handleFieldChange(name, value) {\n    setFields((prev) => ({ ...prev, [name]: value }))\n  }\n\n  async function handleSubmit(e) {\n    e.preventDefault()\n\n    if (category === 'software' && !selectedProject) {\n      setErrors({ project: 'Select a Hackatime project first' })\n      return\n    }\n\n    if (category === 'hardware' && !hoursSpent.trim()) {\n      setErrors({ hours: 'Enter hours spent first' })\n      return\n    }\n\n    const validationErrors = validate(fields, selectedPrize, screenshot, category)\n    if (Object.keys(validationErrors).length > 0) {\n      setErrors(validationErrors)\n      return\n    }\n\n    setErrors({})\n    setStatus('submitting')\n    setStatusMessage('')\n\n    const body = new FormData()\n    body.set('category', category)\n    if (category === 'software') {\n      body.set('projectName', selectedProject.name)\n    } else {\n      body.set('hoursSpent', hoursSpent)\n      body.set('journalLink', fields.journalLink)\n    }\n    body.set('prizeId', selectedPrize.id)\n    body.set('prizeName', selectedPrize.name)\n    body.set('playableUrl', fields.playableUrl)\n    body.set('codeUrl', fields.codeUrl)\n    body.set('description', fields.description)\n    body.set('comments', fields.comments)\n    body.set('birthday', fields.birthday)\n    body.set('addressLine1', fields.addressLine1)\n    body.set('addressLine2', fields.addressLine2)\n    body.set('city', fields.city)\n    body.set('state', fields.state)\n    body.set('country', fields.country)\n    body.set('zip', fields.zip)\n    body.set('screenshot', screenshot)\n\n    try {\n      const response = await fetch('/api/submit', { method: 'POST', body })\n      const result = await response.json()\n\n      if (!response.ok) {\n        setStatus('error')\n        setStatusMessage(result.error || 'Submission failed. Please check the form and try again.')\n        if (result.missingFields) {\n          setErrors(\n            Object.fromEntries(result.missingFields.map((field) => [field, 'Required by Airtable'])),\n          )\n        }\n        return\n      }\n\n      setStatus('success')\n      router.push('/dashboard/success')\n    } catch {\n      setStatus('error')\n      setStatusMessage('Network error \u2014 submission was not sent. Please try again.')\n    }\n  }\n\n  if (!showForm) {\n    return (\n      <div className=\"flex flex-col items-start gap-6\">\n        <p className=\"text-on-background text-lg\">\n          {profile?.firstName ? `Welcome, ${profile.firstName}` : 'Welcome'}\n        </p>\n        <button\n          type=\"button\"\n          onClick={() => setShowForm(true)}\n          className=\"font-mono uppercase tracking-widest border border-primary-container text-primary-container px-8 py-4 hover:bg-primary-container hover:text-on-primary-container transition-colors\"\n        >\n          Submit a project\n        </button>\n      </div>\n    )\n  }\n\n  if (!category) {\n    return (\n      <div>\n        <p className=\"font-mono text-xs text-primary-container tracking-widest uppercase mb-3\">\n          Is this a hardware or software project?\n        </p>\n        <div className=\"flex gap-4\">\n          <button\n            type=\"button\"\n            onClick={() => handleSelectCategory('software')}\n            className=\"font-mono uppercase tracking-widest border border-primary-container text-primary-container px-8 py-4 hover:bg-primary-container hover:text-on-primary-container transition-colors\"\n          >\n            Software\n          </button>\n          <button\n            type=\"button\"\n            onClick={() => handleSelectCategory('hardware')}\n            className=\"font-mono uppercase tracking-widest border border-primary-container text-primary-container px-8 py-4 hover:bg-primary-container hover:text-on-primary-container transition-colors\"\n          >\n            Hardware\n          </button>\n        </div>\n      </div>\n    )\n  }\n\n  return (\n    <form onSubmit={handleSubmit} className=\"flex flex-col gap-12\">\n      <button\n        type=\"button\"\n        onClick={() => handleSelectCategory(null)}\n        className=\"font-mono text-xs text-on-surface-variant hover:underline self-start\"\n      >\n        \u2190 change category\n      </button>\n\n      <div>\n        <p className=\"font-mono text-xs text-primary-container tracking-widest uppercase mb-3\">\n          1. {category === 'software' ? \"Select the project you're submitting\" : 'Enter your self-reported hours spent'}\n        </p>\n        {category === 'software' ? (\n          <>\n            <ProjectPicker\n              projects={projects}\n              selectedProject={selectedProject}\n              onSelect={handleSelectProject}\n            />\n            {errors.project && <p className=\"text-error text-xs mt-2 font-mono\">{errors.project}</p>}\n          </>\n        ) : (\n          <>\n            <input\n              type=\"number\"\n              min=\"0\"\n              step=\"0.1\"\n              value={hoursSpent}\n              onChange={(e) => handleHoursSpentChange(e.target.value)}\n              placeholder=\"Hours spent\"\n              className=\"w-full max-w-xs border border-outline-variant bg-surface-container-low px-3 py-2 text-sm text-on-background focus:outline-none focus:border-primary-container\"\n            />\n            {errors.hours && <p className=\"text-error text-xs mt-2 font-mono\">{errors.hours}</p>}\n          </>\n        )}\n      </div>\n\n      {trackIdentified && (\n        <div>\n          <p className=\"font-mono text-xs text-primary-container tracking-widest uppercase mb-3\">\n            2. Pick your prize (\n            {category === 'software'\n              ? `${hoursTracked.toFixed(1)} tracked hours on \"${selectedProject.name}\"`\n              : `${hoursTracked.toFixed(1)} self-reported hours`}\n            )\n          </p>\n          <PrizePicker\n            hoursTracked={hoursTracked}\n            selectedPrize={selectedPrize}\n            onSelect={setSelectedPrize}\n          />\n          {errors.prize && <p className=\"text-error text-xs mt-2 font-mono\">{errors.prize}</p>}\n        </div>\n      )}\n\n      {trackIdentified && selectedPrize && (\n        <div>\n          <p className=\"font-mono text-xs text-primary-container tracking-widest uppercase mb-3\">\n            3. Submission details\n          </p>\n          <SubmissionForm\n            profile={profile}\n            category={category}\n            fields={fields}\n            onFieldChange={handleFieldChange}\n            onScreenshotChange={setScreenshot}\n            screenshotName={screenshot?.name}\n            errors={errors}\n          />\n\n          <button\n            type=\"submit\"\n            disabled={status === 'submitting'}\n            className=\"mt-8 font-mono uppercase tracking-widest border border-primary-container text-primary-container px-8 py-4 hover:bg-primary-container hover:text-on-primary-container transition-colors disabled:opacity-50 disabled:cursor-not-allowed\"\n          >\n            {status === 'submitting' ? 'Submitting\u2026' : 'Submit'}\n          </button>\n\n          {statusMessage && (\n            <p\n              className={`mt-4 font-mono text-sm ${status === 'success' ? 'text-primary-container' : 'text-error'}`}\n            >\n              {statusMessage}\n            </p>\n          )}\n        </div>\n      )}\n    </form>\n  )\n}\n",
-      "summary": "'use client'. Contains 5 functions/classes: validate, DashboardClient, handleSelectCategory, handleSelectProject, ....",
-      "file_hash": "8d097f91"
+      "content": "'use client'\n\nimport { useState } from 'react'\nimport { useRouter } from 'next/navigation'\nimport ProjectPicker from './ProjectPicker'\nimport PrizePicker from './PrizePicker'\nimport SubmissionForm from './SubmissionForm'\nimport { findPrize } from '../../data/prizeTiers'\n\nconst EMPTY_FIELDS = {\n  playableUrl: '',\n  codeUrl: '',\n  description: '',\n  comments: '',\n  birthday: '',\n  addressLine1: '',\n  addressLine2: '',\n  city: '',\n  state: '',\n  country: '',\n  zip: '',\n  journalLink: '',\n  githubUsername: '',\n}\n\nconst REQUIRED_TEXT_FIELDS = [\n  ['playableUrl', 'Playable URL is required'],\n  ['codeUrl', 'Code URL is required'],\n  ['description', 'Description is required'],\n  ['birthday', 'Birthday is required'],\n  ['addressLine1', 'Address Line 1 is required'],\n  ['city', 'City is required'],\n  ['state', 'State/Province is required'],\n  ['country', 'Country is required'],\n  ['zip', 'Zip Code is required'],\n]\n\nfunction cartTotal(cart) {\n  return Object.entries(cart).reduce((sum, [itemId, quantity]) => {\n    const match = findPrize(itemId)\n    return sum + (match ? match.cost * quantity : 0)\n  }, 0)\n}\n\nfunction validate(fields, cart, hoursTracked, screenshot, category) {\n  const errors = {}\n  for (const [name, message] of REQUIRED_TEXT_FIELDS) {\n    if (!fields[name].trim()) errors[name] = message\n  }\n  if (category === 'hardware' && !fields.journalLink.trim()) {\n    errors.journalLink = 'Journal Link is required'\n  }\n  if (!screenshot) errors.screenshot = 'Screenshot is required'\n  const total = cartTotal(cart)\n  if (total === 0) errors.prize = 'Select at least one prize'\n  else if (total > hoursTracked) errors.prize = 'Cart total exceeds your available hours'\n  return errors\n}\n\nexport default function DashboardClient({ profile, projects }) {\n  const router = useRouter()\n  const [showForm, setShowForm] = useState(false)\n  const [category, setCategory] = useState(null) // null | 'software' | 'hardware'\n  const [selectedProject, setSelectedProject] = useState(null)\n  const [hoursSpent, setHoursSpent] = useState('')\n  const [cart, setCart] = useState({})\n  const [fields, setFields] = useState(() => ({\n    ...EMPTY_FIELDS,\n    githubUsername: profile?.githubUsername ?? '',\n  }))\n  const [screenshot, setScreenshot] = useState(null)\n  const [errors, setErrors] = useState({})\n  const [status, setStatus] = useState('idle') // idle | submitting | success | error\n  const [statusMessage, setStatusMessage] = useState('')\n\n  const hoursTracked =\n    category === 'hardware'\n      ? parseFloat(hoursSpent) || 0\n      : selectedProject\n        ? selectedProject.total_seconds / 3600\n        : 0\n\n  const trackIdentified = category === 'hardware' ? hoursSpent.trim() !== '' : Boolean(selectedProject)\n\n  function handleSelectCategory(nextCategory) {\n    setCategory(nextCategory)\n    setSelectedProject(null)\n    setHoursSpent('')\n    setCart({})\n    setErrors({})\n  }\n\n  function handleSelectProject(project) {\n    setSelectedProject(project)\n    // Changing the project can invalidate a previously-eligible cart.\n    setCart({})\n  }\n\n  function handleHoursSpentChange(value) {\n    setHoursSpent(value)\n    // Changing self-reported hours can invalidate a previously-eligible cart.\n    setCart({})\n  }\n\n  function handleChangeQuantity(itemId, quantity) {\n    setCart((prev) => {\n      if (quantity <= 0) {\n        const { [itemId]: _removed, ...rest } = prev\n        return rest\n      }\n      return { ...prev, [itemId]: quantity }\n    })\n  }\n\n  function handleFieldChange(name, value) {\n    setFields((prev) => ({ ...prev, [name]: value }))\n  }\n\n  async function handleSubmit(e) {\n    e.preventDefault()\n\n    if (category === 'software' && !selectedProject) {\n      setErrors({ project: 'Select a Hackatime project first' })\n      return\n    }\n\n    if (category === 'hardware' && !hoursSpent.trim()) {\n      setErrors({ hours: 'Enter hours spent first' })\n      return\n    }\n\n    const validationErrors = validate(fields, cart, hoursTracked, screenshot, category)\n    if (Object.keys(validationErrors).length > 0) {\n      setErrors(validationErrors)\n      return\n    }\n\n    setErrors({})\n    setStatus('submitting')\n    setStatusMessage('')\n\n    const body = new FormData()\n    body.set('category', category)\n    if (category === 'software') {\n      body.set('projectName', selectedProject.name)\n    } else {\n      body.set('hoursSpent', hoursSpent)\n      body.set('journalLink', fields.journalLink)\n    }\n    body.set('cart', JSON.stringify(cart))\n    body.set('playableUrl', fields.playableUrl)\n    body.set('codeUrl', fields.codeUrl)\n    body.set('description', fields.description)\n    body.set('comments', fields.comments)\n    body.set('birthday', fields.birthday)\n    body.set('addressLine1', fields.addressLine1)\n    body.set('addressLine2', fields.addressLine2)\n    body.set('city', fields.city)\n    body.set('state', fields.state)\n    body.set('country', fields.country)\n    body.set('zip', fields.zip)\n    body.set('githubUsername', fields.githubUsername)\n    body.set('screenshot', screenshot)\n\n    try {\n      const response = await fetch('/api/submit', { method: 'POST', body })\n      const result = await response.json()\n\n      if (!response.ok) {\n        setStatus('error')\n        setStatusMessage(result.error || 'Submission failed. Please check the form and try again.')\n        if (result.missingFields) {\n          setErrors(\n            Object.fromEntries(result.missingFields.map((field) => [field, 'Required by Airtable'])),\n          )\n        }\n        return\n      }\n\n      setStatus('success')\n      router.push('/dashboard/success')\n    } catch {\n      setStatus('error')\n      setStatusMessage('Network error \u2014 submission was not sent. Please try again.')\n    }\n  }\n\n  if (!showForm) {\n    return (\n      <div className=\"flex flex-col items-start gap-6\">\n        <p className=\"text-on-background text-lg\">\n          {profile?.firstName ? `Welcome, ${profile.firstName}` : 'Welcome'}\n        </p>\n        <button\n          type=\"button\"\n          onClick={() => setShowForm(true)}\n          className=\"font-mono uppercase tracking-widest border border-primary-container text-primary-container px-8 py-4 hover:bg-primary-container hover:text-on-primary-container transition-colors\"\n        >\n          Submit a project\n        </button>\n      </div>\n    )\n  }\n\n  if (!category) {\n    return (\n      <div>\n        <p className=\"font-mono text-xs text-primary-container tracking-widest uppercase mb-3\">\n          Is this a hardware or software project?\n        </p>\n        <div className=\"flex gap-4\">\n          <button\n            type=\"button\"\n            onClick={() => handleSelectCategory('software')}\n            className=\"font-mono uppercase tracking-widest border border-primary-container text-primary-container px-8 py-4 hover:bg-primary-container hover:text-on-primary-container transition-colors\"\n          >\n            Software\n          </button>\n          <button\n            type=\"button\"\n            onClick={() => handleSelectCategory('hardware')}\n            className=\"font-mono uppercase tracking-widest border border-primary-container text-primary-container px-8 py-4 hover:bg-primary-container hover:text-on-primary-container transition-colors\"\n          >\n            Hardware\n          </button>\n        </div>\n      </div>\n    )\n  }\n\n  return (\n    <form onSubmit={handleSubmit} className=\"flex flex-col gap-12\">\n      <button\n        type=\"button\"\n        onClick={() => handleSelectCategory(null)}\n        className=\"font-mono text-xs text-on-surface-variant hover:underline self-start\"\n      >\n        \u2190 change category\n      </button>\n\n      <div>\n        <p className=\"font-mono text-xs text-primary-container tracking-widest uppercase mb-3\">\n          1. {category === 'software' ? \"Select the project you're submitting\" : 'Enter your self-reported hours spent'}\n        </p>\n        {category === 'software' ? (\n          <>\n            <ProjectPicker\n              projects={projects}\n              selectedProject={selectedProject}\n              onSelect={handleSelectProject}\n            />\n            {errors.project && <p className=\"text-error text-xs mt-2 font-mono\">{errors.project}</p>}\n          </>\n        ) : (\n          <>\n            <input\n              type=\"number\"\n              min=\"0\"\n              step=\"0.1\"\n              value={hoursSpent}\n              onChange={(e) => handleHoursSpentChange(e.target.value)}\n              placeholder=\"Hours spent\"\n              className=\"w-full max-w-xs border border-outline-variant bg-surface-container-low px-3 py-2 text-sm text-on-background focus:outline-none focus:border-primary-container\"\n            />\n            {errors.hours && <p className=\"text-error text-xs mt-2 font-mono\">{errors.hours}</p>}\n          </>\n        )}\n      </div>\n\n      {trackIdentified && (\n        <div>\n          <p className=\"font-mono text-xs text-primary-container tracking-widest uppercase mb-3\">\n            2. Pick your prizes (\n            {category === 'software'\n              ? `${hoursTracked.toFixed(1)} tracked hours on \"${selectedProject.name}\"`\n              : `${hoursTracked.toFixed(1)} self-reported hours`}\n            )\n          </p>\n          <PrizePicker\n            hoursTracked={hoursTracked}\n            cart={cart}\n            onChangeQuantity={handleChangeQuantity}\n          />\n          {errors.prize && <p className=\"text-error text-xs mt-2 font-mono\">{errors.prize}</p>}\n        </div>\n      )}\n\n      {trackIdentified && cartTotal(cart) > 0 && cartTotal(cart) <= hoursTracked && (\n        <div>\n          <p className=\"font-mono text-xs text-primary-container tracking-widest uppercase mb-3\">\n            3. Submission details\n          </p>\n          <SubmissionForm\n            profile={profile}\n            category={category}\n            fields={fields}\n            onFieldChange={handleFieldChange}\n            onScreenshotChange={setScreenshot}\n            screenshotName={screenshot?.name}\n            errors={errors}\n          />\n\n          <button\n            type=\"submit\"\n            disabled={status === 'submitting'}\n            className=\"mt-8 font-mono uppercase tracking-widest border border-primary-container text-primary-container px-8 py-4 hover:bg-primary-container hover:text-on-primary-container transition-colors disabled:opacity-50 disabled:cursor-not-allowed\"\n          >\n            {status === 'submitting' ? 'Submitting\u2026' : 'Submit'}\n          </button>\n\n          {statusMessage && (\n            <p\n              className={`mt-4 font-mono text-sm ${status === 'success' ? 'text-primary-container' : 'text-error'}`}\n            >\n              {statusMessage}\n            </p>\n          )}\n        </div>\n      )}\n    </form>\n  )\n}\n",
+      "summary": "'use client'. Contains 5 functions/classes: cartTotal, validate, DashboardClient, handleSelectCategory, ....",
+      "file_hash": "5586e492"
+    },
+    {
+      "id": "src/components/dashboard/DashboardClient.jsx::cartTotal",
+      "kind": "symbol",
+      "path": "src/components/dashboard/DashboardClient.jsx",
+      "ext": ".jsx",
+      "size": 6,
+      "keywords": [
+        "carttotal",
+        "cart",
+        "total"
+      ],
+      "symbol_type": "utility",
+      "name": "cartTotal",
+      "line_start": 37,
+      "line_end": 42,
+      "body_hash": "16d73022",
+      "confidence": "medium",
+      "exported": false
     },
     {
       "id": "src/components/dashboard/DashboardClient.jsx::validate",
       "kind": "symbol",
       "path": "src/components/dashboard/DashboardClient.jsx",
       "ext": ".jsx",
-      "size": 12,
+      "size": 14,
       "keywords": [
         "validate"
       ],
       "symbol_type": "utility",
       "name": "validate",
-      "line_start": 35,
-      "line_end": 46,
-      "body_hash": "24ca9e67",
+      "line_start": 44,
+      "line_end": 57,
+      "body_hash": "f5743357",
       "confidence": "medium",
       "exported": false
     },
@@ -1607,7 +1785,7 @@
       "kind": "symbol",
       "path": "src/components/dashboard/DashboardClient.jsx",
       "ext": ".jsx",
-      "size": 250,
+      "size": 263,
       "keywords": [
         "dashboardclient",
         "dashboard",
@@ -1615,9 +1793,9 @@
       ],
       "symbol_type": "use_case",
       "name": "DashboardClient",
-      "line_start": 48,
-      "line_end": 297,
-      "body_hash": "ea200763",
+      "line_start": 59,
+      "line_end": 321,
+      "body_hash": "e9d7a619",
       "confidence": "medium",
       "exported": true
     },
@@ -1626,22 +1804,22 @@
       "kind": "file",
       "path": "src/components/dashboard/PrizePicker.jsx",
       "ext": ".jsx",
-      "size": 1987,
+      "size": 3048,
       "keywords": [
         "prizepicker",
         "prize",
         "picker"
       ],
-      "content": "'use client'\n\nimport { prizeTiers } from '../../data/prizeTiers'\n\nexport default function PrizePicker({ hoursTracked, selectedPrize, onSelect }) {\n  return (\n    <div className=\"grid sm:grid-cols-2 lg:grid-cols-5 gap-4\">\n      {prizeTiers.map((tier) => {\n        const eligible = hoursTracked >= tier.hours\n        return (\n          <div\n            key={tier.hours}\n            className={`border ${eligible ? 'border-outline' : 'border-outline-variant opacity-50'} bg-surface-container-low`}\n          >\n            <div className=\"border-b border-dashed border-outline-variant px-3 py-2 text-center\">\n              <p className=\"font-mono text-lg font-bold text-on-background\">{tier.hours}</p>\n              <p className=\"font-mono text-[9px] tracking-widest text-primary-container uppercase\">\n                Hours \u2014 {tier.codename}\n              </p>\n            </div>\n            <div className=\"p-3 flex flex-col gap-2\">\n              {tier.items.map((item) => {\n                const selected = selectedPrize?.id === item.id\n                return (\n                  <button\n                    key={item.id}\n                    type=\"button\"\n                    disabled={!eligible}\n                    onClick={() => onSelect(item)}\n                    title={eligible ? undefined : `Requires ${tier.hours}+ tracked hours on the selected project`}\n                    className={`text-left border px-2 py-2 text-xs font-mono uppercase tracking-wide transition-colors ${\n                      selected\n                        ? 'border-primary-container bg-surface-container-high text-on-background'\n                        : 'border-outline-variant text-on-surface-variant'\n                    } ${eligible ? 'hover:border-primary-container cursor-pointer' : 'cursor-not-allowed'}`}\n                  >\n                    {item.name}\n                  </button>\n                )\n              })}\n            </div>\n          </div>\n        )\n      })}\n    </div>\n  )\n}\n",
+      "content": "'use client'\n\nimport { prizeTiers } from '../../data/prizeTiers'\n\nexport default function PrizePicker({ hoursTracked, cart, onChangeQuantity }) {\n  const totalCost = prizeTiers.reduce(\n    (sum, tier) => sum + tier.items.reduce((tierSum, item) => tierSum + tier.hours * (cart[item.id] ?? 0), 0),\n    0,\n  )\n  const overBudget = totalCost > hoursTracked\n\n  return (\n    <div className=\"flex flex-col gap-4\">\n      <div className=\"grid sm:grid-cols-2 lg:grid-cols-5 gap-4\">\n        {prizeTiers.map((tier) => (\n          <div key={tier.hours} className=\"border border-outline bg-surface-container-low\">\n            <div className=\"border-b border-dashed border-outline-variant px-3 py-2 text-center\">\n              <p className=\"font-mono text-lg font-bold text-on-background\">{tier.hours}</p>\n              <p className=\"font-mono text-[9px] tracking-widest text-primary-container uppercase\">\n                Hours \u2014 {tier.codename}\n              </p>\n            </div>\n            <div className=\"p-3 flex flex-col gap-2\">\n              {tier.items.map((item) => {\n                const quantity = cart[item.id] ?? 0\n                return (\n                  <div\n                    key={item.id}\n                    className={`flex items-center justify-between gap-2 border px-2 py-2 text-xs font-mono uppercase tracking-wide ${\n                      quantity > 0\n                        ? 'border-primary-container bg-surface-container-high text-on-background'\n                        : 'border-outline-variant text-on-surface-variant'\n                    }`}\n                  >\n                    <span className=\"truncate\">{item.name}</span>\n                    <div className=\"flex items-center gap-1 shrink-0\">\n                      <button\n                        type=\"button\"\n                        onClick={() => onChangeQuantity(item.id, Math.max(0, quantity - 1))}\n                        disabled={quantity === 0}\n                        className=\"border border-outline-variant w-6 h-6 flex items-center justify-center hover:border-primary-container disabled:opacity-30 disabled:cursor-not-allowed\"\n                      >\n                        \u2212\n                      </button>\n                      <span className=\"w-4 text-center\">{quantity}</span>\n                      <button\n                        type=\"button\"\n                        onClick={() => onChangeQuantity(item.id, quantity + 1)}\n                        className=\"border border-outline-variant w-6 h-6 flex items-center justify-center hover:border-primary-container\"\n                      >\n                        +\n                      </button>\n                    </div>\n                  </div>\n                )\n              })}\n            </div>\n          </div>\n        ))}\n      </div>\n\n      <p className={`font-mono text-xs ${overBudget ? 'text-error' : 'text-on-surface-variant'}`}>\n        Cart total: {totalCost.toFixed(1)} / {hoursTracked.toFixed(1)} hours\n        {overBudget ? ' \u2014 over budget' : ''}\n      </p>\n    </div>\n  )\n}\n",
       "summary": "'use client'. Contains 1 function: PrizePicker.",
-      "file_hash": "25f16a23"
+      "file_hash": "bf514536"
     },
     {
       "id": "src/components/dashboard/PrizePicker.jsx::PrizePicker",
       "kind": "symbol",
       "path": "src/components/dashboard/PrizePicker.jsx",
       "ext": ".jsx",
-      "size": 43,
+      "size": 64,
       "keywords": [
         "prizepicker",
         "prize",
@@ -1650,8 +1828,8 @@
       "symbol_type": "use_case",
       "name": "PrizePicker",
       "line_start": 4,
-      "line_end": 46,
-      "body_hash": "12183de1",
+      "line_end": 67,
+      "body_hash": "4aebbaf4",
       "confidence": "medium",
       "exported": true
     },
@@ -1903,18 +2081,39 @@
       "kind": "file",
       "path": "src/data/prizeTiers.js",
       "ext": ".js",
-      "size": 3139,
+      "size": 3638,
       "keywords": [
         "prizetiers",
         "prize",
         "tiers",
         "highlightedprizes",
         "highlighted",
-        "prizes"
+        "prizes",
+        "findprize",
+        "find"
       ],
-      "content": "import flipperPlaceholder from '../assets/prizes/flipper_zero_img.webp'\nimport goproPlaceholder from '../assets/prizes/gopro-placeholder.svg'\nimport monitorPlaceholder from '../assets/prizes/minotor_pic.avif'\nimport casioWatch from \"../assets/prizes/casio_image.jpg\"\nimport laptopImage from \"../assets/prizes/thinkpad_laptop_img.jpg\"\nimport porkbun from \"../assets/prizes/porkbun.png\"\nimport keychain from \"../assets/prizes/keychain_image.jpg\"\nimport macropad from \"../assets/prizes/macropad_image.jpg\"\nimport gopro from \"../assets/prizes/gopro.jpg\"\nimport grant from \"../assets/prizes/grant_image.jpg\"\nimport hardwareGrantPlaceholder from \"../assets/prizes/hardware-grant-placeholder.svg\"\n// Placeholder tier data \u2014 swap items/hours/codenames for real reward-tier\n// content later. Structure (hours, codename, items[]) is stable.\nexport const prizeTiers = [\n  {\n    hours: 1,\n    codename: 'LVL 1 CLEARANCE',\n    items: [\n      { id: 'keychain', name: 'One Key Keychain', image: keychain, desc: 'A tiny macropad keychain for shortcut energy.' },\n      { id: 'hardware-grant', name: '$6.5/hr Hardware Grant', image: grant, desc: '$6.50 for every hour you log, straight to hardware.' },\n    ],\n  },\n  {\n    hours: 3,\n    codename: 'LVL 2 CLEARANCE',\n    items: [\n      { id: 'domain-grant', name: '$10 Domain Grant', image: porkbun, desc: 'domains are cool' },\n      { id: 'macropad', name: 'Four Key Macropad', image: macropad, desc: 'A satisfying four-button macro pad.' },\n    ],\n  },\n  {\n    hours: 15,\n    codename: 'LVL 3 CLEARANCE',\n    items: [\n      { id: 'watch', name: 'Casio Watch', image: casioWatch, desc: 'sick watch to flex on people with (can switch for any watch that is 100 or less)' },\n    ],\n  },\n  {\n    hours: 25,\n    codename: 'LVL 4 CLEARANCE',\n    items: [\n      { id: 'monitor', name: '144Hz Curved Monitor', image: monitorPlaceholder, desc: '144 hertz 27 inch curved monitor for whatever you do on your computer.' },\n      { id: 'flipper-zero', name: 'Flipper Zero', image: flipperPlaceholder, desc: 'can do cool stuff.' },\n    ],\n  },\n  {\n    hours: 50,\n    codename: 'LVL 5 CLEARANCE',\n    items: [\n      { id: 'gopro', name: 'GoPro HERO12 Black', image: gopro, desc: 'Nice mini-camera to document all your adventures. ' },\n      { id: 'laptop', name: 'Thinkpad T14 (Gen 2)', image: laptopImage, desc: 'Laptop with decent specs. Core i5-1145G7, 16GB RAM, 256GB SSD' },\n    ],\n  },\n]\n\n// Homepage teaser highlights: one item each from the lowest, a middle, and\n// the highest tier, so the preview reflects the full range without showing\n// everything (full breakdown lives on /prizes).\nexport const highlightedPrizes = [\n  {\n    id: prizeTiers[0].items[0].id,\n    name: prizeTiers[0].items[0].name,\n    image: prizeTiers[0].items[0].image,\n    codename: prizeTiers[0].codename,\n  },\n  {\n    id: prizeTiers[2].items[0].id,\n    name: prizeTiers[2].items[0].name,\n    image: prizeTiers[2].items[0].image,\n    codename: prizeTiers[2].codename,\n  },\n  {\n    id: prizeTiers[4].items[0].id,\n    name: prizeTiers[4].items[0].name,\n    image: prizeTiers[4].items[0].image,\n    codename: prizeTiers[4].codename,\n  },\n]\n",
-      "summary": "import flipperPlaceholder from '../assets/prizes/flipper_zero_img.webp'.",
-      "file_hash": "917d0b93"
+      "content": "import flipperPlaceholder from '../assets/prizes/flipper_zero_img.webp'\nimport goproPlaceholder from '../assets/prizes/gopro-placeholder.svg'\nimport monitorPlaceholder from '../assets/prizes/minotor_pic.avif'\nimport casioWatch from \"../assets/prizes/casio_image.jpg\"\nimport laptopImage from \"../assets/prizes/thinkpad_laptop_img.jpg\"\nimport porkbun from \"../assets/prizes/porkbun.png\"\nimport keychain from \"../assets/prizes/keychain_image.jpg\"\nimport macropad from \"../assets/prizes/macropad_image.jpg\"\nimport gopro from \"../assets/prizes/gopro.jpg\"\nimport grant from \"../assets/prizes/grant_image.jpg\"\nimport hardwareGrantPlaceholder from \"../assets/prizes/hardware-grant-placeholder.svg\"\n// Placeholder tier data \u2014 swap items/hours/codenames for real reward-tier\n// content later. Structure (hours, codename, items[]) is stable.\n// `hours` is each item's flat hour cost (spendable currency), not a minimum\n// unlock threshold \u2014 every item in a tier costs that tier's `hours` value.\nexport const prizeTiers = [\n  {\n    hours: 1,\n    codename: 'LVL 1 CLEARANCE',\n    items: [\n      { id: 'keychain', name: 'One Key Keychain', image: keychain, desc: 'A tiny macropad keychain for shortcut energy.' },\n      { id: 'hardware-grant', name: '$6.5/hr Hardware Grant', image: grant, desc: '$6.50 for every hour you log, straight to hardware.' },\n    ],\n  },\n  {\n    hours: 3,\n    codename: 'LVL 2 CLEARANCE',\n    items: [\n      { id: 'domain-grant', name: '$10 Domain Grant', image: porkbun, desc: 'domains are cool' },\n      { id: 'macropad', name: 'Four Key Macropad', image: macropad, desc: 'A satisfying four-button macro pad.' },\n    ],\n  },\n  {\n    hours: 15,\n    codename: 'LVL 3 CLEARANCE',\n    items: [\n      { id: 'watch', name: 'Casio Watch', image: casioWatch, desc: 'sick watch to flex on people with (can switch for any watch that is 100 or less)' },\n    ],\n  },\n  {\n    hours: 25,\n    codename: 'LVL 4 CLEARANCE',\n    items: [\n      { id: 'monitor', name: '144Hz Curved Monitor', image: monitorPlaceholder, desc: '144 hertz 27 inch curved monitor for whatever you do on your computer.' },\n      { id: 'flipper-zero', name: 'Flipper Zero', image: flipperPlaceholder, desc: 'can do cool stuff.' },\n    ],\n  },\n  {\n    hours: 50,\n    codename: 'LVL 5 CLEARANCE',\n    items: [\n      { id: 'gopro', name: 'GoPro HERO12 Black', image: gopro, desc: 'Nice mini-camera to document all your adventures. ' },\n      { id: 'laptop', name: 'Thinkpad T14 (Gen 2)', image: laptopImage, desc: 'Laptop with decent specs. Core i5-1145G7, 16GB RAM, 256GB SSD' },\n    ],\n  },\n]\n\n// Homepage teaser highlights: one item each from the lowest, a middle, and\n// the highest tier, so the preview reflects the full range without showing\n// everything (full breakdown lives on /prizes).\nexport const highlightedPrizes = [\n  {\n    id: prizeTiers[0].items[0].id,\n    name: prizeTiers[0].items[0].name,\n    image: prizeTiers[0].items[0].image,\n    codename: prizeTiers[0].codename,\n  },\n  {\n    id: prizeTiers[2].items[0].id,\n    name: prizeTiers[2].items[0].name,\n    image: prizeTiers[2].items[0].image,\n    codename: prizeTiers[2].codename,\n  },\n  {\n    id: prizeTiers[4].items[0].id,\n    name: prizeTiers[4].items[0].name,\n    image: prizeTiers[4].items[0].image,\n    codename: prizeTiers[4].codename,\n  },\n]\n\n// Shared cost lookup used by both the dashboard cart UI and the submit\n// endpoint \u2014 an item's cost is always its tier's `hours` value.\nexport function findPrize(prizeId) {\n  for (const tier of prizeTiers) {\n    const item = tier.items.find((i) => i.id === prizeId)\n    if (item) return { item, tier, cost: tier.hours }\n  }\n  return null\n}\n",
+      "summary": "import flipperPlaceholder from '../assets/prizes/flipper_zero_img.webp'. Contains 1 function: findPrize.",
+      "file_hash": "85b76072"
+    },
+    {
+      "id": "src/data/prizeTiers.js::findPrize",
+      "kind": "symbol",
+      "path": "src/data/prizeTiers.js",
+      "ext": ".js",
+      "size": 7,
+      "keywords": [
+        "findprize",
+        "find",
+        "prize"
+      ],
+      "symbol_type": "use_case",
+      "name": "findPrize",
+      "line_start": 83,
+      "line_end": 89,
+      "body_hash": "7b3bc8d5",
+      "confidence": "high",
+      "exported": true
     },
     {
       "id": "src/context/CloseAttemptContext.jsx",
@@ -2694,6 +2893,41 @@
       "rel": "references"
     },
     {
+      "from": "openspec/changes/editable-github-username/tasks.md",
+      "to": "src/components/dashboard/SubmissionForm.js",
+      "rel": "references"
+    },
+    {
+      "from": "openspec/changes/editable-github-username/tasks.md",
+      "to": "src/components/dashboard/DashboardClient.js",
+      "rel": "references"
+    },
+    {
+      "from": "openspec/changes/editable-github-username/tasks.md",
+      "to": "src/app/api/submit/route.js",
+      "rel": "references"
+    },
+    {
+      "from": "openspec/changes/editable-github-username/design.md",
+      "to": "src/app/api/submit/route.js",
+      "rel": "references"
+    },
+    {
+      "from": "openspec/changes/editable-github-username/proposal.md",
+      "to": "src/components/dashboard/SubmissionForm.js",
+      "rel": "references"
+    },
+    {
+      "from": "openspec/changes/editable-github-username/proposal.md",
+      "to": "src/components/dashboard/DashboardClient.js",
+      "rel": "references"
+    },
+    {
+      "from": "openspec/changes/editable-github-username/proposal.md",
+      "to": "src/app/api/submit/route.js",
+      "rel": "references"
+    },
+    {
       "from": "openspec/changes/add-submission-dashboard/tasks.md",
       "to": "src/pages/Home.js",
       "rel": "references"
@@ -2919,6 +3153,36 @@
       "rel": "references"
     },
     {
+      "from": "openspec/changes/add-multi-prize-cart/tasks.md",
+      "to": "/api/submit/route.js",
+      "rel": "references"
+    },
+    {
+      "from": "openspec/changes/add-multi-prize-cart/design.md",
+      "to": "/api/submit/route.js",
+      "rel": "references"
+    },
+    {
+      "from": "openspec/changes/add-multi-prize-cart/proposal.md",
+      "to": "src/components/dashboard/PrizePicker.js",
+      "rel": "references"
+    },
+    {
+      "from": "openspec/changes/add-multi-prize-cart/proposal.md",
+      "to": "src/components/dashboard/DashboardClient.js",
+      "rel": "references"
+    },
+    {
+      "from": "openspec/changes/add-multi-prize-cart/proposal.md",
+      "to": "src/data/prizeTiers.js",
+      "rel": "references"
+    },
+    {
+      "from": "openspec/changes/add-multi-prize-cart/proposal.md",
+      "to": "src/app/api/submit/route.js",
+      "rel": "references"
+    },
+    {
       "from": "openspec/changes/add-hardware-software-submission-track/tasks.md",
       "to": "src/lib/airtable.js",
       "rel": "references"
@@ -3055,6 +3319,11 @@
     },
     {
       "from": "src/app/page.jsx",
+      "to": "../components/Footer",
+      "rel": "imports"
+    },
+    {
+      "from": "src/app/page.jsx",
       "to": "Marquee",
       "rel": "imports"
     },
@@ -3086,6 +3355,11 @@
     {
       "from": "src/app/page.jsx",
       "to": "CtaFooter",
+      "rel": "imports"
+    },
+    {
+      "from": "src/app/page.jsx",
+      "to": "Footer",
       "rel": "imports"
     },
     {
@@ -3410,7 +3684,12 @@
     },
     {
       "from": "src/app/api/submit/route.js",
-      "to": "src/app/api/submit/route.js::findPrize",
+      "to": "src/app/api/submit/route.js::parseCart",
+      "rel": "contains"
+    },
+    {
+      "from": "src/app/api/submit/route.js",
+      "to": "src/app/api/submit/route.js::serializeCart",
       "rel": "contains"
     },
     {
@@ -3426,6 +3705,21 @@
     {
       "from": "src/components/ScanlineOverlay.jsx",
       "to": "src/components/ScanlineOverlay.jsx::ScanlineOverlay",
+      "rel": "contains"
+    },
+    {
+      "from": "src/components/Footer.jsx",
+      "to": "//hackclub.c",
+      "rel": "references"
+    },
+    {
+      "from": "src/components/Footer.jsx",
+      "to": "//forms.h",
+      "rel": "references"
+    },
+    {
+      "from": "src/components/Footer.jsx",
+      "to": "src/components/Footer.jsx::Footer",
       "rel": "contains"
     },
     {
@@ -3525,6 +3819,11 @@
     },
     {
       "from": "src/components/dashboard/DashboardClient.jsx",
+      "to": "../../data/prizeTiers",
+      "rel": "imports"
+    },
+    {
+      "from": "src/components/dashboard/DashboardClient.jsx",
       "to": "ProjectPicker",
       "rel": "imports"
     },
@@ -3537,6 +3836,11 @@
       "from": "src/components/dashboard/DashboardClient.jsx",
       "to": "SubmissionForm",
       "rel": "imports"
+    },
+    {
+      "from": "src/components/dashboard/DashboardClient.jsx",
+      "to": "src/components/dashboard/DashboardClient.jsx::cartTotal",
+      "rel": "contains"
     },
     {
       "from": "src/components/dashboard/DashboardClient.jsx",
@@ -3832,6 +4136,11 @@
       "from": "src/data/prizeTiers.js",
       "to": "hardwareGrantPlaceholder",
       "rel": "imports"
+    },
+    {
+      "from": "src/data/prizeTiers.js",
+      "to": "src/data/prizeTiers.js::findPrize",
+      "rel": "contains"
     },
     {
       "from": "src/context/CloseAttemptContext.jsx",

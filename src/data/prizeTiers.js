@@ -20,13 +20,14 @@ export const prizeTiers = [
     items: [
       { id: 'keychain', name: 'One Key Keychain', image: keychain, desc: 'A tiny macropad keychain for shortcut energy.' },
       { id: 'hardware-grant', name: '$6.5/hr Hardware Grant', image: grant, desc: '$6.50 for every hour you log, straight to hardware.' },
+      { id: 'general-grant', name: '$5.75/hr General Grant', image: grant, desc: "all purpose grant for items that aren't in the shop but r still cool, read rules at ispy.hackclub.com/general_rules" },
     ],
   },
   {
     hours: 3,
     codename: 'LVL 2 CLEARANCE',
     items: [
-      { id: 'domain-grant', name: '$10 Domain Grant', image: porkbun, desc: 'domains are cool' },
+      { id: 'domain-grant', name: '$20 Domain Grant', image: porkbun, desc: 'domains are cool' },
       { id: 'macropad', name: 'Four Key Macropad', image: macropad, desc: 'A satisfying four-button macro pad.' },
     ],
   },

@@ -20,6 +20,7 @@ const EMPTY_FIELDS = {
   country: '',
   zip: '',
   journalLink: '',
+  githubUsername: '',
 }
 
 const REQUIRED_TEXT_FIELDS = [
@@ -63,7 +64,10 @@ export default function DashboardClient({ profile, projects }) {
   const [selectedProject, setSelectedProject] = useState(null)
   const [hoursSpent, setHoursSpent] = useState('')
   const [cart, setCart] = useState({})
-  const [fields, setFields] = useState(EMPTY_FIELDS)
+  const [fields, setFields] = useState(() => ({
+    ...EMPTY_FIELDS,
+    githubUsername: profile?.githubUsername ?? '',
+  }))
   const [screenshot, setScreenshot] = useState(null)
   const [errors, setErrors] = useState({})
   const [status, setStatus] = useState('idle') // idle | submitting | success | error
@@ -155,6 +159,7 @@ export default function DashboardClient({ profile, projects }) {
     body.set('state', fields.state)
     body.set('country', fields.country)
     body.set('zip', fields.zip)
+    body.set('githubUsername', fields.githubUsername)
     body.set('screenshot', screenshot)
 
     try {
@@ -308,6 +313,20 @@ export default function DashboardClient({ profile, projects }) {
               className={`mt-4 font-mono text-sm ${status === 'success' ? 'text-primary-container' : 'text-error'}`}
             >
               {statusMessage}
+            </p>
+          )}
+
+          {status === 'error' && (
+            <p className="mt-2 font-mono text-xs text-on-surface-variant">
+              Having trouble?{' '}
+              <a
+                href="https://forms.hackclub.com/t/eRmxM63EgHus"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary-container hover:underline"
+              >
+                Try our backup submission form ↗
+              </a>
             </p>
           )}
         </div>

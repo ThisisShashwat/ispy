@@ -54,7 +54,13 @@ export default function SubmissionForm({
           <ReadOnlyField label="First Name" value={profile.firstName} />
           <ReadOnlyField label="Last Name" value={profile.lastName} />
           <ReadOnlyField label="Email" value={profile.email} />
-          <ReadOnlyField label="GitHub Username" value={profile.githubUsername} />
+          <TextField
+            label="GitHub Username"
+            name="githubUsername"
+            value={fields.githubUsername}
+            onChange={onFieldChange}
+            errors={errors}
+          />
         </div>
       </div>
 

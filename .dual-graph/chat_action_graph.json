@@ -215,6 +215,118 @@
     {
       "id": "src/app/api/auth/login/route.js::GET",
       "type": "file"
+    },
+    {
+      "id": "query:github username field oauth hardware project submission modifiable",
+      "type": "query",
+      "meta": {
+        "text": "github username field oauth hardware project submission modifiable"
+      }
+    },
+    {
+      "id": "src/components/dashboard/SubmissionForm.jsx",
+      "type": "file"
+    },
+    {
+      "id": "src/lib/hackatime.js::getHackatimeProjects",
+      "type": "file"
+    },
+    {
+      "id": "src/components/dashboard/ProjectPicker.jsx",
+      "type": "file"
+    },
+    {
+      "id": "query:how submission fields state initialized submitted where githubusername",
+      "type": "query",
+      "meta": {
+        "text": "how submission fields state is initialized and submitted, where githubUsername field is used in submission API/schema"
+      }
+    },
+    {
+      "id": "src/app/dashboard/success/page.jsx::SubmissionSuccessPage",
+      "type": "file"
+    },
+    {
+      "id": "query:shop items structure prizes page submission tier stackable",
+      "type": "query",
+      "meta": {
+        "text": "shop items structure: prizes page, submission page, tier 1 items, stackable items"
+      }
+    },
+    {
+      "id": "src/app/prizes/page.jsx",
+      "type": "file"
+    },
+    {
+      "id": "query:hardware project submission network error fetch failure body",
+      "type": "query",
+      "meta": {
+        "text": "hardware project submission network error fetch failure body size limit screenshot upload timeout"
+      }
+    },
+    {
+      "id": "src/lib/airtable.js::uploadAirtableAttachment",
+      "type": "file"
+    },
+    {
+      "id": "src/lib/airtable.js",
+      "type": "file"
+    },
+    {
+      "id": "src/lib/hackclub.js",
+      "type": "file"
+    },
+    {
+      "id": "query:airtable field character limits single line long text",
+      "type": "query",
+      "meta": {
+        "text": "Airtable field character limits single line long text journal link comments description hardware submission"
+      }
+    },
+    {
+      "id": "src/components/dashboard/SubmissionForm.jsx::TextField",
+      "type": "file"
+    },
+    {
+      "id": "src/components/ScanlineOverlay.jsx",
+      "type": "file"
+    },
+    {
+      "id": "query:domain price prizes checkout page form error fallback",
+      "type": "query",
+      "meta": {
+        "text": "domain price $10 to $20 prizes checkout page, form error fallback secondary submission form fillout"
+      }
+    },
+    {
+      "id": "query:checkout page domain price display dashboardclient submission error",
+      "type": "query",
+      "meta": {
+        "text": "checkout page domain price display, DashboardClient submission error handling"
+      }
+    },
+    {
+      "id": "query:prizepicker component cart item price display cost per",
+      "type": "query",
+      "meta": {
+        "text": "PrizePicker component cart item price display cost per hour"
+      }
+    },
+    {
+      "id": "src/app/api/submit/route.js::parseCart",
+      "type": "file"
+    },
+    {
+      "id": "src/components/dashboard/DashboardClient.jsx::cartTotal",
+      "type": "file"
+    },
+    {
+      "id": "src/components/dashboard/ProjectPicker.jsx::formatHours",
+      "type": "file"
+    },
+    {
+      "id": "src/components/sections/Prizes.jsx::PrizeItem",
+      "type": "file"
     }
   ],
   "edges": [
@@ -862,6 +974,417 @@
       "to": "src/app/api/auth/login/route.js::GET",
       "rel": "retrieved",
       "ts": 1784827580
+    },
+    {
+      "from": "query:github username field oauth hardware project submission modifiable",
+      "to": "src/components/dashboard/SubmissionForm.jsx",
+      "rel": "retrieved",
+      "ts": 1784901987
+    },
+    {
+      "from": "query:github username field oauth hardware project submission modifiable",
+      "to": "src/lib/hackatime.js::getHackatimeProjects",
+      "rel": "retrieved",
+      "ts": 1784901987
+    },
+    {
+      "from": "query:github username field oauth hardware project submission modifiable",
+      "to": "src/components/dashboard/ProjectPicker.jsx",
+      "rel": "retrieved",
+      "ts": 1784901987
+    },
+    {
+      "from": "query:github username field oauth hardware project submission modifiable",
+      "to": "src/app/api/auth/callback/route.js::GET",
+      "rel": "retrieved",
+      "ts": 1784901987
+    },
+    {
+      "from": "query:github username field oauth hardware project submission modifiable",
+      "to": "src/app/api/auth/hackatime/callback/route.js::GET",
+      "rel": "retrieved",
+      "ts": 1784901987
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/components/dashboard/SubmissionForm.jsx",
+      "rel": "read",
+      "ts": 1784901989,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/lib/hackatime.js::getHackatimeProjects",
+      "rel": "read",
+      "ts": 1784901990,
+      "meta": {
+        "mode": "symbol_excerpt"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/components/dashboard/ProjectPicker.jsx",
+      "rel": "read",
+      "ts": 1784901990,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:how submission fields state initialized submitted where githubusername",
+      "to": "src/components/dashboard/SubmissionForm.jsx",
+      "rel": "retrieved",
+      "ts": 1784902232
+    },
+    {
+      "from": "query:how submission fields state initialized submitted where githubusername",
+      "to": "src/app/dashboard/success/page.jsx::SubmissionSuccessPage",
+      "rel": "retrieved",
+      "ts": 1784902232
+    },
+    {
+      "from": "query:how submission fields state initialized submitted where githubusername",
+      "to": "src/hooks/useDecryptText.js::useDecryptText",
+      "rel": "retrieved",
+      "ts": 1784902232
+    },
+    {
+      "from": "query:how submission fields state initialized submitted where githubusername",
+      "to": "src/components/sections/HowItWorks.jsx",
+      "rel": "retrieved",
+      "ts": 1784902232
+    },
+    {
+      "from": "query:how submission fields state initialized submitted where githubusername",
+      "to": "src/app/api/auth/callback/route.js::GET",
+      "rel": "retrieved",
+      "ts": 1784902232
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/hooks/useDecryptText.js::useDecryptText",
+      "rel": "read",
+      "ts": 1784902237,
+      "meta": {
+        "mode": "symbol_excerpt"
+      }
+    },
+    {
+      "from": "query:shop items structure prizes page submission tier stackable",
+      "to": "src/app/prizes/page.jsx",
+      "rel": "retrieved",
+      "ts": 1784905563
+    },
+    {
+      "from": "query:shop items structure prizes page submission tier stackable",
+      "to": "src/app/dashboard/success/page.jsx",
+      "rel": "retrieved",
+      "ts": 1784905563
+    },
+    {
+      "from": "query:shop items structure prizes page submission tier stackable",
+      "to": "src/data/prizeTiers.js",
+      "rel": "retrieved",
+      "ts": 1784905563
+    },
+    {
+      "from": "query:shop items structure prizes page submission tier stackable",
+      "to": "src/components/sections/Prizes.jsx",
+      "rel": "retrieved",
+      "ts": 1784905563
+    },
+    {
+      "from": "query:shop items structure prizes page submission tier stackable",
+      "to": "src/app/dashboard/page.jsx",
+      "rel": "retrieved",
+      "ts": 1784905563
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/data/prizeTiers.js",
+      "rel": "read",
+      "ts": 1784905566,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/app/prizes/page.jsx",
+      "rel": "read",
+      "ts": 1784905566,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/app/dashboard/success/page.jsx",
+      "rel": "read",
+      "ts": 1784905571,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/components/dashboard/SubmissionForm.jsx",
+      "rel": "read",
+      "ts": 1784905571,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/components/dashboard/DashboardClient.jsx",
+      "rel": "read",
+      "ts": 1784905590,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/app/api/submit/route.js",
+      "rel": "read",
+      "ts": 1784905596,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:hardware project submission network error fetch failure body",
+      "to": "src/lib/airtable.js::uploadAirtableAttachment",
+      "rel": "retrieved",
+      "ts": 1784905755
+    },
+    {
+      "from": "query:hardware project submission network error fetch failure body",
+      "to": "src/lib/hackatime.js::getHackatimeProjects",
+      "rel": "retrieved",
+      "ts": 1784905755
+    },
+    {
+      "from": "query:hardware project submission network error fetch failure body",
+      "to": "src/app/api/auth/callback/route.js::GET",
+      "rel": "retrieved",
+      "ts": 1784905755
+    },
+    {
+      "from": "query:hardware project submission network error fetch failure body",
+      "to": "src/app/api/auth/hackatime/callback/route.js::GET",
+      "rel": "retrieved",
+      "ts": 1784905755
+    },
+    {
+      "from": "query:hardware project submission network error fetch failure body",
+      "to": "src/app/api/auth/hackatime/login/route.js::GET",
+      "rel": "retrieved",
+      "ts": 1784905755
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/lib/airtable.js",
+      "rel": "read",
+      "ts": 1784905759,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/lib/hackclub.js",
+      "rel": "read",
+      "ts": 1784905782,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/lib/auth.js",
+      "rel": "read",
+      "ts": 1784905782,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:airtable field character limits single line long text",
+      "to": "src/components/dashboard/SubmissionForm.jsx::TextField",
+      "rel": "retrieved",
+      "ts": 1784906299
+    },
+    {
+      "from": "query:airtable field character limits single line long text",
+      "to": "src/lib/airtable.js",
+      "rel": "retrieved",
+      "ts": 1784906299
+    },
+    {
+      "from": "query:airtable field character limits single line long text",
+      "to": "src/components/ScanlineOverlay.jsx",
+      "rel": "retrieved",
+      "ts": 1784906299
+    },
+    {
+      "from": "query:airtable field character limits single line long text",
+      "to": "src/hooks/useDecryptText.js::useDecryptText",
+      "rel": "retrieved",
+      "ts": 1784906299
+    },
+    {
+      "from": "query:airtable field character limits single line long text",
+      "to": "src/app/dashboard/success/page.jsx",
+      "rel": "retrieved",
+      "ts": 1784906299
+    },
+    {
+      "from": "query:domain price prizes checkout page form error fallback",
+      "to": "src/app/prizes/page.jsx",
+      "rel": "retrieved",
+      "ts": 1784913335
+    },
+    {
+      "from": "query:domain price prizes checkout page form error fallback",
+      "to": "src/components/dashboard/SubmissionForm.jsx",
+      "rel": "retrieved",
+      "ts": 1784913335
+    },
+    {
+      "from": "query:domain price prizes checkout page form error fallback",
+      "to": "src/app/dashboard/success/page.jsx",
+      "rel": "retrieved",
+      "ts": 1784913335
+    },
+    {
+      "from": "query:domain price prizes checkout page form error fallback",
+      "to": "src/components/sections/Prizes.jsx",
+      "rel": "retrieved",
+      "ts": 1784913335
+    },
+    {
+      "from": "query:domain price prizes checkout page form error fallback",
+      "to": "src/app/dashboard/page.jsx",
+      "rel": "retrieved",
+      "ts": 1784913335
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/app/prizes/page.jsx",
+      "rel": "read",
+      "ts": 1784913338,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/components/dashboard/SubmissionForm.jsx",
+      "rel": "read",
+      "ts": 1784913339,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/app/dashboard/success/page.jsx",
+      "rel": "read",
+      "ts": 1784913339,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:checkout page domain price display dashboardclient submission error",
+      "to": "src/app/dashboard/success/page.jsx",
+      "rel": "retrieved",
+      "ts": 1784913345
+    },
+    {
+      "from": "query:checkout page domain price display dashboardclient submission error",
+      "to": "src/app/prizes/page.jsx",
+      "rel": "retrieved",
+      "ts": 1784913345
+    },
+    {
+      "from": "query:checkout page domain price display dashboardclient submission error",
+      "to": "src/components/dashboard/DashboardClient.jsx",
+      "rel": "retrieved",
+      "ts": 1784913345
+    },
+    {
+      "from": "query:checkout page domain price display dashboardclient submission error",
+      "to": "src/app/dashboard/page.jsx",
+      "rel": "retrieved",
+      "ts": 1784913345
+    },
+    {
+      "from": "query:checkout page domain price display dashboardclient submission error",
+      "to": "src/app/api/auth/callback/route.js::GET",
+      "rel": "retrieved",
+      "ts": 1784913345
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/components/dashboard/DashboardClient.jsx",
+      "rel": "read",
+      "ts": 1784913348,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/data/prizeTiers.js",
+      "rel": "read",
+      "ts": 1784913348,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:prizepicker component cart item price display cost per",
+      "to": "src/app/api/submit/route.js::parseCart",
+      "rel": "retrieved",
+      "ts": 1784913352
+    },
+    {
+      "from": "query:prizepicker component cart item price display cost per",
+      "to": "src/components/dashboard/DashboardClient.jsx::cartTotal",
+      "rel": "retrieved",
+      "ts": 1784913352
+    },
+    {
+      "from": "query:prizepicker component cart item price display cost per",
+      "to": "src/components/dashboard/PrizePicker.jsx",
+      "rel": "retrieved",
+      "ts": 1784913352
+    },
+    {
+      "from": "query:prizepicker component cart item price display cost per",
+      "to": "src/components/dashboard/ProjectPicker.jsx::formatHours",
+      "rel": "retrieved",
+      "ts": 1784913352
+    },
+    {
+      "from": "query:prizepicker component cart item price display cost per",
+      "to": "src/components/sections/Prizes.jsx::PrizeItem",
+      "rel": "retrieved",
+      "ts": 1784913352
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/components/dashboard/PrizePicker.jsx",
+      "rel": "read",
+      "ts": 1784913354,
+      "meta": {
+        "mode": "full"
+      }
     }
   ],
   "files": {
@@ -924,18 +1447,18 @@
     "src/data/prizeTiers.js": {
       "query_terms": [],
       "cached_content": "import flipperPlaceholder from '../assets/prizes/flipper_zero_img.webp'\nimport goproPlaceholder from '../assets/prizes/gopro-placeholder.svg'\nimport monitorPlaceholder from '../assets/prizes/minotor_pic.avif'\nimport casioWatch from \"../assets/prizes/casio_image.jpg\"\nimport laptopImage from \"../asset",
-      "cached_chars": 3137,
-      "cached_tokens_est": 784,
+      "cached_chars": 3787,
+      "cached_tokens_est": 946,
       "last_action": "read",
-      "last_ts": 1784826437
+      "last_ts": 1784913348
     },
     "src/hooks/useDecryptText.js::useDecryptText": {
       "query_terms": [],
-      "cached_content": "const FRAME_MS = 30\n\nexport function useDecryptText(finalText) {\n  const [text, setText] = useState(finalText)\n  const prefersReducedMotion = useRef(\n    typeof window !== 'undefined' &&\n      window.matchMedia?.('(prefers-reduced-motion: reduce)').matches,\n  )\n\n  useEffect(() => {\n    if (prefersRe",
-      "cached_chars": 1069,
-      "cached_tokens_est": 267,
+      "cached_content": "export function useDecryptText(finalText) {\n  const [text, setText] = useState(finalText)\n  const prefersReducedMotion = useRef(\n    typeof window !== 'undefined' &&\n      window.matchMedia?.('(prefers-reduced-motion: reduce)').matches,\n  )\n\n  useEffect(() => {\n    if (prefersReducedMotion.current) ",
+      "cached_chars": 1064,
+      "cached_tokens_est": 266,
       "last_action": "read",
-      "last_ts": 1784746373
+      "last_ts": 1784902237
     },
     "src/hooks/useRevealOnScroll.js::useRevealOnScroll": {
       "query_terms": [],
@@ -971,11 +1494,11 @@
     },
     "src/components/dashboard/DashboardClient.jsx": {
       "query_terms": [],
-      "cached_content": "'use client'\n\nimport { useState } from 'react'\nimport { useRouter } from 'next/navigation'\nimport ProjectPicker from './ProjectPicker'\nimport PrizePicker from './PrizePicker'\nimport SubmissionForm from './SubmissionForm'\n\nconst EMPTY_FIELDS = {\n  playableUrl: '',\n  codeUrl: '',\n  description: '',\n  ",
-      "cached_chars": 10052,
-      "cached_tokens_est": 2513,
+      "cached_content": "'use client'\n\nimport { useState } from 'react'\nimport { useRouter } from 'next/navigation'\nimport ProjectPicker from './ProjectPicker'\nimport PrizePicker from './PrizePicker'\nimport SubmissionForm from './SubmissionForm'\nimport { findPrize } from '../../data/prizeTiers'\n\nconst EMPTY_FIELDS = {\n  pla",
+      "cached_chars": 10728,
+      "cached_tokens_est": 2682,
       "last_action": "read",
-      "last_ts": 1784826528
+      "last_ts": 1784913348
     },
     "src/app/page.jsx": {
       "query_terms": [],
@@ -995,19 +1518,19 @@
     },
     "src/components/dashboard/PrizePicker.jsx": {
       "query_terms": [],
-      "cached_content": "'use client'\n\nimport { prizeTiers } from '../../data/prizeTiers'\n\nexport default function PrizePicker({ hoursTracked, selectedPrize, onSelect }) {\n  return (\n    <div className=\"grid sm:grid-cols-2 lg:grid-cols-5 gap-4\">\n      {prizeTiers.map((tier) => {\n        const eligible = hoursTracked >= tier",
-      "cached_chars": 1985,
-      "cached_tokens_est": 496,
+      "cached_content": "'use client'\n\nimport { prizeTiers } from '../../data/prizeTiers'\n\nexport default function PrizePicker({ hoursTracked, cart, onChangeQuantity }) {\n  const totalCost = prizeTiers.reduce(\n    (sum, tier) => sum + tier.items.reduce((tierSum, item) => tierSum + tier.hours * (cart[item.id] ?? 0), 0),\n    ",
+      "cached_chars": 3042,
+      "cached_tokens_est": 760,
       "last_action": "read",
-      "last_ts": 1784826437
+      "last_ts": 1784913354
     },
     "src/app/api/submit/route.js": {
       "query_terms": [],
-      "cached_content": "import { NextResponse } from 'next/server'\nimport { getSessionFromRequest } from '../../../lib/auth'\nimport { getIdentity } from '../../../lib/hackclub'\nimport { getHackatimeMe, getHackatimeProjects } from '../../../lib/hackatime'\nimport { prizeTiers } from '../../../data/prizeTiers'\nimport {\n  AIRT",
-      "cached_chars": 5431,
-      "cached_tokens_est": 1357,
+      "cached_content": "import { NextResponse } from 'next/server'\nimport { getSessionFromRequest } from '../../../lib/auth'\nimport { getIdentity } from '../../../lib/hackclub'\nimport { getHackatimeProjects } from '../../../lib/hackatime'\nimport { findPrize } from '../../../data/prizeTiers'\nimport {\n  AIRTABLE_FIELDS,\n  cr",
+      "cached_chars": 7323,
+      "cached_tokens_est": 1830,
       "last_action": "read",
-      "last_ts": 1784826437
+      "last_ts": 1784905596
     },
     "src/app/dashboard/success/page.jsx": {
       "query_terms": [],
@@ -1015,7 +1538,7 @@
       "cached_chars": 1153,
       "cached_tokens_est": 288,
       "last_action": "read",
-      "last_ts": 1784826528
+      "last_ts": 1784913339
     },
     "src/lib/auth.js": {
       "query_terms": [],
@@ -1023,7 +1546,7 @@
       "cached_chars": 1149,
       "cached_tokens_est": 287,
       "last_action": "read",
-      "last_ts": 1784826538
+      "last_ts": 1784905782
     },
     "src/lib/session.js": {
       "query_terms": [],
@@ -1032,6 +1555,54 @@
       "cached_tokens_est": 414,
       "last_action": "read",
       "last_ts": 1784826546
+    },
+    "src/components/dashboard/SubmissionForm.jsx": {
+      "query_terms": [],
+      "cached_content": "'use client'\n\nfunction ReadOnlyField({ label, value }) {\n  return (\n    <div>\n      <p className=\"font-mono text-[10px] tracking-widest text-on-surface-variant uppercase mb-1\">\n        {label}\n      </p>\n      <p className=\"border border-outline-variant bg-surface-container px-3 py-2 text-sm text-on",
+      "cached_chars": 6268,
+      "cached_tokens_est": 1567,
+      "last_action": "read",
+      "last_ts": 1784913339
+    },
+    "src/lib/hackatime.js::getHackatimeProjects": {
+      "query_terms": [],
+      "cached_content": "export async function getHackatimeProjects(accessToken) {\n  const response = await fetch(`${HACKATIME_BASE}/api/v1/authenticated/projects`, {\n    headers: { Authorization: `Bearer ${accessToken}` },\n  })\n\n  if (!response.ok) {\n    console.error('[hackatime] /projects failed', response.status, await ",
+      "cached_chars": 402,
+      "cached_tokens_est": 100,
+      "last_action": "read",
+      "last_ts": 1784901990
+    },
+    "src/components/dashboard/ProjectPicker.jsx": {
+      "query_terms": [],
+      "cached_content": "'use client'\n\nimport { useMemo, useState } from 'react'\n\nconst TOP_N = 10\n\nfunction formatHours(totalSeconds) {\n  return (totalSeconds / 3600).toFixed(1)\n}\n\nexport default function ProjectPicker({ projects, selectedProject, onSelect }) {\n  const [query, setQuery] = useState('')\n\n  const sortedProjec",
+      "cached_chars": 3057,
+      "cached_tokens_est": 764,
+      "last_action": "read",
+      "last_ts": 1784901990
+    },
+    "src/app/prizes/page.jsx": {
+      "query_terms": [],
+      "cached_content": "'use client'\n\nimport Link from 'next/link'\nimport { prizeTiers } from '../../data/prizeTiers'\nimport DossierPhoto from '../../components/DossierPhoto'\nimport TerminalPane from '../../components/TerminalPane'\nimport { useRevealOnScroll } from '../../hooks/useRevealOnScroll'\n\nfunction TierItem({ item ",
+      "cached_chars": 3371,
+      "cached_tokens_est": 842,
+      "last_action": "read",
+      "last_ts": 1784913338
+    },
+    "src/lib/airtable.js": {
+      "query_terms": [],
+      "cached_content": "const AIRTABLE_API_BASE = 'https://api.airtable.com/v0'\nconst AIRTABLE_CONTENT_BASE = 'https://content.airtable.com/v0'\n\n// Confirmed against the live base schema (table \"YSWS Project Submission\",\n// tblj4KuOsDxuR6Fmw) via the Airtable meta API.\nexport const AIRTABLE_FIELDS = {\n  playableUrl: 'Playa",
+      "cached_chars": 2911,
+      "cached_tokens_est": 727,
+      "last_action": "read",
+      "last_ts": 1784905759
+    },
+    "src/lib/hackclub.js": {
+      "query_terms": [],
+      "cached_content": "const HACKCLUB_AUTH_BASE = 'https://auth.hackclub.com'\n\n// birthdate and address are HQ-Official-tier-only scopes on auth.hackclub.com\n// (see hackclub/auth app/models/oauth_scope.rb) \u2014 a Community-tier app gets\n// \"invalid scope\" if it requests them. Those two fields are collected\n// manually in th",
+      "cached_chars": 1654,
+      "cached_tokens_est": 413,
+      "last_action": "read",
+      "last_ts": 1784905782
     }
   },
   "actions": [
@@ -1209,6 +1780,143 @@
       "payload": {
         "kind": "continue_retrieve",
         "query": "add footer with TOS, privacy policy, and fulfillment bounty links"
+      }
+    },
+    {
+      "ts": 1784901987,
+      "kind": "retrieve",
+      "payload": {
+        "kind": "retrieve",
+        "query": "github username field oauth hardware project submission modifiable"
+      }
+    },
+    {
+      "ts": 1784901987,
+      "kind": "continue_retrieve",
+      "payload": {
+        "kind": "continue_retrieve",
+        "query": "github username field oauth hardware project submission modifiable"
+      }
+    },
+    {
+      "ts": 1784902232,
+      "kind": "retrieve",
+      "payload": {
+        "kind": "retrieve",
+        "query": "how submission fields state is initialized and submitted, where githubUsername field is used in submission API/schema"
+      }
+    },
+    {
+      "ts": 1784902232,
+      "kind": "continue_retrieve",
+      "payload": {
+        "kind": "continue_retrieve",
+        "query": "how submission fields state is initialized and submitted, where githubUsername field is used in submission API/schema"
+      }
+    },
+    {
+      "ts": 1784905563,
+      "kind": "retrieve",
+      "payload": {
+        "kind": "retrieve",
+        "query": "shop items structure: prizes page, submission page, tier 1 items, stackable items"
+      }
+    },
+    {
+      "ts": 1784905563,
+      "kind": "continue_retrieve",
+      "payload": {
+        "kind": "continue_retrieve",
+        "query": "shop items structure: prizes page, submission page, tier 1 items, stackable items"
+      }
+    },
+    {
+      "ts": 1784905596,
+      "kind": "fallback_blocked_limit",
+      "payload": {
+        "kind": "fallback_blocked_limit",
+        "mode": "fallback_blocked_limit",
+        "pattern": "hardware-grant|domain-grant"
+      }
+    },
+    {
+      "ts": 1784905755,
+      "kind": "retrieve",
+      "payload": {
+        "kind": "retrieve",
+        "query": "hardware project submission network error fetch failure body size limit screenshot upload timeout"
+      }
+    },
+    {
+      "ts": 1784905755,
+      "kind": "continue_retrieve",
+      "payload": {
+        "kind": "continue_retrieve",
+        "query": "hardware project submission network error fetch failure body size limit screenshot upload timeout"
+      }
+    },
+    {
+      "ts": 1784906299,
+      "kind": "retrieve",
+      "payload": {
+        "kind": "retrieve",
+        "query": "Airtable field character limits single line long text journal link comments description hardware submission"
+      }
+    },
+    {
+      "ts": 1784906299,
+      "kind": "continue_retrieve",
+      "payload": {
+        "kind": "continue_retrieve",
+        "query": "Airtable field character limits single line long text journal link comments description hardware submission"
+      }
+    },
+    {
+      "ts": 1784913335,
+      "kind": "retrieve",
+      "payload": {
+        "kind": "retrieve",
+        "query": "domain price $10 to $20 prizes checkout page, form error fallback secondary submission form fillout"
+      }
+    },
+    {
+      "ts": 1784913335,
+      "kind": "continue_retrieve",
+      "payload": {
+        "kind": "continue_retrieve",
+        "query": "domain price $10 to $20 prizes checkout page, form error fallback secondary submission form fillout"
+      }
+    },
+    {
+      "ts": 1784913345,
+      "kind": "retrieve",
+      "payload": {
+        "kind": "retrieve",
+        "query": "checkout page domain price display, DashboardClient submission error handling"
+      }
+    },
+    {
+      "ts": 1784913345,
+      "kind": "continue_retrieve",
+      "payload": {
+        "kind": "continue_retrieve",
+        "query": "checkout page domain price display, DashboardClient submission error handling"
+      }
+    },
+    {
+      "ts": 1784913352,
+      "kind": "retrieve",
+      "payload": {
+        "kind": "retrieve",
+        "query": "PrizePicker component cart item price display cost per hour"
+      }
+    },
+    {
+      "ts": 1784913352,
+      "kind": "continue_retrieve",
+      "payload": {
+        "kind": "continue_retrieve",
+        "query": "PrizePicker component cart item price display cost per hour"
       }
     }
   ]
