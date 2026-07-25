@@ -3,7 +3,6 @@
 import Link from 'next/link'
 import { highlightedPrizes } from '../../data/prizeTiers'
 import DossierPhoto from '../DossierPhoto'
-import TerminalPane from '../TerminalPane'
 import { useRevealOnScroll } from '../../hooks/useRevealOnScroll'
 
 function PrizeItem({ prize, index }) {
@@ -27,7 +26,7 @@ function PrizeItem({ prize, index }) {
 
 export default function Prizes() {
   return (
-    <TerminalPane id="prizes" path="./reward_shop.py --tier" className="bg-surface">
+    <section id="prizes">
       <div className="px-6 py-24">
         <div className="max-w-5xl mx-auto text-center">
           <p className="font-mono text-primary-container tracking-[0.3em] text-sm mb-4">
@@ -56,6 +55,6 @@ export default function Prizes() {
           SEE FULL LIST →
         </Link>
       </div>
-    </TerminalPane>
+    </section>
   )
 }

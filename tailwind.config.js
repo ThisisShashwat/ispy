@@ -124,6 +124,18 @@ export default {
           '96%': { opacity: '0.6' },
           '97%': { opacity: '1' },
         },
+        footprintFade: {
+          '0%': {
+            opacity: '0.85',
+            transform:
+              'translate(-50%, -50%) rotate(var(--rot, 0deg)) scaleX(var(--mirror, 1)) scale(1)',
+          },
+          '100%': {
+            opacity: '0',
+            transform:
+              'translate(-50%, -50%) rotate(var(--rot, 0deg)) scaleX(var(--mirror, 1)) scale(0.65)',
+          },
+        },
       },
       animation: {
         'flap-open': 'flapOpen 0.6s ease-in forwards',
@@ -137,6 +149,7 @@ export default {
         'shake-once': 'glitchShift 0.4s steps(2) 2',
         'fade-up': 'fadeUp 0.6s ease-out forwards',
         flicker: 'flicker 6s linear infinite',
+        'footprint-fade': 'footprintFade 1.4s ease-out forwards',
       },
     },
   },

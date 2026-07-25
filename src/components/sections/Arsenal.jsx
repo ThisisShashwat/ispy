@@ -1,7 +1,6 @@
 'use client'
 
 import { useRevealOnScroll } from '../../hooks/useRevealOnScroll'
-import TerminalPane from '../TerminalPane'
 
 const ideas = [
   {
@@ -44,7 +43,7 @@ function IdeaCard({ idea, index }) {
 
 export default function Arsenal() {
   return (
-    <TerminalPane id="arsenal" path="ls -la ./arsenal/" className="bg-surface">
+    <section id="arsenal">
       <div className="px-6 py-20 bg-grid">
         <div className="max-w-5xl mx-auto">
           <p className="font-mono text-primary-container tracking-[0.3em] text-sm mb-4">
@@ -67,6 +66,6 @@ export default function Arsenal() {
           </div>
         </div>
       </div>
-    </TerminalPane>
+    </section>
   )
 }

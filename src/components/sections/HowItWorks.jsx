@@ -1,7 +1,6 @@
 'use client'
 
 import { useRevealOnScroll } from '../../hooks/useRevealOnScroll'
-import TerminalPane from '../TerminalPane'
 
 const steps = [
   {
@@ -49,7 +48,7 @@ function Step({ s, index }) {
 
 export default function HowItWorks() {
   return (
-    <TerminalPane id="how-it-works" path="man protocol" className="bg-surface">
+    <section id="how-it-works">
       <div className="px-6 py-20 bg-grid">
         <div className="max-w-4xl mx-auto">
           <p className="font-mono text-primary-container tracking-[0.3em] text-sm mb-4">
@@ -68,6 +67,6 @@ export default function HowItWorks() {
           </div>
         </div>
       </div>
-    </TerminalPane>
+    </section>
   )
 }

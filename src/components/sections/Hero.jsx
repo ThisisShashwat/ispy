@@ -1,7 +1,6 @@
 'use client'
 
 import { useDecryptText } from '../../hooks/useDecryptText'
-import TerminalPane from '../TerminalPane'
 
 const BOOT_LOG = [
   '[ OK ] Mounting /dev/surveillance',
@@ -13,7 +12,7 @@ export default function Hero() {
   const headline = useDecryptText('ISPY')
 
   return (
-    <TerminalPane id="hero" host="root@ispy" path="./boot.sh" className="bg-surface">
+    <section id="hero">
       <div className="relative min-h-screen flex flex-col items-center justify-center text-center px-6 bg-grid overflow-hidden">
         <div
           aria-hidden="true"
@@ -61,6 +60,6 @@ export default function Hero() {
           ▼ SCROLL FOR BRIEFING
         </p>
       </div>
-    </TerminalPane>
+    </section>
   )
 }

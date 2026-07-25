@@ -327,6 +327,17 @@
     {
       "id": "src/components/sections/Prizes.jsx::PrizeItem",
       "type": "file"
+    },
+    {
+      "id": "query:homepage structure terminal style single scrolling interface redesign",
+      "type": "query",
+      "meta": {
+        "text": "homepage UI structure - terminal-style single scrolling interface redesign"
+      }
+    },
+    {
+      "id": "src/lib/auth.js::requireSession",
+      "type": "file"
     }
   ],
   "edges": [
@@ -1385,6 +1396,36 @@
       "meta": {
         "mode": "full"
       }
+    },
+    {
+      "from": "query:homepage structure terminal style single scrolling interface redesign",
+      "to": "src/lib/auth.js::requireSession",
+      "rel": "retrieved",
+      "ts": 1784989735
+    },
+    {
+      "from": "query:homepage structure terminal style single scrolling interface redesign",
+      "to": "src/components/TerminalPane.jsx",
+      "rel": "retrieved",
+      "ts": 1784989735
+    },
+    {
+      "from": "query:homepage structure terminal style single scrolling interface redesign",
+      "to": "src/app/api/auth/callback/route.js::GET",
+      "rel": "retrieved",
+      "ts": 1784989735
+    },
+    {
+      "from": "query:homepage structure terminal style single scrolling interface redesign",
+      "to": "src/app/api/auth/hackatime/callback/route.js::GET",
+      "rel": "retrieved",
+      "ts": 1784989735
+    },
+    {
+      "from": "query:homepage structure terminal style single scrolling interface redesign",
+      "to": "src/app/api/auth/hackatime/login/route.js::GET",
+      "rel": "retrieved",
+      "ts": 1784989735
     }
   ],
   "files": {
@@ -1917,6 +1958,22 @@
       "payload": {
         "kind": "continue_retrieve",
         "query": "PrizePicker component cart item price display cost per hour"
+      }
+    },
+    {
+      "ts": 1784989735,
+      "kind": "retrieve",
+      "payload": {
+        "kind": "retrieve",
+        "query": "homepage UI structure - terminal-style single scrolling interface redesign"
+      }
+    },
+    {
+      "ts": 1784989735,
+      "kind": "continue_retrieve",
+      "payload": {
+        "kind": "continue_retrieve",
+        "query": "homepage UI structure - terminal-style single scrolling interface redesign"
       }
     }
   ]

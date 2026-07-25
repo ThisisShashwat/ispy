@@ -1,8 +1,6 @@
-import TerminalPane from '../TerminalPane'
-
 export default function CtaFooter() {
   return (
-    <TerminalPane id="cta" idle className="bg-surface-container-lowest">
+    <section id="cta" className="bg-surface-container-lowest">
       <div className="px-6 py-24 text-on-background text-center">
         <p className="font-mono text-secondary-container tracking-[0.3em] text-sm mb-4">
           EYES ONLY
@@ -20,6 +18,6 @@ export default function CtaFooter() {
           ISPY - made with love by <a className="link" href="https://plastuchino.xyz">seba (plastuchino)</a>
         </p>
       </div>
-    </TerminalPane>
+    </section>
   )
 }

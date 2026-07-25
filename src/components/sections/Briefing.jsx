@@ -1,9 +1,8 @@
 import Redacted from '../Redacted'
-import TerminalPane from '../TerminalPane'
 
 export default function Briefing() {
   return (
-    <TerminalPane id="briefing" path="cat case_file_001.md" className="bg-surface">
+    <section id="briefing">
       <div className="px-6 py-20">
         <div className="max-w-3xl mx-auto">
           <p className="font-mono text-primary-container tracking-[0.3em] text-sm mb-4">
@@ -25,6 +24,6 @@ export default function Briefing() {
           </p>
         </div>
       </div>
-    </TerminalPane>
+    </section>
   )
 }

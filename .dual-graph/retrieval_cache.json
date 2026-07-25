@@ -1,270 +1,63 @@
 {
   "entries": {
-    "domain price prizes checkout page form error fallback|tf=5|te=12": {
-      "created_epoch": 1784913335,
+    "homepage structure terminal style single scrolling interface redesign|tf=5|te=12": {
+      "created_epoch": 1784989735,
       "files": [
-        "src/app/prizes/page.jsx",
-        "src/components/dashboard/SubmissionForm.jsx",
-        "src/app/dashboard/success/page.jsx",
-        "src/components/sections/Prizes.jsx",
-        "src/app/dashboard/page.jsx"
+        "src/lib/auth.js::requireSession",
+        "src/components/TerminalPane.jsx",
+        "src/app/api/auth/callback/route.js::GET",
+        "src/app/api/auth/hackatime/callback/route.js::GET",
+        "src/app/api/auth/hackatime/login/route.js::GET"
       ],
       "mtimes_ns": {
-        "src/app/prizes/page.jsx": 1784827251035739657,
-        "src/components/dashboard/SubmissionForm.jsx": 1784902719807834691,
-        "src/app/dashboard/success/page.jsx": 1784743730166330189,
-        "src/components/sections/Prizes.jsx": 1784747130923957468,
-        "src/app/dashboard/page.jsx": 1784817595654745158
+        "src/lib/auth.js::requireSession": 1784743044492748877,
+        "src/components/TerminalPane.jsx": 1784740061993680470,
+        "src/app/api/auth/callback/route.js::GET": 1784743036327648869,
+        "src/app/api/auth/hackatime/callback/route.js::GET": 1784743024316556431,
+        "src/app/api/auth/hackatime/login/route.js::GET": 1784743016953411522
       },
       "result": {
         "ok": true,
-        "query": "domain price $10 to $20 prizes checkout page, form error fallback secondary submission form fillout",
+        "query": "homepage UI structure - terminal-style single scrolling interface redesign",
         "graph_files": [
           {
-            "id": "src/app/prizes/page.jsx",
-            "kind": "file",
-            "path": "src/app/prizes/page.jsx",
-            "ext": ".jsx",
-            "size": 3377,
+            "id": "src/lib/auth.js::requireSession",
+            "kind": "symbol",
+            "path": "src/lib/auth.js",
+            "ext": ".js",
+            "size": 6,
             "keywords": [
-              "prizespage",
-              "prizes",
-              "page"
+              "requiresession",
+              "require",
+              "session"
             ],
-            "summary": "'use client'. Contains 3 functions/classes: TierItem, TierColumn, PrizesPage.",
-            "file_hash": "e2f6034c",
-            "_score": 26,
+            "symbol_type": "use_case",
+            "name": "requireSession",
+            "line_start": 17,
+            "line_end": 22,
+            "body_hash": "06246e69",
+            "confidence": "high",
+            "exported": true,
+            "_score": 15,
             "_role": "code",
-            "_intent": "debug"
+            "_intent": "general"
           },
           {
-            "id": "src/components/dashboard/SubmissionForm.jsx",
+            "id": "src/components/TerminalPane.jsx",
             "kind": "file",
-            "path": "src/components/dashboard/SubmissionForm.jsx",
+            "path": "src/components/TerminalPane.jsx",
             "ext": ".jsx",
-            "size": 6270,
+            "size": 2835,
             "keywords": [
-              "submissionform",
-              "submission",
-              "form"
+              "terminalpane",
+              "terminal",
+              "pane"
             ],
-            "summary": "'use client'. Contains 3 functions/classes: ReadOnlyField, TextField, SubmissionForm.",
-            "file_hash": "0933c7c4",
-            "_score": 23,
+            "summary": "'use client'. Contains 1 function: TerminalPane.",
+            "file_hash": "9bef1220",
+            "_score": 14,
             "_role": "code",
-            "_intent": "debug"
-          },
-          {
-            "id": "src/app/dashboard/success/page.jsx",
-            "kind": "file",
-            "path": "src/app/dashboard/success/page.jsx",
-            "ext": ".jsx",
-            "size": 1155,
-            "keywords": [
-              "submissionsuccesspage",
-              "submission",
-              "success",
-              "page"
-            ],
-            "summary": "import Link from 'next/link'. Contains 1 function: SubmissionSuccessPage.",
-            "file_hash": "010e9f75",
-            "_score": 20,
-            "_role": "code",
-            "_intent": "debug"
-          },
-          {
-            "id": "src/components/sections/Prizes.jsx",
-            "kind": "file",
-            "path": "src/components/sections/Prizes.jsx",
-            "ext": ".jsx",
-            "size": 2162,
-            "keywords": [
-              "prizes"
-            ],
-            "summary": "'use client'. Contains 2 functions/classes: PrizeItem, Prizes.",
-            "file_hash": "6858bc0c",
-            "_score": 17,
-            "_role": "code",
-            "_intent": "debug"
-          },
-          {
-            "id": "src/app/dashboard/page.jsx",
-            "kind": "file",
-            "path": "src/app/dashboard/page.jsx",
-            "ext": ".jsx",
-            "size": 2049,
-            "keywords": [
-              "dashboardpage",
-              "dashboard",
-              "page"
-            ],
-            "summary": "import { requireSession } from '../../lib/auth'. Contains 1 function: DashboardPage.",
-            "file_hash": "60eda2d1",
-            "_score": 16,
-            "_role": "code",
-            "_intent": "debug"
-          }
-        ],
-        "graph_edges": [
-          {
-            "from": "src/app/prizes/page.jsx",
-            "to": "../../components/DossierPhoto",
-            "rel": "imports"
-          },
-          {
-            "from": "src/app/prizes/page.jsx",
-            "to": "../../components/TerminalPane",
-            "rel": "imports"
-          },
-          {
-            "from": "src/app/prizes/page.jsx",
-            "to": "../../data/prizeTiers",
-            "rel": "imports"
-          },
-          {
-            "from": "src/app/prizes/page.jsx",
-            "to": "../../hooks/useRevealOnScroll",
-            "rel": "imports"
-          },
-          {
-            "from": "src/app/prizes/page.jsx",
-            "to": "DossierPhoto",
-            "rel": "imports"
-          },
-          {
-            "from": "src/app/prizes/page.jsx",
-            "to": "Link",
-            "rel": "imports"
-          },
-          {
-            "from": "src/app/prizes/page.jsx",
-            "to": "TerminalPane",
-            "rel": "imports"
-          },
-          {
-            "from": "src/app/prizes/page.jsx",
-            "to": "next/link",
-            "rel": "imports"
-          },
-          {
-            "from": "src/app/dashboard/success/page.jsx",
-            "to": "src/app/dashboard/success/page.jsx::SubmissionSuccessPage",
-            "rel": "contains"
-          },
-          {
-            "from": "src/app/prizes/page.jsx",
-            "to": "/reward_shop.py",
-            "rel": "references"
-          },
-          {
-            "from": "src/app/prizes/page.jsx",
-            "to": "src/app/prizes/page.jsx::PrizesPage",
-            "rel": "contains"
-          },
-          {
-            "from": "src/app/prizes/page.jsx",
-            "to": "src/app/prizes/page.jsx::TierColumn",
-            "rel": "contains"
-          }
-        ],
-        "grep_hits": [],
-        "reuse_candidates": [],
-        "read_budget": {
-          "remaining_chars": 60000,
-          "reuse_gate_candidates": []
-        }
-      }
-    },
-    "checkout page domain price display dashboardclient submission error|tf=5|te=12": {
-      "created_epoch": 1784913345,
-      "files": [
-        "src/app/dashboard/success/page.jsx",
-        "src/app/prizes/page.jsx",
-        "src/components/dashboard/DashboardClient.jsx",
-        "src/app/dashboard/page.jsx",
-        "src/app/api/auth/callback/route.js::GET"
-      ],
-      "mtimes_ns": {
-        "src/app/dashboard/success/page.jsx": 1784743730166330189,
-        "src/app/prizes/page.jsx": 1784827251035739657,
-        "src/components/dashboard/DashboardClient.jsx": 1784902731947961811,
-        "src/app/dashboard/page.jsx": 1784817595654745158,
-        "src/app/api/auth/callback/route.js::GET": 1784743036327648869
-      },
-      "result": {
-        "ok": true,
-        "query": "checkout page domain price display, DashboardClient submission error handling",
-        "graph_files": [
-          {
-            "id": "src/app/dashboard/success/page.jsx",
-            "kind": "file",
-            "path": "src/app/dashboard/success/page.jsx",
-            "ext": ".jsx",
-            "size": 1155,
-            "keywords": [
-              "submissionsuccesspage",
-              "submission",
-              "success",
-              "page"
-            ],
-            "summary": "import Link from 'next/link'. Contains 1 function: SubmissionSuccessPage.",
-            "file_hash": "010e9f75",
-            "_score": 20,
-            "_role": "code",
-            "_intent": "debug"
-          },
-          {
-            "id": "src/app/prizes/page.jsx",
-            "kind": "file",
-            "path": "src/app/prizes/page.jsx",
-            "ext": ".jsx",
-            "size": 3377,
-            "keywords": [
-              "prizespage",
-              "prizes",
-              "page"
-            ],
-            "summary": "'use client'. Contains 3 functions/classes: TierItem, TierColumn, PrizesPage.",
-            "file_hash": "e2f6034c",
-            "_score": 18,
-            "_role": "code",
-            "_intent": "debug"
-          },
-          {
-            "id": "src/components/dashboard/DashboardClient.jsx",
-            "kind": "file",
-            "path": "src/components/dashboard/DashboardClient.jsx",
-            "ext": ".jsx",
-            "size": 10734,
-            "keywords": [
-              "dashboardclient",
-              "dashboard",
-              "client",
-              "api",
-              "submit"
-            ],
-            "summary": "'use client'. Contains 5 functions/classes: cartTotal, validate, DashboardClient, handleSelectCategory, ....",
-            "file_hash": "5586e492",
-            "_score": 18,
-            "_role": "code",
-            "_intent": "debug"
-          },
-          {
-            "id": "src/app/dashboard/page.jsx",
-            "kind": "file",
-            "path": "src/app/dashboard/page.jsx",
-            "ext": ".jsx",
-            "size": 2049,
-            "keywords": [
-              "dashboardpage",
-              "dashboard",
-              "page"
-            ],
-            "summary": "import { requireSession } from '../../lib/auth'. Contains 1 function: DashboardPage.",
-            "file_hash": "60eda2d1",
-            "_score": 16,
-            "_role": "code",
-            "_intent": "debug"
+            "_intent": "general"
           },
           {
             "id": "src/app/api/auth/callback/route.js::GET",
@@ -282,266 +75,110 @@
             "body_hash": "f33cf74b",
             "confidence": "high",
             "exported": true,
-            "_score": 15,
+            "_score": 13,
             "_role": "logic",
-            "_intent": "debug"
+            "_intent": "general"
+          },
+          {
+            "id": "src/app/api/auth/hackatime/callback/route.js::GET",
+            "kind": "symbol",
+            "path": "src/app/api/auth/hackatime/callback/route.js",
+            "ext": ".js",
+            "size": 35,
+            "keywords": [
+              "get"
+            ],
+            "symbol_type": "api_route",
+            "name": "GET",
+            "line_start": 6,
+            "line_end": 40,
+            "body_hash": "016c7ccb",
+            "confidence": "high",
+            "exported": true,
+            "_score": 13,
+            "_role": "logic",
+            "_intent": "general"
+          },
+          {
+            "id": "src/app/api/auth/hackatime/login/route.js::GET",
+            "kind": "symbol",
+            "path": "src/app/api/auth/hackatime/login/route.js",
+            "ext": ".js",
+            "size": 10,
+            "keywords": [
+              "get"
+            ],
+            "symbol_type": "api_route",
+            "name": "GET",
+            "line_start": 4,
+            "line_end": 13,
+            "body_hash": "c72ae081",
+            "confidence": "high",
+            "exported": true,
+            "_score": 13,
+            "_role": "logic",
+            "_intent": "general"
           }
         ],
         "graph_edges": [
           {
-            "from": "src/app/dashboard/page.jsx",
-            "to": "../../components/dashboard/DashboardClient",
+            "from": "src/components/TerminalPane.jsx",
+            "to": "../context/CloseAttemptContext",
             "rel": "imports"
           },
           {
-            "from": "src/app/dashboard/page.jsx",
-            "to": "DashboardClient",
+            "from": "src/components/TerminalPane.jsx",
+            "to": "react",
             "rel": "imports"
           },
           {
-            "from": "src/components/dashboard/DashboardClient.jsx",
-            "to": "./SubmissionForm",
-            "rel": "imports"
-          },
-          {
-            "from": "src/components/dashboard/DashboardClient.jsx",
-            "to": "SubmissionForm",
-            "rel": "imports"
-          },
-          {
-            "from": "src/app/dashboard/success/page.jsx",
-            "to": "src/app/dashboard/success/page.jsx::SubmissionSuccessPage",
+            "from": "src/components/TerminalPane.jsx",
+            "to": "src/components/TerminalPane.jsx::TerminalPane",
             "rel": "contains"
           },
           {
-            "from": "src/app/dashboard/page.jsx",
-            "to": "../../lib/auth",
-            "rel": "imports"
+            "from": "src/lib/auth.js",
+            "to": "src/lib/auth.js::requireSession",
+            "rel": "contains"
           },
           {
-            "from": "src/app/dashboard/page.jsx",
-            "to": "../../lib/hackatime",
-            "rel": "imports"
+            "from": "src/app/api/auth/callback/route.js",
+            "to": "src/app/api/auth/callback/route.js::GET",
+            "rel": "contains"
           },
           {
-            "from": "src/app/dashboard/page.jsx",
-            "to": "../../lib/hackclub",
-            "rel": "imports"
+            "from": "src/app/api/auth/hackatime/callback/route.js",
+            "to": "src/app/api/auth/hackatime/callback/route.js::GET",
+            "rel": "contains"
           },
           {
-            "from": "src/app/dashboard/success/page.jsx",
-            "to": "../../../lib/auth",
-            "rel": "imports"
+            "from": "src/app/api/auth/hackatime/login/route.js",
+            "to": "src/app/api/auth/hackatime/login/route.js::GET",
+            "rel": "contains"
           },
           {
-            "from": "src/app/dashboard/success/page.jsx",
-            "to": "Link",
-            "rel": "imports"
-          },
-          {
-            "from": "src/app/dashboard/success/page.jsx",
-            "to": "next/link",
+            "from": "src/app/prizes/page.jsx",
+            "to": "../../components/TerminalPane",
             "rel": "imports"
           },
           {
             "from": "src/app/prizes/page.jsx",
-            "to": "../../components/DossierPhoto",
-            "rel": "imports"
-          }
-        ],
-        "grep_hits": [],
-        "reuse_candidates": [],
-        "read_budget": {
-          "remaining_chars": 60000,
-          "reuse_gate_candidates": []
-        }
-      }
-    },
-    "prizepicker component cart item price display cost per|tf=5|te=12": {
-      "created_epoch": 1784913352,
-      "files": [
-        "src/app/api/submit/route.js::parseCart",
-        "src/components/dashboard/DashboardClient.jsx::cartTotal",
-        "src/components/dashboard/PrizePicker.jsx",
-        "src/components/dashboard/ProjectPicker.jsx::formatHours",
-        "src/components/sections/Prizes.jsx::PrizeItem"
-      ],
-      "mtimes_ns": {
-        "src/app/api/submit/route.js::parseCart": 1784902783314022681,
-        "src/components/dashboard/DashboardClient.jsx::cartTotal": 1784902731947961811,
-        "src/components/dashboard/PrizePicker.jsx": 1784826989487517798,
-        "src/components/dashboard/ProjectPicker.jsx::formatHours": 1784743722817291365,
-        "src/components/sections/Prizes.jsx::PrizeItem": 1784747130923957468
-      },
-      "result": {
-        "ok": true,
-        "query": "PrizePicker component cart item price display cost per hour",
-        "graph_files": [
-          {
-            "id": "src/app/api/submit/route.js::parseCart",
-            "kind": "symbol",
-            "path": "src/app/api/submit/route.js",
-            "ext": ".js",
-            "size": 19,
-            "keywords": [
-              "parsecart",
-              "parse",
-              "cart"
-            ],
-            "symbol_type": "utility",
-            "name": "parseCart",
-            "line_start": 12,
-            "line_end": 30,
-            "body_hash": "6c3c9d5d",
-            "confidence": "medium",
-            "exported": false,
-            "_score": 16,
-            "_role": "logic",
-            "_intent": "general"
-          },
-          {
-            "id": "src/components/dashboard/DashboardClient.jsx::cartTotal",
-            "kind": "symbol",
-            "path": "src/components/dashboard/DashboardClient.jsx",
-            "ext": ".jsx",
-            "size": 6,
-            "keywords": [
-              "carttotal",
-              "cart",
-              "total"
-            ],
-            "symbol_type": "utility",
-            "name": "cartTotal",
-            "line_start": 37,
-            "line_end": 42,
-            "body_hash": "16d73022",
-            "confidence": "medium",
-            "exported": false,
-            "_score": 16,
-            "_role": "code",
-            "_intent": "general"
-          },
-          {
-            "id": "src/components/dashboard/PrizePicker.jsx",
-            "kind": "file",
-            "path": "src/components/dashboard/PrizePicker.jsx",
-            "ext": ".jsx",
-            "size": 3048,
-            "keywords": [
-              "prizepicker",
-              "prize",
-              "picker"
-            ],
-            "summary": "'use client'. Contains 1 function: PrizePicker.",
-            "file_hash": "bf514536",
-            "_score": 16,
-            "_role": "code",
-            "_intent": "general"
-          },
-          {
-            "id": "src/components/dashboard/ProjectPicker.jsx::formatHours",
-            "kind": "symbol",
-            "path": "src/components/dashboard/ProjectPicker.jsx",
-            "ext": ".jsx",
-            "size": 3,
-            "keywords": [
-              "formathours",
-              "format",
-              "hours"
-            ],
-            "symbol_type": "utility",
-            "name": "formatHours",
-            "line_start": 6,
-            "line_end": 8,
-            "body_hash": "2749a008",
-            "confidence": "medium",
-            "exported": false,
-            "_score": 16,
-            "_role": "code",
-            "_intent": "general"
-          },
-          {
-            "id": "src/components/sections/Prizes.jsx::PrizeItem",
-            "kind": "symbol",
-            "path": "src/components/sections/Prizes.jsx",
-            "ext": ".jsx",
-            "size": 18,
-            "keywords": [
-              "prizeitem",
-              "prize",
-              "item"
-            ],
-            "symbol_type": "utility",
-            "name": "PrizeItem",
-            "line_start": 8,
-            "line_end": 25,
-            "body_hash": "840bb15f",
-            "confidence": "medium",
-            "exported": false,
-            "_score": 16,
-            "_role": "code",
-            "_intent": "general"
-          }
-        ],
-        "graph_edges": [
-          {
-            "from": "src/components/dashboard/PrizePicker.jsx",
-            "to": "../../data/prizeTiers",
+            "to": "TerminalPane",
             "rel": "imports"
           },
           {
-            "from": "src/components/dashboard/DashboardClient.jsx",
-            "to": "src/components/dashboard/DashboardClient.jsx::cartTotal",
-            "rel": "contains"
-          },
-          {
-            "from": "src/components/dashboard/PrizePicker.jsx",
-            "to": "src/components/dashboard/PrizePicker.jsx::PrizePicker",
-            "rel": "contains"
-          },
-          {
-            "from": "src/components/dashboard/ProjectPicker.jsx",
-            "to": "src/components/dashboard/ProjectPicker.jsx::formatHours",
-            "rel": "contains"
-          },
-          {
-            "from": "src/components/sections/Prizes.jsx",
-            "to": "src/components/sections/Prizes.jsx::PrizeItem",
-            "rel": "contains"
-          },
-          {
-            "from": "openspec/changes/add-multi-prize-cart/proposal.md",
-            "to": "src/components/dashboard/PrizePicker.js",
-            "rel": "references"
-          },
-          {
-            "from": "src/app/api/submit/route.js",
-            "to": "src/app/api/submit/route.js::parseCart",
-            "rel": "contains"
-          },
-          {
-            "from": "src/components/dashboard/DashboardClient.jsx",
-            "to": "./PrizePicker",
+            "from": "src/components/sections/Arsenal.jsx",
+            "to": "../TerminalPane",
             "rel": "imports"
           },
           {
-            "from": "src/components/dashboard/DashboardClient.jsx",
-            "to": "PrizePicker",
+            "from": "src/components/sections/Arsenal.jsx",
+            "to": "TerminalPane",
             "rel": "imports"
           },
           {
-            "from": "openspec/changes/add-hardware-software-submission-track/proposal.md",
-            "to": "src/components/dashboard/PrizePicker.js",
-            "rel": "references"
-          },
-          {
-            "from": "openspec/changes/add-multi-prize-cart/proposal.md",
-            "to": "src/components/dashboard/DashboardClient.js",
-            "rel": "references"
-          },
-          {
-            "from": "src/app/dashboard/page.jsx",
-            "to": "../../components/dashboard/DashboardClient",
+            "from": "src/components/sections/Briefing.jsx",
+            "to": "../TerminalPane",
             "rel": "imports"
           }
         ],
