@@ -10,7 +10,7 @@ import gopro from "../assets/prizes/gopro.jpg"
 import grant from "../assets/prizes/grant_image.jpg"
 import ai from "../assets/prizes/claude_vs_gemini.png"
 import hardwareGrantPlaceholder from "../assets/prizes/hardware-grant-placeholder.svg"
-import protonMe from "../assets/prizes/protonMe.avif"
+import protonMe from "../assets/prizes/protonMe.jpg"
 import hackTheBox from "../assets/prizes/hackthebox.png"
 import tryHackMe from "../assets/prizes/tryHackMe.png"
 // Placeholder tier data — swap items/hours/codenames for real reward-tier
