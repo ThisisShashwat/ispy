@@ -42,7 +42,10 @@ export async function POST(request) {
 
   const formData = await request.formData()
   const category = formData.get('category')?.toString() ?? ''
-  const projectName = formData.get('projectName')?.toString() ?? ''
+  const projectNames = (formData.get('projectName')?.toString() ?? '')
+    .split(',')
+    .map((name) => name.trim())
+    .filter(Boolean)
   const journalLink = formData.get('journalLink')?.toString() ?? ''
   const hoursSpentRaw = formData.get('hoursSpent')?.toString() ?? ''
   const cartRaw = formData.get('cart')?.toString() ?? ''
@@ -74,11 +77,16 @@ export async function POST(request) {
     category === 'software' ? getHackatimeProjects(session.hackatime_access_token) : Promise.resolve(null),
   ])
 
-  let selectedProject = null
+  let selectedProjects = []
   let hoursTracked = 0
   if (category === 'software') {
-    selectedProject = projects.find((p) => p.name === projectName)
-    hoursTracked = selectedProject ? selectedProject.total_seconds / 3600 : 0
+    selectedProjects = projectNames
+      .map((name) => projects.find((p) => p.name === name))
+      .filter(Boolean)
+    hoursTracked =
+      selectedProjects.length === projectNames.length
+        ? selectedProjects.reduce((sum, p) => sum + p.total_seconds, 0) / 3600
+        : 0
   } else {
     hoursTracked = parseFloat(hoursSpentRaw) || 0
   }
@@ -142,7 +150,7 @@ export async function POST(request) {
     )
   }
 
-  if (category === 'software' && !selectedProject) {
+  if (category === 'software' && (projectNames.length === 0 || selectedProjects.length !== projectNames.length)) {
     return NextResponse.json({ error: 'Selected project not found on Hackatime' }, { status: 400 })
   }
 
@@ -155,7 +163,7 @@ export async function POST(request) {
   if (cartTotal > hoursTracked) {
     const hoursDescription =
       category === 'software'
-        ? `"${selectedProject.name}" has ${hoursTracked.toFixed(1)} tracked hours`
+        ? `"${selectedProjects.map((p) => p.name).join(', ')}" has ${hoursTracked.toFixed(1)} tracked hours`
         : `${hoursTracked.toFixed(1)} self-reported hours`
     return NextResponse.json(
       {

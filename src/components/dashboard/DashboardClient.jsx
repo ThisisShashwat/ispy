@@ -61,7 +61,7 @@ export default function DashboardClient({ profile, projects }) {
   const router = useRouter()
   const [showForm, setShowForm] = useState(false)
   const [category, setCategory] = useState(null) // null | 'software' | 'hardware'
-  const [selectedProject, setSelectedProject] = useState(null)
+  const [selectedProjects, setSelectedProjects] = useState([])
   const [hoursSpent, setHoursSpent] = useState('')
   const [cart, setCart] = useState({})
   const [fields, setFields] = useState(() => ({
@@ -76,23 +76,26 @@ export default function DashboardClient({ profile, projects }) {
   const hoursTracked =
     category === 'hardware'
       ? parseFloat(hoursSpent) || 0
-      : selectedProject
-        ? selectedProject.total_seconds / 3600
-        : 0
+      : selectedProjects.reduce((sum, project) => sum + project.total_seconds, 0) / 3600
 
-  const trackIdentified = category === 'hardware' ? hoursSpent.trim() !== '' : Boolean(selectedProject)
+  const trackIdentified =
+    category === 'hardware' ? hoursSpent.trim() !== '' : selectedProjects.length > 0
 
   function handleSelectCategory(nextCategory) {
     setCategory(nextCategory)
-    setSelectedProject(null)
+    setSelectedProjects([])
     setHoursSpent('')
     setCart({})
     setErrors({})
   }
 
   function handleSelectProject(project) {
-    setSelectedProject(project)
-    // Changing the project can invalidate a previously-eligible cart.
+    setSelectedProjects((prev) =>
+      prev.some((p) => p.name === project.name)
+        ? prev.filter((p) => p.name !== project.name)
+        : [...prev, project],
+    )
+    // Changing the selection can invalidate a previously-eligible cart.
     setCart({})
   }
 
@@ -119,7 +122,7 @@ export default function DashboardClient({ profile, projects }) {
   async function handleSubmit(e) {
     e.preventDefault()
 
-    if (category === 'software' && !selectedProject) {
+    if (category === 'software' && selectedProjects.length === 0) {
       setErrors({ project: 'Select a Hackatime project first' })
       return
     }
@@ -142,7 +145,7 @@ export default function DashboardClient({ profile, projects }) {
     const body = new FormData()
     body.set('category', category)
     if (category === 'software') {
-      body.set('projectName', selectedProject.name)
+      body.set('projectName', selectedProjects.map((p) => p.name).join(', '))
     } else {
       body.set('hoursSpent', hoursSpent)
       body.set('journalLink', fields.journalLink)
@@ -246,7 +249,7 @@ export default function DashboardClient({ profile, projects }) {
           <>
             <ProjectPicker
               projects={projects}
-              selectedProject={selectedProject}
+              selectedProjects={selectedProjects}
               onSelect={handleSelectProject}
             />
             {errors.project && <p className="text-error text-xs mt-2 font-mono">{errors.project}</p>}
@@ -272,7 +275,7 @@ export default function DashboardClient({ profile, projects }) {
           <p className="font-mono text-xs text-primary-container tracking-widest uppercase mb-3">
             2. Pick your prizes (
             {category === 'software'
-              ? `${hoursTracked.toFixed(1)} tracked hours on "${selectedProject.name}"`
+              ? `${hoursTracked.toFixed(1)} tracked hours on "${selectedProjects.map((p) => p.name).join(', ')}"`
               : `${hoursTracked.toFixed(1)} self-reported hours`}
             )
           </p>

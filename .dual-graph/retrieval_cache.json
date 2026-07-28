@@ -1,61 +1,68 @@
 {
   "entries": {
-    "homepage structure terminal style single scrolling interface redesign|tf=5|te=12": {
-      "created_epoch": 1784989735,
+    "multiple project selection when submitting hours stacking across|tf=5|te=12": {
+      "created_epoch": 1785180676,
       "files": [
-        "src/lib/auth.js::requireSession",
-        "src/components/TerminalPane.jsx",
+        "src/lib/hackatime.js",
+        "src/components/dashboard/ProjectPicker.jsx",
         "src/app/api/auth/callback/route.js::GET",
         "src/app/api/auth/hackatime/callback/route.js::GET",
         "src/app/api/auth/hackatime/login/route.js::GET"
       ],
       "mtimes_ns": {
-        "src/lib/auth.js::requireSession": 1784743044492748877,
-        "src/components/TerminalPane.jsx": 1784740061993680470,
+        "src/lib/hackatime.js": 1784743012692359312,
+        "src/components/dashboard/ProjectPicker.jsx": 1784743722817291365,
         "src/app/api/auth/callback/route.js::GET": 1784743036327648869,
         "src/app/api/auth/hackatime/callback/route.js::GET": 1784743024316556431,
         "src/app/api/auth/hackatime/login/route.js::GET": 1784743016953411522
       },
       "result": {
         "ok": true,
-        "query": "homepage UI structure - terminal-style single scrolling interface redesign",
+        "query": "multiple project selection when submitting hours, stacking hours across projects",
         "graph_files": [
           {
-            "id": "src/lib/auth.js::requireSession",
-            "kind": "symbol",
-            "path": "src/lib/auth.js",
+            "id": "src/lib/hackatime.js",
+            "kind": "file",
+            "path": "src/lib/hackatime.js",
             "ext": ".js",
-            "size": 6,
+            "size": 1975,
             "keywords": [
-              "requiresession",
-              "require",
-              "session"
+              "hackatime_oauth_scope",
+              "exchangehackatimecodefortoken",
+              "exchange",
+              "hackatime",
+              "code",
+              "for",
+              "token",
+              "gethackatimeme",
+              "get",
+              "gethackatimeprojects",
+              "projects",
+              "trackedhoursforproject",
+              "tracked",
+              "hours",
+              "project"
             ],
-            "symbol_type": "use_case",
-            "name": "requireSession",
-            "line_start": 17,
-            "line_end": 22,
-            "body_hash": "06246e69",
-            "confidence": "high",
-            "exported": true,
-            "_score": 15,
+            "summary": "const HACKATIME_BASE = 'https://hackatime.hackclub.com'. Contains 4 functions/classes: exchangeHackatimeCodeForToken, getHackatimeMe, getHackatimeProjects, trackedHoursForProject.",
+            "file_hash": "e9f46f08",
+            "_score": 22,
             "_role": "code",
             "_intent": "general"
           },
           {
-            "id": "src/components/TerminalPane.jsx",
+            "id": "src/components/dashboard/ProjectPicker.jsx",
             "kind": "file",
-            "path": "src/components/TerminalPane.jsx",
+            "path": "src/components/dashboard/ProjectPicker.jsx",
             "ext": ".jsx",
-            "size": 2835,
+            "size": 3062,
             "keywords": [
-              "terminalpane",
-              "terminal",
-              "pane"
+              "projectpicker",
+              "project",
+              "picker"
             ],
-            "summary": "'use client'. Contains 1 function: TerminalPane.",
-            "file_hash": "9bef1220",
-            "_score": 14,
+            "summary": "'use client'. Contains 2 functions/classes: formatHours, ProjectPicker.",
+            "file_hash": "ea07ab54",
+            "_score": 17,
             "_role": "code",
             "_intent": "general"
           },
@@ -122,23 +129,28 @@
         ],
         "graph_edges": [
           {
-            "from": "src/components/TerminalPane.jsx",
-            "to": "../context/CloseAttemptContext",
-            "rel": "imports"
+            "from": "src/components/dashboard/ProjectPicker.jsx",
+            "to": "src/components/dashboard/ProjectPicker.jsx::formatHours",
+            "rel": "contains"
           },
           {
-            "from": "src/components/TerminalPane.jsx",
+            "from": "src/lib/hackatime.js",
+            "to": "src/lib/hackatime.js::getHackatimeProjects",
+            "rel": "contains"
+          },
+          {
+            "from": "src/lib/hackatime.js",
+            "to": "src/lib/hackatime.js::trackedHoursForProject",
+            "rel": "contains"
+          },
+          {
+            "from": "src/components/dashboard/ProjectPicker.jsx",
             "to": "react",
             "rel": "imports"
           },
           {
-            "from": "src/components/TerminalPane.jsx",
-            "to": "src/components/TerminalPane.jsx::TerminalPane",
-            "rel": "contains"
-          },
-          {
-            "from": "src/lib/auth.js",
-            "to": "src/lib/auth.js::requireSession",
+            "from": "src/components/dashboard/ProjectPicker.jsx",
+            "to": "src/components/dashboard/ProjectPicker.jsx::ProjectPicker",
             "rel": "contains"
           },
           {
@@ -157,29 +169,964 @@
             "rel": "contains"
           },
           {
+            "from": "src/lib/hackatime.js",
+            "to": "//hackatime.h",
+            "rel": "references"
+          },
+          {
+            "from": "src/lib/hackatime.js",
+            "to": "docs/oauth/oauth-apps.md",
+            "rel": "references"
+          },
+          {
+            "from": "src/lib/hackatime.js",
+            "to": "src/lib/hackatime.js::exchangeHackatimeCodeForToken",
+            "rel": "contains"
+          },
+          {
+            "from": "src/lib/hackatime.js",
+            "to": "src/lib/hackatime.js::getHackatimeMe",
+            "rel": "contains"
+          }
+        ],
+        "grep_hits": [],
+        "reuse_candidates": [],
+        "read_budget": {
+          "remaining_chars": 60000,
+          "reuse_gate_candidates": []
+        }
+      }
+    },
+    "project submission form submit hours how selectedproject name|tf=5|te=12": {
+      "created_epoch": 1785181295,
+      "files": [
+        "src/components/dashboard/SubmissionForm.jsx",
+        "src/components/dashboard/ProjectPicker.jsx::formatHours",
+        "src/lib/hackatime.js::trackedHoursForProject",
+        "openspec/changes/editable-github-username/proposal.md",
+        "src/lib/airtable.js::createAirtableRecord"
+      ],
+      "mtimes_ns": {
+        "src/components/dashboard/SubmissionForm.jsx": 1784902719807834691,
+        "src/components/dashboard/ProjectPicker.jsx::formatHours": 1784743722817291365,
+        "src/lib/hackatime.js::trackedHoursForProject": 1784743012692359312,
+        "openspec/changes/editable-github-username/proposal.md": 1784902492528573358,
+        "src/lib/airtable.js::createAirtableRecord": 1784826324393254780
+      },
+      "result": {
+        "ok": true,
+        "query": "project submission form, submit hours, how selectedProject and project name are stored/persisted in submission record",
+        "graph_files": [
+          {
+            "id": "src/components/dashboard/SubmissionForm.jsx",
+            "kind": "file",
+            "path": "src/components/dashboard/SubmissionForm.jsx",
+            "ext": ".jsx",
+            "size": 6270,
+            "keywords": [
+              "submissionform",
+              "submission",
+              "form"
+            ],
+            "summary": "'use client'. Contains 3 functions/classes: ReadOnlyField, TextField, SubmissionForm.",
+            "file_hash": "0933c7c4",
+            "_score": 22,
+            "_role": "code",
+            "_intent": "general"
+          },
+          {
+            "id": "src/components/dashboard/ProjectPicker.jsx::formatHours",
+            "kind": "symbol",
+            "path": "src/components/dashboard/ProjectPicker.jsx",
+            "ext": ".jsx",
+            "size": 3,
+            "keywords": [
+              "formathours",
+              "format",
+              "hours"
+            ],
+            "symbol_type": "utility",
+            "name": "formatHours",
+            "line_start": 6,
+            "line_end": 8,
+            "body_hash": "2749a008",
+            "confidence": "medium",
+            "exported": false,
+            "_score": 21,
+            "_role": "code",
+            "_intent": "general"
+          },
+          {
+            "id": "src/lib/hackatime.js::trackedHoursForProject",
+            "kind": "symbol",
+            "path": "src/lib/hackatime.js",
+            "ext": ".js",
+            "size": 4,
+            "keywords": [
+              "trackedhoursforproject",
+              "tracked",
+              "hours",
+              "for",
+              "project"
+            ],
+            "symbol_type": "use_case",
+            "name": "trackedHoursForProject",
+            "line_start": 54,
+            "line_end": 57,
+            "body_hash": "704e43ed",
+            "confidence": "high",
+            "exported": true,
+            "_score": 20,
+            "_role": "code",
+            "_intent": "general"
+          },
+          {
+            "id": "openspec/changes/editable-github-username/proposal.md",
+            "kind": "file",
+            "path": "openspec/changes/editable-github-username/proposal.md",
+            "ext": ".md",
+            "size": 3068,
+            "keywords": [],
+            "summary": "Hardware category submitters are blocked from submitting projects because the GitHub Username field on the submission fo.",
+            "file_hash": "dd95774b",
+            "_score": 19,
+            "_role": "docs",
+            "_intent": "general"
+          },
+          {
+            "id": "src/lib/airtable.js::createAirtableRecord",
+            "kind": "symbol",
+            "path": "src/lib/airtable.js",
+            "ext": ".js",
+            "size": 19,
+            "keywords": [
+              "createairtablerecord",
+              "create",
+              "airtable",
+              "record"
+            ],
+            "symbol_type": "use_case",
+            "name": "createAirtableRecord",
+            "line_start": 38,
+            "line_end": 56,
+            "body_hash": "6203eb6a",
+            "confidence": "high",
+            "exported": true,
+            "_score": 18,
+            "_role": "code",
+            "_intent": "general"
+          }
+        ],
+        "graph_edges": [
+          {
+            "from": "openspec/changes/editable-github-username/proposal.md",
+            "to": "src/components/dashboard/SubmissionForm.js",
+            "rel": "references"
+          },
+          {
+            "from": "src/components/dashboard/ProjectPicker.jsx",
+            "to": "src/components/dashboard/ProjectPicker.jsx::formatHours",
+            "rel": "contains"
+          },
+          {
+            "from": "openspec/changes/editable-github-username/proposal.md",
+            "to": "src/app/api/submit/route.js",
+            "rel": "references"
+          },
+          {
+            "from": "src/components/dashboard/SubmissionForm.jsx",
+            "to": "src/components/dashboard/SubmissionForm.jsx::ReadOnlyField",
+            "rel": "contains"
+          },
+          {
+            "from": "src/components/dashboard/SubmissionForm.jsx",
+            "to": "src/components/dashboard/SubmissionForm.jsx::SubmissionForm",
+            "rel": "contains"
+          },
+          {
+            "from": "src/components/dashboard/SubmissionForm.jsx",
+            "to": "src/components/dashboard/SubmissionForm.jsx::TextField",
+            "rel": "contains"
+          },
+          {
+            "from": "src/lib/hackatime.js",
+            "to": "src/lib/hackatime.js::trackedHoursForProject",
+            "rel": "contains"
+          },
+          {
+            "from": "openspec/changes/add-hardware-software-submission-track/proposal.md",
+            "to": "src/app/api/submit/route.js",
+            "rel": "references"
+          },
+          {
+            "from": "openspec/changes/add-hardware-software-submission-track/proposal.md",
+            "to": "src/components/dashboard/ProjectPicker.js",
+            "rel": "references"
+          },
+          {
+            "from": "openspec/changes/add-hardware-software-submission-track/proposal.md",
+            "to": "src/components/dashboard/SubmissionForm.js",
+            "rel": "references"
+          },
+          {
+            "from": "openspec/changes/add-hardware-software-submission-track/tasks.md",
+            "to": "/api/submit/route.js",
+            "rel": "references"
+          },
+          {
+            "from": "openspec/changes/editable-github-username/proposal.md",
+            "to": "src/components/dashboard/DashboardClient.js",
+            "rel": "references"
+          }
+        ],
+        "grep_hits": [],
+        "reuse_candidates": [],
+        "read_budget": {
+          "remaining_chars": 60000,
+          "reuse_gate_candidates": []
+        }
+      }
+    },
+    "page renders projectpicker submissionform together handlesubmit api route|tf=5|te=12": {
+      "created_epoch": 1785181300,
+      "files": [
+        "src/components/dashboard/ProjectPicker.jsx",
+        "src/components/dashboard/SubmissionForm.jsx",
+        "src/lib/hackatime.js::trackedHoursForProject",
+        "src/app/dashboard/success/page.jsx",
+        "src/lib/airtable.js::createAirtableRecord"
+      ],
+      "mtimes_ns": {
+        "src/components/dashboard/ProjectPicker.jsx": 1784743722817291365,
+        "src/components/dashboard/SubmissionForm.jsx": 1784902719807834691,
+        "src/lib/hackatime.js::trackedHoursForProject": 1784743012692359312,
+        "src/app/dashboard/success/page.jsx": 1784743730166330189,
+        "src/lib/airtable.js::createAirtableRecord": 1784826324393254780
+      },
+      "result": {
+        "ok": true,
+        "query": "page that renders ProjectPicker and SubmissionForm together, handleSubmit, API route that creates submission record with project name and hours in database",
+        "graph_files": [
+          {
+            "id": "src/components/dashboard/ProjectPicker.jsx",
+            "kind": "file",
+            "path": "src/components/dashboard/ProjectPicker.jsx",
+            "ext": ".jsx",
+            "size": 3062,
+            "keywords": [
+              "projectpicker",
+              "project",
+              "picker"
+            ],
+            "summary": "'use client'. Contains 2 functions/classes: formatHours, ProjectPicker.",
+            "file_hash": "ea07ab54",
+            "_score": 26,
+            "_role": "code",
+            "_intent": "feature"
+          },
+          {
+            "id": "src/components/dashboard/SubmissionForm.jsx",
+            "kind": "file",
+            "path": "src/components/dashboard/SubmissionForm.jsx",
+            "ext": ".jsx",
+            "size": 6270,
+            "keywords": [
+              "submissionform",
+              "submission",
+              "form"
+            ],
+            "summary": "'use client'. Contains 3 functions/classes: ReadOnlyField, TextField, SubmissionForm.",
+            "file_hash": "0933c7c4",
+            "_score": 23,
+            "_role": "code",
+            "_intent": "feature"
+          },
+          {
+            "id": "src/lib/hackatime.js::trackedHoursForProject",
+            "kind": "symbol",
+            "path": "src/lib/hackatime.js",
+            "ext": ".js",
+            "size": 4,
+            "keywords": [
+              "trackedhoursforproject",
+              "tracked",
+              "hours",
+              "for",
+              "project"
+            ],
+            "symbol_type": "use_case",
+            "name": "trackedHoursForProject",
+            "line_start": 54,
+            "line_end": 57,
+            "body_hash": "704e43ed",
+            "confidence": "high",
+            "exported": true,
+            "_score": 21,
+            "_role": "code",
+            "_intent": "feature"
+          },
+          {
+            "id": "src/app/dashboard/success/page.jsx",
+            "kind": "file",
+            "path": "src/app/dashboard/success/page.jsx",
+            "ext": ".jsx",
+            "size": 1155,
+            "keywords": [
+              "submissionsuccesspage",
+              "submission",
+              "success",
+              "page"
+            ],
+            "summary": "import Link from 'next/link'. Contains 1 function: SubmissionSuccessPage.",
+            "file_hash": "010e9f75",
+            "_score": 20,
+            "_role": "code",
+            "_intent": "feature"
+          },
+          {
+            "id": "src/lib/airtable.js::createAirtableRecord",
+            "kind": "symbol",
+            "path": "src/lib/airtable.js",
+            "ext": ".js",
+            "size": 19,
+            "keywords": [
+              "createairtablerecord",
+              "create",
+              "airtable",
+              "record"
+            ],
+            "symbol_type": "use_case",
+            "name": "createAirtableRecord",
+            "line_start": 38,
+            "line_end": 56,
+            "body_hash": "6203eb6a",
+            "confidence": "high",
+            "exported": true,
+            "_score": 19,
+            "_role": "code",
+            "_intent": "feature"
+          }
+        ],
+        "graph_edges": [
+          {
+            "from": "src/components/dashboard/ProjectPicker.jsx",
+            "to": "src/components/dashboard/ProjectPicker.jsx::formatHours",
+            "rel": "contains"
+          },
+          {
+            "from": "src/components/dashboard/ProjectPicker.jsx",
+            "to": "react",
+            "rel": "imports"
+          },
+          {
+            "from": "src/app/dashboard/success/page.jsx",
+            "to": "src/app/dashboard/success/page.jsx::SubmissionSuccessPage",
+            "rel": "contains"
+          },
+          {
+            "from": "src/components/dashboard/ProjectPicker.jsx",
+            "to": "src/components/dashboard/ProjectPicker.jsx::ProjectPicker",
+            "rel": "contains"
+          },
+          {
+            "from": "src/components/dashboard/SubmissionForm.jsx",
+            "to": "src/components/dashboard/SubmissionForm.jsx::ReadOnlyField",
+            "rel": "contains"
+          },
+          {
+            "from": "src/components/dashboard/SubmissionForm.jsx",
+            "to": "src/components/dashboard/SubmissionForm.jsx::SubmissionForm",
+            "rel": "contains"
+          },
+          {
+            "from": "src/components/dashboard/SubmissionForm.jsx",
+            "to": "src/components/dashboard/SubmissionForm.jsx::TextField",
+            "rel": "contains"
+          },
+          {
+            "from": "src/lib/hackatime.js",
+            "to": "src/lib/hackatime.js::trackedHoursForProject",
+            "rel": "contains"
+          },
+          {
+            "from": "src/app/dashboard/success/page.jsx",
+            "to": "../../../lib/auth",
+            "rel": "imports"
+          },
+          {
+            "from": "src/app/dashboard/success/page.jsx",
+            "to": "Link",
+            "rel": "imports"
+          },
+          {
+            "from": "src/app/dashboard/success/page.jsx",
+            "to": "next/link",
+            "rel": "imports"
+          },
+          {
+            "from": "openspec/changes/add-hardware-software-submission-track/proposal.md",
+            "to": "src/components/dashboard/ProjectPicker.js",
+            "rel": "references"
+          }
+        ],
+        "grep_hits": [],
+        "reuse_candidates": [],
+        "read_budget": {
+          "remaining_chars": 60000,
+          "reuse_gate_candidates": []
+        }
+      }
+    },
+    "dashboard submit page app router route imports projectpicker|tf=5|te=12": {
+      "created_epoch": 1785181315,
+      "files": [
+        "src/app/dashboard/page.jsx",
+        "src/app/api/submit/route.js::POST",
+        "src/app/dashboard/success/page.jsx",
+        "src/app/prizes/page.jsx",
+        "src/components/dashboard/SubmissionForm.jsx"
+      ],
+      "mtimes_ns": {
+        "src/app/dashboard/page.jsx": 1784817595654745158,
+        "src/app/api/submit/route.js::POST": 1784902783314022681,
+        "src/app/dashboard/success/page.jsx": 1784743730166330189,
+        "src/app/prizes/page.jsx": 1784827251035739657,
+        "src/components/dashboard/SubmissionForm.jsx": 1784902719807834691
+      },
+      "result": {
+        "ok": true,
+        "query": "dashboard submit page app router route.js that imports ProjectPicker and SubmissionForm, hackatimeProjects state, project_names field",
+        "graph_files": [
+          {
+            "id": "src/app/dashboard/page.jsx",
+            "kind": "file",
+            "path": "src/app/dashboard/page.jsx",
+            "ext": ".jsx",
+            "size": 2049,
+            "keywords": [
+              "dashboardpage",
+              "dashboard",
+              "page"
+            ],
+            "summary": "import { requireSession } from '../../lib/auth'. Contains 1 function: DashboardPage.",
+            "file_hash": "60eda2d1",
+            "_score": 29,
+            "_role": "code",
+            "_intent": "general"
+          },
+          {
+            "id": "src/app/api/submit/route.js::POST",
+            "kind": "symbol",
+            "path": "src/app/api/submit/route.js",
+            "ext": ".js",
+            "size": 159,
+            "keywords": [
+              "post"
+            ],
+            "symbol_type": "api_route",
+            "name": "POST",
+            "line_start": 36,
+            "line_end": 194,
+            "body_hash": "76557b29",
+            "confidence": "high",
+            "exported": true,
+            "_score": 25,
+            "_role": "logic",
+            "_intent": "general"
+          },
+          {
+            "id": "src/app/dashboard/success/page.jsx",
+            "kind": "file",
+            "path": "src/app/dashboard/success/page.jsx",
+            "ext": ".jsx",
+            "size": 1155,
+            "keywords": [
+              "submissionsuccesspage",
+              "submission",
+              "success",
+              "page"
+            ],
+            "summary": "import Link from 'next/link'. Contains 1 function: SubmissionSuccessPage.",
+            "file_hash": "010e9f75",
+            "_score": 23,
+            "_role": "code",
+            "_intent": "general"
+          },
+          {
+            "id": "src/app/prizes/page.jsx",
+            "kind": "file",
+            "path": "src/app/prizes/page.jsx",
+            "ext": ".jsx",
+            "size": 3377,
+            "keywords": [
+              "prizespage",
+              "prizes",
+              "page"
+            ],
+            "summary": "'use client'. Contains 3 functions/classes: TierItem, TierColumn, PrizesPage.",
+            "file_hash": "e2f6034c",
+            "_score": 23,
+            "_role": "code",
+            "_intent": "general"
+          },
+          {
+            "id": "src/components/dashboard/SubmissionForm.jsx",
+            "kind": "file",
+            "path": "src/components/dashboard/SubmissionForm.jsx",
+            "ext": ".jsx",
+            "size": 6270,
+            "keywords": [
+              "submissionform",
+              "submission",
+              "form"
+            ],
+            "summary": "'use client'. Contains 3 functions/classes: ReadOnlyField, TextField, SubmissionForm.",
+            "file_hash": "0933c7c4",
+            "_score": 23,
+            "_role": "code",
+            "_intent": "general"
+          }
+        ],
+        "graph_edges": [
+          {
+            "from": "src/app/dashboard/page.jsx",
+            "to": "../../components/dashboard/DashboardClient",
+            "rel": "imports"
+          },
+          {
+            "from": "src/app/dashboard/page.jsx",
+            "to": "../../lib/auth",
+            "rel": "imports"
+          },
+          {
+            "from": "src/app/dashboard/page.jsx",
+            "to": "../../lib/hackatime",
+            "rel": "imports"
+          },
+          {
+            "from": "src/app/dashboard/page.jsx",
+            "to": "../../lib/hackclub",
+            "rel": "imports"
+          },
+          {
+            "from": "src/app/dashboard/page.jsx",
+            "to": "DashboardClient",
+            "rel": "imports"
+          },
+          {
+            "from": "src/app/dashboard/success/page.jsx",
+            "to": "../../../lib/auth",
+            "rel": "imports"
+          },
+          {
+            "from": "src/app/dashboard/success/page.jsx",
+            "to": "Link",
+            "rel": "imports"
+          },
+          {
+            "from": "src/app/dashboard/success/page.jsx",
+            "to": "next/link",
+            "rel": "imports"
+          },
+          {
+            "from": "src/app/prizes/page.jsx",
+            "to": "../../components/DossierPhoto",
+            "rel": "imports"
+          },
+          {
             "from": "src/app/prizes/page.jsx",
             "to": "../../components/TerminalPane",
             "rel": "imports"
           },
           {
             "from": "src/app/prizes/page.jsx",
-            "to": "TerminalPane",
+            "to": "../../data/prizeTiers",
             "rel": "imports"
           },
           {
-            "from": "src/components/sections/Arsenal.jsx",
-            "to": "../TerminalPane",
+            "from": "src/app/prizes/page.jsx",
+            "to": "../../hooks/useRevealOnScroll",
+            "rel": "imports"
+          }
+        ],
+        "grep_hits": [],
+        "reuse_candidates": [],
+        "read_budget": {
+          "remaining_chars": 60000,
+          "reuse_gate_candidates": []
+        }
+      }
+    },
+    "dashboardclient component composes projectpicker cart posts formdata projectname|tf=5|te=12": {
+      "created_epoch": 1785181326,
+      "files": [
+        "src/components/dashboard/DashboardClient.jsx",
+        "src/app/api/submit/route.js::parseCart",
+        "src/components/dashboard/ProjectPicker.jsx",
+        "src/components/sections/Arsenal.jsx::IdeaCard",
+        "src/app/api/auth/callback/route.js::GET"
+      ],
+      "mtimes_ns": {
+        "src/components/dashboard/DashboardClient.jsx": 1784913619875632779,
+        "src/app/api/submit/route.js::parseCart": 1784902783314022681,
+        "src/components/dashboard/ProjectPicker.jsx": 1784743722817291365,
+        "src/components/sections/Arsenal.jsx::IdeaCard": 1784991054601444972,
+        "src/app/api/auth/callback/route.js::GET": 1784743036327648869
+      },
+      "result": {
+        "ok": true,
+        "query": "DashboardClient component that composes ProjectPicker and cart, posts formData with projectName and hoursSpent to /api/submit",
+        "graph_files": [
+          {
+            "id": "src/components/dashboard/DashboardClient.jsx",
+            "kind": "file",
+            "path": "src/components/dashboard/DashboardClient.jsx",
+            "ext": ".jsx",
+            "size": 11219,
+            "keywords": [
+              "dashboardclient",
+              "dashboard",
+              "client",
+              "api",
+              "submit"
+            ],
+            "summary": "'use client'. Contains 5 functions/classes: cartTotal, validate, DashboardClient, handleSelectCategory, ....",
+            "file_hash": "f1242fd6",
+            "_score": 25,
+            "_role": "code",
+            "_intent": "general"
+          },
+          {
+            "id": "src/app/api/submit/route.js::parseCart",
+            "kind": "symbol",
+            "path": "src/app/api/submit/route.js",
+            "ext": ".js",
+            "size": 19,
+            "keywords": [
+              "parsecart",
+              "parse",
+              "cart"
+            ],
+            "symbol_type": "utility",
+            "name": "parseCart",
+            "line_start": 12,
+            "line_end": 30,
+            "body_hash": "6c3c9d5d",
+            "confidence": "medium",
+            "exported": false,
+            "_score": 19,
+            "_role": "logic",
+            "_intent": "general"
+          },
+          {
+            "id": "src/components/dashboard/ProjectPicker.jsx",
+            "kind": "file",
+            "path": "src/components/dashboard/ProjectPicker.jsx",
+            "ext": ".jsx",
+            "size": 3062,
+            "keywords": [
+              "projectpicker",
+              "project",
+              "picker"
+            ],
+            "summary": "'use client'. Contains 2 functions/classes: formatHours, ProjectPicker.",
+            "file_hash": "ea07ab54",
+            "_score": 17,
+            "_role": "code",
+            "_intent": "general"
+          },
+          {
+            "id": "src/components/sections/Arsenal.jsx::IdeaCard",
+            "kind": "symbol",
+            "path": "src/components/sections/Arsenal.jsx",
+            "ext": ".jsx",
+            "size": 19,
+            "keywords": [
+              "ideacard",
+              "idea",
+              "card"
+            ],
+            "symbol_type": "utility",
+            "name": "IdeaCard",
+            "line_start": 23,
+            "line_end": 41,
+            "body_hash": "411a7570",
+            "confidence": "medium",
+            "exported": false,
+            "_score": 14,
+            "_role": "code",
+            "_intent": "general"
+          },
+          {
+            "id": "src/app/api/auth/callback/route.js::GET",
+            "kind": "symbol",
+            "path": "src/app/api/auth/callback/route.js",
+            "ext": ".js",
+            "size": 29,
+            "keywords": [
+              "get"
+            ],
+            "symbol_type": "api_route",
+            "name": "GET",
+            "line_start": 5,
+            "line_end": 33,
+            "body_hash": "f33cf74b",
+            "confidence": "high",
+            "exported": true,
+            "_score": 13,
+            "_role": "logic",
+            "_intent": "general"
+          }
+        ],
+        "graph_edges": [
+          {
+            "from": "src/components/dashboard/DashboardClient.jsx",
+            "to": "./ProjectPicker",
             "rel": "imports"
           },
           {
-            "from": "src/components/sections/Arsenal.jsx",
-            "to": "TerminalPane",
+            "from": "src/components/dashboard/DashboardClient.jsx",
+            "to": "ProjectPicker",
             "rel": "imports"
           },
           {
-            "from": "src/components/sections/Briefing.jsx",
-            "to": "../TerminalPane",
+            "from": "src/components/dashboard/DashboardClient.jsx",
+            "to": "src/components/dashboard/DashboardClient.jsx::cartTotal",
+            "rel": "contains"
+          },
+          {
+            "from": "src/components/dashboard/DashboardClient.jsx",
+            "to": "../../data/prizeTiers",
             "rel": "imports"
+          },
+          {
+            "from": "src/components/dashboard/DashboardClient.jsx",
+            "to": "./PrizePicker",
+            "rel": "imports"
+          },
+          {
+            "from": "src/components/dashboard/DashboardClient.jsx",
+            "to": "./SubmissionForm",
+            "rel": "imports"
+          },
+          {
+            "from": "src/components/dashboard/DashboardClient.jsx",
+            "to": "PrizePicker",
+            "rel": "imports"
+          },
+          {
+            "from": "src/components/dashboard/DashboardClient.jsx",
+            "to": "SubmissionForm",
+            "rel": "imports"
+          },
+          {
+            "from": "src/components/dashboard/DashboardClient.jsx",
+            "to": "next/navigation",
+            "rel": "imports"
+          },
+          {
+            "from": "src/components/dashboard/DashboardClient.jsx",
+            "to": "react",
+            "rel": "imports"
+          },
+          {
+            "from": "src/components/dashboard/ProjectPicker.jsx",
+            "to": "react",
+            "rel": "imports"
+          },
+          {
+            "from": "src/app/api/submit/route.js",
+            "to": "src/app/api/submit/route.js::parseCart",
+            "rel": "contains"
+          }
+        ],
+        "grep_hits": [],
+        "reuse_candidates": [],
+        "read_budget": {
+          "remaining_chars": 60000,
+          "reuse_gate_candidates": []
+        }
+      }
+    },
+    "airtable_fields definition mapping field names project name hours|tf=5|te=12": {
+      "created_epoch": 1785181326,
+      "files": [
+        "src/lib/hackatime.js::trackedHoursForProject",
+        "src/components/dashboard/ProjectPicker.jsx",
+        "src/lib/airtable.js",
+        "openspec/changes/editable-github-username/proposal.md",
+        "src/app/api/auth/callback/route.js::GET"
+      ],
+      "mtimes_ns": {
+        "src/lib/hackatime.js::trackedHoursForProject": 1784743012692359312,
+        "src/components/dashboard/ProjectPicker.jsx": 1784743722817291365,
+        "src/lib/airtable.js": 1784826324393254780,
+        "openspec/changes/editable-github-username/proposal.md": 1784902492528573358,
+        "src/app/api/auth/callback/route.js::GET": 1784743036327648869
+      },
+      "result": {
+        "ok": true,
+        "query": "AIRTABLE_FIELDS definition mapping field names, project name field, hours field",
+        "graph_files": [
+          {
+            "id": "src/lib/hackatime.js::trackedHoursForProject",
+            "kind": "symbol",
+            "path": "src/lib/hackatime.js",
+            "ext": ".js",
+            "size": 4,
+            "keywords": [
+              "trackedhoursforproject",
+              "tracked",
+              "hours",
+              "for",
+              "project"
+            ],
+            "symbol_type": "use_case",
+            "name": "trackedHoursForProject",
+            "line_start": 54,
+            "line_end": 57,
+            "body_hash": "704e43ed",
+            "confidence": "high",
+            "exported": true,
+            "_score": 20,
+            "_role": "code",
+            "_intent": "general"
+          },
+          {
+            "id": "src/components/dashboard/ProjectPicker.jsx",
+            "kind": "file",
+            "path": "src/components/dashboard/ProjectPicker.jsx",
+            "ext": ".jsx",
+            "size": 3062,
+            "keywords": [
+              "projectpicker",
+              "project",
+              "picker"
+            ],
+            "summary": "'use client'. Contains 2 functions/classes: formatHours, ProjectPicker.",
+            "file_hash": "ea07ab54",
+            "_score": 17,
+            "_role": "code",
+            "_intent": "general"
+          },
+          {
+            "id": "src/lib/airtable.js",
+            "kind": "file",
+            "path": "src/lib/airtable.js",
+            "ext": ".js",
+            "size": 2911,
+            "keywords": [
+              "airtable_fields",
+              "createairtablerecord",
+              "create",
+              "airtable",
+              "record",
+              "uploadairtableattachment",
+              "upload",
+              "attachment",
+              "deleteairtablerecord",
+              "delete"
+            ],
+            "summary": "const AIRTABLE_API_BASE = 'https://api.airtable.com/v0'. Contains 4 functions/classes: airtableConfig, createAirtableRecord, uploadAirtableAttachment, deleteAirtableRecord.",
+            "file_hash": "0a3a0a65",
+            "_score": 14,
+            "_role": "code",
+            "_intent": "general"
+          },
+          {
+            "id": "openspec/changes/editable-github-username/proposal.md",
+            "kind": "file",
+            "path": "openspec/changes/editable-github-username/proposal.md",
+            "ext": ".md",
+            "size": 3068,
+            "keywords": [],
+            "summary": "Hardware category submitters are blocked from submitting projects because the GitHub Username field on the submission fo.",
+            "file_hash": "dd95774b",
+            "_score": 13,
+            "_role": "docs",
+            "_intent": "general"
+          },
+          {
+            "id": "src/app/api/auth/callback/route.js::GET",
+            "kind": "symbol",
+            "path": "src/app/api/auth/callback/route.js",
+            "ext": ".js",
+            "size": 29,
+            "keywords": [
+              "get"
+            ],
+            "symbol_type": "api_route",
+            "name": "GET",
+            "line_start": 5,
+            "line_end": 33,
+            "body_hash": "f33cf74b",
+            "confidence": "high",
+            "exported": true,
+            "_score": 13,
+            "_role": "logic",
+            "_intent": "general"
+          }
+        ],
+        "graph_edges": [
+          {
+            "from": "src/components/dashboard/ProjectPicker.jsx",
+            "to": "src/components/dashboard/ProjectPicker.jsx::formatHours",
+            "rel": "contains"
+          },
+          {
+            "from": "src/lib/hackatime.js",
+            "to": "src/lib/hackatime.js::trackedHoursForProject",
+            "rel": "contains"
+          },
+          {
+            "from": "src/components/dashboard/ProjectPicker.jsx",
+            "to": "react",
+            "rel": "imports"
+          },
+          {
+            "from": "openspec/changes/editable-github-username/proposal.md",
+            "to": "src/app/api/submit/route.js",
+            "rel": "references"
+          },
+          {
+            "from": "openspec/changes/editable-github-username/proposal.md",
+            "to": "src/components/dashboard/DashboardClient.js",
+            "rel": "references"
+          },
+          {
+            "from": "openspec/changes/editable-github-username/proposal.md",
+            "to": "src/components/dashboard/SubmissionForm.js",
+            "rel": "references"
+          },
+          {
+            "from": "src/components/dashboard/ProjectPicker.jsx",
+            "to": "src/components/dashboard/ProjectPicker.jsx::ProjectPicker",
+            "rel": "contains"
+          },
+          {
+            "from": "openspec/changes/add-hardware-software-submission-track/proposal.md",
+            "to": "src/lib/airtable.js",
+            "rel": "references"
+          },
+          {
+            "from": "openspec/changes/add-hardware-software-submission-track/tasks.md",
+            "to": "src/lib/airtable.js",
+            "rel": "references"
+          },
+          {
+            "from": "src/app/api/auth/callback/route.js",
+            "to": "src/app/api/auth/callback/route.js::GET",
+            "rel": "contains"
+          },
+          {
+            "from": "src/lib/airtable.js",
+            "to": "src/lib/airtable.js::airtableConfig",
+            "rel": "contains"
+          },
+          {
+            "from": "src/lib/airtable.js",
+            "to": "src/lib/airtable.js::createAirtableRecord",
+            "rel": "contains"
           }
         ],
         "grep_hits": [],

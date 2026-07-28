@@ -8,7 +8,7 @@ function formatHours(totalSeconds) {
   return (totalSeconds / 3600).toFixed(1)
 }
 
-export default function ProjectPicker({ projects, selectedProject, onSelect }) {
+export default function ProjectPicker({ projects, selectedProjects, onSelect }) {
   const [query, setQuery] = useState('')
 
   const sortedProjects = useMemo(
@@ -58,7 +58,7 @@ export default function ProjectPicker({ projects, selectedProject, onSelect }) {
       ) : (
         <div className="grid sm:grid-cols-2 gap-3">
           {visibleProjects.map((project) => {
-            const selected = selectedProject?.name === project.name
+            const selected = selectedProjects.some((p) => p.name === project.name)
             return (
               <button
                 key={project.name}

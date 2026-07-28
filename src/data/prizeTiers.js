@@ -8,7 +8,11 @@ import keychain from "../assets/prizes/keychain_image.jpg"
 import macropad from "../assets/prizes/macropad_image.jpg"
 import gopro from "../assets/prizes/gopro.jpg"
 import grant from "../assets/prizes/grant_image.jpg"
+import ai from "../assets/prizes/claude_vs_gemini.png"
 import hardwareGrantPlaceholder from "../assets/prizes/hardware-grant-placeholder.svg"
+import protonMe from "../assets/prizes/protonMe.avif"
+import hackTheBox from "../assets/prizes/hackthebox.png"
+import tryHackMe from "../assets/prizes/tryHackMe.png"
 // Placeholder tier data — swap items/hours/codenames for real reward-tier
 // content later. Structure (hours, codename, items[]) is stable.
 // `hours` is each item's flat hour cost (spendable currency), not a minimum
@@ -27,6 +31,7 @@ export const prizeTiers = [
     hours: 3,
     codename: 'LVL 2 CLEARANCE',
     items: [
+      { id: "ai-grant", name: "$20 AI Grant", image: ai, desc: "$20 AI Grant" },
       { id: 'domain-grant', name: '$20 Domain Grant', image: porkbun, desc: 'domains are cool' },
       { id: 'macropad', name: 'Four Key Macropad', image: macropad, desc: 'A satisfying four-button macro pad.' },
     ],
@@ -36,6 +41,8 @@ export const prizeTiers = [
     codename: 'LVL 3 CLEARANCE',
     items: [
       { id: 'watch', name: 'Casio Watch', image: casioWatch, desc: 'sick watch to flex on people with (can switch for any watch that is 100 or less)' },
+      { id: 'ProtonMe', name: "ProtonMe 1 year subscription", image: protonMe, desc: "Proton Me Subscription for one year to protect yourself."},
+      { id: "tryHackMe", name: "TryHackMe 6 month subscription", image: tryHackMe, desc: "six months of pure cybersecurity grind"}
     ],
   },
   {
@@ -44,6 +51,7 @@ export const prizeTiers = [
     items: [
       { id: 'monitor', name: '144Hz Curved Monitor', image: monitorPlaceholder, desc: '144 hertz 27 inch curved monitor for whatever you do on your computer.' },
       { id: 'flipper-zero', name: 'Flipper Zero', image: flipperPlaceholder, desc: 'can do cool stuff.' },
+      
     ],
   },
   {
@@ -52,6 +60,7 @@ export const prizeTiers = [
     items: [
       { id: 'gopro', name: 'GoPro HERO12 Black', image: gopro, desc: 'Nice mini-camera to document all your adventures. ' },
       { id: 'laptop', name: 'Thinkpad T14 (Gen 2)', image: laptopImage, desc: 'Laptop with decent specs. Core i5-1145G7, 16GB RAM, 256GB SSD' },
+      { id: "hackTheBox", name: "Hack The Box VIP+ 1 Year Subscription", image: hackTheBox, desc: "rlly cool cybersec tool + env. check it out 100%"}
     ],
   },
 ]

@@ -338,6 +338,64 @@
     {
       "id": "src/lib/auth.js::requireSession",
       "type": "file"
+    },
+    {
+      "id": "query:multiple project selection when submitting hours stacking across",
+      "type": "query",
+      "meta": {
+        "text": "multiple project selection when submitting hours, stacking hours across projects"
+      }
+    },
+    {
+      "id": "src/lib/hackatime.js",
+      "type": "file"
+    },
+    {
+      "id": "query:project submission form submit hours how selectedproject name",
+      "type": "query",
+      "meta": {
+        "text": "project submission form, submit hours, how selectedProject and project name are stored/persisted in submission record"
+      }
+    },
+    {
+      "id": "src/lib/hackatime.js::trackedHoursForProject",
+      "type": "file"
+    },
+    {
+      "id": "openspec/changes/editable-github-username/proposal.md",
+      "type": "file"
+    },
+    {
+      "id": "query:page renders projectpicker submissionform together handlesubmit api route",
+      "type": "query",
+      "meta": {
+        "text": "page that renders ProjectPicker and SubmissionForm together, handleSubmit, API route that creates submission record with project name and hours in database"
+      }
+    },
+    {
+      "id": "query:dashboard submit page app router route imports projectpicker",
+      "type": "query",
+      "meta": {
+        "text": "dashboard submit page app router route.js that imports ProjectPicker and SubmissionForm, hackatimeProjects state, project_names field"
+      }
+    },
+    {
+      "id": "src/app/api/submit/route.js::POST",
+      "type": "file"
+    },
+    {
+      "id": "query:dashboardclient component composes projectpicker cart posts formdata projectname",
+      "type": "query",
+      "meta": {
+        "text": "DashboardClient component that composes ProjectPicker and cart, posts formData with projectName and hoursSpent to /api/submit"
+      }
+    },
+    {
+      "id": "query:airtable_fields definition mapping field names project name hours",
+      "type": "query",
+      "meta": {
+        "text": "AIRTABLE_FIELDS definition mapping field names, project name field, hours field"
+      }
     }
   ],
   "edges": [
@@ -1426,6 +1484,249 @@
       "to": "src/app/api/auth/hackatime/login/route.js::GET",
       "rel": "retrieved",
       "ts": 1784989735
+    },
+    {
+      "from": "query:multiple project selection when submitting hours stacking across",
+      "to": "src/lib/hackatime.js",
+      "rel": "retrieved",
+      "ts": 1785180676
+    },
+    {
+      "from": "query:multiple project selection when submitting hours stacking across",
+      "to": "src/components/dashboard/ProjectPicker.jsx",
+      "rel": "retrieved",
+      "ts": 1785180676
+    },
+    {
+      "from": "query:multiple project selection when submitting hours stacking across",
+      "to": "src/app/api/auth/callback/route.js::GET",
+      "rel": "retrieved",
+      "ts": 1785180676
+    },
+    {
+      "from": "query:multiple project selection when submitting hours stacking across",
+      "to": "src/app/api/auth/hackatime/callback/route.js::GET",
+      "rel": "retrieved",
+      "ts": 1785180676
+    },
+    {
+      "from": "query:multiple project selection when submitting hours stacking across",
+      "to": "src/app/api/auth/hackatime/login/route.js::GET",
+      "rel": "retrieved",
+      "ts": 1785180676
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/components/dashboard/ProjectPicker.jsx",
+      "rel": "read",
+      "ts": 1785180679,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/lib/hackatime.js",
+      "rel": "read",
+      "ts": 1785180680,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:project submission form submit hours how selectedproject name",
+      "to": "src/components/dashboard/SubmissionForm.jsx",
+      "rel": "retrieved",
+      "ts": 1785181295
+    },
+    {
+      "from": "query:project submission form submit hours how selectedproject name",
+      "to": "src/components/dashboard/ProjectPicker.jsx::formatHours",
+      "rel": "retrieved",
+      "ts": 1785181295
+    },
+    {
+      "from": "query:project submission form submit hours how selectedproject name",
+      "to": "src/lib/hackatime.js::trackedHoursForProject",
+      "rel": "retrieved",
+      "ts": 1785181295
+    },
+    {
+      "from": "query:project submission form submit hours how selectedproject name",
+      "to": "openspec/changes/editable-github-username/proposal.md",
+      "rel": "retrieved",
+      "ts": 1785181295
+    },
+    {
+      "from": "query:project submission form submit hours how selectedproject name",
+      "to": "src/lib/airtable.js::createAirtableRecord",
+      "rel": "retrieved",
+      "ts": 1785181295
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/components/dashboard/SubmissionForm.jsx",
+      "rel": "read",
+      "ts": 1785181296,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:page renders projectpicker submissionform together handlesubmit api route",
+      "to": "src/components/dashboard/ProjectPicker.jsx",
+      "rel": "retrieved",
+      "ts": 1785181300
+    },
+    {
+      "from": "query:page renders projectpicker submissionform together handlesubmit api route",
+      "to": "src/components/dashboard/SubmissionForm.jsx",
+      "rel": "retrieved",
+      "ts": 1785181300
+    },
+    {
+      "from": "query:page renders projectpicker submissionform together handlesubmit api route",
+      "to": "src/lib/hackatime.js::trackedHoursForProject",
+      "rel": "retrieved",
+      "ts": 1785181300
+    },
+    {
+      "from": "query:page renders projectpicker submissionform together handlesubmit api route",
+      "to": "src/app/dashboard/success/page.jsx",
+      "rel": "retrieved",
+      "ts": 1785181300
+    },
+    {
+      "from": "query:page renders projectpicker submissionform together handlesubmit api route",
+      "to": "src/lib/airtable.js::createAirtableRecord",
+      "rel": "retrieved",
+      "ts": 1785181300
+    },
+    {
+      "from": "query:dashboard submit page app router route imports projectpicker",
+      "to": "src/app/dashboard/page.jsx",
+      "rel": "retrieved",
+      "ts": 1785181315
+    },
+    {
+      "from": "query:dashboard submit page app router route imports projectpicker",
+      "to": "src/app/api/submit/route.js::POST",
+      "rel": "retrieved",
+      "ts": 1785181315
+    },
+    {
+      "from": "query:dashboard submit page app router route imports projectpicker",
+      "to": "src/app/dashboard/success/page.jsx",
+      "rel": "retrieved",
+      "ts": 1785181315
+    },
+    {
+      "from": "query:dashboard submit page app router route imports projectpicker",
+      "to": "src/app/prizes/page.jsx",
+      "rel": "retrieved",
+      "ts": 1785181315
+    },
+    {
+      "from": "query:dashboard submit page app router route imports projectpicker",
+      "to": "src/components/dashboard/SubmissionForm.jsx",
+      "rel": "retrieved",
+      "ts": 1785181315
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/app/dashboard/page.jsx",
+      "rel": "read",
+      "ts": 1785181318,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/app/api/submit/route.js::POST",
+      "rel": "read",
+      "ts": 1785181318,
+      "meta": {
+        "mode": "symbol_excerpt"
+      }
+    },
+    {
+      "from": "query:dashboardclient component composes projectpicker cart posts formdata projectname",
+      "to": "src/components/dashboard/DashboardClient.jsx",
+      "rel": "retrieved",
+      "ts": 1785181326
+    },
+    {
+      "from": "query:dashboardclient component composes projectpicker cart posts formdata projectname",
+      "to": "src/app/api/submit/route.js::parseCart",
+      "rel": "retrieved",
+      "ts": 1785181326
+    },
+    {
+      "from": "query:dashboardclient component composes projectpicker cart posts formdata projectname",
+      "to": "src/components/dashboard/ProjectPicker.jsx",
+      "rel": "retrieved",
+      "ts": 1785181326
+    },
+    {
+      "from": "query:dashboardclient component composes projectpicker cart posts formdata projectname",
+      "to": "src/components/sections/Arsenal.jsx::IdeaCard",
+      "rel": "retrieved",
+      "ts": 1785181326
+    },
+    {
+      "from": "query:dashboardclient component composes projectpicker cart posts formdata projectname",
+      "to": "src/app/api/auth/callback/route.js::GET",
+      "rel": "retrieved",
+      "ts": 1785181326
+    },
+    {
+      "from": "query:airtable_fields definition mapping field names project name hours",
+      "to": "src/lib/hackatime.js::trackedHoursForProject",
+      "rel": "retrieved",
+      "ts": 1785181326
+    },
+    {
+      "from": "query:airtable_fields definition mapping field names project name hours",
+      "to": "src/components/dashboard/ProjectPicker.jsx",
+      "rel": "retrieved",
+      "ts": 1785181326
+    },
+    {
+      "from": "query:airtable_fields definition mapping field names project name hours",
+      "to": "src/lib/airtable.js",
+      "rel": "retrieved",
+      "ts": 1785181326
+    },
+    {
+      "from": "query:airtable_fields definition mapping field names project name hours",
+      "to": "openspec/changes/editable-github-username/proposal.md",
+      "rel": "retrieved",
+      "ts": 1785181326
+    },
+    {
+      "from": "query:airtable_fields definition mapping field names project name hours",
+      "to": "src/app/api/auth/callback/route.js::GET",
+      "rel": "retrieved",
+      "ts": 1785181326
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/components/dashboard/DashboardClient.jsx",
+      "rel": "read",
+      "ts": 1785181330,
+      "meta": {
+        "mode": "full"
+      }
+    },
+    {
+      "from": "query:(empty)",
+      "to": "src/lib/airtable.js",
+      "rel": "read",
+      "ts": 1785181330,
+      "meta": {
+        "mode": "full"
+      }
     }
   ],
   "files": {
@@ -1531,15 +1832,15 @@
       "cached_chars": 2043,
       "cached_tokens_est": 510,
       "last_action": "read",
-      "last_ts": 1784826528
+      "last_ts": 1785181318
     },
     "src/components/dashboard/DashboardClient.jsx": {
       "query_terms": [],
       "cached_content": "'use client'\n\nimport { useState } from 'react'\nimport { useRouter } from 'next/navigation'\nimport ProjectPicker from './ProjectPicker'\nimport PrizePicker from './PrizePicker'\nimport SubmissionForm from './SubmissionForm'\nimport { findPrize } from '../../data/prizeTiers'\n\nconst EMPTY_FIELDS = {\n  pla",
-      "cached_chars": 10728,
-      "cached_tokens_est": 2682,
+      "cached_chars": 11211,
+      "cached_tokens_est": 2802,
       "last_action": "read",
-      "last_ts": 1784913348
+      "last_ts": 1785181330
     },
     "src/app/page.jsx": {
       "query_terms": [],
@@ -1603,7 +1904,7 @@
       "cached_chars": 6268,
       "cached_tokens_est": 1567,
       "last_action": "read",
-      "last_ts": 1784913339
+      "last_ts": 1785181296
     },
     "src/lib/hackatime.js::getHackatimeProjects": {
       "query_terms": [],
@@ -1619,7 +1920,7 @@
       "cached_chars": 3057,
       "cached_tokens_est": 764,
       "last_action": "read",
-      "last_ts": 1784901990
+      "last_ts": 1785180679
     },
     "src/app/prizes/page.jsx": {
       "query_terms": [],
@@ -1635,7 +1936,7 @@
       "cached_chars": 2911,
       "cached_tokens_est": 727,
       "last_action": "read",
-      "last_ts": 1784905759
+      "last_ts": 1785181330
     },
     "src/lib/hackclub.js": {
       "query_terms": [],
@@ -1644,6 +1945,22 @@
       "cached_tokens_est": 413,
       "last_action": "read",
       "last_ts": 1784905782
+    },
+    "src/lib/hackatime.js": {
+      "query_terms": [],
+      "cached_content": "const HACKATIME_BASE = 'https://hackatime.hackclub.com'\n\n// Hackatime is a fully separate OAuth2 provider from auth.hackclub.com \u2014 its\n// own Doorkeeper server, own app registration, own tokens. See\n// hackclub/hackatime docs/oauth/oauth-apps.md. `read` is needed for the\n// projects/hours endpoints;",
+      "cached_chars": 1973,
+      "cached_tokens_est": 493,
+      "last_action": "read",
+      "last_ts": 1785180680
+    },
+    "src/app/api/submit/route.js::POST": {
+      "query_terms": [],
+      "cached_content": "export async function POST(request) {\n  const session = await getSessionFromRequest()\n  if (!session || !session.hackatime_access_token) {\n    return NextResponse.json({ error: 'Not authenticated' }, { status: 401 })\n  }\n\n  const formData = await request.formData()\n  const category = formData.get('c",
+      "cached_chars": 6266,
+      "cached_tokens_est": 1566,
+      "last_action": "read",
+      "last_ts": 1785181318
     }
   },
   "actions": [
@@ -1974,6 +2291,102 @@
       "payload": {
         "kind": "continue_retrieve",
         "query": "homepage UI structure - terminal-style single scrolling interface redesign"
+      }
+    },
+    {
+      "ts": 1785180675,
+      "kind": "retrieve",
+      "payload": {
+        "kind": "retrieve",
+        "query": "multiple project selection when submitting hours, stacking hours across projects"
+      }
+    },
+    {
+      "ts": 1785180676,
+      "kind": "continue_retrieve",
+      "payload": {
+        "kind": "continue_retrieve",
+        "query": "multiple project selection when submitting hours, stacking hours across projects"
+      }
+    },
+    {
+      "ts": 1785181295,
+      "kind": "retrieve",
+      "payload": {
+        "kind": "retrieve",
+        "query": "project submission form, submit hours, how selectedProject and project name are stored/persisted in submission record"
+      }
+    },
+    {
+      "ts": 1785181295,
+      "kind": "continue_retrieve",
+      "payload": {
+        "kind": "continue_retrieve",
+        "query": "project submission form, submit hours, how selectedProject and project name are stored/persisted in submission record"
+      }
+    },
+    {
+      "ts": 1785181300,
+      "kind": "retrieve",
+      "payload": {
+        "kind": "retrieve",
+        "query": "page that renders ProjectPicker and SubmissionForm together, handleSubmit, API route that creates submission record with project name and hours in database"
+      }
+    },
+    {
+      "ts": 1785181300,
+      "kind": "continue_retrieve",
+      "payload": {
+        "kind": "continue_retrieve",
+        "query": "page that renders ProjectPicker and SubmissionForm together, handleSubmit, API route that creates submission record with project name and hours in database"
+      }
+    },
+    {
+      "ts": 1785181315,
+      "kind": "retrieve",
+      "payload": {
+        "kind": "retrieve",
+        "query": "dashboard submit page app router route.js that imports ProjectPicker and SubmissionForm, hackatimeProjects state, project_names field"
+      }
+    },
+    {
+      "ts": 1785181315,
+      "kind": "continue_retrieve",
+      "payload": {
+        "kind": "continue_retrieve",
+        "query": "dashboard submit page app router route.js that imports ProjectPicker and SubmissionForm, hackatimeProjects state, project_names field"
+      }
+    },
+    {
+      "ts": 1785181326,
+      "kind": "retrieve",
+      "payload": {
+        "kind": "retrieve",
+        "query": "DashboardClient component that composes ProjectPicker and cart, posts formData with projectName and hoursSpent to /api/submit"
+      }
+    },
+    {
+      "ts": 1785181326,
+      "kind": "continue_retrieve",
+      "payload": {
+        "kind": "continue_retrieve",
+        "query": "DashboardClient component that composes ProjectPicker and cart, posts formData with projectName and hoursSpent to /api/submit"
+      }
+    },
+    {
+      "ts": 1785181326,
+      "kind": "retrieve",
+      "payload": {
+        "kind": "retrieve",
+        "query": "AIRTABLE_FIELDS definition mapping field names, project name field, hours field"
+      }
+    },
+    {
+      "ts": 1785181326,
+      "kind": "continue_retrieve",
+      "payload": {
+        "kind": "continue_retrieve",
+        "query": "AIRTABLE_FIELDS definition mapping field names, project name field, hours field"
       }
     }
   ]
