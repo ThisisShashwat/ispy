@@ -74,7 +74,13 @@ export default function PrizesPage() {
                 <TierColumn key={tier.hours} tier={tier} index={i} />
               ))}
             </div>
+            
 
+            <div className='p-2 flex flex-col gap-1 bg-black mx-auto text-center my-4 '>
+              <p className='text-xl'>Want to add something?</p>
+              <p>just head over to <a className='link' href="https://hackclub.enterprise.slack.com/docs/T0266FRGM/F0BKLLXLZF0">#ispy</a> and type your suggestion</p>
+            </div>
+            
             <div className="text-center mt-16">
               <Link
                 href="/"
