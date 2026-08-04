@@ -13,6 +13,10 @@ import hardwareGrantPlaceholder from "../assets/prizes/hardware-grant-placeholde
 import protonMe from "../assets/prizes/protonMe.jpg"
 import hackTheBox from "../assets/prizes/hackthebox.png"
 import tryHackMe from "../assets/prizes/tryHackMe.png"
+import keyboard from "../assets/prizes/creamy_keyboard.jpg"
+import headphones from "../assets/prizes/headphones.png"
+import glasses from "../assets/prizes/metaGlasses.jpeg"
+import charger from "../assets/prizes/anker_image.png"
 // Placeholder tier data — swap items/hours/codenames for real reward-tier
 // content later. Structure (hours, codename, items[]) is stable.
 // `hours` is each item's flat hour cost (spendable currency), not a minimum
@@ -42,7 +46,11 @@ export const prizeTiers = [
     items: [
       { id: 'watch', name: 'Casio Watch', image: casioWatch, desc: 'sick watch to flex on people with (can switch for any watch that is 100 or less)' },
       { id: 'ProtonMe', name: "ProtonMe 1 year subscription", image: protonMe, desc: "Proton Me Subscription for one year to protect yourself."},
-      { id: "tryHackMe", name: "TryHackMe 6 month subscription", image: tryHackMe, desc: "six months of pure cybersecurity grind"}
+      { id: "tryHackMe", name: "TryHackMe 6 month subscription", image: tryHackMe, desc: "six months of pure cybersecurity grind"},
+      { id: "keyboard", name: "EPOMAKER TH99 PRO Keyboard", image: keyboard, desc: "really good keyboard (i use it daily)."},
+      { id: "charger", name: "Anker Nano Charger (100W) with USB-C Cable", image: charger, desc: "100W charging for charging stuff"}
+    
+    
     ],
   },
   {
@@ -60,7 +68,10 @@ export const prizeTiers = [
     items: [
       { id: 'gopro', name: 'GoPro HERO12 Black', image: gopro, desc: 'Nice mini-camera to document all your adventures. ' },
       { id: 'laptop', name: 'Thinkpad T14 (Gen 2)', image: laptopImage, desc: 'Laptop with decent specs. Core i5-1145G7, 16GB RAM, 256GB SSD' },
-      { id: "hackTheBox", name: "Hack The Box VIP+ 1 Year Subscription", image: hackTheBox, desc: "rlly cool cybersec tool + env. check it out 100%"}
+      { id: "hackTheBox", name: "Hack The Box VIP+ 1 Year Subscription", image: hackTheBox, desc: "rlly cool cybersec tool + env. check it out 100%"},
+      { id: "headphones", name: "Sony WH-1000XM5 Wireless Noise Canceling Headphones (Black)", image: headphones, desc: "really good headphones (i use these daily as well)"},
+
+      { id: "metaGlasses", name: "Meta Glasses Gen 1", image: glasses, desc: "could be used to spy on ppl...."}
     ],
   },
 ]
