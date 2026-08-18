@@ -24,8 +24,8 @@ export default function ProjectPicker({ projects, selectedProjects, onSelect }) 
 
   if (!projects || projects.length === 0) {
     return (
-      <div className="border border-outline-variant border-dashed px-4 py-6 text-center">
-        <p className="font-mono text-sm text-on-surface-variant">
+      <div className="border border-ink/15 border-dashed px-4 py-6 text-center">
+        <p className="font-data text-sm text-ink/65">
           No Hackatime projects found for your account yet. Log some time on a project
           in Hackatime, then come back here to submit it.
         </p>
@@ -41,18 +41,18 @@ export default function ProjectPicker({ projects, selectedProjects, onSelect }) 
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder={`Search all ${projects.length} projects…`}
-          className="w-full border border-outline-variant bg-surface-container-low px-3 py-2 text-sm text-on-background mb-3 focus:outline-none focus:border-primary-container"
+          className="w-full border border-ink/15 bg-plate px-3 py-2 text-sm text-ink mb-3 focus:outline-none focus:border-ink"
         />
       )}
 
       {!query.trim() && projects.length > TOP_N && (
-        <p className="font-mono text-[10px] tracking-widest text-on-surface-variant uppercase mb-3">
-          Showing top {TOP_N} by tracked hours — search to find others
+        <p className="font-data text-[10px] tracking-widest text-ink/65 uppercase mb-3">
+          Showing top {TOP_N} by tracked hours. Search to find others
         </p>
       )}
 
       {visibleProjects.length === 0 ? (
-        <p className="font-mono text-sm text-on-surface-variant">
+        <p className="font-data text-sm text-ink/65">
           No projects match "{query}".
         </p>
       ) : (
@@ -66,14 +66,14 @@ export default function ProjectPicker({ projects, selectedProjects, onSelect }) 
                 onClick={() => onSelect(project)}
                 className={`text-left border px-4 py-3 transition-colors ${
                   selected
-                    ? 'border-primary-container bg-surface-container-high'
-                    : 'border-outline bg-surface-container-low hover:border-primary-container'
+                    ? 'border-ink bg-ground'
+                    : 'border-ink/15 bg-plate hover:border-ink'
                 }`}
               >
-                <p className="font-mono uppercase tracking-widest text-sm text-on-background font-bold">
+                <p className="font-data uppercase tracking-widest text-sm text-ink font-bold">
                   {project.name}
                 </p>
-                <p className="text-on-surface-variant text-sm mt-1">
+                <p className="text-ink/65 text-sm mt-1">
                   {formatHours(project.total_seconds)} hrs
                   {project.languages?.length ? ` · ${project.languages.join(', ')}` : ''}
                 </p>

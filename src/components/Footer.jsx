@@ -1,9 +1,9 @@
 export default function Footer() {
   return (
-    <footer className="border-t border-outline-variant bg-surface-container-lowest px-6 py-6">
-      <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 font-mono text-xs uppercase tracking-widest text-on-surface-variant">
+    <footer className="border-t border-ink/15 bg-ground px-5 py-8 sm:px-8">
+      <div className="mx-auto flex max-w-[1500px] flex-wrap items-center justify-center gap-x-6 gap-y-2 font-data text-[10px] uppercase tracking-[0.12em] text-ink/55">
         <a
-          className="link hover:text-primary-container transition-colors"
+          className="transition-colors hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-signal"
           href="https://hackclub.com/privacy-and-terms#hack-club-standard-terms-and-conditions"
           target="_blank"
           rel="noopener noreferrer"
@@ -11,7 +11,7 @@ export default function Footer() {
           Terms of Service
         </a>
         <a
-          className="link hover:text-primary-container transition-colors"
+          className="transition-colors hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-signal"
           href="https://hackclub.com/privacy-and-terms#hack-club-privacy-notice"
           target="_blank"
           rel="noopener noreferrer"
@@ -19,7 +19,7 @@ export default function Footer() {
           Privacy Policy
         </a>
         <a
-          className="link hover:text-primary-container transition-colors"
+          className="transition-colors hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-signal"
           href="https://forms.hackclub.com/bounty"
           target="_blank"
           rel="noopener noreferrer"

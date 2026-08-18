@@ -4,39 +4,13 @@
 
 @layer base {
   body {
-    @apply bg-black text-on-background font-mono;
+    @apply bg-ground text-ink font-data;
   }
 }
 
 @layer components {
-  .glitch-title {
-    position: relative;
-    display: inline-block;
-  }
-  .glitch-title:hover::before,
-  .glitch-title:hover::after {
-    content: attr(data-text);
-    position: absolute;
-    inset: 0;
-    background: inherit;
-  }
-  .glitch-title:hover::before {
-    color: #fdaf00;
-    animation: glitchShift 0.3s steps(2) infinite;
-    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
-  }
-  .glitch-title:hover::after {
-    color: #00ff41;
-    animation: glitchShift 0.3s steps(2) infinite reverse;
-    clip-path: polygon(0 55%, 100% 55%, 100% 100%, 0 100%);
-  }
-
-  .text-glow {
-    text-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
-  }
-
-  .glow {
-    filter: drop-shadow(0 0 4px rgba(0, 230, 57, 0.15));
+  .link {
+    @apply text-signal underline underline-offset-2;
   }
 }
 

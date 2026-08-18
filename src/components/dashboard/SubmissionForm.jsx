@@ -3,11 +3,11 @@
 function ReadOnlyField({ label, value }) {
   return (
     <div>
-      <p className="font-mono text-[10px] tracking-widest text-on-surface-variant uppercase mb-1">
+      <p className="font-data text-[10px] tracking-widest text-ink/65 uppercase mb-1">
         {label}
       </p>
-      <p className="border border-outline-variant bg-surface-container px-3 py-2 text-sm text-on-background">
-        {value || '—'}
+      <p className="border border-ink/15 bg-plate px-3 py-2 text-sm text-ink">
+        {value || 'N/A'}
       </p>
     </div>
   )
@@ -18,7 +18,7 @@ function TextField({ label, name, value, onChange, errors, type = 'text', textar
   const hasError = Boolean(errors[name])
   return (
     <div>
-      <label className="font-mono text-[10px] tracking-widest text-on-surface-variant uppercase mb-1 block">
+      <label className="font-data text-[10px] tracking-widest text-ink/65 uppercase mb-1 block">
         {label}
       </label>
       <Component
@@ -26,11 +26,11 @@ function TextField({ label, name, value, onChange, errors, type = 'text', textar
         rows={textarea ? 4 : undefined}
         value={value}
         onChange={(e) => onChange(name, e.target.value)}
-        className={`w-full border bg-surface-container-low px-3 py-2 text-sm text-on-background focus:outline-none ${
-          hasError ? 'border-error' : 'border-outline-variant focus:border-primary-container'
+        className={`w-full border bg-plate px-3 py-2 text-sm text-ink focus:outline-none ${
+          hasError ? 'border-error' : 'border-ink/15 focus:border-ink'
         }`}
       />
-      {hasError && <p className="text-error text-xs mt-1 font-mono">{errors[name]}</p>}
+      {hasError && <p className="text-error text-xs mt-1 font-data">{errors[name]}</p>}
     </div>
   )
 }
@@ -47,7 +47,7 @@ export default function SubmissionForm({
   return (
     <div className="flex flex-col gap-8">
       <div>
-        <p className="font-mono text-xs text-primary-container tracking-widest uppercase mb-3">
+        <p className="font-data text-xs text-signal tracking-widest uppercase mb-3">
           Identity (from Hack Club OAuth)
         </p>
         <div className="grid sm:grid-cols-2 gap-3">
@@ -65,10 +65,10 @@ export default function SubmissionForm({
       </div>
 
       <div>
-        <p className="font-mono text-xs text-primary-container tracking-widest uppercase mb-3">
+        <p className="font-data text-xs text-signal tracking-widest uppercase mb-3">
           Birthday &amp; address
         </p>
-        <p className="text-on-surface-variant text-xs font-mono mb-3">
+        <p className="text-ink/65 text-xs font-data mb-3">
           basic stuff we need
         </p>
         <div className="grid sm:grid-cols-2 gap-4">
@@ -126,7 +126,7 @@ export default function SubmissionForm({
       </div>
 
       <div>
-        <p className="font-mono text-xs text-primary-container tracking-widest uppercase mb-3">
+        <p className="font-data text-xs text-signal tracking-widest uppercase mb-3">
           Project details
         </p>
         <div className="grid sm:grid-cols-2 gap-4">
@@ -155,22 +155,22 @@ export default function SubmissionForm({
           )}
         </div>
         <div className="mt-4">
-          <label className="font-mono text-[10px] tracking-widest text-on-surface-variant uppercase mb-1 block">
+          <label className="font-data text-[10px] tracking-widest text-ink/65 uppercase mb-1 block">
             Screenshot
           </label>
           <input
             type="file"
             accept="image/*"
             onChange={(e) => onScreenshotChange(e.target.files?.[0] ?? null)}
-            className={`w-full border bg-surface-container-low px-3 py-2 text-sm text-on-background file:mr-3 file:border-0 file:bg-surface-container-high file:px-3 file:py-1 file:font-mono file:text-xs ${
-              errors.screenshot ? 'border-error' : 'border-outline-variant'
+            className={`w-full border bg-plate px-3 py-2 text-sm text-ink file:mr-3 file:border-0 file:bg-ground file:px-3 file:py-1 file:font-data file:text-xs ${
+              errors.screenshot ? 'border-error' : 'border-ink/15'
             }`}
           />
           {screenshotName && (
-            <p className="text-on-surface-variant text-xs mt-1 font-mono">{screenshotName}</p>
+            <p className="text-ink/65 text-xs mt-1 font-data">{screenshotName}</p>
           )}
           {errors.screenshot && (
-            <p className="text-error text-xs mt-1 font-mono">{errors.screenshot}</p>
+            <p className="text-error text-xs mt-1 font-data">{errors.screenshot}</p>
           )}
         </div>
         <div className="mt-4">
