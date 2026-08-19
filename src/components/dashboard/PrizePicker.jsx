@@ -13,11 +13,11 @@ export default function PrizePicker({ hoursTracked, cart, onChangeQuantity }) {
     <div className="flex flex-col gap-4">
       <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
         {prizeTiers.map((tier) => (
-          <div key={tier.hours} className="border border-outline bg-surface-container-low">
-            <div className="border-b border-dashed border-outline-variant px-3 py-2 text-center">
-              <p className="font-mono text-lg font-bold text-on-background">{tier.hours}</p>
-              <p className="font-mono text-[9px] tracking-widest text-primary-container uppercase">
-                Hours — {tier.codename}
+          <div key={tier.hours} className="border border-ink/15 bg-plate">
+            <div className="border-b border-dashed border-ink/15 px-3 py-2 text-center">
+              <p className="font-data text-lg font-bold text-ink">{tier.hours}</p>
+              <p className="font-data text-[9px] tracking-widest text-signal uppercase">
+                Hours · {tier.codename}
               </p>
             </div>
             <div className="p-3 flex flex-col gap-2">
@@ -26,10 +26,10 @@ export default function PrizePicker({ hoursTracked, cart, onChangeQuantity }) {
                 return (
                   <div
                     key={item.id}
-                    className={`flex items-center justify-between gap-2 border px-2 py-2 text-xs font-mono uppercase tracking-wide ${
+                    className={`flex items-center justify-between gap-2 border px-2 py-2 text-xs font-data uppercase tracking-wide ${
                       quantity > 0
-                        ? 'border-primary-container bg-surface-container-high text-on-background'
-                        : 'border-outline-variant text-on-surface-variant'
+                        ? 'border-ink bg-ground text-ink'
+                        : 'border-ink/15 text-ink/65'
                     }`}
                   >
                     <span className="truncate">{item.name}</span>
@@ -38,7 +38,7 @@ export default function PrizePicker({ hoursTracked, cart, onChangeQuantity }) {
                         type="button"
                         onClick={() => onChangeQuantity(item.id, Math.max(0, quantity - 1))}
                         disabled={quantity === 0}
-                        className="border border-outline-variant w-6 h-6 flex items-center justify-center hover:border-primary-container disabled:opacity-30 disabled:cursor-not-allowed"
+                        className="border border-ink/15 w-6 h-6 flex items-center justify-center hover:border-ink disabled:opacity-30 disabled:cursor-not-allowed"
                       >
                         −
                       </button>
@@ -46,7 +46,7 @@ export default function PrizePicker({ hoursTracked, cart, onChangeQuantity }) {
                       <button
                         type="button"
                         onClick={() => onChangeQuantity(item.id, quantity + 1)}
-                        className="border border-outline-variant w-6 h-6 flex items-center justify-center hover:border-primary-container"
+                        className="border border-ink/15 w-6 h-6 flex items-center justify-center hover:border-ink"
                       >
                         +
                       </button>
@@ -59,9 +59,9 @@ export default function PrizePicker({ hoursTracked, cart, onChangeQuantity }) {
         ))}
       </div>
 
-      <p className={`font-mono text-xs ${overBudget ? 'text-error' : 'text-on-surface-variant'}`}>
+      <p className={`font-data text-xs ${overBudget ? 'text-error' : 'text-ink/65'}`}>
         Cart total: {totalCost.toFixed(1)} / {hoursTracked.toFixed(1)} hours
-        {overBudget ? ' — over budget' : ''}
+        {overBudget ? ', over budget' : ''}
       </p>
     </div>
   )

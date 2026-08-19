@@ -60,7 +60,7 @@ function validate(fields, cart, hoursTracked, screenshot, category) {
 export default function DashboardClient({ profile, projects }) {
   const router = useRouter()
   const [showForm, setShowForm] = useState(false)
-  const [category, setCategory] = useState(null) // null | 'software' | 'hardware'
+  const [category, setCategory] = useState(null)
   const [selectedProjects, setSelectedProjects] = useState([])
   const [hoursSpent, setHoursSpent] = useState('')
   const [cart, setCart] = useState({})
@@ -70,7 +70,7 @@ export default function DashboardClient({ profile, projects }) {
   }))
   const [screenshot, setScreenshot] = useState(null)
   const [errors, setErrors] = useState({})
-  const [status, setStatus] = useState('idle') // idle | submitting | success | error
+  const [status, setStatus] = useState('idle')
   const [statusMessage, setStatusMessage] = useState('')
 
   const hoursTracked =
@@ -95,13 +95,11 @@ export default function DashboardClient({ profile, projects }) {
         ? prev.filter((p) => p.name !== project.name)
         : [...prev, project],
     )
-    // Changing the selection can invalidate a previously-eligible cart.
     setCart({})
   }
 
   function handleHoursSpentChange(value) {
     setHoursSpent(value)
-    // Changing self-reported hours can invalidate a previously-eligible cart.
     setCart({})
   }
 
@@ -184,20 +182,20 @@ export default function DashboardClient({ profile, projects }) {
       router.push('/dashboard/success')
     } catch {
       setStatus('error')
-      setStatusMessage('Network error — submission was not sent. Please try again.')
+      setStatusMessage('Network error. Submission was not sent. Please try again.')
     }
   }
 
   if (!showForm) {
     return (
       <div className="flex flex-col items-start gap-6">
-        <p className="text-on-background text-lg">
+        <p className="font-data text-[12px] leading-[1.8] text-ink/70">
           {profile?.firstName ? `Welcome, ${profile.firstName}` : 'Welcome'}
         </p>
         <button
           type="button"
           onClick={() => setShowForm(true)}
-          className="font-mono uppercase tracking-widest border border-primary-container text-primary-container px-8 py-4 hover:bg-primary-container hover:text-on-primary-container transition-colors"
+          className="bg-ink px-7 py-3.5 font-data text-[11px] font-bold uppercase tracking-[0.12em] text-plate transition-opacity hover:opacity-85 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
         >
           Submit a project
         </button>
@@ -208,21 +206,21 @@ export default function DashboardClient({ profile, projects }) {
   if (!category) {
     return (
       <div>
-        <p className="font-mono text-xs text-primary-container tracking-widest uppercase mb-3">
+        <p className="mb-3 font-data text-[10px] uppercase tracking-[0.18em] text-signal">
           Is this a hardware or software project?
         </p>
         <div className="flex gap-4">
           <button
             type="button"
             onClick={() => handleSelectCategory('software')}
-            className="font-mono uppercase tracking-widest border border-primary-container text-primary-container px-8 py-4 hover:bg-primary-container hover:text-on-primary-container transition-colors"
+            className="border border-ink px-7 py-3.5 font-data text-[11px] font-bold uppercase tracking-[0.12em] text-ink transition-colors hover:bg-ink hover:text-plate focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
           >
             Software
           </button>
           <button
             type="button"
             onClick={() => handleSelectCategory('hardware')}
-            className="font-mono uppercase tracking-widest border border-primary-container text-primary-container px-8 py-4 hover:bg-primary-container hover:text-on-primary-container transition-colors"
+            className="border border-ink px-7 py-3.5 font-data text-[11px] font-bold uppercase tracking-[0.12em] text-ink transition-colors hover:bg-ink hover:text-plate focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink"
           >
             Hardware
           </button>
@@ -236,13 +234,13 @@ export default function DashboardClient({ profile, projects }) {
       <button
         type="button"
         onClick={() => handleSelectCategory(null)}
-        className="font-mono text-xs text-on-surface-variant hover:underline self-start"
+        className="font-data text-xs text-ink/65 hover:underline self-start"
       >
         ← change category
       </button>
 
       <div>
-        <p className="font-mono text-xs text-primary-container tracking-widest uppercase mb-3">
+        <p className="mb-3 font-data text-[10px] uppercase tracking-[0.18em] text-signal">
           1. {category === 'software' ? "Select the project you're submitting" : 'Enter your self-reported hours spent'}
         </p>
         {category === 'software' ? (
@@ -252,7 +250,7 @@ export default function DashboardClient({ profile, projects }) {
               selectedProjects={selectedProjects}
               onSelect={handleSelectProject}
             />
-            {errors.project && <p className="text-error text-xs mt-2 font-mono">{errors.project}</p>}
+            {errors.project && <p className="text-error text-xs mt-2 font-data">{errors.project}</p>}
           </>
         ) : (
           <>
@@ -263,16 +261,16 @@ export default function DashboardClient({ profile, projects }) {
               value={hoursSpent}
               onChange={(e) => handleHoursSpentChange(e.target.value)}
               placeholder="Hours spent"
-              className="w-full max-w-xs border border-outline-variant bg-surface-container-low px-3 py-2 text-sm text-on-background focus:outline-none focus:border-primary-container"
+              className="w-full max-w-xs border border-ink/15 bg-plate px-3 py-2 text-sm text-ink focus:outline-none focus:border-ink"
             />
-            {errors.hours && <p className="text-error text-xs mt-2 font-mono">{errors.hours}</p>}
+            {errors.hours && <p className="text-error text-xs mt-2 font-data">{errors.hours}</p>}
           </>
         )}
       </div>
 
       {trackIdentified && (
         <div>
-          <p className="font-mono text-xs text-primary-container tracking-widest uppercase mb-3">
+          <p className="mb-3 font-data text-[10px] uppercase tracking-[0.18em] text-signal">
             2. Pick your prizes (
             {category === 'software'
               ? `${hoursTracked.toFixed(1)} tracked hours on "${selectedProjects.map((p) => p.name).join(', ')}"`
@@ -284,13 +282,13 @@ export default function DashboardClient({ profile, projects }) {
             cart={cart}
             onChangeQuantity={handleChangeQuantity}
           />
-          {errors.prize && <p className="text-error text-xs mt-2 font-mono">{errors.prize}</p>}
+          {errors.prize && <p className="text-error text-xs mt-2 font-data">{errors.prize}</p>}
         </div>
       )}
 
       {trackIdentified && cartTotal(cart) > 0 && cartTotal(cart) <= hoursTracked && (
         <div>
-          <p className="font-mono text-xs text-primary-container tracking-widest uppercase mb-3">
+          <p className="mb-3 font-data text-[10px] uppercase tracking-[0.18em] text-signal">
             3. Submission details
           </p>
           <SubmissionForm
@@ -306,27 +304,27 @@ export default function DashboardClient({ profile, projects }) {
           <button
             type="submit"
             disabled={status === 'submitting'}
-            className="mt-8 font-mono uppercase tracking-widest border border-primary-container text-primary-container px-8 py-4 hover:bg-primary-container hover:text-on-primary-container transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            className="mt-8 bg-ink px-7 py-3.5 font-data text-[11px] font-bold uppercase tracking-[0.12em] text-plate transition-opacity hover:opacity-85 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {status === 'submitting' ? 'Submitting…' : 'Submit'}
           </button>
 
           {statusMessage && (
             <p
-              className={`mt-4 font-mono text-sm ${status === 'success' ? 'text-primary-container' : 'text-error'}`}
+              className={`mt-4 font-data text-sm ${status === 'success' ? 'text-signal' : 'text-error'}`}
             >
               {statusMessage}
             </p>
           )}
 
           {status === 'error' && (
-            <p className="mt-2 font-mono text-xs text-on-surface-variant">
+            <p className="mt-2 font-data text-xs text-ink/65">
               Having trouble?{' '}
               <a
                 href="https://forms.hackclub.com/t/eRmxM63EgHus"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-primary-container hover:underline"
+                className="text-signal hover:underline"
               >
                 Try our backup submission form ↗
               </a>
