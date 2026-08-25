@@ -41,8 +41,18 @@ export const prizeTiers = [
     ],
   },
   {
-    hours: 15,
+    hours: 6,
     codename: 'LVL 3 CLEARANCE',
+    items: [
+      { id: 'cmf-buds', name: 'CMF Buds Pro 2', image: earphones, desc: 'A 40 USD grant for buying some cool earphones ;0' },
+      { id: 'stationery-grant', name: '40$ stationery grant', image: stationery, desc: '40 USD worth stationery!!! (wow?!)' },
+      { id: 'cctv-camera', name: 'Surveillance camera', image: camera, desc: 'Now I see you, now i dont (use this grant to get yourself a CCTV camera)' },
+      { id: 'wifi', name: 'Wifi routers', image: wifi, desc: 'Whats internet?' },
+    ],
+  },
+  {
+    hours: 15,
+    codename: 'LVL 4 CLEARANCE',
     items: [
       { id: 'watch', name: 'Casio Watch', image: casioWatch, desc: 'sick watch to flex on people with (can switch for any watch that is 100 or less)' },
       { id: 'ProtonMe', name: "ProtonMe 1 year subscription", image: protonMe, desc: "Proton Me Subscription for one year to protect yourself."},
@@ -55,7 +65,7 @@ export const prizeTiers = [
   },
   {
     hours: 25,
-    codename: 'LVL 4 CLEARANCE',
+    codename: 'LVL 5 CLEARANCE',
     items: [
       { id: 'monitor', name: '144Hz Curved Monitor', image: monitorPlaceholder, desc: '144 hertz 27 inch curved monitor for whatever you do on your computer.' },
       { id: 'flipper-zero', name: 'Flipper Zero', image: flipperPlaceholder, desc: 'can do cool stuff.' },
@@ -64,12 +74,12 @@ export const prizeTiers = [
   },
   {
     hours: 50,
-    codename: 'LVL 5 CLEARANCE',
+    codename: 'LVL 6 CLEARANCE',
     items: [
       { id: 'gopro', name: 'GoPro HERO12 Black', image: gopro, desc: 'Nice mini-camera to document all your adventures. ' },
       { id: 'laptop', name: 'Thinkpad T14 (Gen 2)', image: laptopImage, desc: 'Laptop with decent specs. Core i5-1145G7, 16GB RAM, 256GB SSD' },
       { id: "hackTheBox", name: "Hack The Box VIP+ 1 Year Subscription", image: hackTheBox, desc: "rlly cool cybersec tool + env. check it out 100%"},
-      { id: "headphones", name: "Sony WH-1000XM5 Wireless Noise Canceling Headphones (Black)", image: headphones, desc: "really good headphones (i use these daily as well)"},
+      { id: "headphones", name: "Sony WH-1000XM5 Wireless Noise Cancelling Headphones (Black)", image: headphones, desc: "really good headphones (i use these daily as well)"},
 
       { id: "metaGlasses", name: "Meta Glasses Gen 1", image: glasses, desc: "could be used to spy on ppl...."}
     ],
@@ -93,10 +103,10 @@ export const highlightedPrizes = [
     codename: prizeTiers[2].codename,
   },
   {
-    id: prizeTiers[4].items[0].id,
-    name: prizeTiers[4].items[0].name,
-    image: prizeTiers[4].items[0].image,
-    codename: prizeTiers[4].codename,
+    id: prizeTiers[5].items[0].id,
+    name: prizeTiers[5].items[0].name,
+    image: prizeTiers[5].items[0].image,
+    codename: prizeTiers[5].codename,
   },
 ]
 
