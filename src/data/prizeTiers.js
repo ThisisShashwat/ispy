@@ -63,12 +63,12 @@ export const prizeTiers = [
     hours: 6,
     codename: 'LVL 3 CLEARANCE',
     items: [
-      { id: 'airtag', name: 'Apple AirTag / SmartTag', image: airtag, desc: '1x Apple AirTag or Samsung SmartTag tracker to keep tabs on your gear.' },
+      { id: 'airtag', name: 'Apple AirTag / SmartTag', image: airtag, desc: 'Apple AirTag or Samsung SmartTag tracker to keep tabs on your gear.' },
       { id: 'cmf-buds', name: 'CMF Buds by Nothing', image: cmfBuds, desc: 'CMF Buds / Neckband Pro with Active Noise Cancellation for wiretaps and tunes.' },
-      { id: 'backpack-stationery', name: 'Spy Tech Backpack / Stationery Grant', image: backpack, desc: 'Anti-theft waterproof tech backpack or $40 grant for spy stationery & covert gear.' },
+      { id: 'backpack-stationery', name: 'Spy Tech Backpack / Stationery Grant', image: backpack, desc: 'Tech backpack or $40 grant for spy stationery & covert gear.' },
       { id: 'cctv-camera', name: 'Smart Surveillance CCTV Camera', image: camera, desc: 'Now I see you, now I dont — smart Pan/Tilt 2K Wi-Fi security camera.' },
-      { id: 'wifi', name: 'GL.iNet OpenWrt Travel Router', image: wifi, desc: 'Portable privacy router with built-in VPN, Tor, and firewall protection.' },
-      { id: 'microphone', name: 'USB Studio / Wireless Lavalier Mic', image: microphone, desc: 'Studio condenser microphone or wireless clip-on spy lapel mic for crisp audio capture.' },
+      { id: 'wifi', name: 'Wifi Router', image: wifi, desc: 'A cool wifi router for all your hacking needs 😎' },
+      { id: 'microphone', name: 'Microphone', image: microphone, desc: 'Wait you can hear me? (Any microphone upto 40$)' },
     ],
   },
   {
@@ -76,8 +76,6 @@ export const prizeTiers = [
     codename: 'LVL 4 CLEARANCE',
     items: [
       { id: 'mx-master-3s', name: 'Logitech MX Master 3S Mouse', image: mxMaster, desc: 'The ultimate ergonomic wireless precision mouse with MagSpeed electromagnetic scrolling.' },
-      { id: 'zimablade', name: 'ZimaBlade 7700 SBC Server', image: zimaBlade, desc: 'Quad-Core x86 single board microserver with PCIe slot and dual SATA for your home lab.' },
-      { id: 'rubber-ducky', name: 'Hak5 USB Rubber Ducky', image: rubberDucky, desc: 'The legendary keystroke injection platform from Hak5 for rapid automated payload deployment.' },
       { id: 'watch', name: 'Casio Watch', image: casioWatch, desc: 'sick watch to flex on people with (can switch for any watch that is 100 or less)' },
       { id: 'ProtonMe', name: "ProtonMe 1 year subscription", image: protonMe, desc: "Proton Me Subscription for one year to protect yourself." },
       { id: "tryHackMe", name: "TryHackMe 6 month subscription", image: tryHackMe, desc: "six months of pure cybersecurity grind" },
@@ -99,6 +97,7 @@ export const prizeTiers = [
     codename: 'LVL 6 CLEARANCE',
     items: [
       { id: 'gopro', name: 'GoPro HERO12 Black', image: gopro, desc: 'Nice mini-camera to document all your adventures. ' },
+      { id: 'zimablade', name: 'ZimaBlade 7700 SBC Server', image: zimaBlade, desc: 'Quad-Core x86 single board microserver with PCIe slot and dual SATA for your home lab.' },
       { id: 'laptop', name: 'Thinkpad T14 (Gen 2)', image: laptopImage, desc: 'Laptop with decent specs. Core i5-1145G7, 16GB RAM, 256GB SSD' },
       { id: "hackTheBox", name: "Hack The Box VIP+ 1 Year Subscription", image: hackTheBox, desc: "rlly cool cybersec tool + env. check it out 100%" },
       { id: "headphones", name: "Sony WH-1000XM5 Wireless Noise Cancelling Headphones (Black)", image: headphones, desc: "really good headphones (i use these daily as well)" },
