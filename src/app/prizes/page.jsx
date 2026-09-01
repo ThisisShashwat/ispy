@@ -55,7 +55,7 @@ export default function PrizesPage() {
             logged hours meet a tier threshold, you can pick a prize from anything in that tier (like a shop)!
           </p>
 
-          <div className="mt-12 grid gap-px border border-ink/15 bg-ink/15 sm:grid-cols-2 lg:grid-cols-5">
+          <div className="mt-12 grid gap-px border border-ink/15 bg-ink/15 sm:grid-cols-2 lg:grid-cols-6">
             {prizeTiers.map((tier) => (
               <TierColumn key={tier.hours} tier={tier} />
             ))}
